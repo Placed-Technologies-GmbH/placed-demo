@@ -1,0 +1,68 @@
+{
+    "title": "Place candidates. Close deals. Fast.",
+    "description": "PLACED uses advanced AI to match your candidates with real-time job openings     — across every major source. Stop hunting. Start placing.",
+    "searchPlaceholder": "Search job titles or drop a CV...",
+    "search": "Search",
+    "onlyPaid": "Only paid ads",
+    "excludeHeadhunter": "Exclude headhunter listings",
+    "dropResume": "Drop a resume to auto-match",
+    "login": {
+      "signIn": "Sign in to your account",
+      "email": "Email address",
+      "password": "Password",
+      "logIn": "Log In",
+      "forgotPassword": "Forgot your password?",
+      "termsText": "By signing in, you agree to our",
+      "termsLink": "Terms of Service",
+      "emailPlaceholder": "your@email.com"
+    },
+    "demo": {
+      "title": "Enter email to try platform",
+      "companyName": "Company Name",
+      "emailAddress": "Email address",
+      "tryForFree": "Try for free",
+      "companyPlaceholder": "Company mail",
+      "emailPlaceholder": "your@companyemail.com",
+      "successTitle": "Thank you!",
+      "successMessage": "We've sent you an email with instructions to access the platform.",
+      "errorMessage": "Something went wrong. Please try again."
+    },
+    "about": "About",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "tryForFree": "Try for free",
+    "dashboard": {
+      "title": "Dashboard page",
+      "navigation": {
+        "logoAlt": "Navigate to Dashboard"
+      }, 
+      "welcome": "Welcome",
+      "searchPlaceholder": "Search job titles or drop a CV...",
+      "locationPlaceholder": "Type something...",
+      "search": "Search",
+      "dropResume": "Drop resume here",
+      "toggles": {
+        "onlyPaidAds": "Only paid ads",
+        "excludeHeadhunters": "Exclude headhunter listings",
+        "excludeMyClients": "Exclude my clients"
+      },
+      "searchHistory": {
+        "searchDetails": "Search Details",
+        "cvUploaded": "CV Uploaded",
+        "cv": "CV",
+        "favoriteJobs": "No. of favourite jobs",
+        "searchAgain": "Search again"
+      },
+      "companies": {
+        "companies": "Companies",
+        "existingClients": "Existing Clients",
+        "following": "Following",
+        "blacklist": "Blacklist",
+        "company": "Company",
+        "location": "Location",
+        "jobsListed": "Jobs listed",
+        "jobsFavorite": "Jobs favorite",
+        "browseJobs": "Browse Jobs"
+      }
+    }
+  } 

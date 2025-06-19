@@ -1,0 +1,385 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* FFF Acid Grotesk Font Family - Optimized Loading */
+@font-face {
+  font-family: 'FFF Acid Grotesk';
+  src: url('/fonts/acid-grotesk/FFF-AcidGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/acid-grotesk/FFF-AcidGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  /* Font metrics for better fallback matching */
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'FFF Acid Grotesk';
+  src: url('/fonts/acid-grotesk/FFF-AcidGrotesk-Medium.woff2') format('woff2'),
+       url('/fonts/acid-grotesk/FFF-AcidGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  /* Font metrics for better fallback matching */
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'FFF Acid Grotesk';
+  src: url('/fonts/acid-grotesk/FFF-AcidGrotesk-Bold.woff2') format('woff2'),
+       url('/fonts/acid-grotesk/FFF-AcidGrotesk-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  /* Font metrics for better fallback matching */
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+/* Fallback font optimization for better visual matching */
+@font-face {
+  font-family: 'FFF Acid Grotesk Fallback';
+  src: local('Helvetica Neue'), local('Helvetica'), local('Arial');
+  font-display: swap;
+  /* Adjust metrics to closely match FFF Acid Grotesk */
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+:root {
+  /* Brand Colors - Updated to match new color scheme */
+  --brand-navy: #050336;        /* Work blue - brand logo colors and for brackets and avatars */
+  --brand-blue: #AFCBFF;        /* Placed blue for other buttons */
+  --brand-pale-blue: #F0F2FF;   /* Pale blue - accent colors */
+  --brand-yellow: #E4FD57;      /* Signal yellow for search buttons */
+  
+  /* Primary Colors */
+  --primary: #050336;           /* Brand navy */
+  --primary-foreground: #FFFFFF; /* White text on navy */
+  --primary-black: #000000;
+  /* Secondary Colors */
+  --secondary: #AFCBFF;         /* Placed blue */
+  --secondary-foreground: #101827; /* Primary text on blue */
+  
+  /* Background Colors */
+  --background: #F9FAFB;        /* Background */
+  --background-muted: #F0F2FF;  /* Pale blue accent */
+  --background-subtle: #FFFFFF; /* White */
+  
+  /* Surface Colors */
+  --surface: #FFFFFF;           /* White */
+  --surface-elevated: #FFFFFF;  /* White */
+  --surface-overlay: rgba(5, 3, 54, 0.5); /* Brand navy with opacity */
+  
+  /* Text Colors */
+  --text-primary: #101827;      /* Primary text */
+  --text-secondary: #6B7280;    /* Secondary text */
+  --text-muted: #6B7280;        /* Secondary text (same as secondary) */
+  --text-inverse: #FFFFFF;      /* White */
+  
+  /* Border Colors */
+  --border: #D1D5DB;            /* Borders */
+  --border-light: #F0F2FF;      /* Pale blue accent */
+  --border-medium: #D1D5DB;     /* Borders */
+  --border-dark: #6B7280;       /* Secondary text */
+  
+  /* Semantic Colors */
+  --success: #17A34A;           /* Success green */
+  --success-foreground: #FFFFFF; /* White text */
+  --warning: #E4FD57;           /* Warning yellow (signal yellow) */
+  --warning-foreground: #101827; /* Primary text */
+  --error: #DC2625;             /* Error red */
+  --error-foreground: #FFFFFF;  /* White text */
+  --info: #2463EB;              /* Info blue */
+  --info-foreground: #FFFFFF;   /* White text */
+  
+  /* Accent Colors */
+  --accent: #F0F2FF;            /* Pale blue accent */
+  --accent-foreground: #101827; /* Primary text */
+  --accent-light: #F0F2FF;      /* Pale blue accent */
+  --accent-dark: #AFCBFF;       /* Placed blue */
+  
+  /* Interactive Colors */
+  --interactive: #AFCBFF;       /* Placed blue for buttons */
+  --interactive-foreground: #101827; /* Primary text */
+  --interactive-hover: #050336; /* Brand navy for hover */
+  --interactive-muted: #6B7280; /* Secondary text */
+  --interactive-muted-hover: #101827; /* Primary text */
+  
+  /* CTA Colors */
+  --cta: #E4FD57;               /* Signal yellow for search buttons */
+  --cta-foreground: #101827;    /* Primary text */
+  --cta-hover: #AFCBFF;         /* Placed blue for hover */
+  --cta-light: #F0F2FF;         /* Pale blue accent */
+  --cta-dark: #050336;          /* Brand navy */
+  
+  /* Muted Colors */
+  --muted: #F0F2FF;             /* Pale blue accent */
+  --muted-foreground: #6B7280;  /* Secondary text */
+  
+  /* Card Colors */
+  --card: #FFFFFF;              /* White */
+  --card-foreground: #101827;   /* Primary text */
+  
+  /* Popover Colors */
+  --popover: #FFFFFF;           /* White */
+  --popover-foreground: #101827; /* Primary text */
+  
+  /* Component-specific CSS variables for shadcn/ui compatibility */
+  --foreground: var(--text-primary);
+  --card: var(--surface);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface);
+  --popover-foreground: var(--text-primary);
+  --muted: var(--background-muted);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--background-muted);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--error);
+  --destructive-foreground: var(--error-foreground);
+  --input: var(--border);
+  --ring: var(--border-none);
+  
+  /* Border Radius */
+  --radius: 0.5rem;
+  
+  /* Chart Colors - Using brand colors */
+  --chart-1: #050336;           /* Brand navy */
+  --chart-2: #AFCBFF;           /* Placed blue */
+  --chart-3: #17A34A;           /* Success green */
+  --chart-4: #E4FD57;           /* Signal yellow */
+  --chart-5: #DC2625;           /* Error red */
+}
+
+.dark {
+  /* Dark mode overrides - keeping brand colors consistent */
+  --background: #050336;        /* Brand navy as dark background */
+  --background-muted: #101827;  /* Primary text as muted background */
+  --background-subtle: #6B7280; /* Secondary text as subtle background */
+  
+  --surface: #101827;           /* Primary text as surface */
+  --surface-elevated: #6B7280;  /* Secondary text as elevated surface */
+  
+  --text-primary: #FFFFFF;      /* White text */
+  --text-secondary: #F0F2FF;    /* Pale blue as secondary text */
+  --text-muted: #AFCBFF;        /* Placed blue as muted text */
+  --text-inverse: #050336;      /* Brand navy as inverse text */
+  
+  --border: #6B7280;            /* Secondary text as border */
+  --border-light: #AFCBFF;      /* Placed blue as light border */
+  --border-medium: #6B7280;     /* Secondary text as medium border */
+  --border-dark: #101827;       /* Primary text as dark border */
+  
+  /* Update shadcn/ui variables for dark mode */
+  --foreground: var(--text-primary);
+  --card: var(--surface);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface);
+  --popover-foreground: var(--text-primary);
+  --muted: var(--background-muted);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--background-muted);
+  --accent-foreground: var(--text-primary);
+}
+
+@theme inline {
+  /* Map CSS variables to Tailwind tokens */
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-pale-blue: var(--brand-pale-blue);
+  --color-brand-yellow: var(--brand-yellow);
+  
+  /* Font families - optimized fallback stacks */
+  --font-display: 'FFF Acid Grotesk', 'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'FFF Acid Grotesk', 'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-grotesk: 'FFF Acid Grotesk', 'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-inter: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: JetBrains Mono, Monaco, Consolas, ui-monospace, monospace;
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-background: var(--background);
+  --color-background-muted: var(--background-muted);
+  --color-background-subtle: var(--background-subtle);
+  
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-overlay: var(--surface-overlay);
+  
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-inverse: var(--text-inverse);
+  
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-border-medium: var(--border-medium);
+  --color-border-dark: var(--border-dark);
+  
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-error: var(--error);
+  --color-error-foreground: var(--error-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  
+  /* Accent Colors */
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  
+  /* Interactive Colors */
+  --color-interactive: var(--interactive);
+  --color-interactive-foreground: var(--interactive-foreground);
+  --color-interactive-hover: var(--interactive-hover);
+  --color-interactive-muted: var(--interactive-muted);
+  --color-interactive-muted-hover: var(--interactive-muted-hover);
+  
+  /* CTA Colors */
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+  --color-cta-hover: var(--cta-hover);
+  --color-cta-light: var(--cta-light);
+  --color-cta-dark: var(--cta-dark);
+  
+  /* Shadcn/ui compatibility */
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-ring: var(--border-none);
+  
+  /* Border radius tokens */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Chart colors */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-none;
+  }
+  
+  body {
+    @apply bg-background text-text-primary font-grotesk;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* Smooth font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-grotesk font-semibold;
+    /* Smooth transition when fonts load */
+    transition: font-family 0.3s ease-in-out;
+  }
+  
+  /* Font loading optimization */
+  .font-loading {
+    font-family: 'FFF Acid Grotesk Fallback', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .font-loaded {
+    font-family: 'FFF Acid Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Additional utility classes for consistent design */
+@layer utilities {
+  .text-brand-navy {
+    color: var(--brand-navy);
+  }
+  
+  .text-brand-blue {
+    color: var(--brand-blue);
+  }
+  
+  .text-brand-pale-blue {
+    color: var(--brand-pale-blue);
+  }
+  
+  .text-brand-yellow {
+    color: var(--brand-yellow);
+  }
+  
+  .bg-brand-navy {
+    background-color: var(--brand-navy);
+  }
+  
+  .bg-brand-blue {
+    background-color: var(--brand-blue);
+  }
+  
+  .bg-brand-pale-blue {
+    background-color: var(--brand-pale-blue);
+  }
+  
+  .bg-brand-yellow {
+    background-color: var(--brand-yellow);
+  }
+
+  /* Font loading optimization utilities */
+  .font-loading-skeleton {
+    @apply animate-pulse;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  .font-smooth-transition {
+    transition: font-family 0.2s ease-in-out, opacity 0.1s ease-in-out;
+  }
+
+  /* Critical font loading indicator */
+  .font-loading-critical {
+    visibility: hidden;
+    animation: fadeIn 0.1s ease-in-out 0.1s forwards;
+  }
+
+  .font-loaded-critical {
+    visibility: visible;
+    animation: none;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes fadeIn {
+    from { visibility: hidden; opacity: 0; }
+    to { visibility: visible; opacity: 1; }
+  }
+}

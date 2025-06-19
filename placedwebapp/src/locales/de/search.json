@@ -1,0 +1,107 @@
+{
+  "title": "Suchergebnisse",
+  "searchPlaceholder": "Jobtitel, Fähigkeiten oder Unternehmen eingeben",
+  "locationPlaceholder": "Standort eingeben",
+  "search": "Suchen",
+  "go": "Los",
+  "tabs": {
+    "keywords": "Stichwörter",
+    "cv": "Lebenslauf"
+  },
+  "filters": {
+    "location": "Standort",
+    "radius": "{{radius}} KM Umkreis",
+    "salaryRange": "Gehaltsbereich",
+    "experienceLevel": "Erfahrungsstufe",
+    "industry": "Branche",
+    "filters": "Filter",
+    "toggles": {
+      "onlyPaidAds": "Nur bezahlte Anzeigen",
+      "excludeHeadhunters": "Headhunter-Anzeigen ausschließen",
+      "excludeMyClients": "Meine Kunden ausschließen"
+    },
+    "placeholders": {
+      "location": "Standort eingeben",
+      "salaryMin": "0",
+      "salaryMax": "Kein Limit",
+      "noLimit": "Kein Limit"
+    },
+    "labels": {
+      "minimumSalary": "Mindestgehalt (€)",
+      "maximumSalary": "Höchstgehalt (€)",
+      "salaryRange": "Bereich: €{{min}}k - €{{max}}k",
+      "kmRadius": "{{radius}} KM Umkreis"
+    },
+    "experienceOptions": {
+      "internship": "Praktikum",
+      "entry-level": "Berufseinsteiger",
+      "associate": "Fachkraft",
+      "mid-senior": "Erfahrene Fachkraft",
+      "director": "Führungskraft",
+      "executive": "Geschäftsführung"
+    },
+    "industryOptions": {
+      "technology": "Technologie",
+      "it-services": "IT-Dienstleistungen",
+      "business-consulting": "Unternehmensberatung",
+      "environmental-services": "Umweltdienstleistungen",
+      "electronics": "Elektronik",
+      "automotive": "Automobilindustrie",
+      "healthcare": "Gesundheitswesen",
+      "finance": "Finanzwesen",
+      "education": "Bildung",
+      "retail": "Einzelhandel",
+      "manufacturing": "Fertigung",
+      "media": "Medien & Kommunikation",
+      "real-estate": "Immobilien",
+      "hospitality": "Gastgewerbe",
+      "transportation": "Transport & Logistik"
+    }
+  },
+  "sorting": {
+    "sortBy": "Sortieren nach",
+    "newJobs": "Neue Jobs",
+    "placedScore": "Placed Score",
+    "urgency": "Dringlichkeit",
+    "profileMatch": "Profil-Übereinstimmung"
+  },
+  "results": {
+    "jobsFound": "{{count}} Jobs gefunden",
+    "noResults": "Keine Jobs gefunden",
+    "noResultsDescription": "Versuchen Sie, Ihre Suchkriterien oder Filter anzupassen, um mehr Möglichkeiten zu finden.",
+    "loading": "Suche nach Jobs...",
+    "error": "Fehler beim Laden der Suchergebnisse"
+  },
+  "jobCard": {
+    "postedDate": "Veröffentlicht {{date}}",
+    "salary": "{{amount}} {{currency}}",
+    "location": "{{location}}",
+    "matchPercentage": "{{percentage}}% Übereinstimmung",
+    "placeNow": "Jetzt platzieren",
+    "listedOn": "Gelistet auf",
+    "headhunters": "{{count}} Headhunter",
+    "headhunter": "{{count}} Headhunter",
+    "reviews": "Bewertungen",
+    "contactDialog": {
+      "title": "Kontaktdaten",
+      "company": "Unternehmen",
+      "role": "Rolle",
+      "contactPerson": "Ansprechpartner",
+      "position": "Position",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "close": "Schließen"
+    },
+    "timeAgo": {
+      "dayAgo": "vor {{days}} Tag",
+      "daysAgo": "vor {{days}} Tagen",
+      "today": "heute",
+      "yesterday": "gestern"
+    }
+  },
+  "pagination": {
+    "previous": "Vorherige",
+    "next": "Nächste",
+    "page": "Seite {{page}} von {{total}}"
+  }
+} 

@@ -1,0 +1,298 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { CompanyInfoSidebar } from '@/components/jobdetails/CompanyInfoSidebar';
+import { JobCard } from '@/components/jobdetails/JobCard';
+import { AISummaryCard } from '@/components/jobdetails/AISummaryCard';
+import { AISummaryLoadingCard } from '@/components/jobdetails/AISummaryLoadingCard';
+import { JobDetailsCard } from '@/components/jobdetails/JobDetailsCard';
+import { useJobDetails } from '@/hooks/jobdetailshook/useJobDetails';
+import { useAISummary } from '@/hooks/jobdetailshook/useAISummary';
+import type { JobDetailsPageState } from '@/features/jobdetails/types';
+
+interface JobDetailsPageClientProps {
+  lang: string;
+  id: string;
+  dict: {
+    company: {
+      title: string;
+      dropdown: {
+        existingClient: string;
+        follow: string;
+        blacklist: string;
+      };
+      contact: string;
+      website: string;
+      about: string;
+    };
+    aiSummary: {
+      title: string;
+      learnMore: string;
+      placedScore: string;
+      profileMatch: string;
+      urgencyScore: string;
+      whyFits: string;
+      whatsMissing: string;
+      generatedOn: string;
+      feedback: {
+        question: string;
+        thumbsUp: string;
+        thumbsDown: string;
+      };
+    };
+    jobDetails: {
+      responsibilities: string;
+      yourProfile: string;
+      benefits: string;
+      jobDescription: string;
+      alsoListedOn: string;
+    };
+    actions: {
+      salesScript: string;
+      aiGenerated: string;
+      generating: string;
+      backToSearch: string;
+      browseJobs: string;
+      favorite: string;
+      copyToClipboard: string;
+    };
+    jobCard: {
+      postedToday: string;
+      postedYesterday: string;
+      postedDaysAgo: string;
+      listedOn: string;
+      headhunterRecruiting: string;
+      headhuntersRecruiting: string;
+    };
+    errors: {
+      jobNotFound: string;
+      jobNotFoundDescription: string;
+      failedToToggleFavorite: string;
+      failedToGenerateAI: string;
+    };
+    loading: {
+      loadingJob: string;
+      generatingAI: string;
+      aiLoadingMessages: {
+        analyzing: string;
+        processing: string;
+        generating: string;
+        finalizing: string;
+      };
+    };
+  };
+}
+
+export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientProps) {
+  const router = useRouter();
+  
+  const [pageState, setPageState] = useState<JobDetailsPageState>({
+    showAISummary: false,
+    isGeneratingAI: false,
+    isFavorited: false,
+    companyRelationship: 'none',
+  });
+
+  // Data fetching hooks
+  const { data: jobDetails, isLoading, error } = useJobDetails(id);
+  const { generateAISummary } = useAISummary(id);
+
+  // Initialize state from job data
+  useEffect(() => {
+    if (jobDetails) {
+      setPageState(prev => ({
+        ...prev,
+        isFavorited: jobDetails.isFavorited || false,
+        companyRelationship: jobDetails.company.relationshipStatus,
+        // Note: AI Summary should only be shown after clicking "Sales Script" button
+        // Do not auto-show AI summary even if it exists in job details
+      }));
+    }
+  }, [jobDetails]);
+
+  const handleSalesScriptClick = async () => {
+    if (pageState.showAISummary) return;
+
+    setPageState(prev => ({ ...prev, isGeneratingAI: true }));
+    
+    try {
+      const aiSummary = await generateAISummary();
+      setPageState(prev => ({
+        ...prev,
+        aiSummaryData: aiSummary,
+        showAISummary: true,
+        isGeneratingAI: false,
+      }));
+    } catch (error) {
+      console.error('Failed to generate AI summary:', error);
+      setPageState(prev => ({ ...prev, isGeneratingAI: false }));
+    }
+  };
+
+  const handleBackToSearch = () => {
+    router.push(`/${lang}/search`);
+  };
+
+  const handleFavoriteToggle = (newFavoriteStatus: boolean) => {
+    setPageState(prev => ({ ...prev, isFavorited: newFavoriteStatus }));
+  };
+
+  const handleCompanyRelationshipChange = (newRelationship: 'existing_client' | 'follow' | 'blacklist' | 'none') => {
+    setPageState(prev => ({ ...prev, companyRelationship: newRelationship }));
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex gap-8">
+        {/* Company Info Sidebar Skeleton */}
+        <div className="w-[296px] flex-shrink-0">
+          <div className="w-full h-full bg-white border border-border rounded-[4px] p-4 space-y-4">
+            <div className="h-6 bg-gray-200 rounded animate-pulse" />
+            <div className="h-10 bg-gray-200 rounded animate-pulse" />
+            <div className="h-5 bg-gray-200 rounded animate-pulse w-3/4" />
+            <div className="h-4 bg-gray-200 rounded animate-pulse w-1/2" />
+            <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3" />
+            <div className="space-y-2 pt-8">
+              <div className="h-6 bg-gray-200 rounded animate-pulse w-1/3" />
+              <div className="h-4 bg-gray-200 rounded animate-pulse" />
+              <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+              <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3" />
+            </div>
+          </div>
+        </div>
+        
+        {/* Right Content Skeleton */}
+        <div className="flex-1 space-y-8">
+          {/* Job Card Skeleton */}
+          <div className="w-full max-w-[952px] h-[192px] bg-white border border-border rounded-3xl p-6">
+            <div className="space-y-4">
+              <div className="flex justify-between items-center">
+                <div className="h-6 bg-gray-200 rounded animate-pulse w-1/2" />
+                <div className="flex items-center gap-2">
+                  <div className="h-5 bg-gray-200 rounded animate-pulse w-12" />
+                  <div className="h-6 w-6 bg-gray-200 rounded animate-pulse" />
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-24" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
+              </div>
+              <div className="flex justify-between items-center pt-4">
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
+                <div className="h-10 w-32 bg-gray-200 rounded-3xl animate-pulse" />
+              </div>
+            </div>
+          </div>
+          
+          {/* Job Details Card Skeleton */}
+          <div className="w-full max-w-[952px] h-[712px] bg-white border border-border rounded-[6px] p-6">
+            <div className="space-y-6">
+              <div className="h-6 bg-gray-200 rounded animate-pulse w-1/4" />
+              <div className="space-y-3">
+                <div className="h-4 bg-gray-200 rounded animate-pulse" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-5/6" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-4/5" />
+              </div>
+              <div className="h-6 bg-gray-200 rounded animate-pulse w-1/4" />
+              <div className="space-y-3">
+                <div className="h-4 bg-gray-200 rounded animate-pulse" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-5/6" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !jobDetails) {
+    return (
+      <div className="text-center py-12">
+        <h1 className="text-2xl font-semibold text-text-primary mb-4">Job Not Found</h1>
+        <p className="text-text-secondary mb-6">The job you&apos;re looking for doesn&apos;t exist or has been removed.</p>
+        <button
+          onClick={handleBackToSearch}
+          className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+        >
+          Back to Search
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {/* Desktop Layout */}
+      <div className="hidden md:flex gap-8">
+        {/* Left Sidebar - Company Info */}
+        <div className="w-[296px] flex-shrink-0">
+          <CompanyInfoSidebar
+            company={jobDetails.company}
+            relationshipStatus={pageState.companyRelationship}
+            onRelationshipChange={handleCompanyRelationshipChange}
+          />
+        </div>
+
+        {/* Right Content Area */}
+        <div className="flex-1 space-y-8">
+          {/* Job Card */}
+          <JobCard
+            job={jobDetails}
+            isFavorited={pageState.isFavorited}
+            onFavoriteToggle={handleFavoriteToggle}
+            onBackToSearch={handleBackToSearch}
+            onSalesScriptClick={handleSalesScriptClick}
+            isGeneratingAI={pageState.isGeneratingAI}
+            showAISummary={pageState.showAISummary}
+          />
+
+          {/* AI Summary Loading Card - Shows while generating */}
+          <AISummaryLoadingCard isGenerating={pageState.isGeneratingAI} />
+
+          {/* AI Summary Card - Appears between Job Card and Job Details Card */}
+          {pageState.showAISummary && pageState.aiSummaryData && !pageState.isGeneratingAI && (
+            <AISummaryCard aiSummary={pageState.aiSummaryData} dict={dict} />
+          )}
+
+          {/* Job Details Card */}
+          <JobDetailsCard jobDetails={jobDetails} />
+        </div>
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="md:hidden space-y-6">
+        {/* Job Card */}
+        <JobCard
+          job={jobDetails}
+          isFavorited={pageState.isFavorited}
+          onFavoriteToggle={handleFavoriteToggle}
+          onBackToSearch={handleBackToSearch}
+          onSalesScriptClick={handleSalesScriptClick}
+          isGeneratingAI={pageState.isGeneratingAI}
+          showAISummary={pageState.showAISummary}
+        />
+
+        {/* Company Info */}
+        <CompanyInfoSidebar
+          company={jobDetails.company}
+          relationshipStatus={pageState.companyRelationship}
+          onRelationshipChange={handleCompanyRelationshipChange}
+        />
+
+        {/* AI Summary Loading Card - Shows while generating */}
+        <AISummaryLoadingCard isGenerating={pageState.isGeneratingAI} />
+
+        {/* AI Summary Card - Appears between Job Card and Job Details Card */}
+        {pageState.showAISummary && pageState.aiSummaryData && !pageState.isGeneratingAI && (
+          <AISummaryCard aiSummary={pageState.aiSummaryData} dict={dict} />
+        )}
+
+        {/* Job Details Card */}
+        <JobDetailsCard jobDetails={jobDetails} />
+      </div>
+    </>
+  );
+} 

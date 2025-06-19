@@ -1,0 +1,68 @@
+{
+  "company": {
+    "title": "Unternehmen",
+    "dropdown": {
+      "existingClient": "Bestehender Kunde",
+      "follow": "Folgen",
+      "blacklist": "Blacklist"
+    },
+    "contact": "Kontakt",
+    "website": "Website",
+    "about": "Über {{companyName}}"
+  },
+  "aiSummary": {
+    "title": "Generiert mit Placed AI",
+    "learnMore": "Mehr erfahren",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profil Match",
+    "urgencyScore": "Dringlichkeits-Score",
+    "whyFits": "Kandidatenpotential",
+    "whatsMissing": "Was fehlt?",
+    "generatedOn": "Generiert am {{date}}",
+    "feedback": {
+      "question": "War das hilfreich?",
+      "thumbsUp": "Daumen hoch - positives Feedback",
+      "thumbsDown": "Daumen runter - negatives Feedback"
+    }
+  },
+  "jobDetails": {
+    "responsibilities": "Verantwortlichkeiten",
+    "yourProfile": "Ihr Profil",
+    "benefits": "Vorteile",
+    "jobDescription": "Stellenbeschreibung",
+    "alsoListedOn": "Auch gelistet auf"
+  },
+  "actions": {
+    "salesScript": "Sales Script",
+    "aiGenerated": "KI Generiert",
+    "generating": "Generiere...",
+    "backToSearch": "Zurück zur Suche",
+    "browseJobs": "Jobs durchsuchen",
+    "favorite": "Favorit",
+    "copyToClipboard": "In Zwischenablage kopieren"
+  },
+  "jobCard": {
+    "postedToday": "heute",
+    "postedYesterday": "gestern",
+    "postedDaysAgo": "vor {{days}} Tagen",
+    "listedOn": "Gelistet auf",
+    "headhunterRecruiting": "{{count}} Headhunter rekrutiert",
+    "headhuntersRecruiting": "{{count}} Headhunter rekrutieren"
+  },
+  "errors": {
+    "jobNotFound": "Job nicht gefunden",
+    "jobNotFoundDescription": "Der gesuchte Job existiert nicht oder wurde entfernt.",
+    "failedToToggleFavorite": "Favoriten-Status konnte nicht geändert werden",
+    "failedToGenerateAI": "KI-Zusammenfassung konnte nicht generiert werden"
+  },
+  "loading": {
+    "loadingJob": "Lade Job-Details...",
+    "generatingAI": "Generiere KI-Zusammenfassung...",
+    "aiLoadingMessages": {
+      "analyzing": "Analysiere Stellenanforderungen...",
+      "processing": "Verarbeite Kandidatenprofil...",
+      "generating": "Generiere KI-Erkenntnisse...",
+      "finalizing": "Finalisiere Zusammenfassung..."
+    }
+  }
+} 

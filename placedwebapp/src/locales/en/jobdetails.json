@@ -1,0 +1,68 @@
+{
+  "company": {
+    "title": "Company",
+    "dropdown": {
+      "existingClient": "Existing Client",
+      "follow": "Follow",
+      "blacklist": "Blacklist"
+    },
+    "contact": "Contact",
+    "website": "Website",
+    "about": "About {{companyName}}"
+  },
+  "aiSummary": {
+    "title": "Generated with Placed AI",
+    "learnMore": "Learn More",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profile Match",
+    "urgencyScore": "Urgency Score",
+    "whyFits": "Why the candidate fits this position?",
+    "whatsMissing": "What is missing?",
+    "generatedOn": "Generated on {{date}}",
+    "feedback": {
+      "question": "Was this helpful?",
+      "thumbsUp": "Thumbs up - positive feedback",
+      "thumbsDown": "Thumbs down - negative feedback"
+    }
+  },
+  "jobDetails": {
+    "responsibilities": "Responsibilities",
+    "yourProfile": "Your Profile",
+    "benefits": "Benefits",
+    "jobDescription": "Job Description",
+    "alsoListedOn": "Also Listed On"
+  },
+  "actions": {
+    "salesScript": "Sales Script",
+    "aiGenerated": "AI Generated",
+    "generating": "Generating...",
+    "backToSearch": "Back to Search",
+    "browseJobs": "Browse Jobs",
+    "favorite": "Favorite",
+    "copyToClipboard": "Copy to clipboard"
+  },
+  "jobCard": {
+    "postedToday": "today",
+    "postedYesterday": "yesterday",
+    "postedDaysAgo": "{{days}} days ago",
+    "listedOn": "Listed on",
+    "headhunterRecruiting": "{{count}} headhunter recruiting",
+    "headhuntersRecruiting": "{{count}} headhunters recruiting"
+  },
+  "errors": {
+    "jobNotFound": "Job Not Found",
+    "jobNotFoundDescription": "The job you're looking for doesn't exist or has been removed.",
+    "failedToToggleFavorite": "Failed to toggle favorite status",
+    "failedToGenerateAI": "Failed to generate AI summary"
+  },
+  "loading": {
+    "loadingJob": "Loading job details...",
+    "generatingAI": "Generating AI summary...",
+    "aiLoadingMessages": {
+      "analyzing": "Analyzing job requirements...",
+      "processing": "Processing candidate profile...",
+      "generating": "Generating AI insights...",
+      "finalizing": "Finalizing summary..."
+    }
+  }
+} 

@@ -1,0 +1,68 @@
+{
+    "title": "Die KI-Revolution im Kandidatenvertrieb für bis zu 5x mehr Vermittlungen.",
+    "description": "Erfolgreich Vermitteln statt ewig Suchen: Die PLACED KI findet die besten Stellen für Ihre Kandidaten, optimiert Lebensläufe und stellt perfekte Sales-Pitches zur Verfügung - mit den meisten Job- und Kontaktdaten in Deutschland.",
+    "searchPlaceholder": "Jobtitel suchen oder Lebenslauf ablegen...",
+    "search": "Suchen",
+    "onlyPaid": "Nur bezahlte Anzeigen",
+    "excludeHeadhunter": "Headhunter-Angebote ausschließen",
+    "dropResume": "Lebenslauf zum automatischen Abgleich ablegen",
+    "login": {
+      "signIn": "Melden Sie sich bei Ihrem Konto an",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "logIn": "Anmelden",
+      "forgotPassword": "Passwort vergessen?",
+      "termsText": "Mit der Anmeldung stimmen Sie unseren",
+      "termsLink": "Nutzungsbedingungen zu",
+      "emailPlaceholder": "ihre@email.com"
+    },
+    "demo": {
+      "title": "E-Mail eingeben, um die Plattform zu testen",
+      "companyName": "Firmenname",
+      "emailAddress": "E-Mail-Adresse",
+      "tryForFree": "Kostenlos testen",
+      "companyPlaceholder": "ACME GmbH",
+      "emailPlaceholder": "ihre@firmen-email.de",
+      "successTitle": "Vielen Dank!",
+      "successMessage": "Wir haben Ihnen eine E-Mail mit Anweisungen zum Zugriff auf die Plattform gesendet.",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    },
+    "about": "Über uns",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "tryForFree": "Kostenlos testen",
+    "dashboard": {
+      "title": "Dashboard-Seite",
+      "navigation": {
+        "logoAlt": "Zum Dashboard navigieren"
+      },
+      "welcome": "Willkommen",
+      "searchPlaceholder": "Jobtitel suchen oder Lebenslauf ablegen...",
+      "locationPlaceholder": "Etwas eingeben...",
+      "search": "Suchen",
+      "dropResume": "Lebenslauf hier ablegen",
+      "toggles": {
+        "onlyPaidAds": "Nur bezahlte Anzeigen",
+        "excludeHeadhunters": "Headhunter-Angebote ausschließen",
+        "excludeMyClients": "Meine Kunden ausschließen"
+      },
+      "searchHistory": {
+        "searchDetails": "Suchdetails",
+        "cvUploaded": "Lebenslauf hochgeladen",
+        "cv": "Lebenslauf",
+        "favoriteJobs": "Anzahl der Lieblingsjobs",
+        "searchAgain": "Erneut suchen"
+      },
+      "companies": {
+        "companies": "Unternehmen",
+        "existingClients": "Bestehende Kunden",
+        "following": "Verfolgt",
+        "blacklist": "Blacklist",
+        "company": "Unternehmen",
+        "location": "Standort",
+        "jobsListed": "Jobs gelistet",
+        "jobsFavorite": "Jobs favorisiert",
+        "browseJobs": "Jobs durchsuchen"
+      }
+    }
+  } 

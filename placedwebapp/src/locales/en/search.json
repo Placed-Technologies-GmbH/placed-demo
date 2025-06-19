@@ -1,0 +1,107 @@
+{
+  "title": "Search Results",
+  "searchPlaceholder": "Enter job title, skills, or company",
+  "locationPlaceholder": "Enter location",
+  "search": "Search",
+  "go": "Go",
+  "tabs": {
+    "keywords": "Keywords",
+    "cv": "CV"
+  },
+  "filters": {
+    "location": "Location",
+    "radius": "{{radius}} KM radius",
+    "salaryRange": "Salary Range",
+    "experienceLevel": "Experience Level",
+    "industry": "Industry",
+    "filters": "Filters",
+    "toggles": {
+      "onlyPaidAds": "Only paid ads",
+      "excludeHeadhunters": "Exclude headhunter listings",
+      "excludeMyClients": "Exclude my clients"
+    },
+    "placeholders": {
+      "location": "Enter location",
+      "salaryMin": "0",
+      "salaryMax": "No limit",
+      "noLimit": "No limit"
+    },
+    "labels": {
+      "minimumSalary": "Minimum salary (€)",
+      "maximumSalary": "Maximum salary (€)",
+      "salaryRange": "Range: €{{min}}k - €{{max}}k",
+      "kmRadius": "{{radius}} KM radius"
+    },
+    "experienceOptions": {
+      "internship": "Internship",
+      "entry-level": "Entry Level",
+      "associate": "Associate",
+      "mid-senior": "Mid-Senior Level",
+      "director": "Director",
+      "executive": "Executive"
+    },
+    "industryOptions": {
+      "technology": "Technology",
+      "it-services": "IT Services",
+      "business-consulting": "Business Consulting",
+      "environmental-services": "Environmental Services",
+      "electronics": "Electronics",
+      "automotive": "Automotive",
+      "healthcare": "Healthcare",
+      "finance": "Finance",
+      "education": "Education",
+      "retail": "Retail",
+      "manufacturing": "Manufacturing",
+      "media": "Media & Communications",
+      "real-estate": "Real Estate",
+      "hospitality": "Hospitality",
+      "transportation": "Transportation & Logistics"
+    }
+  },
+  "sorting": {
+    "sortBy": "Sort by",
+    "newJobs": "New Jobs",
+    "placedScore": "Placed Score",
+    "urgency": "Urgency",
+    "profileMatch": "Profile Match"
+  },
+  "results": {
+    "jobsFound": "{{count}} jobs found",
+    "noResults": "No jobs found",
+    "noResultsDescription": "Try adjusting your search criteria or filters to find more opportunities.",
+    "loading": "Searching for jobs...",
+    "error": "Failed to load search results"
+  },
+  "jobCard": {
+    "postedDate": "Posted {{date}}",
+    "salary": "{{amount}} {{currency}}",
+    "location": "{{location}}",
+    "matchPercentage": "{{percentage}}% match",
+    "placeNow": "Place Now",
+    "listedOn": "Listed on",
+    "headhunters": "{{count}} Headhunters",
+    "headhunter": "{{count}} Headhunter",
+    "reviews": "Reviews",
+    "contactDialog": {
+      "title": "Contact Details",
+      "company": "Company",
+      "role": "Role",
+      "contactPerson": "Contact Person",
+      "position": "Position",
+      "phone": "Phone",
+      "email": "Email",
+      "close": "Close"
+    },
+    "timeAgo": {
+      "dayAgo": "{{days}} day ago",
+      "daysAgo": "{{days}} days ago",
+      "today": "today",
+      "yesterday": "yesterday"
+    }
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {{page}} of {{total}}"
+  }
+} 
