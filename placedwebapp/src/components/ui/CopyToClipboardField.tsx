@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 interface CopyToClipboardFieldProps {
-  label?: string;
+  label?: string | React.ReactNode;
   className?: string;
   copiedMessage?: string;
 }
@@ -12,7 +12,7 @@ export function CopyToClipboardField({ label, className = '', copiedMessage = 'C
   const handleCopy = async () => {
     if (!label) return;
     try {
-      await navigator.clipboard.writeText(label);
+      await navigator.clipboard.writeText(String(label));
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
     } catch (err) {

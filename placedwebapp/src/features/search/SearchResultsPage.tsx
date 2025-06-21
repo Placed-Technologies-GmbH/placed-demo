@@ -4,16 +4,16 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { useDebounce } from 'use-debounce';
 import { useSearchResults } from '../../hooks/useSearchResults';
 import { SearchFilters } from '../../components/search/SearchFilters';
-import { SearchBarWithToggles } from '../../components/search/SearchBarWithToggles';
+// import { SearchBarWithToggles } from '../../components/search/SearchBarWithToggles';
 import { JobListView } from '../../components/search/JobListView';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuItem } from '@/components/ui/dropdown-menu';
+// import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuItem } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { InternalNavbar } from '@/components/ui/layouts/InternalNavbar';
 import { Container } from '@/components/ui/Container';
-import { Filter, ChevronDown, SortAsc } from 'lucide-react';
-import { useParams, useRouter, useSearchParams } from 'next/navigation';
+import { Filter, /* ChevronDown, SortAsc */ } from 'lucide-react';
+import { /* useParams, */ useRouter, useSearchParams } from 'next/navigation';
 import { CvErrorBoundary } from '@/components/search/CvErrorBoundry';
 
 
@@ -101,8 +101,8 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
   
   const router = useRouter();
   const searchParams = useSearchParams();
-  const params = useParams();
-  const lang = params?.lang || 'en';
+  // const params = useParams();
+  // const lang = params?.lang || 'en';
   
   // Unified search state
   const [searchState, setSearchState] = useState({
@@ -110,11 +110,13 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
     location: searchParams.get('location') || '',
     cvFile: null as File | null,
     fileId: searchParams.get('fileId') || null,
-    candidateName: '',
+    candidateName: searchParams.get('cv') ? decodeURIComponent(searchParams.get('cv')!).replace(/\.(pdf|doc|docx)$/i, '') : '',
   });
   
   const [cvError, setCvError] = useState(false);
-  const [currentSort, setCurrentSort] = useState('newJobs');
+  const [currentSort, /* setCurrentSort */] = useState('Neueste Jobangebote');
+  const [isCvProcessing, setIsCvProcessing] = useState(false);
+  const [hasTriggeredCvAnimation, setHasTriggeredCvAnimation] = useState(false);
   
   // Track previous values for debounce fallback
   const prevKeywordRef = useRef(searchState.keyword);
@@ -123,84 +125,177 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
   // Debounced values for fallback only
   const [debouncedKeyword] = useDebounce(searchState.keyword, 500);
   const [debouncedLocation] = useDebounce(searchState.location, 500);
+  
+  // --- CV Animation Timeout Logic with useRef ---
+  const cvAnimationTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Mock parseCv function (replace with real API later)
-  async function parseCv(file: File): Promise<{ success: boolean, fileId?: string, candidateName?: string }> {
-    if (!file || file.size === 0 || file.name.endsWith('.txt')) return { success: false };
-    // Mock: extract candidate name from filename
-    const candidateName = file.name.replace(/\.(pdf|doc|docx)$/i, '');
-    return { success: true, fileId: 'mock-file-id', candidateName };
-  }
+  // Simple function to start CV animation
+  const startCVAnimation = useCallback(() => {
+    console.log('Starting CV animation');
+    setIsCvProcessing(true);
+    setHasTriggeredCvAnimation(true);
 
-  // Unified search handler - only triggered by button click
-  const handleSearch = async () => {
-    setCvError(false);
-    
-    // If CV file is attached, parse it first
-    if (searchState.cvFile && !searchState.fileId) {
-      const result = await parseCv(searchState.cvFile);
-      if (!result.success) {
-        setCvError(true);
-        return;
-      }
+    // Clear any existing timeout
+    if (cvAnimationTimeoutRef.current) {
+      clearTimeout(cvAnimationTimeoutRef.current);
+    }
+
+    // Set timeout to stop animation after 6 seconds
+    cvAnimationTimeoutRef.current = setTimeout(() => {
+      console.log('CV animation timeout completed - showing job cards');
+      setIsCvProcessing(false);
+      cvAnimationTimeoutRef.current = null;
+    }, 6000);
+  }, []);
+
+  // Handle CV upload via navigation (URL params)
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const hasFileId = urlParams.get('fileId');
+    const cvParam = urlParams.get('cv');
+
+    // Only start animation if we have CV params and haven't triggered yet
+    if (hasFileId && cvParam && !hasTriggeredCvAnimation) {
+      console.log('CV detected in URL params, starting animation');
+      startCVAnimation();
+
+      // Trigger job search
+      updateSearchParams({
+        keyword: searchState.keyword,
+        page: 1,
+        filters: {
+          ...currentParams.filters,
+          location: searchState.location
+        }
+      });
+    }
+  }, [searchState.fileId, searchState.candidateName, hasTriggeredCvAnimation, startCVAnimation, updateSearchParams, searchState.keyword, searchState.location, currentParams.filters]);
+
+  // Reset animation trigger when navigating away from CV search
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const hasFileId = urlParams.get('fileId');
+
+    // If no fileId in URL, reset everything
+    if (!hasFileId && hasTriggeredCvAnimation) {
+      console.log('No CV in URL, resetting animation state and search context');
+      setHasTriggeredCvAnimation(false);
+      setIsCvProcessing(false);
       
-      // Update state with CV info
+      // Clear CV-related search state
       setSearchState(prev => ({
         ...prev,
-        fileId: result.fileId || null,
-        candidateName: result.candidateName || '',
+        fileId: null,
+        candidateName: '',
+        cvFile: null
       }));
       
-      // Trigger search with CV
-      updateSearchParams({
-        keyword: searchState.keyword,
-        filters: currentParams.filters
-      });
-      
-      // Update URL with all params including fileId
-      const urlParams = new URLSearchParams();
-      if (result.fileId) urlParams.set('fileId', result.fileId);
-      if (searchState.keyword) urlParams.set('keyword', searchState.keyword);
-      if (searchState.location) urlParams.set('location', searchState.location);
-      router.push(`/${lang}/search?${urlParams.toString()}`);
-      
-    } else {
-      // Normal search (with or without existing fileId)
-      updateSearchParams({
-        keyword: searchState.keyword,
-        filters: currentParams.filters
-      });
-      
-      // Update URL with all params
-      const urlParams = new URLSearchParams();
-      if (searchState.fileId) urlParams.set('fileId', searchState.fileId);
-      if (searchState.keyword) urlParams.set('keyword', searchState.keyword);
-      if (searchState.location) urlParams.set('location', searchState.location);
-      router.push(`/${lang}/search?${urlParams.toString()}`);
+      // Clear timeout if running
+      if (cvAnimationTimeoutRef.current) {
+        clearTimeout(cvAnimationTimeoutRef.current);
+        cvAnimationTimeoutRef.current = null;
+      }
     }
-  };
+  }, [hasTriggeredCvAnimation]);
+
+  // Mock parseCv function (replace with real API later)
+  // async function parseCv(file: File): Promise<{ success: boolean, fileId?: string, candidateName?: string }> {
+  //   if (!file || file.size === 0 || file.name.endsWith('.txt')) return { success: false };
+  //   // Mock: extract candidate name from filename and generate fileId
+  //   const candidateName = file.name.replace(/\.(pdf|doc|docx)$/i, '');
+  //   const fileId = `cv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  //   return { success: true, fileId, candidateName };
+  // }
+
+  // Unified search handler - only triggered by button click
+  // const handleSearch = async () => {
+  //   console.log('handleSearch called with:', { searchState });
+  //   setCvError(false);
+
+  //   // If CV file is attached, parse it first
+  //   if (searchState.cvFile && !searchState.fileId) {
+  //     console.log('Parsing CV file:', searchState.cvFile.name);
+
+  //     const result = await parseCv(searchState.cvFile);
+  //     if (!result.success) {
+  //       setCvError(true);
+  //       return;
+  //     }
+
+  //     // Update state with CV info
+  //     setSearchState(prev => ({
+  //       ...prev,
+  //       fileId: result.fileId || null,
+  //       candidateName: result.candidateName || '',
+  //       cvFile: null // Clear the file after successful upload
+  //     }));
+
+  //     // Start CV processing animation for new uploads
+  //     console.log('CV uploaded via search form, starting animation');
+  //     startCVAnimation();
+
+  //     // Update URL with all params including fileId
+  //     const urlParams = new URLSearchParams();
+  //     if (result.fileId) urlParams.set('fileId', result.fileId);
+  //     if (result.candidateName) urlParams.set('cv', `${result.candidateName}.pdf`);
+  //     if (searchState.keyword) urlParams.set('keyword', searchState.keyword);
+  //     if (searchState.location) urlParams.set('location', searchState.location);
+
+  //     // Navigate to URL with CV parameters
+  //     router.push(`/${lang}/search?${urlParams.toString()}`);
+
+  //     // Trigger job search
+  //     updateSearchParams({
+  //       keyword: searchState.keyword,
+  //       page: 1,
+  //       filters: {
+  //         ...currentParams.filters,
+  //         location: searchState.location
+  //       }
+  //     });
+
+  //   } else {
+  //     // Normal search (with or without existing fileId) - use existing hook
+  //     updateSearchParams({
+  //       keyword: searchState.keyword,
+  //       page: 1,
+  //       filters: {
+  //         ...currentParams.filters,
+  //         location: searchState.location
+  //       }
+  //     });
+  //   }
+  // };
 
   // Handle file change
-  const handleFileChange = (file: File | null) => {
-    setSearchState(prev => ({
-      ...prev,
-      cvFile: file,
-      // Clear fileId if file is removed
-      fileId: file ? prev.fileId : null,
-      candidateName: file ? prev.candidateName : '',
-    }));
-    setCvError(false);
-  };
+  // const handleFileChange = (file: File | null) => {
+  //   setSearchState(prev => ({
+  //     ...prev,
+  //     cvFile: file,
+  //     // Clear fileId if file is removed
+  //     fileId: file ? prev.fileId : null,
+  //     candidateName: file ? prev.candidateName : '',
+  //   }));
+  //   setCvError(false);
+  //   // Reset CV processing state and animation trigger when file is changed
+  //   setIsCvProcessing(false);
+  //   setHasTriggeredCvAnimation(false);
+  //   // Also clear any running animation timeout
+  //   if (cvAnimationTimeoutRef.current) {
+  //     clearTimeout(cvAnimationTimeoutRef.current);
+  //     cvAnimationTimeoutRef.current = null;
+  //   }
+  // };
 
   // Handle keyword change
-  const handleKeywordChange = (value: string) => {
-    setSearchState(prev => ({ ...prev, keyword: value }));
-  };
+  // const handleKeywordChange = (value: string) => {
+  //   setSearchState(prev => ({ ...prev, keyword: value }));
+  // };
 
   // Handle location change
-  const handleLocationChange = (value: string) => {
-    setSearchState(prev => ({ ...prev, location: value }));
-  };
+  // const handleLocationChange = (value: string) => {
+  //   setSearchState(prev => ({ ...prev, location: value }));
+  // };
 
   // Debounce fallback when fields are cleared
   useEffect(() => {
@@ -239,24 +334,24 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
     prevLocationRef.current = debouncedLocation;
   }, [debouncedLocation, searchState.keyword, searchState.fileId, currentParams.filters, updateSearchParams, router]);
 
-  // Toggle change handler
-  const handleToggleChange = useCallback((key: 'onlyPaidAds' | 'excludeHeadhunters' | 'excludeMyClients', value: boolean) => {
-    updateSearchParams({ 
-      filters: { ...currentParams.filters, [key]: value } 
-    });
-  }, [currentParams.filters, updateSearchParams]);
+  // // Toggle change handler
+  // const handleToggleChange = useCallback((key: 'onlyPaidAds' | 'excludeHeadhunters' | 'excludeMyClients', value: boolean) => {
+  //   updateSearchParams({ 
+  //     filters: { ...currentParams.filters, [key]: value } 
+  //   });
+  // }, [currentParams.filters, updateSearchParams]);
 
-  const sortingOptions = [
-    { key: 'newJobs', label: dict.sorting.newJobs, active: currentSort === 'newJobs' },
-    { key: 'placedScore', label: dict.sorting.placedScore, active: currentSort === 'placedScore' },
-    { key: 'urgency', label: dict.sorting.urgency, active: currentSort === 'urgency' },
-    { key: 'profileMatch', label: dict.sorting.profileMatch, active: currentSort === 'profileMatch' },
-  ];
+  // const sortingOptions = [
+  //   { key: 'newJobs', label: dict.sorting.newJobs, active: currentSort === 'neueste Jobangebote' },
+  //   { key: 'placedScore', label: dict.sorting.placedScore, active: currentSort === 'placedScore' },
+  //   { key: 'urgency', label: dict.sorting.urgency, active: currentSort === 'urgency' },
+  //   { key: 'profileMatch', label: dict.sorting.profileMatch, active: currentSort === 'profileMatch' },
+  // ];
 
-  const handleSortChange = useCallback((sortKey: string) => {
-    setCurrentSort(sortKey);
-    // Add sorting logic here when backend integration is ready
-  }, []);
+  // const handleSortChange = useCallback((sortKey: string) => {
+  //   setCurrentSort(sortKey);
+  //   // Add sorting logic here when backend integration is ready
+  // }, []);
 
   // Create search context for JobsCountAndSort
   const searchContext = {
@@ -266,10 +361,19 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
     candidateName: searchState.candidateName,
   };
 
+  // Debug logs
+  console.log('SearchResultsPage state:', {
+    searchState,
+    isCvProcessing,
+    hasTriggeredCvAnimation,
+    searchContext,
+    isLoading
+  });
+
   return (
-    <div className="min-h-screen bg-background-primary">
+    <div>
       {/* Internal Navigation */}
-      <InternalNavbar dict={commonDict} />
+      <InternalNavbar className="sticky top-3 z-50 bg-[rgba(255,255,255,0.7)]" dict={commonDict} />
 
       {/* Show CV Error Boundary if error triggered */}
       {cvError && (
@@ -278,7 +382,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
         </div>
       )}
 
-      {/* Search Bar with Toggles Component */}
+      {/* Search Bar with Toggles Component
       <SearchBarWithToggles
         searchQuery={searchState.keyword}
         location={searchState.location}
@@ -299,7 +403,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
           toggles: dict.filters.toggles
         }}
         onFileChange={handleFileChange}
-      />
+      /> */}
 
       {/* Mobile Filter and Sort Controls */}
       <div className="w-full bg-background-muted py-4 lg:hidden">
@@ -376,7 +480,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
             </Sheet>
 
             {/* Sort Dropdown */}
-            <DropdownMenu>
+            {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-2">
                   <SortAsc className="h-4 w-4" />
@@ -395,7 +499,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
           </div>
         </Container>
       </div>
@@ -406,7 +510,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
           <div className="flex gap-8">
             {/* Left Container - Filters (Desktop Only) */}
             <aside className="hidden lg:block w-[300px] flex-shrink-0">
-              <div className="sticky top-60">
+              <div className="pt-16">
                 <SearchFilters
                   filters={currentParams.filters}
                   onFiltersChange={(newFilters) => updateSearchParams({ filters: { ...currentParams.filters, ...newFilters } })}
@@ -416,11 +520,11 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
             </aside>
 
             {/* Right Container - Job Results (56px gap from search bar) */}
-            <main className="flex-1 min-w-0 pt-14 ">
+            <main className="flex-1 min-w-0 pt-6 ">
               <div className="flex flex-col gap-8">
                 <JobListView
                   jobs={jobs}
-                  isLoading={isLoading}
+                  isLoading={isLoading || isCvProcessing}
                   currentPage={currentPage}
                   totalPages={totalPages}
                   totalCount={totalCount}
@@ -428,7 +532,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
                   hasPreviousPage={hasPreviousPage}
                   currentSort={currentSort}
                   onPageChange={handlePageChange}
-                  onSortChange={handleSortChange}
+                  // onSortChange={handleSortChange}
                   searchContext={searchContext}
                   dict={{
                     noResults: dict.results.noResults,

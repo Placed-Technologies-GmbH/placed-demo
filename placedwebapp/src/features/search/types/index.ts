@@ -45,6 +45,17 @@ export interface SearchFilters {
   onlyPaidAds: boolean;
   excludeHeadhunters: boolean;
   excludeMyClients: boolean;
+  location?: string;
+  locationRadius?: number;
+  salaryMin?: number;
+  salaryMax?: number;
+  bestandskundenDropdown?: string;
+  zeitraum?: string[];
+  vertragsart?: string[];
+  merklisten?: string[];
+  berufsgruppe?: string[];
+  ausbildung?: string[];
+  placedScore?: string[];
 }
 
 export interface ExperienceLevel {

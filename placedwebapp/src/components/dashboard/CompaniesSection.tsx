@@ -79,7 +79,7 @@ function CompanyTable({ companies, dict }: { companies: Company[]; dict: Compani
                   <TableHead className="h-[20px] px-4 font-grotesk font-medium text-sm text-text-secondary">
                     {dict.jobsFavorite}
                   </TableHead>
-                  <TableHead className="h-[20px] px-4 font-grotesk font-medium text-sm text-text-secondary">
+                  <TableHead className="h-[20px] px-4 py-6 flex justify-center items-center font-grotesk font-medium text-sm text-text-secondary">
                     {dict.browseJobs}
                   </TableHead>
                 </TableRow>
@@ -101,19 +101,20 @@ function CompanyTable({ companies, dict }: { companies: Company[]; dict: Compani
                       <TableCell className="px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
                         {isEmpty ? '-' : company.jobsFavorite}
                       </TableCell>
-                      <TableCell className="px-4 py-0">
+                      <TableCell className="flex justify-center px-4 py-0">
                         {!isEmpty && (
                           <Button
                             variant="ghost"
-                            size="xs"
+                            size="icon"
                             onClick={() => {
                               router.push(`/${lang}/search`);
                             }}
-                            className="h-6 text-xs text-primary hover:text-primary/80"
+                            className="items-center text-xs text-primary hover:text-primary/80"
                           >
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fillRule="evenodd" clipRule="evenodd" d="M9.02975 3.3437C10.9834 2.88543 13.0166 2.88543 14.9703 3.3437C17.7916 4.00549 19.9945 6.20842 20.6563 9.02975C21.1146 10.9834 21.1146 13.0166 20.6563 14.9703C19.9945 17.7916 17.7916 19.9945 14.9703 20.6563C13.0166 21.1146 10.9834 21.1146 9.02975 20.6563C6.20842 19.9945 4.0055 17.7916 3.3437 14.9703C2.88543 13.0166 2.88543 10.9834 3.3437 9.02974C4.0055 6.20841 6.20842 4.00549 9.02975 3.3437ZM10.6365 13.987C10.4122 14.2114 10.4122 14.575 10.6365 14.7993C10.8609 15.0236 11.2245 15.0236 11.4488 14.7993L13.842 12.4061C13.9498 12.2984 14.0103 12.1523 14.0103 12C14.0103 11.8476 13.9498 11.7015 13.842 11.5938L11.4488 9.20062C11.2245 8.97631 10.8609 8.97631 10.6365 9.20062C10.4122 9.42492 10.4122 9.78859 10.6365 10.0129L12.6236 12L10.6365 13.987Z" fill="#363853"/>
-                            </svg>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fillRule="evenodd" clipRule="evenodd" d="M8.96967 17.5303C8.67678 17.2374 8.67678 16.7626 8.96967 16.4697L13.4393 12L8.96967 7.53033C8.67678 7.23744 8.67678 6.76256 8.96967 6.46967C9.26256 6.17678 9.73744 6.17678 10.0303 6.46967L15.0303 11.4697C15.171 11.6103 15.25 11.8011 15.25 12C15.25 12.1989 15.171 12.3897 15.0303 12.5303L10.0303 17.5303C9.73744 17.8232 9.26256 17.8232 8.96967 17.5303Z" fill="#363853"/>
+                          </svg>
+
                           </Button>
                         )}
                         {isEmpty && <span className="text-text-secondary">-</span>}
@@ -194,7 +195,7 @@ export function CompaniesSection({ existingClients, following, blacklist, dict }
       <div className="w-full flex flex-col">
         {/* Tabs List */}
         <Tabs defaultValue="existingClients" className="flex justify-center w-[840px]">
-          <div className="w-[273px]">
+          <div className="w-[400px]">
             <TabsList >
               <TabsTrigger value="existingClients" className="font-grotesk font-medium text-sm">
                 {dict.existingClients}

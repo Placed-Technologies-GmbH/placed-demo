@@ -4,6 +4,7 @@ import { JobCard } from './JobCard';
 import { JobsCountAndSort } from './JobsCountAndSort';
 import { Skeleton } from '@/components/ui/skeleton';
 import { SmartPagination } from '@/components/search/SmartPagination';
+import { GradientText } from '@/components/ui/gradient-text';
 import type { JobListing } from '@/features/search/types';
 
 interface JobListViewProps {
@@ -16,7 +17,7 @@ interface JobListViewProps {
   hasPreviousPage: boolean;
   currentSort?: string;
   onPageChange: (page: number) => void;
-  onSortChange?: (sortKey: string) => void;
+  // onSortChange?: (sortKey: string) => void;
   searchContext?: {
     keyword?: string;
     location?: string;
@@ -175,7 +176,7 @@ export function JobListView({
   totalCount,
   currentSort = 'newJobs',
   onPageChange,
-  onSortChange,
+  // onSortChange,
   searchContext,
   dict,
 }: JobListViewProps) {
@@ -188,8 +189,9 @@ export function JobListView({
         <JobsCountAndSort
           totalCount={totalCount}
           currentSort={currentSort}
-          onSortChange={onSortChange}
+          // onSortChange={onSortChange}
           searchContext={searchContext}
+          isLoading={isLoading}
           dict={{
             jobsFound: dict.jobsFound,
             sorting: dict.sorting,
@@ -199,9 +201,21 @@ export function JobListView({
 
       {/* Mobile Results Count */}
       <div className="lg:hidden px-4 py-2">
-        <div className="text-sm font-medium text-foreground">
-          {dict.jobsFound.replace('{{count}}', totalCount.toString())}
-        </div>
+        {isLoading && searchContext?.cv ? (
+          <div className="min-h-[48px] flex items-center justify-start overflow-visible">
+            <GradientText
+              colors={["var(--brand-navy)", "var(--brand-blue)", "var(--brand-yellow)", "var(--brand-blue)", "var(--brand-navy)"]}
+              animationSpeed={3}
+              className="text-sm font-grotesk font-medium whitespace-nowrap"
+            >
+              Finding your perfect matches...
+            </GradientText>
+          </div>
+        ) : (
+          <div className="text-sm font-medium text-foreground">
+            {dict.jobsFound.replace('{{count}}', totalCount.toString())}
+          </div>
+        )}
       </div>
 
       {/* Job Cards Container - 8px gap from count/sort */}

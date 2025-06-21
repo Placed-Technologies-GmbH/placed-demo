@@ -139,7 +139,7 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
                       <TableCell className="h-[40px] px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
                         {isEmpty ? '-' : item.cvUploaded}
                       </TableCell>
-                      <TableCell className="h-[40px] px-4 py-0">
+                      <TableCell className="h-[40px] px-4 py-0 flex justify-center items-center">
                         {!isEmpty && item.cv && (
                           <Button
                             variant="ghost"
@@ -156,7 +156,7 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
                       <TableCell className="h-[40px] px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
                         {isEmpty ? '-' : item.favoriteJobs}
                       </TableCell>
-                      <TableCell className="h-[40px] px-4 py-0">
+                      <TableCell className="h-[40px] px-4 py-0 flex justify-center items-center">
                         {!isEmpty && (
                           <Button
                             variant="ghost"

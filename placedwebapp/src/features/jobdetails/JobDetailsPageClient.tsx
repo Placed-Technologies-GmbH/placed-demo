@@ -237,7 +237,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
         </div>
 
         {/* Right Content Area */}
-        <div className="flex-1 space-y-8">
+        <div className="flex-1 space-y-16">
           {/* Job Card */}
           <JobCard
             job={jobDetails}
@@ -247,6 +247,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
             onSalesScriptClick={handleSalesScriptClick}
             isGeneratingAI={pageState.isGeneratingAI}
             showAISummary={pageState.showAISummary}
+            dict={dict.jobCard}
           />
 
           {/* AI Summary Loading Card - Shows while generating */}
@@ -273,6 +274,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
           onSalesScriptClick={handleSalesScriptClick}
           isGeneratingAI={pageState.isGeneratingAI}
           showAISummary={pageState.showAISummary}
+          dict={dict.jobCard}
         />
 
         {/* Company Info */}

@@ -132,11 +132,11 @@ const generateMockJobs = (): JobListing[] => {
       company: randomCompany,
       companyLogo: companyLogos[companyIndex], // Use corresponding logo or undefined
       contactPerson: {
-        name: `Contact Person ${i}`,
+        name: `Anna Musterfrau `,
         position: 'Recruiting Manager',
         phone: `+49 175444${String(i).padStart(4, '0')}`,
-        email: `contact${i}@${randomCompany.toLowerCase().replace(/\s+/g, '')}.de`,
-        avatar: `/avatars/contact-${i}.jpg`
+        email: `Anna@${randomCompany.toLowerCase().replace(/\s+/g, '')}.de`,
+        avatar: `/avatars/contact-1.jpg`
       },
       location: randomLocation,
       salary: {

@@ -1,10 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { AuthProvider } from '@/context/AuthContext';
 import { ReactQueryProvider } from '@/context/ReactQueryProvider';
 import { LoadingProvider } from '@/context/LoadingProvider';
 import { ToastProvider } from '@/context/ToastProvider';
+import { SearchProvider } from '@/context/SearchContext';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 
 export const metadata: Metadata = {
@@ -60,7 +61,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <LoadingProvider>
               <ToastProvider>
                 <AuthProvider>
-                  {children}
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <SearchProvider>
+                      {children}
+                    </SearchProvider>
+                  </Suspense>
                 </AuthProvider>
               </ToastProvider>
             </LoadingProvider>

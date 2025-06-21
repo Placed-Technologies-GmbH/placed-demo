@@ -9,6 +9,7 @@ import { Container } from '@/components/ui/Container';
 import { DropdownMenuItem, DropdownMenuContent, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import { DropdownMenu } from '@radix-ui/react-dropdown-menu';
 import { LogOut } from 'lucide-react';
+import { NavSearchbar } from '@/components/ui/NavSearchbar';
 
 interface InternalNavbarProps {
   className?: string;
@@ -30,13 +31,12 @@ export function InternalNavbar({ className = '', dict }: InternalNavbarProps) {
 
   const handleLogout = async () => {
     await logout(); // or supabase.auth.signOut() as a placeholder
-    router.push(`/${lang}/`);
+    router.push(`/${lang}/login`);
   };
 
   return (
-    <nav className={`w-full h-14 bg-background shadow-lg ${className}`}>
-      <Container size="xl">
-        <div className="h-14 flex items-center justify-between">
+      <Container size="xl" className="sticky top-3 z-50 ">
+        <div className={`mt-4 w-[1200px] h-14 flex items-center justify-between rounded-full bg-interactive/60 px-[80px] ${className}`}>
           {/* Logo - Left Side */}
           <Link 
             href={`/${lang}/dashboard`} 
@@ -52,6 +52,11 @@ export function InternalNavbar({ className = '', dict }: InternalNavbarProps) {
               className="h-8 w-auto"
             />
           </Link>
+
+          {/* Search Bar - Center */}
+          <div className="flex-1 flex justify-center">
+            <NavSearchbar />
+          </div>
 
           {/* User Avatar - Right Side */}
           <div className="flex items-center gap-2">
@@ -95,6 +100,5 @@ export function InternalNavbar({ className = '', dict }: InternalNavbarProps) {
           </div>
         </div>
       </Container>
-    </nav>
   );
 } 

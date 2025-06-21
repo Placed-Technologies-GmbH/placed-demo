@@ -8,9 +8,8 @@ interface JobDetailsCardProps {
 
 export function JobDetailsCard({ jobDetails }: JobDetailsCardProps) {
   return (
-    <div className="w-full max-w-[952px] h-[712px] bg-white border border-border rounded-[6px] p-6">
+    <div className="w-full max-w-[952px] flex flex-col gap-4 bg-white border border-border rounded-[6px] p-6">
       {/* Scrollable Content */}
-      <div className="h-full overflow-y-auto space-y-8 pr-2">
         {/* Responsibilities Section */}
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-text-secondary">
@@ -75,7 +74,6 @@ export function JobDetailsCard({ jobDetails }: JobDetailsCardProps) {
             </div>
           </div>
         )}
-      </div>
     </div>
   );
 } 

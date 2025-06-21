@@ -7,11 +7,11 @@ import * as z from 'zod';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useAuth } from '@/hooks/useAuth';
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Logo from '@/components/ui/Logo';
+import { useParams, useRouter } from 'next/navigation';
 
 // Form schema with zod validation
 const loginSchema = z.object({
@@ -38,7 +38,8 @@ export function LoginForm({ dict }: LoginFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const { login } = useAuth();
-
+  const router = useRouter();
+  const { lang } = useParams();
   const {
     register,
     handleSubmit,
@@ -50,10 +51,11 @@ export function LoginForm({ dict }: LoginFormProps) {
   const onSubmit = async (data: LoginFormValues) => {
     setIsLoading(true);
     setError('');
-    
+    await login(data.email, data.password);
+    router.push(`/${lang}/dashboard`);
+      
     try {
       // Use the login function from useAuth hook
-      await login(data.email, data.password);
       console.log('Login successful:', data);
       // Redirect would happen here
     } catch (err) {

@@ -18,7 +18,7 @@
     "urgencyScore": "Dringlichkeits-Score",
     "whyFits": "Kandidatenpotential",
     "whatsMissing": "Was fehlt?",
-    "generatedOn": "Generiert am {{date}}",
+    "generatedOn": "Generiert am ",
     "feedback": {
       "question": "War das hilfreich?",
       "thumbsUp": "Daumen hoch - positives Feedback",
@@ -44,10 +44,10 @@
   "jobCard": {
     "postedToday": "heute",
     "postedYesterday": "gestern",
-    "postedDaysAgo": "vor {{days}} Tagen",
+    "postedDaysAgo": "vor {{days}} Tagen veröffentlicht",
     "listedOn": "Gelistet auf",
-    "headhunterRecruiting": "{{count}} Headhunter rekrutiert",
-    "headhuntersRecruiting": "{{count}} Headhunter rekrutieren"
+    "headhunterRecruiting": "{{count}} Personalvermittler aktiv",
+    "headhuntersRecruiting": "{{count}} Personalvermittler aktiv"
   },
   "errors": {
     "jobNotFound": "Job nicht gefunden",

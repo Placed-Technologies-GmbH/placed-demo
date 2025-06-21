@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import { InternalNavbar } from '@/components/ui/layouts/InternalNavbar';
 import { DashboardContainer } from '@/components/dashboard/DashboardContainer';
-import { DashboardSearchBar } from '@/components/dashboard/DashboardSearchBar';
+// import { DashboardSearchBar } from '@/components/dashboard/DashboardSearchBar';
 import { SearchHistoryTable } from '@/components/dashboard/SearchHistoryTable';
 import { CompaniesSection } from '@/components/dashboard/CompaniesSection';
 import { useUser } from '@/hooks/useUser';
 import { useDashboardData } from '@/hooks/useDashboardData';
-import { useRouter, useParams } from 'next/navigation';
+// import { useRouter, useParams } from 'next/navigation';
 import { CvErrorBoundary } from '@/components/search/CvErrorBoundry';
 
 
@@ -54,56 +54,56 @@ interface DashboardPageProps {
 export function DashboardPage({ dict }: DashboardPageProps) {
   const { displayName, loading: userLoading } = useUser();
   const { data: dashboardData, loading: dataLoading, error } = useDashboardData();
-  const router = useRouter();
-  const params = useParams();
-  const lang = params?.lang || 'en';
-  const [searchQuery, setSearchQuery] = useState('');
-  const [location, setLocation] = useState('');
-  const [toggles, setToggles] = useState({
-    onlyPaidAds: false,
-    excludeHeadhunters: false,
-    excludeMyClients: false,
-  });
-  const [attachedFile, setAttachedFile] = useState<File | null>(null);
+  // const router = useRouter();
+  // const params = useParams();
+  // const lang = params?.lang || 'en';
+  // const [searchQuery, setSearchQuery] = useState('');
+  // const [location, setLocation] = useState('');
+  // const [toggles, setToggles] = useState({
+  //   onlyPaidAds: false,
+  //   excludeHeadhunters: false,
+  //   excludeMyClients: false,
+  // });
+  // const [attachedFile, setAttachedFile] = useState<File | null>(null);
   const [cvError, setCvError] = useState(false);
 
-  const handleToggleChange = (key: 'onlyPaidAds' | 'excludeHeadhunters' | 'excludeMyClients', value: boolean) => {
-    setToggles(prev => ({ ...prev, [key]: value }));
-  };
+  // const handleToggleChange = (key: 'onlyPaidAds' | 'excludeHeadhunters' | 'excludeMyClients', value: boolean) => {
+  //   setToggles(prev => ({ ...prev, [key]: value }));
+  // };
 
-  const handleSearchClick = () => {
-    console.log('Search clicked:', { searchQuery, location, toggles });
-  };
+  // const handleSearchClick = () => {
+  //   console.log('Search clicked:', { searchQuery, location, toggles });
+  // };
 
   // Mock parseCv function (replace with real API later)
-  async function parseCv(file: File): Promise<{ success: boolean, fileId?: string }> {
-    // Simulate error for empty file or .txt
-    if (!file || file.size === 0 || file.name.endsWith('.txt')) return { success: false };
-    return { success: true, fileId: 'mock-file-id' };
-  }
+  // async function parseCv(file: File): Promise<{ success: boolean, fileId?: string }> {
+  //   // Simulate error for empty file or .txt
+  //   if (!file || file.size === 0 || file.name.endsWith('.txt')) return { success: false };
+  //   return { success: true, fileId: 'mock-file-id' };
+  // }
 
-  const handleFileChange = (file: File | null) => {
-    setAttachedFile(file);
-    setCvError(false);
-  };
+  // const handleFileChange = (file: File | null) => {
+  //   setAttachedFile(file);
+  //   setCvError(false);
+  // };
 
-  const handleSearch = async () => {
-    if (attachedFile) {
-      const result = await parseCv(attachedFile);
-      if (!result.success) {
-        setCvError(true);
-        return;
-      }
-      router.push(`/${lang}/search?fileId=${result.fileId}`);
-      return;
-    }
+  // const handleSearch = async () => {
+  //   if (attachedFile) {
+  //     const result = await parseCv(attachedFile);
+  //     if (!result.success) {
+  //       setCvError(true);
+  //       return;
+  //     }
+  //     router.push(`/${lang}/search?fileId=${result.fileId}`);
+  //     return;
+  //   }
     
-    // Normal search logic (no file attached)
-    const urlParams = new URLSearchParams();
-    if (searchQuery) urlParams.set('q', searchQuery);
-    if (location) urlParams.set('location', location);
-    router.push(`/${lang}/search?${urlParams.toString()}`);
-  };
+  //   // Normal search logic (no file attached)
+  //   const urlParams = new URLSearchParams();
+  //   if (searchQuery) urlParams.set('q', searchQuery);
+  //   if (location) urlParams.set('location', location);
+  //   router.push(`/${lang}/search?${urlParams.toString()}`);
+  // };
 
   // Show loading state
   if (userLoading || dataLoading) {
@@ -153,11 +153,11 @@ export function DashboardPage({ dict }: DashboardPageProps) {
       {/* Main Content */}
       <main className="w-full flex flex-row">
         <DashboardContainer>
-          <div className="flex flex-col space-y-8 pt-8">
+          <div className="flex flex-col space-y-3 pt-20">
             {/* Welcome Message */}
             <div className="flex items-center">
               <h1 className="font-grotesk font-medium text-xl leading-none text-text-primary">
-                {dict?.dashboard?.welcome || 'Welcome'} {displayName},
+                {dict?.dashboard?.welcome || 'Welcome'} {displayName}
               </h1>
             </div>
             {/* Show CV Error Boundary if error triggered */}
@@ -167,7 +167,7 @@ export function DashboardPage({ dict }: DashboardPageProps) {
               </div>
             )}
             {/* Search Bar */}
-            <div className="flex flex-col space-y-8 pt-8">
+            {/* <div className="flex flex-col space-y-8 pt-8">
               <DashboardSearchBar
                 searchQuery={searchQuery}
                 location={location}
@@ -190,10 +190,10 @@ export function DashboardPage({ dict }: DashboardPageProps) {
                 onFileChange={handleFileChange}
                 onSearch={handleSearch}
               />
-            </div>
+            </div> */}
 
             {/* Search History Table */}
-            <div className="flex flex-col space-y-8 pt-16">
+            <div className="flex flex-col space-y-2 pt-16">
               {dashboardData?.searchHistory && (
                 <SearchHistoryTable
                   data={dashboardData.searchHistory}

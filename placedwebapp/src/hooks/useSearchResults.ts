@@ -36,9 +36,30 @@ export function useSearchResults() {
     const excludeHeadhunters = searchParams.get('excludeHeadhunters') === 'true';
     const excludeMyClients = searchParams.get('excludeMyClients') === 'true';
 
+    // Parse new filter parameters
+    const location = searchParams.get('location') || '';
+    const locationRadius = parseInt(searchParams.get('locationRadius') || '30', 10);
+    const salaryMin = searchParams.get('salaryMin') ? parseInt(searchParams.get('salaryMin')!, 10) : undefined;
+    const salaryMax = searchParams.get('salaryMax') ? parseInt(searchParams.get('salaryMax')!, 10) : undefined;
+    const bestandskundenDropdown = searchParams.get('bestandskundenDropdown') || '';
+    
+    // Parse array parameters
+    const zeitraumParam = searchParams.get('zeitraum') || '';
+    const vertragsartParam = searchParams.get('vertragsart') || '';
+    const merklistenParam = searchParams.get('merklisten') || '';
+    const berufsgruppeParam = searchParams.get('berufsgruppe') || '';
+    const ausbildungParam = searchParams.get('ausbildung') || '';
+    const placedScoreParam = searchParams.get('placedScore') || '';
+
     // Parse comma-separated values into arrays
     const experienceLevel = experienceLevelParam ? experienceLevelParam.split(',').filter(Boolean) : [];
     const industry = industryParam ? industryParam.split(',').filter(Boolean) : [];
+    const zeitraum = zeitraumParam ? zeitraumParam.split(',').filter(Boolean) : [];
+    const vertragsart = vertragsartParam ? vertragsartParam.split(',').filter(Boolean) : [];
+    const merklisten = merklistenParam ? merklistenParam.split(',').filter(Boolean) : [];
+    const berufsgruppe = berufsgruppeParam ? berufsgruppeParam.split(',').filter(Boolean) : [];
+    const ausbildung = ausbildungParam ? ausbildungParam.split(',').filter(Boolean) : [];
+    const placedScore = placedScoreParam ? placedScoreParam.split(',').filter(Boolean) : [];
 
     return {
       keyword,
@@ -50,6 +71,17 @@ export function useSearchResults() {
         onlyPaidAds,
         excludeHeadhunters,
         excludeMyClients,
+        location,
+        locationRadius,
+        salaryMin,
+        salaryMax,
+        bestandskundenDropdown,
+        zeitraum,
+        vertragsart,
+        merklisten,
+        berufsgruppe,
+        ausbildung,
+        placedScore,
       },
     };
   }, [searchParams, itemsPerPage]);
@@ -133,6 +165,98 @@ export function useSearchResults() {
           params.set('excludeMyClients', 'true');
         } else {
           params.delete('excludeMyClients');
+        }
+      }
+
+      // Location
+      if (filters.location !== undefined) {
+        if (filters.location) {
+          params.set('location', filters.location);
+        } else {
+          params.delete('location');
+        }
+      }
+
+      // Location radius
+      if (filters.locationRadius !== undefined) {
+        params.set('locationRadius', filters.locationRadius.toString());
+      } else {
+        params.delete('locationRadius');
+      }
+
+      // Salary
+      if (filters.salaryMin !== undefined) {
+        params.set('salaryMin', filters.salaryMin.toString());
+      } else {
+        params.delete('salaryMin');
+      }
+
+      if (filters.salaryMax !== undefined) {
+        params.set('salaryMax', filters.salaryMax.toString());
+      } else {
+        params.delete('salaryMax');
+      }
+
+             // Bestandskunden dropdown
+       if (filters.bestandskundenDropdown !== undefined) {
+         if (filters.bestandskundenDropdown) {
+           params.set('bestandskundenDropdown', filters.bestandskundenDropdown);
+         } else {
+           params.delete('bestandskundenDropdown');
+         }
+       }
+
+      // Zeitraum
+      if (filters.zeitraum !== undefined) {
+        if (Array.isArray(filters.zeitraum) && filters.zeitraum.length > 0) {
+          params.set('zeitraum', filters.zeitraum.join(','));
+        } else {
+          params.delete('zeitraum');
+        }
+      }
+
+      // Vertragsart
+      if (filters.vertragsart !== undefined) {
+        if (Array.isArray(filters.vertragsart) && filters.vertragsart.length > 0) {
+          params.set('vertragsart', filters.vertragsart.join(','));
+        } else {
+          params.delete('vertragsart');
+        }
+      }
+
+      // Merklisten
+      if (filters.merklisten !== undefined) {
+        if (Array.isArray(filters.merklisten) && filters.merklisten.length > 0) {
+          params.set('merklisten', filters.merklisten.join(','));
+        } else {
+          params.delete('merklisten');
+        }
+      }
+
+      // Berufsgruppe
+      if (filters.berufsgruppe !== undefined) {
+        if (Array.isArray(filters.berufsgruppe) && filters.berufsgruppe.length > 0) {
+          params.set('berufsgruppe', filters.berufsgruppe.join(','));
+        } else {
+          params.delete('berufsgruppe');
+        }
+      }
+
+      // Ausbildung
+      if (filters.ausbildung !== undefined) {
+        if (Array.isArray(filters.ausbildung) && filters.ausbildung.length > 0) {
+          params.set('ausbildung', filters.ausbildung.join(','));
+        } else {
+          params.delete('ausbildung');
+        }
+      }
+
+      // Placed score
+      if (filters.placedScore !== undefined) {
+        if (Array.isArray(filters.placedScore) && filters.placedScore.length > 0) {
+          params.set('placedScore', filters.placedScore.join(','));
+        } else {
+          params.delete('placedScore');
         }
       }
     }

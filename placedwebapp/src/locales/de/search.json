@@ -60,13 +60,13 @@
   },
   "sorting": {
     "sortBy": "Sortieren nach",
-    "newJobs": "Neue Jobs",
+    "newJobs": "Neueste Jobangebote",
     "placedScore": "Placed Score",
     "urgency": "Dringlichkeit",
     "profileMatch": "Profil-Übereinstimmung"
   },
   "results": {
-    "jobsFound": "{{count}} Jobs gefunden",
+    "jobsFound": "Über {{count}} Stellenangebote gefunden",
     "noResults": "Keine Jobs gefunden",
     "noResultsDescription": "Versuchen Sie, Ihre Suchkriterien oder Filter anzupassen, um mehr Möglichkeiten zu finden.",
     "loading": "Suche nach Jobs...",
@@ -78,9 +78,9 @@
     "location": "{{location}}",
     "matchPercentage": "{{percentage}}% Übereinstimmung",
     "placeNow": "Jetzt platzieren",
-    "listedOn": "Gelistet auf",
-    "headhunters": "{{count}} Headhunter",
-    "headhunter": "{{count}} Headhunter",
+    "listedOn": "Veröffentlicht am",
+    "headhunters": "{{count}} Personalvermittler aktiv",
+    "headhunter": "{{count}} Personalvermittler aktiv",
     "reviews": "Bewertungen",
     "contactDialog": {
       "title": "Kontaktdaten",
@@ -94,7 +94,7 @@
     },
     "timeAgo": {
       "dayAgo": "vor {{days}} Tag",
-      "daysAgo": "vor {{days}} Tagen",
+      "daysAgo": "vor {{days}} Tagen veröffentlicht",
       "today": "heute",
       "yesterday": "gestern"
     }

@@ -11,6 +11,7 @@
   import { CopyToClipboardField } from '@/components/ui/CopyToClipboardField';
   import type { JobListing } from '@/features/search/types';
   import Image from 'next/image';
+  import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
   interface JobCardProps {
     job: JobListing;
@@ -67,9 +68,9 @@
 
     const formatHeadhunters = (count: number) => {
       if (count === 1) {
-        return dict.headhunter?.replace('{{count}}', '1') || '1 Headhunter';
+        return dict.headhunter?.replace('{{count}}', '1') || '1 Personalvermittler aktiv';
       }
-      return dict.headhunters?.replace('{{count}}', count.toString()) || `${count} Headhunters`;
+      return dict.headhunters?.replace('{{count}}', count.toString()) || `${count} Personalvermittler aktiv`;
     };
 
     const handleFavoriteToggle = async (e: React.MouseEvent) => {
@@ -96,6 +97,7 @@
         setIsTogglingFavorite(false);
       }
     };
+     
 
     const handleCardClick = () => {
       const lang = params.lang || 'en';
@@ -205,7 +207,7 @@
                   fill={isFavorited ? "currentColor" : "none"}
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  className={`h-[22px] w-[24px] ${isFavorited ? 'text-primary' : 'text-primary hover:text-primary/80'}`}
+                  className={`h-[22px] w-[24px]  ${isFavorited ? 'text-primary' : 'text-primary hover:text-primary/80'}`}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
                 </svg>
@@ -214,18 +216,14 @@
           </div>
 
           {/* Second Row */}
-          <div className="w-full h-8 flex items-center gap-6 pt-2 pl-6">
+          <div className="w-full h-8 flex items-center gap-6 pl-6">
             {/* Company Logo + Name */}
             <div className="flex items-center gap-2">
-              {job.companyLogo ? (
-                <Image src={job.companyLogo} alt={job.company} width={20} height={20} className="h-5 w-5 rounded-full object-contain" />
-              ) : (
-                <Avatar className="h-5 w-5">
-                  <AvatarFallback>{job.company?.[0] || '?'}</AvatarFallback>
-                </Avatar>
-              )}
+                <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.99992 13.6666C6.08881 13.6666 5.2277 13.4916 4.41659 13.1416C3.60547 12.7916 2.89714 12.3139 2.29159 11.7083C1.68603 11.1028 1.20825 10.3944 0.858252 9.58331C0.508252 8.7722 0.333252 7.91109 0.333252 6.99998C0.333252 6.07776 0.508252 5.21387 0.858252 4.40831C1.20825 3.60276 1.68603 2.8972 2.29159 2.29165C2.89714 1.68609 3.60547 1.20831 4.41659 0.858313C5.2277 0.508313 6.08881 0.333313 6.99992 0.333313C7.92214 0.333313 8.78603 0.508313 9.59159 0.858313C10.3971 1.20831 11.1027 1.68609 11.7083 2.29165C12.3138 2.8972 12.7916 3.60276 13.1416 4.40831C13.4916 5.21387 13.6666 6.07776 13.6666 6.99998C13.6666 7.91109 13.4916 8.7722 13.1416 9.58331C12.7916 10.3944 12.3138 11.1028 11.7083 11.7083C11.1027 12.3139 10.3971 12.7916 9.59159 13.1416C8.78603 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3C7.28881 11.9 7.53881 11.4833 7.74992 11.05C7.96103 10.6166 8.13325 10.1555 8.26659 9.66665H5.73325C5.86659 10.1555 6.03881 10.6166 6.24992 11.05C6.46103 11.4833 6.71103 11.9 6.99992 12.3ZM5.26659 12.0333C5.06659 11.6666 4.89159 11.2861 4.74159 10.8916C4.59159 10.4972 4.46659 10.0889 4.36659 9.66665H2.39992C2.72214 10.2222 3.12492 10.7055 3.60825 11.1166C4.09159 11.5278 4.64436 11.8333 5.26659 12.0333ZM8.73325 12.0333C9.35547 11.8333 9.90825 11.5278 10.3916 11.1166C10.8749 10.7055 11.2777 10.2222 11.5999 9.66665H9.63325C9.53325 10.0889 9.40825 10.4972 9.25825 10.8916C9.10825 11.2861 8.93325 11.6666 8.73325 12.0333ZM1.83325 8.33331H4.09992C4.06659 8.11109 4.04159 7.89165 4.02492 7.67498C4.00825 7.45831 3.99992 7.23331 3.99992 6.99998C3.99992 6.76665 4.00825 6.54165 4.02492 6.32498C4.04159 6.10831 4.06659 5.88887 4.09992 5.66665H1.83325C1.7777 5.88887 1.73603 6.10831 1.70825 6.32498C1.68047 6.54165 1.66659 6.76665 1.66659 6.99998C1.66659 7.23331 1.68047 7.45831 1.70825 7.67498C1.73603 7.89165 1.7777 8.11109 1.83325 8.33331ZM5.43325 8.33331H8.56659C8.59992 8.11109 8.62492 7.89165 8.64159 7.67498C8.65825 7.45831 8.66659 7.23331 8.66659 6.99998C8.66659 6.76665 8.65825 6.54165 8.64159 6.32498C8.62492 6.10831 8.59992 5.88887 8.56659 5.66665H5.43325C5.39992 5.88887 5.37492 6.10831 5.35825 6.32498C5.34159 6.54165 5.33325 6.76665 5.33325 6.99998C5.33325 7.23331 5.34159 7.45831 5.35825 7.67498C5.37492 7.89165 5.39992 8.11109 5.43325 8.33331ZM9.89992 8.33331H12.1666C12.2221 8.11109 12.2638 7.89165 12.2916 7.67498C12.3194 7.45831 12.3333 7.23331 12.3333 6.99998C12.3333 6.76665 12.3194 6.54165 12.2916 6.32498C12.2638 6.10831 12.2221 5.88887 12.1666 5.66665H9.89992C9.93325 5.88887 9.95825 6.10831 9.97492 6.32498C9.99159 6.54165 9.99992 6.76665 9.99992 6.99998C9.99992 7.23331 9.99159 7.45831 9.97492 7.67498C9.95825 7.89165 9.93325 8.11109 9.89992 8.33331ZM9.63325 4.33331H11.5999C11.2777 3.77776 10.8749 3.29442 10.3916 2.88331C9.90825 2.4722 9.35547 2.16665 8.73325 1.96665C8.93325 2.33331 9.10825 2.71387 9.25825 3.10831C9.40825 3.50276 9.53325 3.91109 9.63325 4.33331ZM5.73325 4.33331H8.26659C8.13325 3.84442 7.96103 3.38331 7.74992 2.94998C7.53881 2.51665 7.28881 2.09998 6.99992 1.69998C6.71103 2.09998 6.46103 2.51665 6.24992 2.94998C6.03881 3.38331 5.86659 3.84442 5.73325 4.33331ZM2.39992 4.33331H4.36659C4.46659 3.91109 4.59159 3.50276 4.74159 3.10831C4.89159 2.71387 5.06659 2.33331 5.26659 1.96665C4.64436 2.16665 4.09159 2.4722 3.60825 2.88331C3.12492 3.29442 2.72214 3.77776 2.39992 4.33331Z" fill="#212121"/>
+                </svg>
               {job.company ? (
-                <span className="text-muted-foreground h-[20px]">{job.company}</span>
+                <span className="text-muted-foreground text-md">{job.company}</span>
               ) : (
                 <Skeleton className="h-4 w-24" />
               )}
@@ -277,14 +275,23 @@
             )}
             {/* Salary */}
             {job.salary?.amount ? (
-              <span className="flex items-center gap-1 h-[20px]">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-navy" className="size-4">
-                  <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
-                  <path fillRule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z" clipRule="evenodd" />
-                  <path d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z" />
-                </svg>
-                {formatSalary(job.salary.amount, job.salary.currency)}
-              </span>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <span className="flex items-center gap-1 h-[20px]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-navy" className="size-4">
+                        <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
+                        <path fillRule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z" clipRule="evenodd" />
+                        <path d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z" />
+                      </svg>
+                      {formatSalary(job.salary.amount, job.salary.currency)}
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Budget for placement</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             ) : (
               <Skeleton className="h-4 w-16" />
             )}
@@ -306,9 +313,21 @@
               <span className="text-muted-foreground">{dict.listedOn}:</span>
               {job.listedOn && job.listedOn.length > 0 && (
                 <>
-                  {job.listedOn.slice(0, 5).map((logo, idx) => (
-                    <Image key={idx} src={logo.src} alt={logo.alt} width={20} height={16} className="h-4 w-auto" />
-                  ))}
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <span className="flex items-center gap-1 h-[20px]">
+                      {job.listedOn.slice(0, 5).map((logo, idx) => (
+                      <Image key={idx} src={logo.src} alt={logo.alt} width={20} height={16} className="h-4 w-auto" />
+                      ))}
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Links</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+
                   {job.listedOn.length > 5 && (
                     <div className="relative group">
                       <span className="inline-block px-2 cursor-pointer">...</span>
@@ -539,13 +558,19 @@
                       <span className="text-text-secondary text-md font-medium">{job.company}</span>
                     </div>
                     {/* Phone with copy-to-clipboard */}
-                    {job.contactPerson?.phone && (
+                      {job.contactPerson?.phone && (
+                        <div className="flex items-center gap-2">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.11021 12.9223C9.6979 13.0259 10.3021 13.0259 10.8898 12.9223C11.8344 12.7559 12.5952 12.1217 12.8573 11.2824L12.9129 11.1044C12.9707 10.9193 13 10.7279 13 10.5356C13 9.68751 12.2416 9 11.306 9H8.69404C7.75845 9 7 9.68751 7 10.5356C7 10.7279 7.02931 10.9193 7.08709 11.1044L7.14268 11.2824C7.40475 12.1217 8.16561 12.7559 9.11021 12.9223ZM9.11021 12.9223C5.02797 12.1659 1.83405 8.97203 1.07767 4.88979M1.07767 4.88979C0.97411 4.3021 0.974111 3.6979 1.07767 3.11021C1.24412 2.16561 1.8783 1.40475 2.71761 1.14268L2.89563 1.08709C3.08069 1.02931 3.27208 1 3.46441 1C4.31249 1 5.00001 1.75845 5 2.69404L5 5.30596C5 6.24155 4.31249 7 3.4644 7C3.27208 7 3.08068 6.97069 2.89563 6.91291L2.71761 6.85732C1.87829 6.59525 1.24412 5.83439 1.07767 4.88979Z" stroke="#363853" stroke-width="1.5"/>
+                          </svg>
+                          {job.contactPerson.phone}
+                        </div>
+                      )}
                       <CopyToClipboardField
                         label={job.contactPerson.phone}
                         className="text-text-navy text-md font-medium text-primary text-shadow-sm hover:text-shadow-2xl"
                         copiedMessage="Copied!"
                       />
-                    )}
                     {/* Email with copy-to-clipboard */}
                     {job.contactPerson?.email && (
                       <CopyToClipboardField
