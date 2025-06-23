@@ -21,7 +21,7 @@ export function TextMorph({
   const characters = useMemo(() => {
     const charCounts: Record<string, number> = {};
 
-    return children.split('').map((char, index) => {
+    return children.split(' ').map((char, index) => {
       const lowerChar = char.toLowerCase();
       charCounts[lowerChar] = (charCounts[lowerChar] || 0) + 1;
 

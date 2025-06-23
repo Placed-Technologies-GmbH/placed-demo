@@ -1,14 +1,19 @@
 {
   "company": {
-    "title": "Company",
+    "title": "Company Information",
     "dropdown": {
       "existingClient": "Existing Client",
       "follow": "Follow",
-      "blacklist": "Blacklist"
+      "blacklist": "Blacklist",
+      "none": "No Relationship"
     },
+    "employees": "employees",
     "contact": "Contact",
     "website": "Website",
-    "about": "About {{companyName}}"
+    "about": "About {{companyName}}",
+    "relationship": "Relationship",
+    "industry": "Industry",
+    "location": "Location"
   },
   "aiSummary": {
     "title": "Generated with Placed AI",

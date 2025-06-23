@@ -22,9 +22,11 @@ interface SearchFiltersProps {
   filters: SearchFiltersType;
   onFiltersChange: (filters: Partial<SearchFiltersType>) => void;
   dict: {
+    location: string;
     experienceLevel: string;
     industry: string;
     filters: string;
+    reset: string;
     toggles: {
       onlyPaidAds: string;
       excludeHeadhunters: string;
@@ -184,14 +186,14 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
 
   // Berufsgruppe options
   const berufsgruppeOptions = [
-    { id: 'land-forst', label: 'Land-, Forst- und Tierwirtschaft und Gartenbau' },
-    { id: 'rohstoff-produktion', label: 'Rohstoffgewinnung, Produktion und Fertigung / Bau, Architektur, Vermessung' },
+    { id: 'land-forst', label: 'Land-Forst-Tierwirtschaft' },
+    { id: 'rohstoff-produktion', label: 'Rohstoffgewinnung, Produktion und Fertigung' },
     { id: 'naturwissenschaft', label: 'Naturwissenschaft, Geografie und Informatik' },
     { id: 'verkehr-logistik', label: 'Verkehr, Logistik, Schutz und Sicherheit' },
-    { id: 'kaufmaennisch', label: 'Kaufmännische Dienstleistungen, Warenhandel, Vertrieb' },
-    { id: 'unternehmensorganisation', label: 'Unternehmensorganisation, Buchhaltung, Recht und Verwaltung' },
+    { id: 'kaufmaennisch', label: 'Kaufmännische Dienstleistungen' },
+    { id: 'unternehmensorganisation', label: 'Unternehmensorganisation' },
     { id: 'gesundheit-soziales', label: 'Gesundheit, Soziales, Lehre und Erziehung' },
-    { id: 'sprach-literatur', label: 'Sprach-, Literatur-, Geistes-, Gesellschafts- und Wirtschaftswissenschaften' },
+    { id: 'sprach-literatur', label: 'Sprach-Literatur' },
     { id: 'militaer', label: 'Militär' }
   ];
 
@@ -218,16 +220,16 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
     <div className="w-full max-w-sm">
       {/* Reset Button */}
       <div className="mb-4 flex justify-between items-center">
-        <span className="flex justify-start text-text-primary font-grotesk text-medium font-bold">
-          Filters
+        <span className="flex justify-start text-text-primary font-grotesk text-light font-bold">
+          {dict.filters}
         </span>        
         <Button 
           onClick={handleResetFilters}
           variant="ghost" 
           size="sm" 
-          className="w-[85px] h-[32px] flex items-center gap-3 text-text-primary"
+          className="w-[150px] h-[32px] flex items-center gap-3 text-text-primary justify-end"
         >
-          Reset
+          {dict.reset}
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M3.35288 8.95043C4.00437 6.17301 6.17301 4.00437 8.95043 3.35288C10.9563 2.88237 13.0437 2.88237 15.0496 3.35288C17.827 4.00437 19.9956 6.17301 20.6471 8.95044C21.1176 10.9563 21.1176 13.0437 20.6471 15.0496C19.9956 17.827 17.827 19.9956 15.0496 20.6471C13.0437 21.1176 10.9563 21.1176 8.95044 20.6471C6.17301 19.9956 4.00437 17.827 3.35288 15.0496C2.88237 13.0437 2.88237 10.9563 3.35288 8.95043Z" stroke="#363853" strokeWidth="1.5"/>
             <path d="M13.7678 10.2322L10.2322 13.7678M13.7678 13.7678L10.2322 10.2322" stroke="#363853" strokeWidth="1.5" strokeLinecap="round"/>
@@ -245,7 +247,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
               <CollapsibleTrigger asChild>
                 <Button variant="ghost" className="w-full justify-between p-0 h-auto">
                   <h3 className="font-grotesk font-medium text-lg leading-none text-filter-header">
-                    Location
+                    {dict.location}
                   </h3>
                   {isLocationOpen ? (
                     <ChevronUp className="h-4 w-4" />
@@ -259,7 +261,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
             <CollapsibleContent>
               <div className="w-full px-7 space-y-4">
                 <div>
-                  <Label className="font-grotesk font-normal text-xs leading-none text-filter-item mb-2 block">
+                  <Label className="font-grotesk font-normal text-medium leading-none text-filter-item mb-2 block">
                     Berlin
                   </Label>
                   <Input
@@ -271,10 +273,10 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                 </div>
                 <div>
                   <div className="flex justify-between items-center mb-2">
-                    <Label className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                    <Label className="font-grotesk font-normal text-medium leading-none text-filter-item">
                       Radius
                     </Label>
-                    <span className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                    <span className="font-grotesk font-normal text-medium leading-none text-filter-item">
                       {filters.locationRadius || 30} KM radius
                     </span>
                   </div>
@@ -302,7 +304,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
               <CollapsibleTrigger asChild>
                 <Button variant="ghost" className="w-full justify-between p-0 h-auto">
                   <h3 className="font-grotesk font-medium text-lg leading-none text-filter-header">
-                    Filter Options
+                   Filteroptionen
                   </h3>
                   {isToggleFiltersOpen ? (
                     <ChevronUp className="h-4 w-4" />
@@ -317,7 +319,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
               <div className="w-full px-7 space-y-3">
                 {/* Headhunter ausblenden */}
                 <div className="flex items-center justify-between">
-                  <Label className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                  <Label className="font-grotesk font-normal text-medium leading-none text-filter-item">
                     Headhunter ausblenden
                   </Label>
                   <Switch
@@ -328,18 +330,18 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                 
                 {/* Bestandskunden */}
                 <div className="flex items-center justify-between">
-                  <Label className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                  <Label className="font-grotesk font-normal text-medium leading-none text-filter-item">
                     Bestandskunden
                   </Label>
                   <Switch
                     checked={filters.excludeMyClients}
                     onCheckedChange={(checked) => onFiltersChange({ excludeMyClients: checked })}
-                  />
+                  />  
                 </div>
                 
                 {/* Nur bezahlte Stellen */}
                 <div className="flex items-center justify-between">
-                  <Label className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                  <Label className="font-grotesk font-normal text-medium leading-none text-filter-item">
                     Nur bezahlte Stellen
                   </Label>
                   <Switch
@@ -359,7 +361,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
               <CollapsibleTrigger asChild>
                 <Button variant="ghost" className="w-full justify-between p-0 h-auto">
                   <h3 className="font-grotesk font-medium text-lg leading-none text-filter-header">
-                    Salary Range
+                    Gehaltsspanne
                   </h3>
                   {isSalaryOpen ? (
                     <ChevronUp className="h-4 w-4" />
@@ -374,7 +376,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
               <div className="w-full px-7 space-y-3">
                 <div className="flex gap-2">
                   <div className="flex-1">
-                    <Label className="font-grotesk font-normal text-xs leading-none text-filter-item mb-1 block">
+                    <Label className="font-grotesk font-normal text-medium leading-none text-filter-item mb-1 block">
                       Min
                     </Label>
                     <Input
@@ -386,7 +388,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                     />
                   </div>
                   <div className="flex-1">
-                    <Label className="font-grotesk font-normal text-xs leading-none text-filter-item mb-1 block">
+                    <Label className="font-grotesk font-normal text-medium leading-none text-filter-item mb-1 block">
                       Max
                     </Label>
                     <Input
@@ -402,8 +404,8 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                   onClick={handleSalaryApply}
                   size="sm"
                   className="w-full h-8"
-                >
-                  Apply
+                >                
+                  anwenden
                 </Button>
               </div>
             </CollapsibleContent>
@@ -436,19 +438,19 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                 >
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="amazon" id="amazon" />
-                    <Label htmlFor="amazon" className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                    <Label htmlFor="amazon" className="font-grotesk font-normal text-medium leading-none text-filter-item">
                       Amazon
                     </Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="google" id="google" />
-                    <Label htmlFor="google" className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                    <Label htmlFor="google" className="font-grotesk font-normal text-medium leading-none text-filter-item">
                       Google
                     </Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="apple" id="apple" />
-                    <Label htmlFor="apple" className="font-grotesk font-normal text-xs leading-none text-filter-item">
+                    <Label htmlFor="apple" className="font-grotesk font-normal text-medium leading-none text-filter-item">
                       Apple
                     </Label>
                   </div>
@@ -492,7 +494,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       />
                       <Label 
                         htmlFor={`experience-${experience.id}`} 
-                        className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                        className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                       >
                         {experience.label}
                       </Label>
@@ -540,7 +542,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                           />
                           <Label 
                             htmlFor={`industry-${industry.id}`} 
-                            className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                            className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                           >
                             {industry.label}
                           </Label>
@@ -588,7 +590,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       />
                       <Label 
                         htmlFor={`zeitraum-${zeitraum.id}`} 
-                        className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                        className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                       >
                         {zeitraum.label}
                       </Label>
@@ -634,7 +636,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       />
                       <Label 
                         htmlFor={`vertragsart-${vertragsart.id}`} 
-                        className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                        className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                       >
                         {vertragsart.label}
                       </Label>
@@ -680,7 +682,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       />
                       <Label 
                         htmlFor={`merkliste-${merkliste.id}`} 
-                        className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                        className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                       >
                         {merkliste.label}
                       </Label>
@@ -728,7 +730,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                           />
                           <Label 
                             htmlFor={`berufsgruppe-${berufsgruppe.id}`} 
-                            className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                            className="font-grotesk font-normal text-sm leading-none text-filter-item cursor-pointer"
                           >
                             {berufsgruppe.label}
                           </Label>
@@ -776,7 +778,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       />
                       <Label 
                         htmlFor={`ausbildung-${ausbildung.id}`} 
-                        className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                        className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                       >
                         {ausbildung.label}
                       </Label>
@@ -822,7 +824,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       />
                       <Label 
                         htmlFor={`placed-score-${score.id}`} 
-                        className="font-grotesk font-normal text-xs leading-none text-filter-item cursor-pointer"
+                        className="font-grotesk font-normal text-medium leading-none text-filter-item cursor-pointer"
                       >
                         {score.label}
                       </Label>

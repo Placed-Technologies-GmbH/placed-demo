@@ -7,6 +7,7 @@ import { LoadingProvider } from '@/context/LoadingProvider';
 import { ToastProvider } from '@/context/ToastProvider';
 import { SearchProvider } from '@/context/SearchContext';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { MobileBlocker } from '@/components/ui/MobileBlocker';
 
 export const metadata: Metadata = {
   title: 'Placed',
@@ -56,21 +57,23 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="min-h-screen bg-background antialiased">
-        <ErrorBoundary>
-          <ReactQueryProvider>
-            <LoadingProvider>
-              <ToastProvider>
-                <AuthProvider>
-                  <Suspense fallback={<div>Loading...</div>}>
-                    <SearchProvider>
-                      {children}
-                    </SearchProvider>
-                  </Suspense>
-                </AuthProvider>
-              </ToastProvider>
-            </LoadingProvider>
-          </ReactQueryProvider>
-        </ErrorBoundary>
+        <MobileBlocker>
+          <ErrorBoundary>
+            <ReactQueryProvider>
+              <LoadingProvider>
+                <ToastProvider>
+                  <AuthProvider>
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <SearchProvider>
+                        {children}
+                      </SearchProvider>
+                    </Suspense>
+                  </AuthProvider>
+                </ToastProvider>
+              </LoadingProvider>
+            </ReactQueryProvider>
+          </ErrorBoundary>
+        </MobileBlocker>
       </body>
     </html>
   );

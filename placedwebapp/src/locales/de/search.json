@@ -15,6 +15,7 @@
     "experienceLevel": "Erfahrungsstufe",
     "industry": "Branche",
     "filters": "Filter",
+    "reset": "Zurücksetzen",
     "toggles": {
       "onlyPaidAds": "Nur bezahlte Anzeigen",
       "excludeHeadhunters": "Headhunter-Anzeigen ausschließen",

@@ -15,6 +15,7 @@
     "experienceLevel": "Experience Level",
     "industry": "Industry",
     "filters": "Filters",
+    "reset": "Reset",
     "toggles": {
       "onlyPaidAds": "Only paid ads",
       "excludeHeadhunters": "Exclude headhunter listings",

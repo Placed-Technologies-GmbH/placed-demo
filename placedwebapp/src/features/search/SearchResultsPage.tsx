@@ -28,6 +28,8 @@ interface SearchResultsPageProps {
       experienceLevel: string;
       industry: string;
       filters: string;
+      location: string;
+      reset: string;
       toggles: {
         onlyPaidAds: string;
         excludeHeadhunters: string;
@@ -406,7 +408,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
       /> */}
 
       {/* Mobile Filter and Sort Controls */}
-      <div className="w-full bg-background-muted py-4 lg:hidden">
+      <div className="w-full bg-background py-4 lg:hidden">
         <Container size="xl">
           <div className="flex items-center justify-between gap-4">
             {/* Filter Button with Sheet */}
@@ -419,7 +421,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
               </SheetTrigger>
               <SheetContent side="left" className="w-full sm:w-80">
                 <SheetHeader>
-                  <SheetTitle>{dict.filters.filters}</SheetTitle>
+                  <SheetTitle></SheetTitle>
                 </SheetHeader>
                 <div className="mt-6">
                   <SearchFilters
@@ -510,7 +512,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
           <div className="flex gap-8">
             {/* Left Container - Filters (Desktop Only) */}
             <aside className="hidden lg:block w-[300px] flex-shrink-0">
-              <div className="pt-16">
+              <div className="pt-7">
                 <SearchFilters
                   filters={currentParams.filters}
                   onFiltersChange={(newFilters) => updateSearchParams({ filters: { ...currentParams.filters, ...newFilters } })}
@@ -520,7 +522,7 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
             </aside>
 
             {/* Right Container - Job Results (56px gap from search bar) */}
-            <main className="flex-1 min-w-0 pt-6 ">
+            <main className="flex-1 min-w-0 pt-7 ">
               <div className="flex flex-col gap-8">
                 <JobListView
                   jobs={jobs}

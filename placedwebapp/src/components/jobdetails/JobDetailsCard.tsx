@@ -13,7 +13,7 @@ export function JobDetailsCard({ jobDetails }: JobDetailsCardProps) {
         {/* Responsibilities Section */}
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-text-secondary">
-            Responsibilities
+            Verantwortlichkeiten
           </h2>
           <div className="space-y-1">
             {jobDetails.responsibilities.map((responsibility, index) => (
@@ -30,7 +30,7 @@ export function JobDetailsCard({ jobDetails }: JobDetailsCardProps) {
         {/* Your Profile Section */}
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-text-secondary">
-            Your Profile
+            Dein Profil
           </h2>
           <div className="space-y-1">
             {jobDetails.yourProfile.map((requirement, index) => (
@@ -47,7 +47,7 @@ export function JobDetailsCard({ jobDetails }: JobDetailsCardProps) {
         {/* Benefits Section */}
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-text-secondary">
-            Benefits
+            Vorteile
           </h2>
           <div className="space-y-1">
             {jobDetails.benefits.map((benefit, index) => (
@@ -65,7 +65,7 @@ export function JobDetailsCard({ jobDetails }: JobDetailsCardProps) {
         {jobDetails.fullDescription && (
           <div className="space-y-1">
             <h2 className="text-xl font-semibold text-text-secondary">
-              Job Description
+              Jobbeschreibung
             </h2>
             <div className="prose prose-sm max-w-none">
               <p className="text-sm text-text-primary leading-relaxed whitespace-pre-wrap">

@@ -88,14 +88,14 @@ export function NavSearchbar() {
         <button
           type="button"
           aria-label="Upload CV"
-          className="w-[24px] h-[24px] relative overflow-hidden hover:opacity-80 transition-fast focus:outline-none"
+          className="w-full h-[24px] flex justify-center items-center gap-2 relative overflow-hidden hover:opacity-80 transition-fast focus:outline-none text-text-secondary text-sm font-normal font-inter"
           onClick={handleCVIconClick}
         >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.35288 8.95043C4.00437 6.17301 6.17301 4.00437 8.95043 3.35288C10.9563 2.88237 13.0437 2.88237 15.0496 3.35288C17.827 4.00437 19.9956 6.17301 20.6471 8.95044C21.1176 10.9563 21.1176 13.0437 20.6471 15.0496C19.9956 17.827 17.827 19.9956 15.0496 20.6471C13.0437 21.1176 10.9563 21.1176 8.95044 20.6471C6.17301 19.9956 4.00437 17.827 3.35288 15.0496C2.88237 13.0437 2.88237 10.9563 3.35288 8.95043Z" stroke="#363853" strokeWidth="1.5"/>
             <path d="M14.5 12H9.5M12 14.5L12 9.5" stroke="#363853" strokeWidth="1.5" strokeLinecap="round"/>
         </svg>
-
+        CV-Suche
           <input
             ref={fileInputRef}
             type="file"
@@ -104,16 +104,13 @@ export function NavSearchbar() {
             onChange={handleFileChange}
           />
         </button>
-        
-        {/* Search with CV Text */}
-        <div className="justify-center text-gray-500 text-sm font-normal font-inter">CV-Suche</div>
       </div>
 
       {/* Title/Skill Input */}
       <div className="w-52 h-10 max-w-80 px-3 py-3 bg-background rounded-md outline outline-1 outline-offset-[-1px] outline-input flex justify-start items-start">
         <Input
           type="text"
-          placeholder="Titel, Fähigkeit oder Unternehmen"
+          placeholder="Job, Skill, Firma"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
           onKeyPress={handleKeyPress}

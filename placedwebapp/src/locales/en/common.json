@@ -14,7 +14,8 @@
       "forgotPassword": "Forgot your password?",
       "termsText": "By signing in, you agree to our",
       "termsLink": "Terms of Service",
-      "emailPlaceholder": "your@email.com"
+      "emailPlaceholder": "your@email.com",
+      "passwordPlaceholder": "Enter your password"
     },
     "demo": {
       "title": "Enter email to try platform",

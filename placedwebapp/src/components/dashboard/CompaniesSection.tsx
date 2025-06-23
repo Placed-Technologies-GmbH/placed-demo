@@ -45,19 +45,6 @@ function CompanyTable({ companies, dict }: { companies: Company[]; dict: Compani
   const params = useParams();
   const lang = params?.lang || 'en';
 
-  // Ensure minimum 5 rows for consistent spacing
-  const minRows = 5;
-  const displayData = [...companies];
-  while (displayData.length < minRows) {
-    displayData.push({
-      id: `empty-company-${displayData.length}`,
-      name: '-',
-      location: '-',
-      jobsListed: 0,
-      jobsFavorite: 0,
-    });
-  }
-
   return (
     <>
       {/* Desktop Table */}
@@ -85,43 +72,44 @@ function CompanyTable({ companies, dict }: { companies: Company[]; dict: Compani
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {displayData.map((company) => {
-                  const isEmpty = company.name === '-';
-                  return (
-                    <TableRow key={company.id} className="h-[40px] border-none hover:bg-background-muted/30 hover:shadow-md">
+                {companies.length > 0 ? (
+                  companies.map((company) => (
+                    <TableRow key={company.id} className="h-[40px] border-none hover:bg-background-muted/30">
                       <TableCell className=" px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : company.name}
+                        {company.name}
                       </TableCell>
                       <TableCell className="px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : company.location}
+                        {company.location}
                       </TableCell>
                       <TableCell className="px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : company.jobsListed}
+                        {company.jobsListed}
                       </TableCell>
                       <TableCell className="px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : company.jobsFavorite}
+                        {company.jobsFavorite}
                       </TableCell>
                       <TableCell className="flex justify-center px-4 py-0">
-                        {!isEmpty && (
-                          <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => {
-                              router.push(`/${lang}/search`);
-                            }}
-                            className="items-center text-xs text-primary hover:text-primary/80"
-                          >
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          onClick={() => {
+                            router.push(`/${lang}/search`);
+                          }}
+                          className="items-center text-xs text-primary hover:text-primary/80"
+                        >
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" clipRule="evenodd" d="M8.96967 17.5303C8.67678 17.2374 8.67678 16.7626 8.96967 16.4697L13.4393 12L8.96967 7.53033C8.67678 7.23744 8.67678 6.76256 8.96967 6.46967C9.26256 6.17678 9.73744 6.17678 10.0303 6.46967L15.0303 11.4697C15.171 11.6103 15.25 11.8011 15.25 12C15.25 12.1989 15.171 12.3897 15.0303 12.5303L10.0303 17.5303C9.73744 17.8232 9.26256 17.8232 8.96967 17.5303Z" fill="#363853"/>
                           </svg>
-
-                          </Button>
-                        )}
-                        {isEmpty && <span className="text-text-secondary">-</span>}
+                        </Button>
                       </TableCell>
                     </TableRow>
-                  );
-                })}
+                  ))
+                ) : (
+                  <TableRow>
+                    <TableCell colSpan={5} className="text-center text-text-secondary font-grotesk font-normal text-sm">
+                      No companies available
+                    </TableCell>
+                  </TableRow>
+                )}
               </TableBody>
             </Table>
           </ScrollArea>

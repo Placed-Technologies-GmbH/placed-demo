@@ -31,6 +31,7 @@ interface LoginFormProps {
     termsText: string;
     termsLink: string;
     emailPlaceholder: string;
+    passwordPlaceholder: string;
   };
 }
 
@@ -118,6 +119,7 @@ export function LoginForm({ dict }: LoginFormProps) {
             <Input
               id="password"
               type="password"
+              placeholder={dict.passwordPlaceholder}
               {...register('password')}
               className={errors.password ? 'border-error' : ''}
             />

@@ -75,7 +75,7 @@ const mockJobDetails: JobDetails = {
         avatar: '/avatars/ryan-reinhart.jpg'
       }
     ],
-    relationshipStatus: 'existing_client'
+    relationshipStatus: 'none'
   },
   contactPerson: {
     name: 'Anna Müller',

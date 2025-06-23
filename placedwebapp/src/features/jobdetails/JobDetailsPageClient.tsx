@@ -9,6 +9,9 @@ import { AISummaryLoadingCard } from '@/components/jobdetails/AISummaryLoadingCa
 import { JobDetailsCard } from '@/components/jobdetails/JobDetailsCard';
 import { useJobDetails } from '@/hooks/jobdetailshook/useJobDetails';
 import { useAISummary } from '@/hooks/jobdetailshook/useAISummary';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
+import { Button } from '@/components/ui/button';
+import { Building2 } from 'lucide-react';
 import type { JobDetailsPageState } from '@/features/jobdetails/types';
 
 interface JobDetailsPageClientProps {
@@ -144,63 +147,106 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
 
   if (isLoading) {
     return (
-      <div className="flex gap-8">
-        {/* Company Info Sidebar Skeleton */}
-        <div className="w-[296px] flex-shrink-0">
-          <div className="w-full h-full bg-white border border-border rounded-[4px] p-4 space-y-4">
-            <div className="h-6 bg-gray-200 rounded animate-pulse" />
-            <div className="h-10 bg-gray-200 rounded animate-pulse" />
-            <div className="h-5 bg-gray-200 rounded animate-pulse w-3/4" />
-            <div className="h-4 bg-gray-200 rounded animate-pulse w-1/2" />
-            <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3" />
-            <div className="space-y-2 pt-8">
-              <div className="h-6 bg-gray-200 rounded animate-pulse w-1/3" />
-              <div className="h-4 bg-gray-200 rounded animate-pulse" />
-              <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+      <div className="w-full">
+        {/* Desktop Loading Layout */}
+        <div className="hidden md:flex gap-8">
+          {/* Company Info Sidebar Skeleton */}
+          <div className="w-[296px] flex-shrink-0">
+            <div className="w-full h-[580px] bg-white border border-border rounded-[4px] p-4 space-y-4">
+              <div className="h-6 bg-gray-200 rounded animate-pulse" />
+              <div className="h-10 bg-gray-200 rounded animate-pulse" />
+              <div className="h-5 bg-gray-200 rounded animate-pulse w-3/4" />
+              <div className="h-4 bg-gray-200 rounded animate-pulse w-1/2" />
               <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3" />
-            </div>
-          </div>
-        </div>
-        
-        {/* Right Content Skeleton */}
-        <div className="flex-1 space-y-8">
-          {/* Job Card Skeleton */}
-          <div className="w-full max-w-[952px] h-[192px] bg-white border border-border rounded-3xl p-6">
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <div className="h-6 bg-gray-200 rounded animate-pulse w-1/2" />
-                <div className="flex items-center gap-2">
-                  <div className="h-5 bg-gray-200 rounded animate-pulse w-12" />
-                  <div className="h-6 w-6 bg-gray-200 rounded animate-pulse" />
-                </div>
-              </div>
-              <div className="flex items-center gap-6">
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-24" />
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
-              </div>
-              <div className="flex justify-between items-center pt-4">
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
-                <div className="h-10 w-32 bg-gray-200 rounded-3xl animate-pulse" />
+              <div className="space-y-2 pt-8">
+                <div className="h-6 bg-gray-200 rounded animate-pulse w-1/3" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3" />
               </div>
             </div>
           </div>
           
+          {/* Right Content Skeleton */}
+          <div className="flex-1 space-y-8">
+            {/* Job Card Skeleton */}
+            <div className="w-full max-w-[952px] space-y-4">
+              <div className="h-8 bg-gray-200 rounded animate-pulse w-24" />
+              <div className="bg-white border border-border rounded-[6px] p-6 space-y-4">
+                <div className="flex justify-between items-center">
+                  <div className="h-6 bg-gray-200 rounded animate-pulse w-1/2" />
+                  <div className="flex items-center gap-2">
+                    <div className="h-5 bg-gray-200 rounded animate-pulse w-12" />
+                    <div className="h-6 w-6 bg-gray-200 rounded animate-pulse" />
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-24" />
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
+                </div>
+                <div className="flex justify-between items-center pt-4">
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-20" />
+                  <div className="h-10 w-32 bg-gray-200 rounded-3xl animate-pulse" />
+                </div>
+              </div>
+            </div>
+            
+            {/* Job Details Card Skeleton */}
+            <div className="w-full max-w-[952px] h-[712px] bg-white border border-border rounded-[6px] p-6">
+              <div className="space-y-6">
+                <div className="h-6 bg-gray-200 rounded animate-pulse w-1/4" />
+                <div className="space-y-3">
+                  <div className="h-4 bg-gray-200 rounded animate-pulse" />
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-5/6" />
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-4/5" />
+                </div>
+                <div className="h-6 bg-gray-200 rounded animate-pulse w-1/4" />
+                <div className="space-y-3">
+                  <div className="h-4 bg-gray-200 rounded animate-pulse" />
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-5/6" />
+                  <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Loading Layout */}
+        <div className="md:hidden space-y-4 px-4">
+          {/* Back Button Skeleton */}
+          <div className="h-8 bg-gray-200 rounded animate-pulse w-24" />
+          
+          {/* Job Card Skeleton */}
+          <div className="bg-white border border-border rounded-[6px] p-4 space-y-4">
+            <div className="flex justify-between items-start">
+              <div className="h-5 bg-gray-200 rounded animate-pulse w-3/4" />
+              <div className="flex items-center gap-2">
+                <div className="h-4 bg-gray-200 rounded animate-pulse w-8" />
+                <div className="h-5 w-5 bg-gray-200 rounded animate-pulse" />
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <div className="h-3 bg-gray-200 rounded animate-pulse w-20" />
+              <div className="h-3 bg-gray-200 rounded animate-pulse w-16" />
+              <div className="h-3 bg-gray-200 rounded animate-pulse w-24" />
+            </div>
+            <div className="flex justify-between items-center pt-2">
+              <div className="h-3 bg-gray-200 rounded animate-pulse w-16" />
+              <div className="h-8 w-24 bg-gray-200 rounded-full animate-pulse" />
+            </div>
+          </div>
+
+          {/* Company Info Button Skeleton */}
+          <div className="h-10 bg-gray-200 rounded animate-pulse w-full" />
+          
           {/* Job Details Card Skeleton */}
-          <div className="w-full max-w-[952px] h-[712px] bg-white border border-border rounded-[6px] p-6">
-            <div className="space-y-6">
-              <div className="h-6 bg-gray-200 rounded animate-pulse w-1/4" />
-              <div className="space-y-3">
-                <div className="h-4 bg-gray-200 rounded animate-pulse" />
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-5/6" />
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-4/5" />
-              </div>
-              <div className="h-6 bg-gray-200 rounded animate-pulse w-1/4" />
-              <div className="space-y-3">
-                <div className="h-4 bg-gray-200 rounded animate-pulse" />
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-5/6" />
-                <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4" />
-              </div>
+          <div className="bg-white border border-border rounded-[6px] p-4 space-y-4">
+            <div className="h-5 bg-gray-200 rounded animate-pulse w-1/3" />
+            <div className="space-y-2">
+              <div className="h-3 bg-gray-200 rounded animate-pulse" />
+              <div className="h-3 bg-gray-200 rounded animate-pulse w-5/6" />
+              <div className="h-3 bg-gray-200 rounded animate-pulse w-4/5" />
             </div>
           </div>
         </div>
@@ -210,12 +256,12 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
 
   if (error || !jobDetails) {
     return (
-      <div className="text-center py-12">
-        <h1 className="text-2xl font-semibold text-text-primary mb-4">Job Not Found</h1>
-        <p className="text-text-secondary mb-6">The job you&apos;re looking for doesn&apos;t exist or has been removed.</p>
+      <div className="text-center py-12 px-4">
+        <h1 className="text-xl md:text-2xl font-semibold text-text-primary mb-4">Job Not Found</h1>
+        <p className="text-sm md:text-base text-text-secondary mb-6">The job you&apos;re looking for doesn&apos;t exist or has been removed.</p>
         <button
           onClick={handleBackToSearch}
-          className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+          className="px-4 md:px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm md:text-base"
         >
           Back to Search
         </button>
@@ -224,7 +270,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
   }
 
   return (
-    <>
+    <div className="w-full">
       {/* Desktop Layout */}
       <div className="hidden md:flex gap-8">
         {/* Left Sidebar - Company Info */}
@@ -237,7 +283,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
         </div>
 
         {/* Right Content Area */}
-        <div className="flex-1 space-y-16">
+        <div className="flex-1 space-y-6 ">
           {/* Job Card */}
           <JobCard
             job={jobDetails}
@@ -264,7 +310,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
       </div>
 
       {/* Mobile Layout */}
-      <div className="md:hidden space-y-6">
+      <div className="md:hidden space-y-4 px-4">
         {/* Job Card */}
         <JobCard
           job={jobDetails}
@@ -277,12 +323,32 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
           dict={dict.jobCard}
         />
 
-        {/* Company Info */}
-        <CompanyInfoSidebar
-          company={jobDetails.company}
-          relationshipStatus={pageState.companyRelationship}
-          onRelationshipChange={handleCompanyRelationshipChange}
-        />
+        {/* Company Info Sheet Trigger */}
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button 
+              variant="outline" 
+              className="w-full flex items-center justify-center gap-2 h-12 text-base font-medium"
+            >
+              <Building2 className="h-5 w-5" />
+              {dict.company.title}
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="bottom" className="h-[85vh] rounded-t-[12px]">
+            <SheetHeader className="pb-4">
+              <SheetTitle className="text-lg font-semibold text-left">
+                {dict.company.title}
+              </SheetTitle>
+            </SheetHeader>
+            <div className="h-full overflow-y-auto pb-6">
+              <CompanyInfoSidebar
+                company={jobDetails.company}
+                relationshipStatus={pageState.companyRelationship}
+                onRelationshipChange={handleCompanyRelationshipChange}
+              />
+            </div>
+          </SheetContent>
+        </Sheet>
 
         {/* AI Summary Loading Card - Shows while generating */}
         <AISummaryLoadingCard isGenerating={pageState.isGeneratingAI} />
@@ -295,6 +361,6 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
         {/* Job Details Card */}
         <JobDetailsCard jobDetails={jobDetails} />
       </div>
-    </>
+    </div>
   );
 } 

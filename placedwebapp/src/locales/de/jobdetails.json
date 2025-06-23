@@ -1,17 +1,20 @@
 {
   "company": {
-    "title": "Unternehmen",
+    "title": "Unternehmensinformationen",
     "dropdown": {
       "existingClient": "Bestehender Kunde",
       "follow": "Folgen",
-      "blacklist": "Blacklist"
+      "blacklist": "Schwarze Liste",
+      "none": "Keine Beziehung"
     },
     "contact": "Kontakt",
     "website": "Website",
     "about": "Über {{companyName}}"
   },
   "aiSummary": {
-    "title": "Generiert mit Placed AI",
+    "title": "KI-Verkaufsscript",
+    "subtitle": "Basierend auf der Stellenbeschreibung generiert",
+    "regenerate": "Neu generieren",
     "learnMore": "Mehr erfahren",
     "placedScore": "Placed Score",
     "profileMatch": "Profil Match",
@@ -26,11 +29,17 @@
     }
   },
   "jobDetails": {
+    "title": "Stellendetails",
     "responsibilities": "Verantwortlichkeiten",
     "yourProfile": "Ihr Profil",
     "benefits": "Vorteile",
     "jobDescription": "Stellenbeschreibung",
-    "alsoListedOn": "Auch gelistet auf"
+    "alsoListedOn": "Auch gelistet auf",
+    "description": "Stellenbeschreibung",
+    "requirements": "Anforderungen",
+    "aboutCompany": "Über das Unternehmen",
+    "applyNow": "Jetzt bewerben",
+    "saveJob": "Stelle speichern"
   },
   "actions": {
     "salesScript": "Sales Script",
@@ -47,7 +56,16 @@
     "postedDaysAgo": "vor {{days}} Tagen veröffentlicht",
     "listedOn": "Gelistet auf",
     "headhunterRecruiting": "{{count}} Personalvermittler aktiv",
-    "headhuntersRecruiting": "{{count}} Personalvermittler aktiv"
+    "headhuntersRecruiting": "{{count}} Personalvermittler aktiv",
+    "backToSearch": "Zurück zur Suche",
+    "salesScript": "Verkaufsscript",
+    "generating": "Generiere...",
+    "favorited": "Favorisiert",
+    "addToFavorites": "Zu Favoriten hinzufügen",
+    "removeFromFavorites": "Aus Favoriten entfernen",
+    "headhunters": "Headhunter",
+    "salaryRange": "Gehaltsbereich",
+    "postedDate": "Veröffentlicht"
   },
   "errors": {
     "jobNotFound": "Job nicht gefunden",

@@ -92,7 +92,7 @@ function CVLoadingAnimation() {
               <GradientText
                 colors={["#AFCBFF", "#050336", "#F0F2FF", "#E4FD57"]}
                 animationSpeed={3}
-                className="text-base font-grotesk font-medium whitespace-nowrap"
+                className="text-base font-grotesk font-light whitespace-nowrap"
               >
                 {scene.title}
               </GradientText>
@@ -119,33 +119,33 @@ function CVLoadingAnimation() {
 }
 
 // Helper function to generate sign board message
-function getSignBoardMessage(context: SearchContext): string {
-  const { keyword, location, cv, candidateName } = context;
+// function getSignBoardMessage(context: SearchContext): string {
+//   const { keyword, location, cv, candidateName } = context;
   
-  if (cv && candidateName) {
-    // CV-based search
-    if (keyword && location) {
-      return `Showing jobs for ${candidateName} based on CV  Keyword: ${keyword}  Location: ${location}`;
-    } else if (keyword) {
-      return `Showing jobs for ${candidateName} based on CV  Keyword: ${keyword}`;
-    } else if (location) {
-      return `Showing jobs for ${candidateName} based on CV  Location: ${location}`;
-    } else {
-      return `Showing jobs for ${candidateName} based on CV`;
-    }
-  } else {
-    // Non-CV search
-    if (keyword && location) {
-      return `Showing jobs for ${keyword} in ${location}`;
-    } else if (keyword) {
-      return `Showing jobs for ${keyword}`;
-    } else if (location) {
-      return `Showing jobs for ${location}`;
-    } else {
-      return 'Showing all jobs';
-    }
-  }
-}
+//   if (cv && candidateName) {
+//     // CV-based search
+//     if (keyword && location) {
+//       return `Showing jobs for ${candidateName} based on CV  Keyword: ${keyword}  Location: ${location}`;
+//     } else if (keyword) {
+//       return `Showing jobs for ${candidateName} based on CV  Keyword: ${keyword}`;
+//     } else if (location) {
+//       return `Showing jobs for ${candidateName} based on CV  Location: ${location}`;
+//     } else {
+//       return `Showing jobs for ${candidateName} based on CV`;
+//     }
+//   } else {
+//     // Non-CV search
+//     if (keyword && location) {
+//       return `Showing jobs for ${keyword} in ${location}`;
+//     } else if (keyword) {
+//       return `Showing jobs for ${keyword}`;
+//     } else if (location) {
+//       return `Showing jobs for ${location}`;
+//     } else {
+//       return 'Showing all jobs';
+//     }
+//   }
+// }
 
 export function JobsCountAndSort({
   totalCount,
@@ -170,7 +170,7 @@ export function JobsCountAndSort({
 //     // { key: 'profileMatch', label: dict.sorting.profileMatch },
 //   ];
 
-  const signBoardMessage = getSignBoardMessage(searchContext);
+  // const signBoardMessage = getSignBoardMessage(searchContext);
 
   // Show CV loading animation when CV search is loading (isLoading=true means CV processing is happening)
   if (isLoading && searchContext.cv) {
@@ -182,7 +182,7 @@ export function JobsCountAndSort({
       {/* Count and Sort Row */}
       <div className="flex items-center gap-3 h-8">
         {/* Job Count */}
-        <div className="text-text-primary font-grotesk font-medium text-base px-3">
+        <div className="text-text-primary font-grotesk font-light text-base px-3">
           {dict.jobsFound.replace('{{count}}', totalCount.toString())}
         </div>
 
@@ -190,13 +190,13 @@ export function JobsCountAndSort({
         <div className="flex items-center gap-3">
           {searchContext.cv ? (
             // Static sort text when CV is present
-            <span className="text-text-primary font-grotesk font-medium text-base px-3">
+            <span className="text-text-primary font-grotesk font-light text-base px-3">
               {currentSort}
             </span>
           ) : (
             // Interactive sort buttons when no CV
             <>
-              <span className="text-text-primary font-grotesk font-medium text-base px-3">{dict.sorting.sortBy}: {currentSort}</span>
+              <span className="text-text-primary font-grotesk font-light text-base px-3">{dict.sorting.sortBy}: {currentSort}</span>
               {/* {sortingOptions.map((option) => (
                 <Button
                   key={option.key}
@@ -217,11 +217,11 @@ export function JobsCountAndSort({
       </div>
 
       {/* Sign Board Message */}
-      <div className="mt-3">
+      {/* <div className="mt-3">
         <span className="inline-block text-muted-foreground bg-muted/30 rounded px-3 py-1 text-sm font-grotesk">
           {signBoardMessage}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 } 

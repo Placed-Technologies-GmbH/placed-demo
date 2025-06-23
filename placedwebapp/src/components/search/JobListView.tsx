@@ -72,11 +72,11 @@ interface JobListViewProps {
 
 function JobCardSkeleton() {
   return (
-    <div className="w-[950px] h-[192px] bg-white border border-[#E0DFDF] rounded-3xl pt-6 pb-4 mb-2">
+    <div className="w-full h-[192px] bg-white border border-[#E0DFDF] rounded-3xl pt-6 pb-4 mb-2">
       {/* Desktop Skeleton */}
       <div className="hidden md:block h-full">
         {/* First Row */}
-        <div className="w-[950px] h-8 flex justify-between items-center px-6">
+        <div className="w-full h-8 flex justify-between items-center px-6">
           <Skeleton className="h-6 w-1/2" />
           <div className="flex items-center gap-2">
             <Skeleton className="h-5 w-12" />
@@ -85,7 +85,7 @@ function JobCardSkeleton() {
         </div>
 
         {/* Second Row */}
-        <div className="w-[950px] h-8 flex items-center gap-6 pt-2 pl-6">
+        <div className="w-full h-8 flex items-center gap-6 pt-2 pl-6">
           <div className="flex items-center gap-2">
             <Skeleton className="h-6 w-6 rounded-full" />
             <Skeleton className="h-4 w-24" />
@@ -95,7 +95,7 @@ function JobCardSkeleton() {
         </div>
 
         {/* Third Row */}
-        <div className="w-[950px] h-8 flex items-center gap-6 pt-2 pl-6">
+        <div className="w-full h-8 flex items-center gap-6 pt-2 pl-6">
           <Skeleton className="h-4 w-16" />
           <Skeleton className="h-4 w-16" />
           <Skeleton className="h-4 w-16" />
@@ -103,7 +103,7 @@ function JobCardSkeleton() {
         </div>
 
         {/* Fourth Row */}
-        <div className="w-[950px] h-14 flex justify-between items-center pt-4 px-6">
+        <div className="w-full h-14 flex justify-between items-center pt-4 px-6">
           <Skeleton className="h-4 w-20" />
           <Skeleton className="h-10 w-[128px] rounded-3xl" />
         </div>
@@ -142,7 +142,7 @@ function JobCardSkeleton() {
 
 function NoResults({ dict }: { dict: { noResults: string; noResultsDescription: string } }) {
   return (
-    <div className="w-[950px] flex flex-col items-center justify-center py-12 text-center">
+    <div className="w-full flex flex-col items-center justify-center py-12 text-center">
       <div className="w-16 h-16 bg-background-muted rounded-full flex items-center justify-center mb-4">
         <svg
           className="w-8 h-8 text-text-muted"

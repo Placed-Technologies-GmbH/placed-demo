@@ -113,8 +113,8 @@
             <div className="w-full h-8 flex justify-between items-center px-6">
               <Skeleton className="h-6 w-1/2" />
               <div className="flex items-center gap-2">
-                <Skeleton className="h-5 w-12" />
-                <Skeleton className="h-6 w-6" />
+                <Skeleton className="h-5 w-8" />
+                <Skeleton className="h-6 w-4" />
               </div>
             </div>
 
@@ -194,7 +194,7 @@
               {job.matchPercentage !== undefined ? (
                 <span className="text-md font-semibold h-6 text-primary">[ {job.matchPercentage}% ]</span>
               ) : (
-                <Skeleton className="h-5 w-12" />
+                <Skeleton className="h-5 w-8" />
               )}
               {/* Favorite Star */}
               <button
@@ -316,7 +316,7 @@
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger>
-                      <span className="flex items-center gap-1 h-[20px]">
+                      <span className="flex items-center gap-3 h-[20px]">
                       {job.listedOn.slice(0, 5).map((logo, idx) => (
                       <Image key={idx} src={logo.src} alt={logo.alt} width={20} height={16} className="h-4 w-auto" />
                       ))}

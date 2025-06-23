@@ -23,14 +23,14 @@ export function CompanyInfoSidebar({
 
   const getDropdownLabel = () => {
     switch (relationshipStatus) {
+      default:  
+        return 'Keine Beziehung';
       case 'existing_client':
-        return 'Existing Client';
+        return 'Bestehender Kunde';
       case 'follow':
-        return 'Follow';
+        return 'Folgen';
       case 'blacklist':
-        return 'Blacklist';
-      default:
-        return 'Existing Client';
+        return 'Schwarze Liste'
     }
   };
 
@@ -58,14 +58,14 @@ export function CompanyInfoSidebar({
           <DropdownMenuContent className="w-[264px] bg-white border border-border rounded-md shadow-lg p-1">
             <DropdownMenuItem
               className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-background-muted rounded-sm cursor-pointer"
-              onClick={() => handleRelationshipChange('existing_client')}
+              onClick={() => handleRelationshipChange('none')}
             >
               <div className="w-4 h-4 flex items-center justify-center">
                 {relationshipStatus === 'existing_client' && (
                   <div className="w-2 h-2 bg-primary rounded-full" />
                 )}
               </div>
-              <span>Existing Client</span>
+              <span>Bestehender Kunde</span>
             </DropdownMenuItem>
             <DropdownMenuItem
               className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-background-muted rounded-sm cursor-pointer"
@@ -76,7 +76,7 @@ export function CompanyInfoSidebar({
                   <div className="w-2 h-2 bg-primary rounded-full" />
                 )}
               </div>
-              <span>Follow</span>
+              <span>Verfolgen</span>
             </DropdownMenuItem>
             <DropdownMenuItem
               className="flex items-center gap-2 px-3 py-2 text-sm hover:bg-background-muted rounded-sm cursor-pointer"
@@ -87,7 +87,7 @@ export function CompanyInfoSidebar({
                   <div className="w-2 h-2 bg-primary rounded-full" />
                 )}
               </div>
-              <span>Blacklist</span>
+              <span>Schwarze Liste</span>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

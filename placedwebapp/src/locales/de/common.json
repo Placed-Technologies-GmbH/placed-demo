@@ -14,7 +14,8 @@
       "forgotPassword": "Passwort vergessen?",
       "termsText": "Mit der Anmeldung stimmen Sie unseren",
       "termsLink": "Nutzungsbedingungen zu",
-      "emailPlaceholder": "ihre@email.com"
+      "emailPlaceholder": "ihre@email.com",
+      "passwordPlaceholder": "Passwort eingeben"
     },
     "demo": {
       "title": "E-Mail eingeben, um die Plattform zu testen",
@@ -57,7 +58,7 @@
         "companies": "Unternehmen",
         "existingClients": "Bestehende Kunden",
         "following": "Verfolgt",
-        "blacklist": "Blacklist",
+        "blacklist": "Schwarze Liste",
         "company": "Unternehmen",
         "location": "Standort",
         "jobsListed": "Jobs gelistet",

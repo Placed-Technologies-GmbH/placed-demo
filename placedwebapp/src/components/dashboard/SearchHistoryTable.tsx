@@ -61,19 +61,6 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
     }
   });
 
-  // Ensure minimum 6 rows for consistent spacing
-  const minRows = 6;
-  const displayData = [...sortedData];
-  while (displayData.length < minRows) {
-    displayData.push({
-      id: `empty-${displayData.length}`,
-      searchDetails: '-',
-      cvUploaded: '-',
-      cv: '',
-      favoriteJobs: 0,
-    });
-  }
-
   const SortIcon = ({ field }: { field: SortField }) => {
     if (sortField !== field) {
       return <ChevronUp className="w-3 h-3 text-text-secondary" />;
@@ -129,18 +116,17 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {displayData.map((item) => {
-                  const isEmpty = item.searchDetails === '-';
-                  return (
-                    <TableRow key={item.id} className="h-[40px] border-none hover:bg-background-muted/30 hover:shadow-md">
+                {sortedData.length > 0 ? (
+                  sortedData.map((item) => (
+                    <TableRow key={item.id} className="h-[40px] border-none hover:bg-background-muted/30">
                       <TableCell className="h-[40px] px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : item.searchDetails}
+                        {item.searchDetails}
                       </TableCell>
                       <TableCell className="h-[40px] px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : item.cvUploaded}
+                        {item.cvUploaded}
                       </TableCell>
                       <TableCell className="h-[40px] px-4 py-0 flex justify-center items-center">
-                        {!isEmpty && item.cv && (
+                        {item.cv ? (
                           <Button
                             variant="ghost"
                             size="xs"
@@ -150,30 +136,32 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
                               <path d="M13 9V11.6667C13 12.0203 12.8595 12.3594 12.6095 12.6095C12.3594 12.8595 12.0203 13 11.6667 13H2.33333C1.97971 13 1.64057 12.8595 1.39052 12.6095C1.14048 12.3594 1 12.0203 1 11.6667V9M3.66667 5.66667L7 9M7 9L10.3333 5.66667M7 9V1" stroke="#757575" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                           </Button>
-                        )}
-                        {isEmpty && <span className="text-text-secondary">-</span>}
+                        ):(null)}
                       </TableCell>
                       <TableCell className="h-[40px] px-4 py-0 font-grotesk font-normal text-sm text-text-secondary">
-                        {isEmpty ? '-' : item.favoriteJobs}
+                        {item.favoriteJobs}
                       </TableCell>
                       <TableCell className="h-[40px] px-4 py-0 flex justify-center items-center">
-                        {!isEmpty && (
-                          <Button
-                            variant="ghost"
-                            size="lg"
-                            className="h-6 px-2 text-xs justify-center item-center text-text-secondary hover:text-text-primary/80"
-                          >
+                        <Button
+                          variant="ghost"
+                          size="lg"
+                          className="h-6 px-2 text-xs justify-center item-center text-text-secondary hover:text-text-primary/80"
+                        >
                           <svg width="12" height="12" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 8.05932C1 4.25885 4.11111 1.17796 8 1.17796C12.6667 1.17796 15 5.00093 15 5.00093M15 5.00093L15 0.940674M15 5.00093H11.3794" stroke="#363853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M15 9.09321C15 12.8937 11.8889 15.9746 8 15.9746C3.33333 15.9746 1 12.1516 1 12.1516M1 12.1516L1 16.2119M1 12.1516H4.62064" stroke="#363853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                           </svg>
-                          </Button>
-                        )}
-                        {isEmpty && <span className="justify-center item-center text-text-secondary">-</span>}
+                        </Button>
                       </TableCell>
                     </TableRow>
-                  );
-                })}
+                  ))
+                ) : (
+                  <TableRow>
+                    <TableCell colSpan={5} className="text-center text-text-secondary">
+                      No search history available
+                    </TableCell>
+                  </TableRow>
+                )}
               </TableBody>
             </Table>
           </ScrollArea>
@@ -182,7 +170,7 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
 
       {/* Mobile Cards */}
       <div className="md:hidden space-y-3">
-        {data.length > 0 ? (
+        {sortedData.length > 0 ? (
           sortedData.map((item) => (
             <div key={item.id} className="bg-surface border border-border rounded-lg p-4 shadow-sm">
               <div className="space-y-2">

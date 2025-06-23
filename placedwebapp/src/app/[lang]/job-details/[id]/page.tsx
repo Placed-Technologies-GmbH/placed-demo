@@ -41,7 +41,7 @@ export default async function JobDetailsPage({ params }: JobDetailsPageProps) {
     <div className="min-h-screen bg-background">
       <InternalNavbar />
       
-      <Container size="xl" className="pt-[69px]">
+      <Container size="xl" className="pt-7">
         <Suspense fallback={
           <div className="flex gap-8">
             {/* Loading skeleton */}
