@@ -24,7 +24,7 @@ export function CompanyInfoSidebar({
   const getDropdownLabel = () => {
     switch (relationshipStatus) {
       default:  
-        return 'Keine Beziehung';
+        return 'Nicht kategorisiert';
       case 'existing_client':
         return 'Bestehender Kunde';
       case 'follow':
