@@ -12,7 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-
+import { useParams, useRouter } from 'next/navigation'; 
 interface SearchHistoryItem {
   id: string;
   searchDetails: string;
@@ -38,6 +38,20 @@ type SortDirection = 'asc' | 'desc';
 export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
   const [sortField, setSortField] = useState<SortField | null>(null);
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+  const router = useRouter();
+  const params = useParams();
+  const lang = params?.lang || 'en';
+
+  // Add URL mapping strategy for search history items
+  const getSearchUrl = (itemId: string): string => {
+    const searchUrlMappings: Record<string, string> = {
+      '1': `/${lang}/search/?fileId=cv1_sales-1750756618111-d1ixajybv&cv=CV+1+-+Sales.pdf&uploadId=upload_1750756618111_ff252w9k1&page=1`,
+      '2': `/${lang}/search/?fileId=cv2_electrician-1750755769795-32qc2hfax&cv=CV+2+-+Electrician.pdf&uploadId=upload_1750755769796_kxcskq3c4&page=1`,
+    };
+    
+    // Return specific mapped URL or fallback to basic search page
+    return searchUrlMappings[itemId] || `/${lang}/search/`;
+  };
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -145,6 +159,9 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
                         <Button
                           variant="ghost"
                           size="lg"
+                          onClick={() => {
+                            router.push(getSearchUrl(item.id));
+                          }}
                           className="h-6 px-2 text-xs justify-center item-center text-text-secondary hover:text-text-primary/80"
                         >
                           <svg width="12" height="12" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,6 +218,9 @@ export function SearchHistoryTable({ data, dict }: SearchHistoryTableProps) {
                     <Button
                       variant="ghost"
                       size="sm"
+                      onClick={() => {
+                        router.push(getSearchUrl(item.id));
+                      }}
                       className="h-8 px-2 text-xs text-primary hover:text-primary/80"
                     >
                       <RotateCcw className="w-3 h-3 mr-1" />

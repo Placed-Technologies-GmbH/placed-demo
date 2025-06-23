@@ -71,7 +71,7 @@ export function NavSearchbar() {
             onClick={handleClear}
             className="justify-start text-white text-base font-normal font-inter hover:opacity-80 transition-fast focus:outline-none flex items-center gap-2 hover:cursor-pointer"
           >
-            klar
+            Reset
           </button>
         </div>
       </div>

@@ -4,7 +4,7 @@ import type { JobDetails, AISummary, SalesPitch, ContactPerson, CompanyDetails }
 
 // Import CV-specific data
 import cv1SalesData from './cv1_data.json';
-import cv2MarketingData from './cv2_marketing_data.json';
+import cv2ElectricianData from './cv2_electrician_data.json';
 import cv3TechData from './cv3_tech_data.json';
 import cv4FinanceData from './cv4_finance_data.json';
 import cv5HrData from './cv5_hr_data.json';
@@ -53,7 +53,7 @@ interface MockJobData {
 
 // Type the imported data - using any for now due to complex nested structure differences
 const cv1SalesTyped = cv1SalesData as any[];
-const cv2MarketingTyped = cv2MarketingData as any[];
+const cv2ElectricianTyped = cv2ElectricianData as any[];
 const cv3TechTyped = cv3TechData as any[];
 const cv4FinanceTyped = cv4FinanceData as any[];
 const cv5HrTyped = cv5HrData as any[];
@@ -73,10 +73,10 @@ const locationSearchTyped = locationSearchData as LocationSearchData;
 // CV File mapping - maps filename to specific dataset
 const CV_FILE_MAPPING = {
   'CV 1 - Sales.pdf': 'cv1_sales',
-  'CV2 - Marketing.pdf': 'cv2_marketing', 
-  'CV3 - Tech.pdf': 'cv3_tech',
-  'CV4 - Finance.pdf': 'cv4_finance',
-  'CV5 - HR.pdf': 'cv5_hr',
+  'CV 2 - Electrician.pdf': 'cv2_electrician', 
+  'CV 3 - Tech.pdf': 'cv3_tech',
+  'CV 4 - Finance.pdf': 'cv4_finance',
+  'CV 5 - HR.pdf': 'cv5_hr',
 } as const;
 
 // Keyword-based search mapping
@@ -160,8 +160,8 @@ export class MockDataManager {
       case 'cv1_sales':
         jobs = this.transformToJobListings(cv1SalesTyped);
         break;
-      case 'cv2_marketing':
-        jobs = this.transformToJobListings(cv2MarketingTyped);
+      case 'cv2_electrician':
+        jobs = this.transformToJobListings(cv2ElectricianTyped);
         break;
       case 'cv3_tech':
         jobs = this.transformToJobListings(cv3TechTyped);
@@ -199,8 +199,8 @@ export class MockDataManager {
       case 'cv1_sales':
         rawData = cv1SalesTyped.find((item) => item.id === jobId);
         break;
-      case 'cv2_marketing':
-        rawData = cv2MarketingTyped.find((item) => item.id === jobId);
+      case 'cv2_electrician':
+        rawData = cv2ElectricianTyped.find((item) => item.id === jobId);
         break;
       case 'cv3_tech':
         rawData = cv3TechTyped.find((item) => item.id === jobId);
@@ -231,8 +231,8 @@ export class MockDataManager {
       case 'cv1_sales':
         rawData = cv1SalesTyped.find((item) => item.id === jobId);
         break;
-      case 'cv2_marketing':
-        rawData = cv2MarketingTyped.find((item) => item.id === jobId);
+      case 'cv2_electrician':
+        rawData = cv2ElectricianTyped.find((item) => item.id === jobId);
         break;
       case 'cv3_tech':
         rawData = cv3TechTyped.find((item) => item.id === jobId);
@@ -261,8 +261,8 @@ export class MockDataManager {
       case 'cv1_sales':
         rawData = cv1SalesTyped.find((item) => item.id === jobId);
         break;
-      case 'cv2_marketing':
-        rawData = cv2MarketingTyped.find((item) => item.id === jobId);
+      case 'cv2_electrician':
+        rawData = cv2ElectricianTyped.find((item) => item.id === jobId);
         break;
       case 'cv3_tech':
         rawData = cv3TechTyped.find((item) => item.id === jobId);
@@ -457,10 +457,10 @@ export class MockDataManager {
    */
   private generateFallbackJobs(cvType: string): JobListing[] {
     const templates = {
-      cv2_marketing: {
-        title: 'Marketing Manager (m/w/d)',
-        company: 'Marketing Solutions GmbH',
-        industry: 'Marketing'
+      cv2_electrician: {
+        title: 'Elektriker (m/w/d)',
+        company: 'Elektroanlagen GmbH',
+        industry: 'Elektro'
       },
       cv3_tech: {
         title: 'Software Engineer (m/w/d)',

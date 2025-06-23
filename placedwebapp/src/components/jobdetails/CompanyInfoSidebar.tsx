@@ -24,7 +24,7 @@ export function CompanyInfoSidebar({
   const getDropdownLabel = () => {
     switch (relationshipStatus) {
       default:  
-        return 'Keine Beziehung';
+        return 'Nicht kategorisiert';
       case 'existing_client':
         return 'Bestehender Kunde';
       case 'follow':
@@ -40,7 +40,7 @@ export function CompanyInfoSidebar({
   };
 
   return (
-    <div className="w-full md:w-[296px] h-[580px] bg-white border border-border rounded-[4px] p-4 space-y-1">
+    <div className="w-full md:w-[296px] bg-white border border-border rounded-[4px] p-4 space-y-1">
       {/* Company Header */}
       <div className="text-lg font-semibold text-secondary mb-4">
         Company

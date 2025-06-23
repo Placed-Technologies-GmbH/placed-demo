@@ -195,8 +195,7 @@
             {/* Job Title */}
             {job.title ? (
               <h3 className="text-lg font-semibold text-foreground leading-tight">{job.title}</h3>
-            ) : (
-              <Skeleton className="h-6 w-1/2" />
+            ) : (null
             )}
             <div className="flex items-center gap-2">
               {/* Placed Score */}
@@ -234,7 +233,7 @@
               {job.company ? (
                 <span className="text-muted-foreground text-md">{job.company}</span>
               ) : (
-                <Skeleton className="h-4 w-24" />
+                null
               )}
             </div>
             {/* Contact Info */}
@@ -244,7 +243,7 @@
                 {job.contactPerson.phone}
               </span>
             ) : (
-              <Skeleton className="h-4 w-20" />
+              null
             )}
             {/* Kununu */}
             {job.kununu ? (
@@ -268,7 +267,7 @@
                 {job.location}
               </span>
             ) : (
-              <Skeleton className="h-4 w-16" />
+            null
             )}
             {/* Date Posted */}
             {job.postedDate ? (
@@ -280,7 +279,7 @@
                 {formatDate(job.postedDate)}
               </span>
             ) : (
-              <Skeleton className="h-4 w-16" />
+            null
             )}
             {/* Salary */}
             {job.salary?.amount ? (
@@ -297,12 +296,12 @@
                     </span>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Gehalt für die Platzierung</p>
+                    <p>Bisherige Anzeigenkosten für diese Stelleür die Platzierung</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
             ) : (
-              <Skeleton className="h-4 w-16" />
+              null
             )}
             {/* Headhunters */}
             {job.headhunters ? (

@@ -14,7 +14,7 @@ interface JobDetailsPageProps {
 
 // Import the JSON data files to count how many jobs exist
 import cv1Data from '@/lib/data/cv1_data.json';
-import cv2Data from '@/lib/data/cv2_marketing_data.json';
+import cv2Data from '@/lib/data/cv2_electrician_data.json';
 import cv3Data from '@/lib/data/cv3_tech_data.json';
 import cv4Data from '@/lib/data/cv4_finance_data.json';
 import cv5Data from '@/lib/data/cv5_hr_data.json';

@@ -45,7 +45,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
   // Collapsible states - first three open by default
   const [isLocationOpen, setIsLocationOpen] = useState(true);
   const [isToggleFiltersOpen, setIsToggleFiltersOpen] = useState(true);
-  const [isSalaryOpen, setIsSalaryOpen] = useState(true);
+  // const [isSalaryOpen, setIsSalaryOpen] = useState(true);
   const [isExperienceOpen, setIsExperienceOpen] = useState(false);
   const [isIndustryOpen, setIsIndustryOpen] = useState(false);
   const [isBestandskundenOpen, setIsBestandskundenOpen] = useState(false);
@@ -57,8 +57,8 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
   const [isPlacedScoreOpen, setIsPlacedScoreOpen] = useState(false);
 
   // Local state for salary inputs
-  const [salaryMin, setSalaryMin] = useState(filters.salaryMin?.toString() || '');
-  const [salaryMax, setSalaryMax] = useState(filters.salaryMax?.toString() || '');
+  // const [salaryMin, setSalaryMin] = useState(filters.salaryMin?.toString() || '');
+  // const [salaryMax, setSalaryMax] = useState(filters.salaryMax?.toString() || '');
 
   // Handler functions
   const handleResetFilters = () => {
@@ -70,8 +70,8 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
       excludeMyClients: false,
       location: '',
       locationRadius: 30,
-      salaryMin: undefined,
-      salaryMax: undefined,
+      // salaryMin: undefined,
+      // salaryMax: undefined,
       bestandskundenDropdown: '',
       zeitraum: [],
       vertragsart: [],
@@ -80,8 +80,8 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
       ausbildung: [],
       placedScore: []
     });
-    setSalaryMin('');
-    setSalaryMax('');
+      // setSalaryMin('');
+      // setSalaryMax('');
   };
 
   const handleExperienceChange = (experienceId: string, checked: boolean) => {
@@ -117,12 +117,12 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
     }
   };
 
-  const handleSalaryApply = () => {
-    onFiltersChange({
-      salaryMin: salaryMin ? parseInt(salaryMin) : undefined,
-      salaryMax: salaryMax ? parseInt(salaryMax) : undefined
-    });
-  };
+  // const handleSalaryApply = () => {
+  //   onFiltersChange({
+  //     salaryMin: salaryMin ? parseInt(salaryMin) : undefined,
+  //     salaryMax: salaryMax ? parseInt(salaryMax) : undefined
+  //   });
+  // };
 
   // Experience level options with German translations
   const experienceOptions = [
@@ -261,9 +261,9 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
             <CollapsibleContent>
               <div className="w-full px-7 space-y-4">
                 <div>
-                  <Label className="font-grotesk font-normal text-medium leading-none text-filter-item mb-2 block">
+                  {/* <Label className="font-grotesk font-normal text-medium leading-none text-filter-item mb-2 block">
                     Berlin
-                  </Label>
+                  </Label> */}
                   <Input
                     value={filters.location || ''}
                     onChange={(e) => onFiltersChange({ location: e.target.value })}
@@ -277,7 +277,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                       Radius
                     </Label>
                     <span className="font-grotesk font-normal text-medium leading-none text-filter-item">
-                      {filters.locationRadius || 30} KM radius
+                      {filters.locationRadius || 30} km
                     </span>
                   </div>
                   <Slider
@@ -316,11 +316,11 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
             </div>
             
             <CollapsibleContent>
-              <div className="w-full px-7 space-y-3">
+              <div className="w-full px-7 space-y-3"> 
                 {/* Headhunter ausblenden */}
                 <div className="flex items-center justify-between">
                   <Label className="font-grotesk font-normal text-medium leading-none text-filter-item">
-                    Headhunter ausblenden
+                    Ohne Personalvermittler
                   </Label>
                   <Switch
                     checked={filters.excludeHeadhunters}
@@ -355,7 +355,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
         </Collapsible>
 
         {/* Salary Range */}
-        <Collapsible open={isSalaryOpen} onOpenChange={setIsSalaryOpen}>
+        {/* <Collapsible open={isSalaryOpen} onOpenChange={setIsSalaryOpen}>
           <div className="w-full border-b border-border-filter pb-4">
             <div className="w-full h-[49px] flex items-center justify-between pt-4 px-4 pb-2">
               <CollapsibleTrigger asChild>
@@ -370,9 +370,9 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
                   )}
                 </Button>
               </CollapsibleTrigger>
-            </div>
+            </div> */}
             
-            <CollapsibleContent>
+            {/* <CollapsibleContent>
               <div className="w-full px-7 space-y-3">
                 <div className="flex gap-2">
                   <div className="flex-1">
@@ -410,7 +410,7 @@ export function SearchFilters({ filters, onFiltersChange, dict }: SearchFiltersP
               </div>
             </CollapsibleContent>
           </div>
-        </Collapsible>
+        </Collapsible> */}
 
         {/* Bestandskunden Dropdown */}
         <Collapsible open={isBestandskundenOpen} onOpenChange={setIsBestandskundenOpen}>

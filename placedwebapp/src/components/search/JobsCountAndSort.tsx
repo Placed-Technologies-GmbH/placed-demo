@@ -47,20 +47,12 @@ function CVLoadingAnimation() {
       title: "Priorisierung der Stellen anhand PLACED-Score",
       description: "Wir priorisieren die Stellen im Kontext des Kandidatenprofils nach Kandidaten-Fit und Dringlichkeit der Suche der Unternehmen."
     },
-    {
-      title: "Suchen wir nach den richtigen Möglichkeiten für Sie",
-      description: "Jetzt suchen wir in unserer Job-Netzwerk nach den besten Passungen basierend auf Ihrem Profil."
-    },
-    {
-      title: "Ihre persönlichen Job-Passungen sind bereit!",
-      description: "Hier sind Rollen, in denen Ihre Fähigkeiten glänzen. Passend, relevant und nur für Sie."
-    }
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentScene((prev) => (prev + 1) % scenes.length);
-    }, 1200); // 6 seconds / 5 scenes = 1.2 seconds per scene
+    }, 2000); // 6 seconds / 5 scenes = 1.2 seconds per scene
 
     // Auto-complete after all scenes have played
     const timeoutId = setTimeout(() => {
