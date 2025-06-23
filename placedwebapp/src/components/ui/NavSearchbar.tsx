@@ -69,7 +69,7 @@ export function NavSearchbar() {
         <div className="h-10 px-6 py-3 bg-slate-900 rounded-3xl flex justify-center items-center overflow-hidden">
           <button
             onClick={handleClear}
-            className="justify-start text-white text-base font-normal font-inter hover:opacity-80 transition-fast focus:outline-none flex items-center gap-2"
+            className="justify-start text-white text-base font-normal font-inter hover:opacity-80 transition-fast focus:outline-none flex items-center gap-2 hover:cursor-pointer"
           >
             klar
           </button>
@@ -88,7 +88,7 @@ export function NavSearchbar() {
         <button
           type="button"
           aria-label="Upload CV"
-          className="w-full h-[24px] flex justify-center items-center gap-2 relative overflow-hidden hover:opacity-80 transition-fast focus:outline-none text-text-secondary text-sm font-normal font-inter"
+          className="w-full h-[24px] flex justify-center items-center gap-2 relative overflow-hidden hover:opacity-80 transition-fast focus:outline-none text-text-secondary text-sm font-normal font-inter hover:cursor-pointer"
           onClick={handleCVIconClick}
         >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +135,7 @@ export function NavSearchbar() {
         <button
           onClick={handleSearchClick}
           disabled={!keyword.trim() && !location.trim()}
-          className="justify-start text-text-inverse text-base font-normal hover:opacity-80 font-inter transition-fast focus:outline-none"
+          className="justify-start text-text-inverse text-base font-normal hover:opacity-80 font-inter transition-fast focus:outline-none hover:cursor-pointer"
         >
           Suchen
         </button>

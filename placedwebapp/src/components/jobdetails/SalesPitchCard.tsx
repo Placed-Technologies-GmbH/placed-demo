@@ -3,20 +3,19 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GlowEffect } from '@/components/ui/GlowEffect';
-import { MetricsChart } from './MetricsChart';
-import type { AISummary } from '@/features/jobdetails/types';
+// import { MetricsChart } from './MetricsChart';
+import type { SalesPitch } from '@/features/jobdetails/types';
 
-interface AISummaryCardProps {
-  aiSummary: AISummary;
+interface SalesPitchCardProps {
+  salesPitch: SalesPitch;
   dict: {
-    aiSummary: {
+    salesPitch: {
       title: string;
       placedScore: string;
       profileMatch: string;
       urgencyScore: string;
-      whatsGood: string;
-      whatsBad: string;
-      whatsMissing: string;
+      conversationStarters: string;
+      objectionHandlers: string;
       generatedOn: string;
       feedback: {
         question: string;
@@ -29,7 +28,7 @@ interface AISummaryCardProps {
 
 type FeedbackType = 'positive' | 'negative' | null;
 
-export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
+export function SalesPitchCard({ salesPitch, dict }: SalesPitchCardProps) {
   const [feedback, setFeedback] = useState<FeedbackType>(null);
   const [isSubmittingFeedback, setIsSubmittingFeedback] = useState(false);
 
@@ -44,7 +43,7 @@ export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
       setFeedback(newFeedback);
 
       // Submit feedback to API
-      await submitFeedback(aiSummary.id, newFeedback);
+      await submitFeedback(salesPitch.id, newFeedback);
     } catch (error) {
       console.error('Failed to submit feedback:', error);
       // Revert feedback state on error
@@ -54,16 +53,16 @@ export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
     }
   };
 
-  const submitFeedback = async (summaryId: string, feedbackType: FeedbackType) => {
+  const submitFeedback = async (salesPitchId: string, feedbackType: FeedbackType) => {
     // TODO: Replace with actual FastAPI backend endpoint
     const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-    const response = await fetch(`${apiUrl}/api/ai-summary/feedback`, {
+    const response = await fetch(`${apiUrl}/api/sales-pitch/feedback`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        summaryId,
+        salesPitchId,
         feedback: feedbackType,
         timestamp: new Date().toISOString(),
       }),
@@ -78,7 +77,7 @@ export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
 
   return (
     <div className="relative w-full max-w-[952px] h-[498px]">
-      {/* Dynamic Glow Effect */}
+      {/* Dynamic Glow Effect - Different colors for sales pitch */}
       <motion.div
         className="pointer-events-none absolute inset-0"
         initial={{ opacity: 0 }}
@@ -89,7 +88,7 @@ export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
         }}
       >
         <GlowEffect
-          colors={['#0894FF', '#C959DD', '#FF2E54', '#FF9004']}
+          colors={['#FF6B35', '#F7931E', '#FFD23F', '#FF9F1C']}
           mode="colorShift"
           blur="medium"
           duration={4}
@@ -108,15 +107,15 @@ export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 text-orange-500">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
             </svg>
-            <span className="text-sm text-text-secondary">{dict.aiSummary.title}</span>
+            <span className="text-sm text-text-secondary">{dict.salesPitch.title}</span>
           </div>
           
           {/* Feedback Buttons */}
           <div className="flex items-center gap-2">
-            <span className="text-xs text-text-secondary mr-2">{dict.aiSummary.feedback.question}</span>
+            <span className="text-xs text-text-secondary mr-2">{dict.salesPitch.feedback.question}</span>
             
             {/* Thumbs Up Button */}
             <button 
@@ -166,101 +165,85 @@ export function AISummaryCard({ aiSummary, dict }: AISummaryCardProps) {
           </div>
         </div>  
 
-        {/* Metrics Section */}
+        {/* Metrics Section
         <div className="flex items-center gap-8 mb-6">
           <MetricsChart
-            value={aiSummary.placedScore}
-            label={dict.aiSummary.placedScore}
-            color="#78C2FF"
-          />
-          <MetricsChart
-            value={aiSummary.profileMatch}
-            label={dict.aiSummary.profileMatch}
-            color="#57E4A0"
-          />
-          <MetricsChart
-            value={aiSummary.urgencyScore}
-            label={dict.aiSummary.urgencyScore}
+            value={salesPitch.placedScore}
+            label={dict.salesPitch.placedScore}
             color="#FF8A65"
           />
-        </div>
+          <MetricsChart
+            value={salesPitch.profileMatch}
+            label={dict.salesPitch.profileMatch}
+            color="#FFB74D"
+          />
+          <MetricsChart
+            value={salesPitch.urgencyScore}
+            label={dict.salesPitch.urgencyScore}
+            color="#FFCC02"
+          />
+        </div> */}
 
         {/* Content Section - Scrollable */}
         <div className="flex-1 overflow-y-auto space-y-6 pr-2">
-          {/* Why the candidate fits this position */}
+          {/* Sales Pitch Content */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-text-secondary">
-              {dict.aiSummary.whatsGood}
+              Sales Pitch
             </h3>
             <div className="space-y-4">
-              {aiSummary.whatsGood.map((point, index) => (
+              {salesPitch.salesPitch?.map((pitch, index) => (
                 <div key={index} className="flex gap-2">
-                  <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-0.5">
-                    <span className="text-xs font-medium text-primary-foreground">
+                  <div className="flex-shrink-0 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mt-0.5">
+                    <span className="text-xs font-medium text-white">
                       {index + 1}
                     </span>
                   </div>
-                  <p className="text-sm text-text-primary leading-relaxed">
-                    {point}
+                  <p className="text-sm text-foreground leading-relaxed">
+                    {pitch}
                   </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* What is Bad */}
-          <div className="space-y-4">
+          {/* Objection Handlers */}
+          {/* <div className="space-y-4">
             <h3 className="text-xl font-semibold text-text-secondary">
-              {dict.aiSummary.whatsBad}
+              {dict.salesPitch.objectionHandlers}
             </h3>
             <div className="space-y-4">
-              {aiSummary.whatsBad.map((point, index) => (
+              {salesPitch.objectionHandlers.map((handler, index) => (
                 <div key={index} className="flex gap-2">
-                  <div className="flex-shrink-0 w-6 h-6 bg-warning rounded-full flex items-center justify-center mt-0.5">
-                    <span className="text-xs font-medium text-warning-foreground">
-                      {index + 1}
-                    </span>
+                  <div className="flex-shrink-0 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-3 h-3 text-white">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                   </div>
-                  <p className="text-sm text-text-primary leading-relaxed">
-                    {point}
+                  <p className="text-sm text-foreground leading-relaxed">
+                    {handler}
                   </p>
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
-          {/* What is missing */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-text-secondary">
-              {dict.aiSummary.whatsMissing}
-            </h3>
-            <div className="space-y-4">
-              {aiSummary.whatsMissing.map((point, index) => (
-                <div key={index} className="flex gap-2">
-                  <div className="flex-shrink-0 w-6 h-6 bg-warning rounded-full flex items-center justify-center mt-0.5">
-                    <span className="text-xs font-medium text-warning-foreground">
-                      {index + 1}
-                    </span>
-                  </div>
-                  <p className="text-sm text-text-primary leading-relaxed">
-                    {point}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Generated timestamp */}
-        {aiSummary.generatedAt && (
+          {/* Generated timestamp */}
           <div className="pt-4 border-t border-border">
             <p className="text-xs text-text-secondary">
-              {dict.aiSummary.generatedOn} {new Date(aiSummary.generatedAt).toLocaleString()}
+              {dict.salesPitch.generatedOn}
+              {salesPitch.generatedAt && new Date(salesPitch.generatedAt).toLocaleString('de-DE', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+              })}
             </p>
           </div>
-        )}
+        </div>
       </div>
-    </motion.div>
+      </motion.div>
     </div>
   );
 } 

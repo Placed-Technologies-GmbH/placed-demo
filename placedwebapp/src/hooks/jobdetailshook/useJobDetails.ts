@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import type { JobDetails } from '@/features/jobdetails/types';
+import MockDataManager from '@/lib/data/mockDataManager';
+import { useSearchParams } from 'next/navigation';
 
 // Mock data for development
 const mockJobDetails: JobDetails = {
@@ -126,6 +128,7 @@ export function useJobDetails(jobId: string): UseJobDetailsReturn {
   const [data, setData] = useState<JobDetails | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const searchParams = useSearchParams();
 
   const fetchJobDetails = async () => {
     setIsLoading(true);
@@ -139,7 +142,55 @@ export function useJobDetails(jobId: string): UseJobDetailsReturn {
       // Simulate API delay
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Return mock data for now
+      const mockDataManager = MockDataManager.getInstance();
+      
+      // Check for CV context in URL search params
+      const fileId = searchParams.get('fileId');
+      
+      // Try to get CV-specific job details first
+      if (fileId) {
+        const cvJobDetails = mockDataManager.getCVSpecificJobDetails(jobId, fileId);
+        if (cvJobDetails) {
+          console.log(`Found CV-specific job details for jobId: ${jobId}, fileId: ${fileId}`);
+          setData(cvJobDetails);
+          return;
+        }
+      }
+
+      // Check if this is a CV-specific job ID (fallback method)
+      if (jobId.startsWith('cv1_') || jobId.startsWith('cv2_') || jobId.startsWith('cv3_') || jobId.startsWith('cv4_') || jobId.startsWith('cv5_')) {
+        const cvType = jobId.split('_')[0];
+        const fallbackFileId = `${cvType}_sales-${Date.now()}-mock`;
+        const cvJobDetails = mockDataManager.getCVSpecificJobDetails(jobId, fallbackFileId);
+        if (cvJobDetails) {
+          console.log(`Found CV-specific job details using fallback method for jobId: ${jobId}`);
+          setData(cvJobDetails);
+          return;
+        }
+      }
+
+      // Check if this is a keyword-specific job ID
+      if (jobId.startsWith('keyword_')) {
+        const keywordJobDetails = mockDataManager.getKeywordSpecificJobDetails(jobId);
+        if (keywordJobDetails) {
+          console.log(`Found keyword-specific job details for jobId: ${jobId}`);
+          setData(keywordJobDetails);
+          return;
+        }
+      }
+
+      // Check if this is a location-specific job ID
+      if (jobId.startsWith('location_')) {
+        const locationJobDetails = mockDataManager.getLocationSpecificJobDetails(jobId);
+        if (locationJobDetails) {
+          console.log(`Found location-specific job details for jobId: ${jobId}`);
+          setData(locationJobDetails);
+          return;
+        }
+      }
+      
+      // Fallback to general mock data
+      console.log(`Using general mock data for jobId: ${jobId}`);
       setData(mockJobDetails);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch job details');
@@ -153,7 +204,7 @@ export function useJobDetails(jobId: string): UseJobDetailsReturn {
     if (jobId) {
       fetchJobDetails();
     }
-  }, [jobId]);
+  }, [jobId, searchParams]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return {
     data,

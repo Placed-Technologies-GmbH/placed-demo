@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useDebounce } from 'use-debounce';
 import { useSearchResults } from '../../hooks/useSearchResults';
 import { SearchFilters } from '../../components/search/SearchFilters';
@@ -15,6 +15,7 @@ import { Container } from '@/components/ui/Container';
 import { Filter, /* ChevronDown, SortAsc */ } from 'lucide-react';
 import { /* useParams, */ useRouter, useSearchParams } from 'next/navigation';
 import { CvErrorBoundary } from '@/components/search/CvErrorBoundry';
+import { useSearchContext } from '@/context/SearchContext';
 
 
 interface SearchResultsPageProps {
@@ -103,102 +104,78 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
   
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { searchState: contextSearchState, shouldShowCvAnimation, markAnimationAsShown } = useSearchContext();
+  // const { handleCVUpload } = useSearchState();
   // const params = useParams();
   // const lang = params?.lang || 'en';
   
-  // Unified search state
-  const [searchState, setSearchState] = useState({
-    keyword: currentParams.keyword || '',
-    location: searchParams.get('location') || '',
+  // Use context search state for UI display
+  const displaySearchState = {
+    keyword: contextSearchState?.keyword || currentParams.keyword || '',
+    location: contextSearchState?.location || searchParams.get('location') || '',
     cvFile: null as File | null,
-    fileId: searchParams.get('fileId') || null,
-    candidateName: searchParams.get('cv') ? decodeURIComponent(searchParams.get('cv')!).replace(/\.(pdf|doc|docx)$/i, '') : '',
-  });
+    fileId: contextSearchState?.fileId || searchParams.get('fileId') || null,
+    candidateName: contextSearchState?.cvFileName 
+      ? contextSearchState.cvFileName.replace(/\.(pdf|doc|docx)$/i, '') 
+      : (searchParams.get('cv') ? decodeURIComponent(searchParams.get('cv')!).replace(/\.(pdf|doc|docx)$/i, '') : ''),
+  };
   
   const [cvError, setCvError] = useState(false);
   const [currentSort, /* setCurrentSort */] = useState('Neueste Jobangebote');
   const [isCvProcessing, setIsCvProcessing] = useState(false);
-  const [hasTriggeredCvAnimation, setHasTriggeredCvAnimation] = useState(false);
   
   // Track previous values for debounce fallback
-  const prevKeywordRef = useRef(searchState.keyword);
-  const prevLocationRef = useRef(searchState.location);
+  const prevKeywordRef = useRef(displaySearchState.keyword);
+  const prevLocationRef = useRef(displaySearchState.location);
   
   // Debounced values for fallback only
-  const [debouncedKeyword] = useDebounce(searchState.keyword, 500);
-  const [debouncedLocation] = useDebounce(searchState.location, 500);
+  const [debouncedKeyword] = useDebounce(displaySearchState.keyword, 500);
+  const [debouncedLocation] = useDebounce(displaySearchState.location, 500);
   
   // --- CV Animation Timeout Logic with useRef ---
   const cvAnimationTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Simple function to start CV animation
-  const startCVAnimation = useCallback(() => {
-    console.log('Starting CV animation');
-    setIsCvProcessing(true);
-    setHasTriggeredCvAnimation(true);
-
-    // Clear any existing timeout
-    if (cvAnimationTimeoutRef.current) {
-      clearTimeout(cvAnimationTimeoutRef.current);
-    }
-
-    // Set timeout to stop animation after 6 seconds
-    cvAnimationTimeoutRef.current = setTimeout(() => {
-      console.log('CV animation timeout completed - showing job cards');
-      setIsCvProcessing(false);
-      cvAnimationTimeoutRef.current = null;
-    }, 6000);
-  }, []);
-
-  // Handle CV upload via navigation (URL params)
+  // Handle CV upload via navigation (URL params) - NEW LOGIC
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const hasFileId = urlParams.get('fileId');
     const cvParam = urlParams.get('cv');
+    
+    // Check if we should show animation for this CV
+    if (hasFileId && cvParam && shouldShowCvAnimation(contextSearchState)) {
+      console.log('Fresh CV upload detected, starting animation');
+      
+      // Start animation
+      setIsCvProcessing(true);
+      
+      // Mark animation as shown for this upload
+      if (contextSearchState?.cvUploadId) {
+        markAnimationAsShown(contextSearchState.cvUploadId);
+      }
+      
+      // Clear any existing timeout
+      if (cvAnimationTimeoutRef.current) {
+        clearTimeout(cvAnimationTimeoutRef.current);
+      }
 
-    // Only start animation if we have CV params and haven't triggered yet
-    if (hasFileId && cvParam && !hasTriggeredCvAnimation) {
-      console.log('CV detected in URL params, starting animation');
-      startCVAnimation();
+      // Set timeout to stop animation after 6 seconds
+      cvAnimationTimeoutRef.current = setTimeout(() => {
+        console.log('CV animation completed');
+        setIsCvProcessing(false);
+        cvAnimationTimeoutRef.current = null;
+      }, 6000);
 
       // Trigger job search
       updateSearchParams({
-        keyword: searchState.keyword,
+        keyword: contextSearchState?.keyword || '',
         page: 1,
         filters: {
           ...currentParams.filters,
-          location: searchState.location
+          location: contextSearchState?.location || ''
         }
       });
     }
-  }, [searchState.fileId, searchState.candidateName, hasTriggeredCvAnimation, startCVAnimation, updateSearchParams, searchState.keyword, searchState.location, currentParams.filters]);
-
-  // Reset animation trigger when navigating away from CV search
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const hasFileId = urlParams.get('fileId');
-
-    // If no fileId in URL, reset everything
-    if (!hasFileId && hasTriggeredCvAnimation) {
-      console.log('No CV in URL, resetting animation state and search context');
-      setHasTriggeredCvAnimation(false);
-      setIsCvProcessing(false);
-      
-      // Clear CV-related search state
-      setSearchState(prev => ({
-        ...prev,
-        fileId: null,
-        candidateName: '',
-        cvFile: null
-      }));
-      
-      // Clear timeout if running
-      if (cvAnimationTimeoutRef.current) {
-        clearTimeout(cvAnimationTimeoutRef.current);
-        cvAnimationTimeoutRef.current = null;
-      }
-    }
-  }, [hasTriggeredCvAnimation]);
+  }, [contextSearchState, shouldShowCvAnimation, markAnimationAsShown, updateSearchParams, currentParams.filters]);
 
   // Mock parseCv function (replace with real API later)
   // async function parseCv(file: File): Promise<{ success: boolean, fileId?: string, candidateName?: string }> {
@@ -299,6 +276,8 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
   //   setSearchState(prev => ({ ...prev, location: value }));
   // };
 
+
+
   // Debounce fallback when fields are cleared
   useEffect(() => {
     // Check if keyword was cleared
@@ -311,30 +290,30 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
       // Update URL to maintain fileId and location
       const urlParams = new URLSearchParams(window.location.search);
       urlParams.delete('q'); // Remove keyword
-      if (searchState.fileId) urlParams.set('fileId', searchState.fileId);
-      if (searchState.location) urlParams.set('location', searchState.location);
+      if (displaySearchState.fileId) urlParams.set('fileId', displaySearchState.fileId);
+      if (displaySearchState.location) urlParams.set('location', displaySearchState.location);
       router.push(`${window.location.pathname}?${urlParams.toString()}`);
     }
     prevKeywordRef.current = debouncedKeyword;
-  }, [debouncedKeyword, searchState.fileId, searchState.location, currentParams.filters, updateSearchParams, router]);
+  }, [debouncedKeyword, displaySearchState.fileId, displaySearchState.location, currentParams.filters, updateSearchParams, router]);
 
   useEffect(() => {
     // Check if location was cleared
     if (prevLocationRef.current && !debouncedLocation) {
       updateSearchParams({
-        keyword: searchState.keyword,
+        keyword: displaySearchState.keyword,
         filters: currentParams.filters
       });
       
       // Update URL to maintain fileId
       const urlParams = new URLSearchParams(window.location.search);
       urlParams.delete('location');
-      if (searchState.fileId) urlParams.set('fileId', searchState.fileId);
-      if (searchState.keyword) urlParams.set('q', searchState.keyword);
+      if (displaySearchState.fileId) urlParams.set('fileId', displaySearchState.fileId);
+      if (displaySearchState.keyword) urlParams.set('q', displaySearchState.keyword);
       router.push(`${window.location.pathname}?${urlParams.toString()}`);
     }
     prevLocationRef.current = debouncedLocation;
-  }, [debouncedLocation, searchState.keyword, searchState.fileId, currentParams.filters, updateSearchParams, router]);
+  }, [debouncedLocation, displaySearchState.keyword, displaySearchState.fileId, currentParams.filters, updateSearchParams, router]);
 
   // // Toggle change handler
   // const handleToggleChange = useCallback((key: 'onlyPaidAds' | 'excludeHeadhunters' | 'excludeMyClients', value: boolean) => {
@@ -357,17 +336,17 @@ export function SearchResultsPage({ dict, commonDict }: SearchResultsPageProps) 
 
   // Create search context for JobsCountAndSort
   const searchContext = {
-    keyword: searchState.keyword,
-    location: searchState.location,
-    cv: !!searchState.fileId,
-    candidateName: searchState.candidateName,
+    keyword: displaySearchState.keyword,
+    location: displaySearchState.location,
+    cv: !!displaySearchState.fileId,
+    candidateName: displaySearchState.candidateName,
   };
 
   // Debug logs
   console.log('SearchResultsPage state:', {
-    searchState,
+    displaySearchState,
+    contextSearchState,
     isCvProcessing,
-    hasTriggeredCvAnimation,
     searchContext,
     isLoading
   });

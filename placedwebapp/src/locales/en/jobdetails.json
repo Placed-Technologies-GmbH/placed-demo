@@ -21,9 +21,24 @@
     "placedScore": "Placed Score",
     "profileMatch": "Profile Match",
     "urgencyScore": "Urgency Score",
-    "whyFits": "Why the candidate fits this position?",
+    "whatsGood": "What is good?",
+    "whatsBad": "What is bad?",
     "whatsMissing": "What is missing?",
     "generatedOn": "Generated on {{date}}",
+    "feedback": {
+      "question": "Was this helpful?",
+      "thumbsUp": "Thumbs up - positive feedback",
+      "thumbsDown": "Thumbs down - negative feedback"
+    }
+  },
+  "salesPitch": {
+    "title": "AI Sales Pitch",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profile Match",
+    "urgencyScore": "Urgency Score",
+    "conversationStarters": "Conversation Starters",
+    "objectionHandlers": "Objection Handlers",
+    "generatedOn": "Generated on ",
     "feedback": {
       "question": "Was this helpful?",
       "thumbsUp": "Thumbs up - positive feedback",
@@ -38,7 +53,8 @@
     "alsoListedOn": "Also Listed On"
   },
   "actions": {
-    "salesScript": "Sales Script",
+    "profileAnalysis": "AI Assistant",
+    "salesPitch": "AI Sales Pitch",
     "aiGenerated": "AI Generated",
     "generating": "Generating...",
     "backToSearch": "Back to Search",
@@ -52,7 +68,14 @@
     "postedDaysAgo": "{{days}} days ago",
     "listedOn": "Listed on",
     "headhunterRecruiting": "{{count}} headhunter recruiting",
-    "headhuntersRecruiting": "{{count}} headhunters recruiting"
+    "headhuntersRecruiting": "{{count}} headhunters recruiting",
+    "backToSearch": "Back to Search",
+    "profileAnalysis": "AI Assistant",
+    "salesPitch": "AI Sales Pitch",
+    "generating": "Generating...",
+    "favorited": "Favorited",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites"
   },
   "errors": {
     "jobNotFound": "Job Not Found",

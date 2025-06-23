@@ -1,0 +1,221 @@
+[
+  {
+    "id": "cv4_job_1",
+    "title": "Senior Financial Analyst (m/w/d)",
+    "company": "Commerzbank AG",
+    "location": "Frankfurt am Main, Germany",
+    "postedDate": "2024-12-31T08:00:00Z",
+    "matchPercentage": 91,
+    "urgency": "high",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": true,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/commerzbank.svg",
+    "contactPerson": {
+      "name": "Dr. Andrea Müller",
+      "position": "HR Director Finance",
+      "phone": "+49 69 136-20000",
+      "email": "andrea.mueller@commerzbank.de",
+      "avatar": "/avatars/contact-10.jpg"
+    },
+    "salary": {
+      "amount": 82000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.1,
+      "reviews": 445
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+      { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+    ],
+    "headhunters": 9,
+    "externalSources": [
+      { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" },
+      { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" }
+    ],
+    "responsibilities": [
+      "Durchführung von komplexen Finanzanalysen und Bewertungen",
+      "Erstellung von Quartals- und Jahresabschlüssen nach IFRS",
+      "Budgetplanung und Forecasting für verschiedene Geschäftsbereiche",
+      "Risikomanagement und Compliance-Überwachung",
+      "Vorbereitung von Management-Berichten und Präsentationen",
+      "Zusammenarbeit mit internen und externen Auditoren"
+    ],
+    "yourProfile": [
+      "Abgeschlossenes Studium in Finance, Economics oder vergleichbarer Bereich",
+      "CFA, FRM oder ähnliche Zertifizierung erwünscht",
+      "Mindestens 4 Jahre Erfahrung in der Finanzanalyse oder im Banking",
+      "Expertise in Bloomberg, Reuters und fortgeschrittenen Excel-Kenntnissen",
+      "Sehr gute Kenntnisse in IFRS und regulatorischen Anforderungen",
+      "Analytisches Denken und hohe Detailgenauigkeit"
+    ],
+    "benefits": [
+      "Attraktive Vergütung mit variablen Gehaltskomponenten",
+      "Umfassende Gesundheitsvorsorge und Betriebsrente",
+      "Flexible Arbeitszeiten und Home-Office-Möglichkeiten",
+      "Jährliches Weiterbildungsbudget für Zertifizierungen",
+      "Exzellente Aufstiegsmöglichkeiten in der Commerzbank-Gruppe",
+      "Mitarbeiter-Banking-Konditionen und Vergünstigungen",
+      "Modernes Arbeitsumfeld in den Commerzbank-Towers"
+    ],
+    "fullDescription": "Die Commerzbank ist eine führende deutsche Geschäftsbank mit starker Marktposition im deutschen Mittelstand und in Zentral- und Osteuropa. Wir suchen einen erfahrenen Financial Analyst für unser Corporate Finance Team. Sie werden verantwortlich sein für komplexe Finanzanalysen, die strategische Entscheidungen des Managements unterstützen. Als Teil unseres dynamischen Teams haben Sie die Möglichkeit, an bedeutenden Transaktionen mitzuwirken und Ihre Karriere im Bankwesen voranzutreiben.",
+    "company": {
+      "id": "commerzbank-1",
+      "name": "Commerzbank AG",
+      "website": "https://www.commerzbank.de",
+      "logo": "/logos/providerlogos/commerzbank.svg",
+      "kununu": {
+        "rating": 4.1,
+        "reviews": 445
+      },
+      "contacts": [
+        {
+          "id": "contact-10",
+          "name": "Dr. Andrea Müller",
+          "position": "HR Director Finance",
+          "phone": "+49 69 136-20000",
+          "email": "andrea.mueller@commerzbank.de",
+          "avatar": "/avatars/contact-10.jpg"
+        },
+        {
+          "id": "contact-11",
+          "name": "Stefan Koch",
+          "position": "Head of Corporate Finance",
+          "phone": "+49 69 136-20001",
+          "email": "stefan.koch@commerzbank.de",
+          "avatar": "/avatars/contact-11.jpg"
+        }
+      ],
+      "relationshipStatus": "existing_client"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv4-1",
+      "placedScore": 91,
+      "profileMatch": 93,
+      "urgencyScore": 85,
+      "whyFits": [
+        "Ihre umfassende Erfahrung in der Finanzanalyse und Ihr tiefes Verständnis für IFRS machen Sie zum idealen Kandidaten.",
+        "Mit Ihrer CFA-Zertifizierung und Bloomberg-Expertise können Sie sofort komplexe Analysen durchführen.",
+        "Ihre Banking-Erfahrung und Kenntnisse im Risikomanagement sind essentiell für diese Position.",
+        "Die nachgewiesene Fähigkeit, Management-Berichte zu erstellen, entspricht genau unseren Anforderungen.",
+        "Ihre Detailgenauigkeit und analytischen Fähigkeiten sind perfekt für unser Finance-Team."
+      ],
+      "whatsMissing": [
+        "Spezifische Commerzbank-System-Kenntnisse können durch umfassende Einarbeitung erworben werden.",
+        "Erfahrung mit regulatorischen Meldungen wäre von Vorteil, kann aber entwickelt werden.",
+        "Zusätzliche Kenntnisse in der Mittelstandsfinanzierung wären hilfreich.",
+        "Erfahrung mit ESG-Reporting könnte für zukünftige Projekte nützlich sein."
+      ],
+      "generatedAt": "2024-12-31T08:00:00Z"
+    }
+  },
+  {
+    "id": "cv4_job_2",
+    "title": "Investment Controller (m/w/d)",
+    "company": "Allianz SE",
+    "location": "Munich, Germany",
+    "postedDate": "2024-12-26T10:30:00Z",
+    "matchPercentage": 86,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/allianz.svg",
+    "contactPerson": {
+      "name": "Maria Schneider",
+      "position": "Senior Recruiter",
+      "phone": "+49 89 3800-12345",
+      "email": "maria.schneider@allianz.de",
+      "avatar": "/avatars/contact-12.jpg"
+    },
+    "salary": {
+      "amount": 78000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.0,
+      "reviews": 623
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
+      { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" },
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" }
+    ],
+    "headhunters": 6,
+    "externalSources": [
+      { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" },
+      { "name": "Monster", "logo": "/logos/providerlogos/monster.svg", "url": "https://monster.com" }
+    ],
+    "responsibilities": [
+      "Kontrolle und Überwachung von Investment-Portfolios",
+      "Performance-Messung und Risikobewertung von Anlagen",
+      "Erstellung von Investment-Reports für Management und Aufsichtsbehörden",
+      "Compliance-Überwachung im Investmentbereich",
+      "Zusammenarbeit mit Portfolio-Managern und externen Asset Managern",
+      "Unterstützung bei regulatorischen Prüfungen und Audits"
+    ],
+    "yourProfile": [
+      "Studium der Wirtschaftswissenschaften, Finance oder ähnlicher Bereich",
+      "2-4 Jahre Berufserfahrung im Investment Controlling oder Asset Management",
+      "Kenntnisse in Investment-Instrumenten und Derivaten",
+      "Erfahrung mit Solvency II und anderen Versicherungsregulatorien",
+      "Sehr gute Excel-Kenntnisse und Erfahrung mit BI-Tools",
+      "Kommunikationsstärke und Teamfähigkeit"
+    ],
+    "benefits": [
+      "Leistungsgerechte Vergütung mit Jahresbonus",
+      "Umfangreiche Sozialleistungen und Altersvorsorge",
+      "Flexible Arbeitszeiten und Mobile Working",
+      "Weiterbildungsmöglichkeiten und Karriereentwicklung",
+      "Allianz-Mitarbeiterkonditionen für Versicherungen",
+      "Gesundheitsmanagement und Fitness-Angebote",
+      "Internationale Einsatzmöglichkeiten in der Allianz-Gruppe"
+    ],
+    "fullDescription": "Die Allianz ist ein weltweit führender Versicherer und Asset Manager. Wir suchen einen motivierten Investment Controller für unser Investment Management Team in München. Sie werden verantwortlich sein für die Überwachung und Kontrolle unserer Anlageportfolios im Bereich der Lebensversicherung. Als Teil eines internationalen Teams haben Sie die Möglichkeit, an der Verwaltung von Assets im Wert von mehreren Milliarden Euro mitzuwirken und Ihre Expertise im Investmentbereich zu erweitern.",
+    "company": {
+      "id": "allianz-1",
+      "name": "Allianz SE",
+      "website": "https://www.allianz.de",
+      "logo": "/logos/providerlogos/allianz.svg",
+      "kununu": {
+        "rating": 4.0,
+        "reviews": 623
+      },
+      "contacts": [
+        {
+          "id": "contact-12",
+          "name": "Maria Schneider",
+          "position": "Senior Recruiter",
+          "phone": "+49 89 3800-12345",
+          "email": "maria.schneider@allianz.de",
+          "avatar": "/avatars/contact-12.jpg"
+        }
+      ],
+      "relationshipStatus": "none"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv4-2",
+      "placedScore": 86,
+      "profileMatch": 88,
+      "urgencyScore": 73,
+      "whyFits": [
+        "Ihre Erfahrung im Investment Controlling und Verständnis für Risikomanagement machen Sie zu einem starken Kandidaten.",
+        "Mit Ihrer Expertise in der Performance-Messung können Sie sofort wertvollen Beitrag leisten.",
+        "Ihre Kenntnisse in regulatorischen Anforderungen sind essentiell für diese Compliance-kritische Position.",
+        "Die Erfahrung mit Investment-Instrumenten passt perfekt zu unseren Portfolio-Anforderungen."
+      ],
+      "whatsMissing": [
+        "Spezifische Solvency II Erfahrung kann durch interne Schulungen entwickelt werden.",
+        "Erfahrung mit Allianz-spezifischen Systemen wird in der Einarbeitung vermittelt.",
+        "Zusätzliche Derivate-Kenntnisse wären für komplexe Portfolios von Vorteil.",
+        "Versicherungs-spezifische Investment-Erfahrung könnte hilfreich sein."
+      ],
+      "generatedAt": "2024-12-26T10:30:00Z"
+    }
+  }
+] 

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "cv1_job_1",
+  "title": "Vertriebspartner:in im Versicherungsaußendienst",
+  "company": "Barmenia Krankenversicherung AG",
+  "location": "Berlin",
+  "postedDate": "2025-06-09T09:00:00+02:00",
+  "matchPercentage": 75,
+  "urgency": "medium",
+  "isPaidAd": false,
+  "isHeadhunter": false,
+  "isMyClient": false,
+  "isFavorited": false,
+  "companyLogo": "https://www.barmenia.de/logo.png",
+  "contactPerson": {
+    "name": "Patrick Erne",
+    "position": "Recruiting, Onboarding und Digitalisierung",
+    "phone": "0151 70552908",
+    "email": "patrick.erne@barmenia.de",
+    "avatar": ""
+  },
+  "salary": {
+    "amount": 10000,
+    "currency": "EUR"
+  },
+  "kununu": {
+    "rating": 4.2,
+    "reviews": 450
+  },
+  "listedOn": [
+    { "src": "/logos/providerlogos/signaliduna.svg", "alt": "Signal Iduna" },
+    { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+    { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" }
+
+  ],
+  "headhunters": 1,
+  "externalSources": [
+    {
+      "name": "Barmenia Krankenversicherung AG",
+      "logo": "https://www.barmenia.de/logo.png",
+      "url": "https://www.barmenia.de"
+    }
+  ],
+  "responsibilities": [
+    "Betreuung und Ausbau eines eigenen Kundenstamms im Versicherungs- und Finanzbereich",
+    "Akquise von Neukund:innen und Vermittlung maßgeschneiderter Vorsorge- und Versicherungslösungen",
+    "Begleitung des gesamten Verkaufsprozesses von der Bedarfserhebung bis zum Abschluss",
+    "Teamaufbau und Coaching neuer Agenturpartner:innen",
+    "Nutzung digitaler Verkaufsinstrumente und Lead-Management-Tools"
+  ],
+  "yourProfile": [
+    "Mehrjährige Erfahrung als Vertriebspartner:in Barmenia im Lebensversicherungsgeschäft (Jan 2020–März 2021)",
+    "Abgeschlossene Ausbildung/Studium im Finanz- oder Versicherungswesen oder vergleichbar",
+    "Ausgeprägte Kundenorientierung und Vermittlungsexpertise auf C1-Niveau Deutsch",
+    "Verhandlungssichere Englischkenntnisse",
+    "Selbstständige, unternehmerische Arbeitsweise und Teamführungskompetenz",
+    "Sicherer Umgang mit digitalen Vertriebstools und Microsoft Office"
+  ],
+  "benefits": [
+    "Flexible Übernahme von bestehenden Kundenstämmen",
+    "Karrieremodell mit Vergütungs- und Weiterqualifizierungsbudgets",
+    "Agenturausstattung und Zuschüsse für Büroinfrastruktur",
+    "Zugang zur Barmenia-Akademie & digitalen Marketing-Tools",
+    "Lead-Management und bAV-Beratungstool",
+    "Kostenloser GoTo-Meeting-Account für Onlineberatung",
+    "Regelmäßige Vertriebsveranstaltungen und Wettbewerbe"
+  ],
+  "fullDescription": "Als selbstständige:r Versicherungsfachmann/-frau bei der Barmenia betreuen Sie Ihren eigenen Kundenstamm, akquirieren Neukund:innen und vermitteln individuelle Vorsorge- und Versicherungslösungen. Sie gestalten Ihren Erfolg aktiv über Teamaufbau und nutzen digitale Tools zur Prozessoptimierung.",
+  "companyDetails": {
+    "id": "barmenia",
+    "name": "Barmenia Krankenversicherung AG",
+    "website": "https://www.barmenia.de",
+    "logo": "https://www.barmenia.de/logo.png",
+    "kununu": {
+      "rating": 4.2,
+      "reviews": 450
+    },
+    "contacts": [
+      {
+        "id": "patrick-erne",
+        "name": "Patrick Erne",
+        "position": "Recruiting, Onboarding und Digitalisierung",
+        "phone": "0151 70552908",
+        "email": "patrick.erne@barmenia.de",
+        "avatar": ""
+      },
+      {
+        "id": "stefan-weber",
+        "name": "Stefan Weber",
+        "position": "Recruiting, Onboarding und Digitalisierung",
+        "phone": "0151 70552909",
+        "email": "stefan.weber@barmenia.de",
+        "avatar": ""
+      }
+    ],
+    "relationshipStatus": "partner"
+  },
+  "aiSummary": {
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
+    "whatsGood": [
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
+    ],
+    "whatsBad": [
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
+    ],
+    "whatsMissing": [
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
+    ],
+    "generatedAt": "2025-06-23T17:35:59Z"
+  },
+  "salesPitch": {
+    "id": "sales-pitch-cv1_job_1",
+    "salesPitch": [
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
+      "Top 5 Stärken und Erfahrungen des Bewerbers:",
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
+    ],
+    "generatedAt": "2025-06-23T17:35:59Z"
+  }
+}]

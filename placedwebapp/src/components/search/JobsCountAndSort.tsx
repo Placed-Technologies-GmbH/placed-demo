@@ -36,24 +36,24 @@ function CVLoadingAnimation() {
 
   const scenes = [
     {
-      title: "Let's start with your CV",
-      description: "You're just a few seconds away from your next opportunity. We're reading your CV to understand your strengths, skills, and experience."
+      title: "Einlesen des CVs",
+      description: "Wir lesen den Lebenslauf des Kandidaten im Detail ein, um Stärken, Fähigkeiten und Erfahrungen zu verstehen."
     },
     {
-      title: "Extracting insights from your experience",
-      description: "We're parsing the document for key information: roles, education, skills, certifications, and more."
+      title: "Matching mit Stellendaten",
+      description: "Wir vergleichen den Lebenslauf des Kandidaten mit allen aktuellen Stellen."
     },
     {
-      title: "Crafting your professional fingerprint",
-      description: "We've built a unique profile that reflects your experience, ambitions, and potential."
+      title: "Priorisierung der Stellen anhand PLACED-Score",
+      description: "Wir priorisieren die Stellen im Kontext des Kandidatenprofils nach Kandidaten-Fit und Dringlichkeit der Suche der Unternehmen."
     },
     {
-      title: "Finding the right opportunities for you",
-      description: "Now we're searching our network of jobs to find the best fits based on your profile."
+      title: "Suchen wir nach den richtigen Möglichkeiten für Sie",
+      description: "Jetzt suchen wir in unserer Job-Netzwerk nach den besten Passungen basierend auf Ihrem Profil."
     },
     {
-      title: "Your personalized job matches are ready!",
-      description: "Here are roles where your skills shine. Tailored, relevant, and just for you."
+      title: "Ihre persönlichen Job-Passungen sind bereit!",
+      description: "Hier sind Rollen, in denen Ihre Fähigkeiten glänzen. Passend, relevant und nur für Sie."
     }
   ];
 

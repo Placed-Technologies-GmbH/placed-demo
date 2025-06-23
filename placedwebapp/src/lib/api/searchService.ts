@@ -1,6 +1,8 @@
 import api from '../axios';
 import type { SearchParams, SearchResponse, JobListing } from '@/features/search/types';
+import type { JobDetails } from '@/features/jobdetails/types';
 import { getAllProviderLogos, getCompanyLogoVariants } from '../config/logos';
+import MockDataManager from '../data/mockDataManager';
 
 // API Endpoints Configuration
 // TODO: Switch to GET /api/search once backend is updated
@@ -171,18 +173,8 @@ export class SearchService {
   static async parseCv(file: File, locale: string = 'en'): Promise<{ success: boolean; fileId?: string; candidateName?: string; error?: string }> {
     // Mock implementation for development
     if (process.env.NODE_ENV === 'development' || !process.env.NEXT_PUBLIC_API_URL) {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Simulate parsing failure for certain file types/names
-      if (file.name.endsWith('.txt') || file.size === 0) {
-        return { success: false, error: 'Invalid file format or empty file' };
-      }
-      
-      // Extract candidate name from filename (mock)
-      const candidateName = file.name.replace(/\.(pdf|doc|docx)$/i, '');
-      const fileId = `cv-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
-      
-      return { success: true, fileId, candidateName };
+      const mockDataManager = MockDataManager.getInstance();
+      return await mockDataManager.parseCVFile(file);
     }
 
     // Production API call
@@ -217,14 +209,41 @@ export class SearchService {
       // Simulate API delay
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Apply filters to mock data
-      const filteredJobs = mockJobs.filter(job => {
+      const mockDataManager = MockDataManager.getInstance();
+      let jobs: JobListing[] = [];
+
+      // If CV-based search, use CV-specific data
+      if (params.fileId) {
+        jobs = mockDataManager.getCVSpecificJobs(params.fileId);
+        console.log(`CV-based search: Found ${jobs.length} jobs for fileId: ${params.fileId}`);
+      } else {
+        // Use keyword/location-based search or fallback to general mock data
+        if (params.keyword) {
+          jobs = mockDataManager.getKeywordSpecificJobs(params.keyword, params.filters.location);
+          console.log(`Keyword search for "${params.keyword}": Found ${jobs.length} jobs`);
+        }
+        
+        // If no keyword jobs found but location is specified, try location search
+        if (jobs.length === 0 && params.filters.location) {
+          jobs = mockDataManager.getLocationSpecificJobs(params.filters.location);
+          console.log(`Location search for "${params.filters.location}": Found ${jobs.length} jobs`);
+        }
+        
+        // If no specific jobs found, use general mock data
+        if (jobs.length === 0) {
+          jobs = mockJobs;
+          console.log(`Using general mock data: ${jobs.length} jobs`);
+        }
+      }
+      
+      // Apply filters to the jobs
+      const filteredJobs = jobs.filter(job => {
         if (params.filters.onlyPaidAds && !job.isPaidAd) return false;
         if (params.filters.excludeHeadhunters && job.isHeadhunter) return false;
         if (params.filters.excludeMyClients && job.isMyClient) return false;
         
-        // Keyword search simulation
-        if (params.keyword) {
+        // Keyword search simulation (only for non-CV searches)
+        if (!params.fileId && params.keyword) {
           const keyword = params.keyword.toLowerCase();
           const searchableText = `${job.title} ${job.company} ${job.location}`.toLowerCase();
           if (!searchableText.includes(keyword)) return false;
@@ -233,10 +252,10 @@ export class SearchService {
         return true;
       });
 
-      // If CV is present, shuffle jobs to simulate CV-based ranking
+      // Sort jobs by match percentage for CV searches
       let sortedJobs = filteredJobs;
       if (params.fileId) {
-        sortedJobs = [...filteredJobs].sort(() => Math.random() - 0.5);
+        sortedJobs = [...filteredJobs].sort((a, b) => (b.matchPercentage || 0) - (a.matchPercentage || 0));
       }
 
       // Calculate pagination
@@ -284,8 +303,50 @@ export class SearchService {
   /**
    * Get a specific job by ID
    */
-  static async getJob(id: string): Promise<JobListing> {
+  static async getJob(id: string): Promise<JobListing | JobDetails> {
     if (process.env.NODE_ENV === 'development' || !process.env.NEXT_PUBLIC_API_URL) {
+      // First try to find in CV-specific data
+      const mockDataManager = MockDataManager.getInstance();
+      
+      // Check if this is a CV-specific job ID
+      if (id.startsWith('cv1_') || id.startsWith('cv2_') || id.startsWith('cv3_') || id.startsWith('cv4_') || id.startsWith('cv5_')) {
+        // Extract CV type from job ID
+        const cvType = id.split('_')[0];
+        const fileId = `${cvType}_sales-${Date.now()}-mock`;
+        const cvJobs = mockDataManager.getCVSpecificJobs(fileId);
+        const job = cvJobs.find(j => j.id === id);
+        if (job) return job;
+      }
+      
+      // Check if this is a keyword-specific job ID
+      if (id.startsWith('keyword_')) {
+        const jobDetails = mockDataManager.getKeywordSpecificJobDetails(id);
+        if (jobDetails) return jobDetails;
+        
+        // Fallback: search through jobs
+        const keywords = ['software engineer', 'marketing manager', 'sales manager', 'financial analyst', 'hr specialist'];
+        for (const keyword of keywords) {
+          const jobs = mockDataManager.getKeywordSpecificJobs(keyword);
+          const job = jobs.find(j => j.id === id);
+          if (job) return job;
+        }
+      }
+      
+      // Check if this is a location-specific job ID
+      if (id.startsWith('location_')) {
+        const jobDetails = mockDataManager.getLocationSpecificJobDetails(id);
+        if (jobDetails) return jobDetails;
+        
+        // Fallback: search through jobs
+        const locations = ['berlin', 'munich', 'hamburg', 'frankfurt', 'cologne'];
+        for (const location of locations) {
+          const jobs = mockDataManager.getLocationSpecificJobs(location);
+          const job = jobs.find(j => j.id === id);
+          if (job) return job;
+        }
+      }
+      
+      // Fallback to general mock data
       const job = mockJobs.find(j => j.id === id);
       if (!job) throw new Error('Job not found');
       return job;

@@ -50,7 +50,7 @@ export function CompanyInfoSidebar({
       <div className="mb-3">
         <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
           <DropdownMenuTrigger asChild>
-            <button className="w-full h-10 px-2 py-2 bg-background border border-border rounded-md flex items-center justify-between text-text-primary hover:bg-background-muted transition-colors">
+            <button className="w-full h-10 px-2 py-2 bg-background border border-border rounded-md flex items-center justify-between text-text-primary hover:bg-background-muted transition-colors hover:cursor-pointer">
               <span className="text-sm font-medium">{getDropdownLabel()}</span>
               <ChevronDown className="h-4 w-4 text-text-secondary" />
             </button>

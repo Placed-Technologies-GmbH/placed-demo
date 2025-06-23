@@ -27,7 +27,7 @@ export function useSearchResults() {
   const itemsPerPage = getItemsPerPage(isMobile);
 
   // Parse current search parameters from URL
-  const currentParams = useMemo((): SearchParams => {
+  const currentParams = useMemo((): SearchParams & { fileId?: string | null } => {
     const keyword = searchParams.get('q') || '';
     const page = parseInt(searchParams.get('page') || '1', 10);
     const experienceLevelParam = searchParams.get('experienceLevel') || '';
@@ -35,6 +35,9 @@ export function useSearchResults() {
     const onlyPaidAds = searchParams.get('onlyPaidAds') === 'true';
     const excludeHeadhunters = searchParams.get('excludeHeadhunters') === 'true';
     const excludeMyClients = searchParams.get('excludeMyClients') === 'true';
+    
+    // Extract CV-related parameters
+    const fileId = searchParams.get('fileId');
 
     // Parse new filter parameters
     const location = searchParams.get('location') || '';
@@ -65,6 +68,7 @@ export function useSearchResults() {
       keyword,
       page,
       limit: itemsPerPage,
+      fileId,
       filters: {
         experienceLevel,
         industry,

@@ -40,7 +40,7 @@ export function InternalNavbar({ className = '', dict }: InternalNavbarProps) {
           {/* Logo - Left Side */}
           <Link 
             href={`/${lang}/dashboard`} 
-            className="flex items-center transition-fast hover:opacity-80"
+            className="flex items-center transition-fast hover:opacity-80 hover:cursor-pointer"
             aria-label={dict?.dashboard?.navigation?.logoAlt || "Navigate to Dashboard"}
           >
             <Image
@@ -62,7 +62,7 @@ export function InternalNavbar({ className = '', dict }: InternalNavbarProps) {
           <div className="flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="h-8 w-8">
+                <button className="h-8 w-8 hover:cursor-pointer">
                   <Avatar className="h-8 w-8">
                     <AvatarImage 
                       src={user?.avatar || "/api/placeholder/32/32"} 
@@ -95,7 +95,7 @@ export function InternalNavbar({ className = '', dict }: InternalNavbarProps) {
                 </div>
                 {/* Log Out item */}
                 <DropdownMenuItem
-                  className="w-[214px] h-[32px] px-2 py-[6px] mx-auto flex items-center gap-2 hover:bg-background-subtle rounded-[4px] mt-1 text-text-secondary text-md font-medium"
+                  className="w-[214px] h-[32px] px-2 py-[6px] mx-auto flex items-center gap-2 hover:bg-background-subtle rounded-[4px] mt-1 text-text-secondary text-md font-medium hover:cursor-pointer"
                   style={{ paddingLeft: 8, paddingRight: 8, paddingTop: 6, paddingBottom: 6 }}
                   onClick={handleLogout}
                 >

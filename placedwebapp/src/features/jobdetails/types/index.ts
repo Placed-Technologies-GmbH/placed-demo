@@ -27,13 +27,26 @@ export interface AISummary {
   placedScore: number;
   profileMatch: number;
   urgencyScore: number;
-  whyFits: string[];
+  whatsGood: string[];
+  whatsBad: string[];
   whatsMissing: string[];
+  generatedAt?: string;
+}
+
+export interface SalesPitch {
+  id: string;
+  placedScore?: number;
+  profileMatch?: number;
+  urgencyScore?: number;
+  salesPitch: string[];
+  conversationStarters?: string[];
+  objectionHandlers?: string[];
   generatedAt?: string;
 }
 
 export interface JobDetails extends Omit<JobListing, 'company'> {
   aiSummary?: AISummary;
+  salesPitch?: SalesPitch;
   responsibilities: string[];
   yourProfile: string[];
   benefits: string[];
@@ -43,8 +56,11 @@ export interface JobDetails extends Omit<JobListing, 'company'> {
 
 export interface JobDetailsPageState {
   showAISummary: boolean;
+  showSalesPitch: boolean;
   isGeneratingAI: boolean;
+  isGeneratingSalesPitch: boolean;
   aiSummaryData?: AISummary;
+  salesPitchData?: SalesPitch;
   isFavorited: boolean;
   companyRelationship: 'existing_client' | 'follow' | 'blacklist' | 'none';
 }

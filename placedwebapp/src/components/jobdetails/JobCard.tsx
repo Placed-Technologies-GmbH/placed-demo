@@ -11,9 +11,12 @@ interface JobCardProps {
   isFavorited: boolean;
   onFavoriteToggle: (isFavorited: boolean) => void;
   onBackToSearch: () => void;
-  onSalesScriptClick: () => void;
+  onProfileAnalysisClick: () => void;
+  onSalesPitchClick: () => void;
   isGeneratingAI: boolean;
+  isGeneratingSalesPitch: boolean;
   showAISummary: boolean;
+  showSalesPitch: boolean;
   dict: {
     postedToday: string;
     postedYesterday: string;
@@ -29,9 +32,12 @@ export function JobCard({
   isFavorited, 
   onFavoriteToggle, 
   onBackToSearch, 
-  onSalesScriptClick,
+  onProfileAnalysisClick,
+  onSalesPitchClick,
   isGeneratingAI,
+  isGeneratingSalesPitch,
   showAISummary,
+  showSalesPitch,
   dict
 }: JobCardProps) {
   const [isTogglingFavorite, setIsTogglingFavorite] = useState(false);
@@ -133,7 +139,7 @@ export function JobCard({
       <div className="flex flex-start">
         <button 
           onClick={handleCardClick} 
-          className="flex items-center gap-2 md:gap-2 text-text-secondary text-sm md:text-md font-medium rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
+          className="flex items-center gap-2 md:gap-2 text-text-secondary text-sm md:text-md font-medium rounded-full hover:cursor-pointer"
         >
           <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-8 md:h-8">
             <g opacity="0.5">
@@ -172,7 +178,7 @@ export function JobCard({
                 fill={isFavorited ? "currentColor" : "none"}
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className={`h-5 w-5 md:h-[22px] md:w-[24px] ${isFavorited ? 'text-primary' : 'text-primary hover:text-primary/80'}`}
+                className={`h-5 w-5 md:h-[22px] md:w-[24px] hover:cursor-pointer ${isFavorited ? 'text-primary' : 'text-primary hover:text-primary/80 hover:cursor-pointer'}`}
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
               </svg>
@@ -246,14 +252,14 @@ export function JobCard({
         </div>
 
         {/* Fourth Row - CTA Button */}
-        <div className="flex justify-start">
+        <div className="flex justify-start gap-6">
           <Button
             onClick={(e) => {
               e.stopPropagation();
-              onSalesScriptClick();
+              onProfileAnalysisClick();
             }}
             disabled={isGeneratingAI}
-            className={`h-8 md:h-10 px-4 md:px-6 rounded-full text-sm md:text-base font-light transition-colors ${
+            className={`h-8 md:h-10 px-4 md:px-6 rounded-full text-sm md:text-base font-light transition-colors hover:cursor-pointer ${
               showAISummary 
                 ? 'bg-primary text-success-foreground hover:bg-success/90' 
                 : 'bg-primary text-primary-foreground hover:bg-primary/90'
@@ -261,13 +267,36 @@ export function JobCard({
           >
             {isGeneratingAI ? (
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 md:w-4 md:h-4 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin" />
+                <div className="w-3 h-3 md:w-4 md:h-4 border-2 border-primary-foreground text-sm border-t-transparent rounded-full animate-spin" />
                 <span>Generiere...</span>
               </div>
             ) : showAISummary ? (
-              'Verkaufsscript'
+              'KI Profiloptimierer'
             ) : (
-              'Verkaufsscript'
+              'KI Profiloptimierer'
+            )}
+          </Button>
+          <Button
+            onClick={(e) => {
+              e.stopPropagation();
+              onSalesPitchClick();
+            }}
+            disabled={isGeneratingSalesPitch}
+            className={`h-8 md:h-10 px-4 md:px-6 rounded-full text-sm md:text-base font-light transition-colors hover:cursor-pointer ${
+              showSalesPitch 
+                ? 'bg-primary text-success-foreground hover:bg-success/90' 
+                : 'bg-primary text-primary-foreground hover:bg-primary/90'
+            }`}
+          >
+            {isGeneratingSalesPitch ? (
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 md:w-4 md:h-4 border-2 border-primary-foreground text-sm border-t-transparent rounded-full animate-spin" />
+                <span>Generiere...</span>
+              </div>
+            ) : showSalesPitch ? (
+              'KI Gesprächsleitfaden'
+            ) : (
+              'KI Gesprächsleitfaden'
             )}
           </Button>
         </div>

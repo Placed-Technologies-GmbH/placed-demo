@@ -12,15 +12,30 @@
     "about": "Über {{companyName}}"
   },
   "aiSummary": {
-    "title": "KI-Verkaufsscript",
+    "title": "KI Assistent",
     "subtitle": "Basierend auf der Stellenbeschreibung generiert",
     "regenerate": "Neu generieren",
     "learnMore": "Mehr erfahren",
     "placedScore": "Placed Score",
     "profileMatch": "Profil Match",
     "urgencyScore": "Dringlichkeits-Score",
-    "whyFits": "Kandidatenpotential",
+    "whatsGood": "Was ist gut?",
+    "whatsBad": "Was ist schlecht?",
     "whatsMissing": "Was fehlt?",
+    "generatedOn": "Generiert am ",
+    "feedback": {
+      "question": "War das hilfreich?",
+      "thumbsUp": "Daumen hoch - positives Feedback",
+      "thumbsDown": "Daumen runter - negatives Feedback"
+    }
+  },
+  "salesPitch": {
+    "title": "KI Gesprächsleitfaden",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profil Match",
+    "urgencyScore": "Dringlichkeits-Score",
+    "conversationStarters": "Gesprächseinstiege",
+    "objectionHandlers": "Einwandbehandlung",
     "generatedOn": "Generiert am ",
     "feedback": {
       "question": "War das hilfreich?",
@@ -42,7 +57,8 @@
     "saveJob": "Stelle speichern"
   },
   "actions": {
-    "salesScript": "Sales Script",
+    "profileAnalysis": "KI Assistent",
+    "salesPitch": "KI Gesprächsleitfaden",
     "aiGenerated": "KI Generiert",
     "generating": "Generiere...",
     "backToSearch": "Zurück zur Suche",
@@ -58,7 +74,8 @@
     "headhunterRecruiting": "{{count}} Personalvermittler aktiv",
     "headhuntersRecruiting": "{{count}} Personalvermittler aktiv",
     "backToSearch": "Zurück zur Suche",
-    "salesScript": "Verkaufsscript",
+    "profileAnalysis": "KI Assistent",
+    "salesPitch": "KI Gesprächsleitfaden",
     "generating": "Generiere...",
     "favorited": "Favorisiert",
     "addToFavorites": "Zu Favoriten hinzufügen",

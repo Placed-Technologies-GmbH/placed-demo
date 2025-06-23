@@ -1,0 +1,209 @@
+[
+  {
+    "id": "cv5_job_1",
+    "title": "HR Business Partner (m/w/d)",
+    "company": "Siemens AG",
+    "location": "Munich, Germany",
+    "postedDate": "2024-12-30T12:00:00Z",
+    "matchPercentage": 90,
+    "urgency": "high",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": true,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/siemens.svg",
+    "contactPerson": {
+      "name": "Jennifer Walsh",
+      "position": "Head of Talent Acquisition",
+      "phone": "+49 89 636-12345",
+      "email": "jennifer.walsh@siemens.com",
+      "avatar": "/avatars/contact-13.jpg"
+    },
+    "salary": {
+      "amount": 80000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.2,
+      "reviews": 789
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+    ],
+    "headhunters": 11,
+    "externalSources": [
+      { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" },
+      { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" }
+    ],
+    "responsibilities": [
+      "Strategische HR-Beratung für Führungskräfte und Management",
+      "Entwicklung und Umsetzung von HR-Strategien und -Programmen",
+      "Talent Management und Nachfolgeplanung",
+      "Change Management und Organisationsentwicklung",
+      "Performance Management und Mitarbeiterentwicklung",
+      "HR-Controlling und People Analytics"
+    ],
+    "yourProfile": [
+      "Abgeschlossenes Studium in HR, Psychologie, BWL oder ähnlichem Bereich",
+      "Mindestens 5 Jahre Erfahrung als HR Business Partner oder in ähnlicher Position",
+      "Expertise in strategischem HR Management und Change Management",
+      "Starke analytische Fähigkeiten und Erfahrung mit HR-Tools",
+      "Exzellente Kommunikations- und Beratungskompetenz",
+      "Internationale Erfahrung und sehr gute Englischkenntnisse"
+    ],
+    "benefits": [
+      "Attraktive Vergütung mit leistungsorientierten Komponenten",
+      "Umfassendes Weiterbildungsangebot und Leadership-Programme",
+      "Flexible Arbeitszeiten und Mobile Working",
+      "Betriebliche Altersvorsorge und Gesundheitsmanagement",
+      "Siemens-Mitarbeiteraktien und Corporate Benefits",
+      "Internationale Karrieremöglichkeiten in 190+ Ländern",
+      "Modernes Arbeitsumfeld mit neuester Technologie"
+    ],
+    "fullDescription": "Siemens ist ein globaler Technologiekonzern, der seit mehr als 170 Jahren für technische Leistungsfähigkeit, Innovation, Qualität, Zuverlässigkeit und Internationalität steht. Wir suchen einen erfahrenen HR Business Partner, der unsere Geschäftsbereiche strategisch unterstützt und zur Weiterentwicklung unserer HR-Organisation beiträgt. Sie werden Teil eines internationalen Teams sein und die Möglichkeit haben, an der Gestaltung der Zukunft der Arbeit bei einem der führenden Technologieunternehmen mitzuwirken.",
+    "company": {
+      "id": "siemens-1",
+      "name": "Siemens AG",
+      "website": "https://www.siemens.com",
+      "logo": "/logos/providerlogos/siemens.svg",
+      "kununu": {
+        "rating": 4.2,
+        "reviews": 789
+      },
+      "contacts": [
+        {
+          "id": "contact-13",
+          "name": "Jennifer Walsh",
+          "position": "Head of Talent Acquisition",
+          "phone": "+49 89 636-12345",
+          "email": "jennifer.walsh@siemens.com",
+          "avatar": "/avatars/contact-13.jpg"
+        }
+      ],
+      "relationshipStatus": "existing_client"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv5-1",
+      "placedScore": 90,
+      "profileMatch": 94,
+      "urgencyScore": 82,
+      "whyFits": [
+        "Ihre umfassende Erfahrung als HR Business Partner und strategische HR-Expertise machen Sie zum idealen Kandidaten.",
+        "Mit Ihrer Expertise in Change Management können Sie sofort zur Transformation unserer Organisation beitragen.",
+        "Ihre internationale Erfahrung und Führungsqualitäten sind essentiell für unser globales Team.",
+        "Die nachgewiesene Fähigkeit im Talent Management entspricht genau unseren Anforderungen."
+      ],
+      "whatsMissing": [
+        "Spezifische Siemens-System-Kenntnisse können durch umfassende Einarbeitung erworben werden.",
+        "Erfahrung mit Industrie 4.0 HR-Strategien wäre von Vorteil.",
+        "Zusätzliche Digitalisierungs-Expertise im HR-Bereich könnte hilfreich sein."
+      ],
+      "generatedAt": "2024-12-30T12:00:00Z"
+    }
+  },
+  {
+    "id": "cv5_job_2",
+    "title": "Talent Acquisition Manager (m/w/d)",
+    "company": "BMW Group",
+    "location": "Munich, Germany",
+    "postedDate": "2024-12-28T15:20:00Z",
+    "matchPercentage": 87,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/bmw.svg",
+    "contactPerson": {
+      "name": "Robert Klein",
+      "position": "Senior HR Manager",
+      "phone": "+49 89 382-54321",
+      "email": "robert.klein@bmw.de",
+      "avatar": "/avatars/contact-14.jpg"
+    },
+    "salary": {
+      "amount": 75000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.1,
+      "reviews": 456
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
+      { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+    ],
+    "headhunters": 8,
+    "externalSources": [
+      { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" },
+      { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" }
+    ],
+    "responsibilities": [
+      "End-to-End Recruiting für technische und kaufmännische Positionen",
+      "Entwicklung von innovativen Recruiting-Strategien",
+      "Candidate Experience Management und Employer Branding",
+      "Aufbau und Pflege von Talent Pools und Netzwerken",
+      "Zusammenarbeit mit Fachbereichen und externen Partnern",
+      "Recruiting Analytics und Performance-Messung"
+    ],
+    "yourProfile": [
+      "Studium in HR, Psychologie, BWL oder vergleichbarer Bereich",
+      "3+ Jahre Erfahrung im Talent Acquisition oder Recruiting",
+      "Erfahrung mit modernen Recruiting-Tools und -Methoden",
+      "Starke Kommunikations- und Verhandlungsfähigkeiten",
+      "Affinität für Automotive-Branche und technische Themen",
+      "Proaktive Arbeitsweise und Ergebnisorientierung"
+    ],
+    "benefits": [
+      "Leistungsgerechte Vergütung mit variablen Anteilen",
+      "BMW Mitarbeiterkonditionen und Dienstwagen-Programm",
+      "Flexible Arbeitsmodelle und Work-Life-Balance",
+      "Umfassende Weiterbildung und Karriereentwicklung",
+      "Betriebliche Altersvorsorge und Gesundheitsvorsorge",
+      "Innovatives Arbeitsumfeld mit modernster Technologie",
+      "Internationale Einsatzmöglichkeiten in der BMW Group"
+    ],
+    "fullDescription": "Die BMW Group ist einer der weltweit führenden Premium-Hersteller von Automobilen und Motorrädern sowie Anbieter von Premium-Finanz- und Mobilitätsdienstleistungen. Wir suchen einen motivierten Talent Acquisition Manager, der unser Recruiting-Team dabei unterstützt, die besten Talente für unsere innovativen Projekte zu gewinnen. Sie werden Teil eines dynamischen Teams sein und die Möglichkeit haben, die Zukunft der Mobilität mitzugestalten.",
+    "company": {
+      "id": "bmw-1",
+      "name": "BMW Group",
+      "website": "https://www.bmwgroup.com",
+      "logo": "/logos/providerlogos/bmw.svg",
+      "kununu": {
+        "rating": 4.1,
+        "reviews": 456
+      },
+      "contacts": [
+        {
+          "id": "contact-14",
+          "name": "Robert Klein",
+          "position": "Senior HR Manager",
+          "phone": "+49 89 382-54321",
+          "email": "robert.klein@bmw.de",
+          "avatar": "/avatars/contact-14.jpg"
+        }
+      ],
+      "relationshipStatus": "none"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv5-2",
+      "placedScore": 87,
+      "profileMatch": 89,
+      "urgencyScore": 78,
+      "whyFits": [
+        "Ihre Recruiting-Erfahrung und Expertise in modernen Talent Acquisition Methoden machen Sie zu einem starken Kandidaten.",
+        "Mit Ihrer Affinität für technische Themen können Sie erfolgreich für unsere innovativen Projekte rekrutieren.",
+        "Ihre proaktive Arbeitsweise und Ergebnisorientierung passen perfekt zu unserer Unternehmenskultur."
+      ],
+      "whatsMissing": [
+        "Spezifische Automotive-Recruiting-Erfahrung kann durch interne Einarbeitung entwickelt werden.",
+        "Erfahrung mit BMW-spezifischen Recruiting-Tools wird vermittelt.",
+        "Zusätzliche Kenntnisse in E-Mobility-Recruiting wären von Vorteil."
+      ],
+      "generatedAt": "2024-12-28T15:20:00Z"
+    }
+  }
+] 

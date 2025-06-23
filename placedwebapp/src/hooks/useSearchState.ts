@@ -32,22 +32,16 @@ export function useSearchState(): UseSearchStateReturn {
 
   // Mock CV parsing function (replace with real API later)
   const parseCv = async (file: File): Promise<{ success: boolean; fileId?: string; error?: string }> => {
-    // Simulate file validation
-    if (!file || file.size === 0) {
-      return { success: false, error: 'File is empty' };
-    }
+    // Use the MockDataManager for consistent CV parsing
+    const { default: MockDataManager } = await import('@/lib/data/mockDataManager');
+    const mockDataManager = MockDataManager.getInstance();
     
-    if (file.name.endsWith('.txt')) {
-      return { success: false, error: 'Text files are not supported' };
-    }
+    const result = await mockDataManager.parseCVFile(file);
     
-    // Simulate processing delay
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
-    // Mock success response
-    return { 
-      success: true, 
-      fileId: `cv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}` 
+    return {
+      success: result.success,
+      fileId: result.fileId,
+      error: result.error
     };
   };
 
@@ -57,18 +51,23 @@ export function useSearchState(): UseSearchStateReturn {
       const result = await parseCv(file);
       
       if (result.success && result.fileId) {
-        // Create new search state
+        // Generate unique upload ID for this upload
+        const cvUploadId = `upload_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        
+        // Create new search state with upload tracking
         const newSearchState = {
           fileId: result.fileId,
           cvFileName: file.name,
           timestamp: Date.now(),
+          cvUploadId, // Track this specific upload
+          uploadTimestamp: Date.now(), // When upload happened
         };
         
         // Update context state
         setSearchState(newSearchState);
         
-        // Navigate to search page immediately
-        const searchUrl = `/${lang}/search?fileId=${result.fileId}&cv=${encodeURIComponent(file.name)}`;
+        // Navigate to search page immediately (preserve existing flow)
+        const searchUrl = `/${lang}/search?fileId=${result.fileId}&cv=${encodeURIComponent(file.name)}&uploadId=${cvUploadId}`;
         router.push(searchUrl);
       } else {
         // Navigate to search page anyway, error will be handled there
@@ -110,14 +109,17 @@ export function useSearchState(): UseSearchStateReturn {
     // Clear context state and localStorage
     clearSearchState();
     
-    // Stay on current page but remove search parameters from URL
-    if (pathname.includes('/search') || pathname.includes('/job-details')) {
-      // For search/job-details pages, remove search params from URL
-      const cleanUrl = pathname;
+    // Navigate based on current page
+    if (pathname.includes('/search')) {
+      // For search page, remove search params from URL
+      const cleanUrl = pathname.split('?')[0];
       router.push(cleanUrl);
+    } else if (pathname.includes('/job-details')) {
+      // For job-details page, go back to dashboard since clearing search context
+      router.push(`/${lang}/dashboard`);
     }
     // For other pages, no URL change needed
-  }, [clearSearchState, pathname, router]);
+  }, [clearSearchState, pathname, router, lang]);
 
   // Generate search summary text for active state
   const getSearchSummaryText = useCallback((): string => {

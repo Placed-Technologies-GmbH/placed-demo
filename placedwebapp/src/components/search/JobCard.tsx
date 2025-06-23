@@ -1,7 +1,7 @@
   'use client';
 
   import { useState } from 'react';
-  import { useRouter, useParams } from 'next/navigation';
+  import { useRouter, useParams, useSearchParams } from 'next/navigation';
   import { Button } from '@/components/ui/button';
   import { Dialog, DialogContent, DialogHeader, DialogTitle,  DialogFooter, DialogTrigger, DialogClose } from '@/components/ui/dialog';
   import { Avatar, AvatarFallback } from '@/components/ui/avatar';
@@ -47,6 +47,7 @@
   export function JobCard({ job, dict }: JobCardProps) {
     const router = useRouter();
     const params = useParams();
+    const searchParams = useSearchParams();
     const [isFavorited, setIsFavorited] = useState(job.isFavorited || false);
     const [isTogglingFavorite, setIsTogglingFavorite] = useState(false);
 
@@ -101,7 +102,15 @@
 
     const handleCardClick = () => {
       const lang = params.lang || 'en';
-      router.push(`/${lang}/job-details/${job.id}`);
+      
+      // Preserve current search parameters when navigating to job details
+      const currentSearchParams = new URLSearchParams(searchParams.toString());
+      const searchQuery = currentSearchParams.toString();
+      const jobDetailsUrl = searchQuery 
+        ? `/${lang}/job-details/${job.id}?${searchQuery}`
+        : `/${lang}/job-details/${job.id}`;
+      
+      router.push(jobDetailsUrl);
     };
 
     if (!job) {
@@ -207,7 +216,7 @@
                   fill={isFavorited ? "currentColor" : "none"}
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  className={`h-[22px] w-[24px]  ${isFavorited ? 'text-primary' : 'text-primary hover:text-primary/80'}`}
+                  className={`h-[22px] w-[24px] hover:cursor-pointer ${isFavorited ? 'text-primary' : 'text-primary hover:text-primary/80 hover:cursor-pointer'}`}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
                 </svg>
@@ -288,7 +297,7 @@
                     </span>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Budget for placement</p>
+                    <p>Gehalt für die Platzierung</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -346,7 +355,7 @@
               <DialogTrigger asChild>
                 <Button
                   variant="cta"
-                  className="min-w-[128px] h-10 rounded-3xl px-6 py-3 font-semibold hover:bg-cta-hover whitespace-nowrap"
+                  className="min-w-[128px] h-10 rounded-3xl px-6 py-3 font-semibold hover:bg-cta-hover whitespace-nowrap hover:cursor-pointer"
                   onClick={(e) => e.stopPropagation()}
                 >
                   {dict.placeNow}
@@ -357,7 +366,7 @@
                   <DialogTitle className="text-text-navy text-xl font-medium ">Contact Details</DialogTitle>
                   <div className="flex flex-col gap-2">
                     <div className="flex flex-col gap-2 h-[22px]">
-                      <span className="text-text-navy text-lg font-medium text-primary text-shadow-sm">{job.contactPerson?.name}</span>
+                      <span className="text-text-navy text-lg font-medium text-primary ">{job.contactPerson?.name}</span>
                     </div>
                     <div className="flex flex-col gap-2 h-[22px]">
                       <span className="text-text-secondary text-md font-medium">{job.company}</span>
@@ -366,7 +375,7 @@
                     {job.contactPerson?.phone && (
                       <CopyToClipboardField
                         label={job.contactPerson.phone}
-                        className="text-text-navy text-md font-medium text-primary text-shadow-sm hover:text-shadow-2xl"
+                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
                         copiedMessage="Copied!"
                       />
                     )}
@@ -374,7 +383,7 @@
                     {job.contactPerson?.email && (
                       <CopyToClipboardField
                         label={job.contactPerson.email}
-                        className="text-text-navy text-md font-medium text-primary text-shadow-sm hover:text-shadow-2xl"
+                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
                         copiedMessage="Copied!"
                       />
                     )}
@@ -552,7 +561,7 @@
                   <DialogTitle className="text-text-navy text-xl font-medium ">Contact Details</DialogTitle>
                   <div className="flex flex-col gap-2">
                     <div className="flex flex-col gap-2 h-[22px]">
-                      <span className="text-text-navy text-lg font-medium text-primary text-shadow-sm">{job.contactPerson?.name}</span>
+                      <span className="text-text-navy text-lg font-medium text-primary">{job.contactPerson?.name}</span>
                     </div>
                     <div className="flex flex-col gap-2 h-[22px]">
                       <span className="text-text-secondary text-md font-medium">{job.company}</span>
@@ -568,14 +577,14 @@
                       )}
                       <CopyToClipboardField
                         label={job.contactPerson.phone}
-                        className="text-text-navy text-md font-medium text-primary text-shadow-sm hover:text-shadow-2xl"
+                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
                         copiedMessage="Copied!"
                       />
                     {/* Email with copy-to-clipboard */}
                     {job.contactPerson?.email && (
                       <CopyToClipboardField
                         label={job.contactPerson.email}
-                        className="text-text-navy text-md font-medium text-primary text-shadow-sm hover:text-shadow-2xl"
+                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
                         copiedMessage="Copied!"
                       />
                     )}

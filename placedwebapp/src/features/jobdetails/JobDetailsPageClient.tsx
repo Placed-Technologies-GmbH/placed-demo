@@ -1,14 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { CompanyInfoSidebar } from '@/components/jobdetails/CompanyInfoSidebar';
 import { JobCard } from '@/components/jobdetails/JobCard';
 import { AISummaryCard } from '@/components/jobdetails/AISummaryCard';
 import { AISummaryLoadingCard } from '@/components/jobdetails/AISummaryLoadingCard';
+import { SalesPitchCard } from '@/components/jobdetails/SalesPitchCard';
+import { SalesPitchLoadingCard } from '@/components/jobdetails/AISummaryLoadingCard';
 import { JobDetailsCard } from '@/components/jobdetails/JobDetailsCard';
 import { useJobDetails } from '@/hooks/jobdetailshook/useJobDetails';
 import { useAISummary } from '@/hooks/jobdetailshook/useAISummary';
+import { useSalesPitch } from '@/hooks/jobdetailshook/useSalesPitch';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Building2 } from 'lucide-react';
@@ -35,8 +38,23 @@ interface JobDetailsPageClientProps {
       placedScore: string;
       profileMatch: string;
       urgencyScore: string;
-      whyFits: string;
+      whatsGood: string;
+      whatsBad: string;
       whatsMissing: string;
+      generatedOn: string;
+      feedback: {
+        question: string;
+        thumbsUp: string;
+        thumbsDown: string;
+      };
+    };
+    salesPitch: {
+      title: string;
+      placedScore: string;
+      profileMatch: string;
+      urgencyScore: string;
+      conversationStarters: string;
+      objectionHandlers: string;
       generatedOn: string;
       feedback: {
         question: string;
@@ -52,7 +70,8 @@ interface JobDetailsPageClientProps {
       alsoListedOn: string;
     };
     actions: {
-      salesScript: string;
+      profileAnalysis: string;
+      salesPitch: string;
       aiGenerated: string;
       generating: string;
       backToSearch: string;
@@ -89,10 +108,13 @@ interface JobDetailsPageClientProps {
 
 export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   
   const [pageState, setPageState] = useState<JobDetailsPageState>({
     showAISummary: false,
+    showSalesPitch: false,
     isGeneratingAI: false,
+    isGeneratingSalesPitch: false,
     isFavorited: false,
     companyRelationship: 'none',
   });
@@ -100,6 +122,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
   // Data fetching hooks
   const { data: jobDetails, isLoading, error } = useJobDetails(id);
   const { generateAISummary } = useAISummary(id);
+  const { generateSalesPitch } = useSalesPitch(id);
 
   // Initialize state from job data
   useEffect(() => {
@@ -114,7 +137,7 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
     }
   }, [jobDetails]);
 
-  const handleSalesScriptClick = async () => {
+  const handleProfileAnalysisClick = async () => {
     if (pageState.showAISummary) return;
 
     setPageState(prev => ({ ...prev, isGeneratingAI: true }));
@@ -133,8 +156,30 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
     }
   };
 
+  const handleSalesPitchClick = async () => {
+    if (pageState.showSalesPitch) return;
+
+    setPageState(prev => ({ ...prev, isGeneratingSalesPitch: true }));
+
+    try {
+      const salesPitch = await generateSalesPitch();
+      setPageState(prev => ({ ...prev, salesPitchData: salesPitch, showSalesPitch: true, isGeneratingSalesPitch: false }));
+    } catch (error) {
+      console.error('Failed to generate sales pitch:', error);
+      setPageState(prev => ({ ...prev, isGeneratingSalesPitch: false }));
+    }
+  };
+
   const handleBackToSearch = () => {
-    router.push(`/${lang}/search`);
+    // Reconstruct the search URL with preserved parameters
+    const currentSearchParams = new URLSearchParams(searchParams.toString());
+    const searchQuery = currentSearchParams.toString();
+    
+    const searchUrl = searchQuery 
+      ? `/${lang}/search?${searchQuery}`
+      : `/${lang}/search`;
+    
+    router.push(searchUrl);
   };
 
   const handleFavoriteToggle = (newFavoriteStatus: boolean) => {
@@ -290,9 +335,12 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
             isFavorited={pageState.isFavorited}
             onFavoriteToggle={handleFavoriteToggle}
             onBackToSearch={handleBackToSearch}
-            onSalesScriptClick={handleSalesScriptClick}
+            onProfileAnalysisClick={handleProfileAnalysisClick}
+            onSalesPitchClick={handleSalesPitchClick}
             isGeneratingAI={pageState.isGeneratingAI}
+            isGeneratingSalesPitch={pageState.isGeneratingSalesPitch}
             showAISummary={pageState.showAISummary}
+            showSalesPitch={pageState.showSalesPitch}
             dict={dict.jobCard}
           />
 
@@ -302,6 +350,14 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
           {/* AI Summary Card - Appears between Job Card and Job Details Card */}
           {pageState.showAISummary && pageState.aiSummaryData && !pageState.isGeneratingAI && (
             <AISummaryCard aiSummary={pageState.aiSummaryData} dict={dict} />
+          )}
+
+          {/* Sales Pitch Loading Card - Shows while generating */}
+          <SalesPitchLoadingCard isGenerating={pageState.isGeneratingSalesPitch} />
+
+          {/* Sales Pitch Card - Appears below AI Summary or between Job Card and Job Details Card */}
+          {pageState.showSalesPitch && pageState.salesPitchData && !pageState.isGeneratingAI && (
+            <SalesPitchCard salesPitch={pageState.salesPitchData} dict={dict} />
           )}
 
           {/* Job Details Card */}
@@ -317,9 +373,12 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
           isFavorited={pageState.isFavorited}
           onFavoriteToggle={handleFavoriteToggle}
           onBackToSearch={handleBackToSearch}
-          onSalesScriptClick={handleSalesScriptClick}
+          onProfileAnalysisClick={handleProfileAnalysisClick}
+          onSalesPitchClick={handleSalesPitchClick}
           isGeneratingAI={pageState.isGeneratingAI}
+          isGeneratingSalesPitch={pageState.isGeneratingSalesPitch}
           showAISummary={pageState.showAISummary}
+          showSalesPitch={pageState.showSalesPitch}
           dict={dict.jobCard}
         />
 
@@ -356,6 +415,11 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
         {/* AI Summary Card - Appears between Job Card and Job Details Card */}
         {pageState.showAISummary && pageState.aiSummaryData && !pageState.isGeneratingAI && (
           <AISummaryCard aiSummary={pageState.aiSummaryData} dict={dict} />
+        )}
+
+        {/* Sales Pitch Card - Appears below AI Summary or between Job Card and Job Details Card */}
+        {pageState.showSalesPitch && pageState.salesPitchData && !pageState.isGeneratingAI && (
+          <SalesPitchCard salesPitch={pageState.salesPitchData} dict={dict} />
         )}
 
         {/* Job Details Card */}

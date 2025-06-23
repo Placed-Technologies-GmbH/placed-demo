@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cv2_job_1",
+    "title": "Marketing Manager (m/w/d) Digital Marketing",
+    "company": "HubSpot",
+    "location": "Berlin, Germany",
+    "postedDate": "2024-12-30T14:00:00Z",
+    "matchPercentage": 92,
+    "urgency": "high",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": true,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/hubspot.svg",
+    "contactPerson": {
+      "name": "Sarah Johnson",
+      "position": "Talent Acquisition Manager",
+      "phone": "+49 30 555-0123",
+      "email": "sarah.johnson@hubspot.com",
+      "avatar": "/avatars/contact-4.jpg"
+    },
+    "salary": {
+      "amount": 75000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.6,
+      "reviews": 234
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+    ],
+    "headhunters": 7,
+    "externalSources": [
+      { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" },
+      { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" }
+    ],
+    "responsibilities": [
+      "Entwicklung und Umsetzung von digitalen Marketingstrategien",
+      "Führung von Marketing-Kampagnen über verschiedene Kanäle",
+      "Analyse von Marketing-Performance und ROI-Optimierung",
+      "Zusammenarbeit mit Sales-Team für Lead-Generierung",
+      "Management von Social Media und Content Marketing",
+      "Budget-Planung und -Kontrolle für Marketingaktivitäten"
+    ],
+    "yourProfile": [
+      "Abgeschlossenes Studium im Marketing, BWL oder vergleichbare Qualifikation",
+      "Mindestens 3 Jahre Erfahrung im digitalen Marketing",
+      "Expertise in Google Analytics, AdWords und Social Media Marketing",
+      "Erfahrung mit Marketing Automation Tools (HubSpot, Marketo)",
+      "Analytisches Denken und datengetriebene Entscheidungsfindung",
+      "Exzellente Kommunikationsfähigkeiten in Deutsch und Englisch"
+    ],
+    "benefits": [
+      "Flexible Arbeitszeiten und Remote-Arbeits-Möglichkeiten",
+      "Umfassende Weiterbildungsmöglichkeiten und Konferenz-Budget",
+      "Modernes Büro in Berlin-Mitte mit kostenlosem Mittagessen",
+      "Betriebliche Krankenversicherung und Fitness-Studio-Zuschuss",
+      "30 Urlaubstage plus zusätzliche Wellnesstage",
+      "Attraktive Vergütung mit Performance-Boni",
+      "Internationale Karrieremöglichkeiten in 100+ Ländern"
+    ],
+    "fullDescription": "HubSpot ist ein führender Anbieter von Marketing-, Sales- und Service-Software. Wir suchen einen kreativen und analytischen Marketing Manager, der unser deutschsprachiges Marketing-Team verstärkt. Sie werden verantwortlich sein für die Entwicklung und Umsetzung von digitalen Marketingstrategien, die unsere Wachstumsziele unterstützen. Als Teil unseres internationalen Teams haben Sie die Möglichkeit, mit modernsten Marketing-Tools zu arbeiten und Ihre Karriere in einem schnell wachsenden Technologieunternehmen voranzutreiben.",
+    "company": {
+      "id": "hubspot-1",
+      "name": "HubSpot",
+      "website": "https://www.hubspot.de",
+      "logo": "/logos/providerlogos/hubspot.svg",
+      "kununu": {
+        "rating": 4.6,
+        "reviews": 234
+      },
+      "contacts": [
+        {
+          "id": "contact-4",
+          "name": "Sarah Johnson",
+          "position": "Talent Acquisition Manager",
+          "phone": "+49 30 555-0123",
+          "email": "sarah.johnson@hubspot.com",
+          "avatar": "/avatars/contact-4.jpg"
+        },
+        {
+          "id": "contact-5",
+          "name": "Marcus Weber",
+          "position": "Marketing Director DACH",
+          "phone": "+49 30 555-0124",
+          "email": "marcus.weber@hubspot.com",
+          "avatar": "/avatars/contact-5.jpg"
+        }
+      ],
+      "relationshipStatus": "follow"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2-1",
+      "placedScore": 92,
+      "profileMatch": 95,
+      "urgencyScore": 88,
+      "whyFits": [
+        "Ihre umfassende Erfahrung im digitalen Marketing und nachgewiesene Erfolge bei der Lead-Generierung machen Sie zum perfekten Kandidaten.",
+        "Mit Ihrer Expertise in Marketing Automation und Analytics können Sie sofort einen messbaren Impact erzielen.",
+        "Ihre Fähigkeiten im Content Marketing und Social Media Management entsprechen genau unseren Anforderungen.",
+        "Die Erfahrung mit B2B-Marketing und SaaS-Produkten ist ein großer Vorteil für diese Position.",
+        "Ihre bilinguale Kommunikationsfähigkeiten sind essentiell für unser internationales Team."
+      ],
+      "whatsMissing": [
+        "Spezifische HubSpot-Tool-Kenntnisse können durch umfassende Schulungen erworben werden.",
+        "Erfahrung mit Account-Based Marketing wäre von Vorteil, kann aber entwickelt werden.",
+        "Zusätzliche Zertifizierungen in Google Ads könnten hilfreich sein.",
+        "Erfahrung im Event-Marketing wäre ein Plus für unsere Konferenz-Strategie."
+      ],
+      "generatedAt": "2024-12-30T14:00:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2-1",
+      "placedScore": 92,
+      "profileMatch": 95,
+      "urgencyScore": 88,
+      "conversationStarters": [
+        "Hallo [Kandidatenname], Ihre beeindruckende Erfolgsbilanz im digitalen Marketing bei HubSpot macht Sie zu einem Topkandidaten.",
+        "Mit Ihrer Expertise in Marketing Automation und Lead-Generierung können Sie bei HubSpot sofort durchstarten.",
+        "Ihre bilinguale Kommunikationsfähigkeiten sind perfekt für unser internationales Marketing-Team.",
+        "Die Kombination aus B2B-Marketing und SaaS-Erfahrung passt wie angegossen zu unserer Position.",
+        "HubSpot bietet Ihnen die Chance, mit modernsten Marketing-Tools in einem Wachstumsunternehmen zu arbeiten."
+      ],
+      "objectionHandlers": [
+        "Falls Sie Bedenken wegen HubSpot-spezifischer Tools haben: Wir bieten umfassende Schulungen und Zertifizierungen.",
+        "Account-Based Marketing können Sie bei uns lernen - wir haben erfahrene Mentoren im Team.",
+        "Google Ads Zertifizierungen unterstützen wir gerne - das ist Teil unseres Weiterbildungsbudgets.",
+        "Event-Marketing-Erfahrung können Sie bei unseren zahlreichen Konferenzen sammeln.",
+        "Die internationale Karrieremöglichkeit in 100+ Ländern macht diese Position einzigartig."
+      ],
+      "generatedAt": "2024-12-30T14:00:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_2",
+    "title": "Content Marketing Specialist (m/w/d)",
+    "company": "Contentful",
+    "location": "Berlin, Germany",
+    "postedDate": "2024-12-25T11:15:00Z",
+    "matchPercentage": 87,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/contentful.svg",
+    "contactPerson": {
+      "name": "Lisa Martinez",
+      "position": "Head of People Operations",
+      "phone": "+49 30 987-6543",
+      "email": "lisa.martinez@contentful.com",
+      "avatar": "/avatars/contact-6.jpg"
+    },
+    "salary": {
+      "amount": 68000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.4,
+      "reviews": 178
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
+      { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+    ],
+    "headhunters": 4,
+    "externalSources": [
+      { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" },
+      { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" }
+    ],
+    "responsibilities": [
+      "Erstellung von hochwertigem Content für verschiedene Marketing-Kanäle",
+      "Entwicklung von Content-Strategien zur Lead-Generierung",
+      "SEO-Optimierung von Blog-Artikeln und Landing Pages",
+      "Zusammenarbeit mit Design-Team für visuelle Content-Erstellung",
+      "Performance-Analyse und kontinuierliche Content-Optimierung",
+      "Management von Editorial Calendar und Content-Planung"
+    ],
+    "yourProfile": [
+      "Studium im Marketing, Kommunikation, Journalismus oder ähnlichem Bereich",
+      "2+ Jahre Erfahrung im Content Marketing oder Copywriting",
+      "Exzellente Schreibfähigkeiten in Deutsch und Englisch",
+      "Erfahrung mit CMS-Systemen und SEO-Tools",
+      "Kreativität und Gespür für relevante Themen",
+      "Analytisches Verständnis für Content-Performance"
+    ],
+    "benefits": [
+      "Flexibles Arbeiten mit Remote-First-Kultur",
+      "Kreative Arbeitsatmosphäre in modernem Berliner Büro",
+      "Learning & Development Budget für persönliche Weiterbildung",
+      "Kostenlose Snacks, Getränke und wöchentliche Team-Lunches",
+      "Mental Health Support und Wellness-Programme",
+      "Jährliches Company Retreat und Team-Building Events",
+      "Neueste Tech-Ausstattung und Software-Tools"
+    ],
+    "fullDescription": "Contentful ist eine führende Headless-CMS-Plattform, die es Unternehmen ermöglicht, digitale Erlebnisse zu erstellen und zu verwalten. Wir suchen einen kreativen Content Marketing Specialist, der unser Marketing-Team dabei unterstützt, überzeugende Inhalte zu erstellen, die unsere Zielgruppe ansprechen und zur Lead-Generierung beitragen. Sie werden Teil eines dynamischen Teams sein und die Möglichkeit haben, mit modernsten Content-Management-Tools zu arbeiten.",
+    "company": {
+      "id": "contentful-1",
+      "name": "Contentful",
+      "website": "https://www.contentful.com",
+      "logo": "/logos/providerlogos/contentful.svg",
+      "kununu": {
+        "rating": 4.4,
+        "reviews": 178
+      },
+      "contacts": [
+        {
+          "id": "contact-6",
+          "name": "Lisa Martinez",
+          "position": "Head of People Operations",
+          "phone": "+49 30 987-6543",
+          "email": "lisa.martinez@contentful.com",
+          "avatar": "/avatars/contact-6.jpg"
+        }
+      ],
+      "relationshipStatus": "none"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2-2",
+      "placedScore": 87,
+      "profileMatch": 89,
+      "urgencyScore": 72,
+      "whyFits": [
+        "Ihre nachgewiesene Expertise im Content Marketing und SEO-Optimierung passt perfekt zu unseren Anforderungen.",
+        "Mit Ihrer Erfahrung in der Lead-Generierung durch Content können Sie sofort Wert schaffen.",
+        "Ihre kreativen Fähigkeiten und Ihr Verständnis für digitale Trends machen Sie zur idealen Ergänzung.",
+        "Die Erfahrung mit verschiedenen Content-Formaten und -Kanälen ist ein großer Vorteil."
+      ],
+      "whatsMissing": [
+        "Erfahrung mit Contentful-Plattform kann durch interne Schulungen erworben werden.",
+        "Zusätzliche Video-Content-Erstellung-Fähigkeiten wären von Vorteil.",
+        "Kenntnisse in Marketing Automation könnten für Content-Workflows hilfreich sein.",
+        "Erfahrung mit internationalen Content-Strategien wäre ein Plus."
+      ],
+      "generatedAt": "2024-12-25T11:15:00Z"
+    }
+  }
+] 
