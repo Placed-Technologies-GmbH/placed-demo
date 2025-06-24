@@ -1,6 +1,6 @@
 [
   {
-  "id": "cv1_job_1",
+    "id": "cv2_job_1",
   "title": "Vertriebspartner:in im Versicherungsaußendienst",
   "company": "Barmenia Krankenversicherung AG",
   "location": "Berlin",
@@ -132,8 +132,8 @@
     ],
     "generatedAt": "2025-06-23T17:35:59Z"
   }
-}, 
-{
+},
+  {
   "id": "cv1_job_2",
   "title": "Selbstständiger Verkaufsberater",
   "company": "AlphaConsult KG",
@@ -182,12 +182,12 @@
   ],
   "yourProfile": [
     "Berufsausbildung als Versicherungskaufmann/-frau wünschenswert",
-    "Mind. Sachkundeprüfung / Fachmann/-frau für Versicherungsvermittlung (§5VersVermV)",
+    "Mind. Sachkundeprüfung / Fachmann/-frau für Versicherungsvermittlung bzw. §5VersVermV",
     "Umfassende EDV- und PC-Kenntnisse",
-    "Schnelle Auffassungsgabe und selbstständige Arbeitsweise"
+    "schnelle Auffassungsgabe und selbstständige Arbeitsweise"
   ],
   "benefits": [
-    "Abschlagszahlungen – Vorschüsse",
+    "Abschlagszahlungen - Vorschüsse",
     "Geplante Übernahme",
     "Gute Bezahlung",
     "Mitarbeiterangebote",
@@ -219,42 +219,40 @@
     "relationshipStatus": "partner"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_2",
-    "placedScore": 80,
-    "profileMatch": 75,
-    "urgencyScore": 50,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "EDV- und PC-Kenntnisse: CV nennt sicheren Umgang mit Microsoft Office und digitalen Vertriebstools.",
-      "Selbstständige Arbeitsweise: Nachgewiesene Selbstorganisation als freier Vertriebspartner.",
-      "Kommunikationsstärke: Umfangreiche Erfahrung in Kunden- und Interessentengesprächen.",
-      "Schnelle Auffassungsgabe: Vielseitige Stationen bei unterschiedlichen Versicherungsunternehmen."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Qualifikation §5 vs. §34d: Gesuchte Sachkundeprüfung (§5VersVermV) nicht explizit vorhanden, CV weist §34d-Lizenz aus.",
-      "Keine klassische Ausbildung: Ausbildung zum Versicherungskaufmann fehlt; Automobilkaufmann-Ausbildung ist anders ausgelegt.",
-      "Fehlende Vertragsbearbeitung: Keine Erfahrung in Neuschadenanlage oder einfachen Geschäftsvorfällen dokumentiert.",
-      "Teamunterstützung: CV fokussiert auf Eigenvertrieb, kaum Hinweise auf interne Teamarbeit."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Sachkundeprüfung (§5VersVermV): Sollte ergänzt werden, wenn vorhanden oder angestrebt.",
-      "Erfahrung in Vertragsbearbeitung/Schadenanlage: Konkrete Stationen und Aufgaben beschreiben.",
-      "Kaufmännische Ausbildung Versicherungskaufmann: Sollte genannt oder durch Weiterbildung ergänzt werden.",
-      "Quantitative Nachweise: Erfolge im Bereich Bestands- und Schadenmanagement mit Zahlen belegen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T12:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_2",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Selbstständiger Verkaufsberater, AlphaConsult KG, Berlin-Neukölln, veröffentlicht am 2025-06-23.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Solide EDV-/PC-Kenntnisse (Microsoft Office & digitale Vertriebstools).",
-      "2. Nachgewiesene selbstständige Arbeitsweise als freier Vertriebspartner.",
-      "3. Starke Kommunikationsfähigkeiten in Kunden- und Vermittlerdialogen.",
-      "4. Schnelle Auffassungsgabe durch vielseitige Stationen im Versicherungsvertrieb.",
-      "5. Flexibilität und Anpassungsfähigkeit an unterschiedliche Geschäftsprozesse."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T12:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -271,12 +269,12 @@
   "isFavorited": false,
   "companyLogo": "https://www.lightspeedhq.com/logo.png",
   "contactPerson": {
-    "id": "patrick-erne",
-    "name": "Patrick Erne",
-    "position": "Recruiting, Onboarding und Digitalisierung",
-    "phone": "0151 70552908",
-    "email": "patrick.erne@barmenia.de",
-    "avatar": ""
+      "id": "patrick-erne",
+      "name": "Patrick Erne",
+      "position": "Recruiting, Onboarding und Digitalisierung",
+      "phone": "0151 70552908",
+      "email": "patrick.erne@barmenia.de",
+      "avatar": ""
   },
   "salary": {
     "amount": 6000,
@@ -336,42 +334,40 @@
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_3",
-    "placedScore": 20,
-    "profileMatch": 20,
-    "urgencyScore": 30,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Vertriebserfahrung: Mehrjährige Kundenakquise und -betreuung im Versicherungsbereich.",
-      "Upselling: Erfahrung in Cross- und Upselling-Strategien bei Versicherungsvertrieb.",
-      "Kommunikationsstärke: Versiert im Gespräch mit unterschiedlichen Kundengruppen.",
-      "Selbstständige Arbeitsweise: Bewährte Fähigkeit zur eigenverantwortlichen Organisation."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Keine SaaS-Erfahrung: Fehlende nachgewiesene Tätigkeit mit Software-as-a-Service-Produkten.",
-      "Kein CRM-Kenntnis: Salesforce & Co. werden nicht im CV erwähnt.",
-      "B2B-Tech-Vertrieb: Keine spezifische Erfahrung im B2B-Software- oder Gastronomieumfeld.",
-      "C-Level-Kontakt: Keine Beispiele für Verhandlungen oder Präsentationen auf Führungsebene."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "SaaS-Projekte: Konkrete Stationen mit Cloud-/Software-Vertrieb ergänzen.",
-      "Salesforce-Kenntnisse: Erfahrungen mit CRM-Systemen benennen.",
-      "Business Reviews: Praxisbeispiele für regelmäßige Kundengespräche und Reports hinzufügen.",
-      "C-Level-Engagement: Erfolge bei strategischer Kundenbetreuung auf Management-Ebene aufführen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T12:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_3",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Account Manager (m/w/x), Lightspeed, Berlin, veröffentlicht am 2025-06-23.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Vertriebserfahrung im Versicherungsumfeld.",
-      "2. Nachweisbare Upselling-Erfolge durch Cross- und Up-Selling-Maßnahmen.",
-      "3. Hohe Kommunikationskompetenz in Kunden- und Vermittlergesprächen.",
-      "4. Selbstorganisation und eigenverantwortliches Agieren als freier Vertriebspartner.",
-      "5. Fähigkeit, Kundenbedarfe schnell zu erfassen und passende Lösungen zu empfehlen."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T12:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -457,42 +453,46 @@
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_4",
-    "placedScore": 40,
-    "profileMatch": 35,
-    "urgencyScore": 40,
-    "whatsGood": [
-      "Storytelling-Kompetenz: CV zeigt Erfahrung in telefonischer Kaltakquise und Präsentationen.",
-      "Vertriebsstärke: Nachgewiesene Erfolge bei Leadgenerierung und Bestandsausbau.",
-      "Sprachkenntnisse: Fließend Deutsch und Englisch, passend für internationale Kontakte.",
-      "Unternehmerisches Denken: Selbstständige Arbeitsweise und eigenverantwortliche Kundenbetreuung."
-    ],
-    "whatsBad": [
-      "Keine Mediensoftware-Erfahrung: Fehlende nachgewiesene Tätigkeit mit AR- oder Softwareprodukten.",
-      "Messen & Konferenzen: Keine expliziten Beispiele für Messe- oder Konferenztätigkeit im CV.",
-      "Preismodell-Entwicklung: Keine Referenzen zur Erstellung von Preisstrategien oder Verkaufsprozessen.",
-      "Marketing-Koordination: Unklar, ob Erfahrung in enger Zusammenarbeit mit Marketing-Teams besteht."
-    ],
-    "whatsMissing": [
-      "AR/Softwareprojekte: Konkrete Stationen mit Software- oder AR-Produktvertrieb ergänzen.",
-      "Trade-Show-Experience: Beispiele für Messe- oder Konferenzrepräsentation anführen.",
-      "Prozessentwicklung: Nachweise für Mitwirkung an Preismodellierung und Sales-Funnel-Design.",
-      "Cross-Funktionale Zusammenarbeit: Details zur Koordination mit Marketing- oder Produktteams."
-    ],
-    "generatedAt": "2025-06-24T12:15:00Z"
-  },
-  "salesPitch": {
-    "id": "sales-pitch-cv1_job_4",
-    "salesPitch": [
-      "Stelle: Account Manager (Mediensoftware), Zaubar UG (haftungsbeschränkt), Berlin, veröffentlicht am 2025-06-16.",
-      "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Storytelling & Präsentationserfahrung: Bewährte Telefon- und Vor-Ort-Demos.",
-      "2. Leadgenerierung: Nachweisliche Kaltakquise-Erfolge und Bestandsausbau.",
-      "3. Sprachen: Verhandlungssicher in Deutsch und Englisch.",
-      "4. Eigenverantwortung: Selbstständige Organisation als freier Vertriebspartner.",
-      "5. Unternehmerische Einstellung: Proaktives Erkennen und Nutzen von Wachstumschancen."
-    ],
-    "generatedAt": "2025-06-24T12:15:00Z"
+    "id": "ai-summary-3",
+    "placedScore": 50,
+    "profileMatch": 40,
+    "urgencyScore": 70,
+    "aiSummary": {
+      "id": "ai-summary-cv1_job_1",
+      "placedScore": 85,
+      "profileMatch": 90,
+      "urgencyScore": 70,
+      "whatsGood": [
+        "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+        "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+        "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+        "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
+      ],
+      "whatsBad": [
+        "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+        "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
+      ],
+      "whatsMissing": [
+        "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+        "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+        "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+        "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
+      ],
+      "generatedAt": "2025-06-23T17:35:59Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv1_job_1",
+      "salesPitch": [
+        "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+        "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+        "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+        "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+        "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
+      ],
+      "generatedAt": "2025-06-23T17:35:59Z"
+    }
   }
 },
 {
@@ -509,11 +509,11 @@
   "isFavorited": false,
   "companyLogo": "https://www.pflegia.de/logo.png",
   "contactPerson": {
-    "id": "pflegia-sales",
-    "name": "Pflegia Recruiting Team",
-    "position": "HR & Sales",
-    "phone": "+49 30 12345678",
-    "email": "recruiting@pflegia.de",
+    "id": "johannes-klein",
+    "name": "Johannes Klein",
+    "position": "Head of Sales",
+    "phone": "+49 30 20609999",
+    "email": "johannes.klein@zaubar.com",
     "avatar": ""
   },
   "salary": {
@@ -542,7 +542,7 @@
     "Optimierung der Recruitingprozesse bei Partnerunternehmen",
     "Konditionsverhandlungen zwischen Pflegekräften und Arbeitgebern",
     "Cross-Selling und Weiterentwicklung von Bestandskunden",
-    "Strategische Partnerbetreuung und Profil-/Stellenausschreibungs-Updates",
+    "Strategische Partnerbetreuung und kontinuierliche Profil-/Stellenausschreibungs-Updates",
     "Regelmäßige Feedback- und Lösungsworkshops mit Partnern",
     "Analyse und Reporting der Key-Account-Performance",
     "Zielorientierte Vermittlung passender Pflegekräfte"
@@ -557,12 +557,12 @@
   ],
   "benefits": [
     "Faires Grundgehalt plus ungedeckelte Provision",
-    "8-wöchiges Onboarding in Berlin (Reisekostenübernahme)",
-    "Anschließendes Remote-Arbeiten mit regelmäßigen Team-Events",
-    "Unbegrenzte Entwicklungsmöglichkeiten & Coaching-Workshops",
+    "8-wöchiges Onboarding in Berlin mit Übernahme aller Reisekosten",
+    "Anschließendes Remote-Arbeiten mit regelmäßigen Team-Events vor Ort",
+    "Unbegrenzte Entwicklungsmöglichkeiten und Coaching-Workshops",
     "Moderne Arbeitsausstattung (Laptop, Bildschirm, Headset)",
-    "Regelmäßige Team- & Networking-Events",
-    "Kostenlose Verpflegung & personalisierte Snacks",
+    "Regelmäßige Team- und Networking-Events",
+    "Kostenlose Verpflegung und personalisierte Snack-Bestellungen",
     "27 Urlaubstage pro Jahr"
   ],
   "fullDescription": "Pflegia ist ein dynamisches Social-Scale-Up aus Berlin, das seit 2019 die Personalvermittlung im Gesundheitswesen mit einer innovativen Matching-Plattform und KI neu definiert. Als (Junior) Key Account Manager:in arbeitest du remote und betreust bundesweit unsere Partner im Pflegebereich – von der ersten Kontaktaufnahme über Konditionsverhandlungen bis zur langfristigen Optimierung ihrer Recruitingprozesse.",
@@ -575,55 +575,25 @@
       "rating": 4.5,
       "reviews": 200
     },
-    "contacts": [
-      {
-        "id": "pflegia-sales",
-        "name": "Pflegia Recruiting Team",
-        "position": "HR & Sales",
-        "phone": "+49 30 12345678",
-        "email": "recruiting@pflegia.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_5",
-    "placedScore": 45,
-    "profileMatch": 40,
-    "urgencyScore": 50,
-    "whatsGood": [
-      "Langjährige Vertriebs- und Bestandskundenbetreuung im Außendienst.",
-      "Starke Kommunikations- und Verhandlungsfähigkeiten.",
-      "Nachweisbares Cross- und Upselling im Versicherungsvertrieb.",
-      "Eigenständige, strukturierte Arbeitsweise."
-    ],
-    "whatsBad": [
-      "Keine Erfahrung im Gesundheits- oder Recruiting-Umfeld.",
-      "Unklarheiten bei analytischem Reporting und KPI-Tracking.",
-      "Deutschkenntnisse: CV nennt C1, Anzeige wünscht C2.",
-      "Keine spezifischen Recruiting-Tools oder Matching-Plattformen genannt."
+    "id": "ai-summary-4",
+    "placedScore": 50,
+    "profileMatch": 45,
+    "urgencyScore": 70,
+    "whyFits": [
+      "Mehrjährige Kaltakquise-Erfahrung im Gesundheits-/Krankenbereich bei Signal Iduna :contentReference[oaicite:0]{index=0}",
+      "Tiefes Verständnis für Kranken- und Pflegeversicherungen durch Hanse Merkur Tätigkeit :contentReference[oaicite:1]{index=1}",
+      "Ausgeprägte Kommunikations- und Teamfähigkeit, belegt durch Microsoft-Office- und Team-Skills :contentReference[oaicite:2]{index=2}"
     ],
     "whatsMissing": [
-      "Branche Health/Recruiting: Erfahrungen im Pflege- oder HR-Umfeld ergänzen.",
-      "KPI-Reporting: Konkrete Zahlen zu Key-Account-Performance hinzufügen.",
-      "Tool-Kenntnisse: Matching-Plattform und CRM-Systeme im CV aufführen.",
-      "Sprachlevel: C2-Nachweis für Deutsch ergänzen."
+      "Keine direkte Erfahrung im Key Account Management oder Recruiting im Gesundheitswesen",
+      "Keine ausgewiesene Remote-Arbeits- oder CRM-System-Erfahrung",
+      "Keine nachweislichen analytischen Reporting-Projekte im CV"
     ],
-    "generatedAt": "2025-06-24T12:30:00Z"
-  },
-  "salesPitch": {
-    "id": "sales-pitch-cv1_job_5",
-    "salesPitch": [
-      "Stelle: (Junior) Key Account Manager - Remote (m/w/d), Pflegia GmbH, Home-Office bundesweit, veröffentlicht am 2025-06-18.",
-      "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Vertriebserfahrung und Bestandskundenpflege im Außendienst.",
-      "2. Ausgeprägte Kommunikations- und Organisationsfähigkeiten.",
-      "3. Nachweisbare Cross- und Upselling-Erfolge.",
-      "4. Selbstständige, strukturierte Arbeitsweise mit kaufmännischem Background.",
-      "5. Analytisches Denkvermögen und Interesse an KPI-getriebener Optimierung."
-    ],
-    "generatedAt": "2025-06-24T12:30:00Z"
+    "generatedAt": "2025-06-23T11:30:00+02:00"
   }
 },
 {
@@ -640,11 +610,11 @@
   "isFavorited": false,
   "companyLogo": "https://autohaus-kramm.de/logo.png",
   "contactPerson": {
-    "id": "autohaus-kramm-sales",
-    "name": "Vertriebsleitung Autohaus Kramm",
+    "id": "johannes-klein",
+    "name": "Johannes Klein",
     "position": "Head of Sales",
     "phone": "+49 30 20609999",
-    "email": "vertrieb@autohaus-kramm.de",
+    "email": "johannes.klein@zaubar.com",
     "avatar": ""
   },
   "salary": {
@@ -677,8 +647,8 @@
     "Zubehörverkauf"
   ],
   "yourProfile": [
-    "Abgeschlossene Ausbildung zum Automobilkaufmann",
-    "Erfahrung im Verkauf von Automobilen (idealerweise Opel)",
+    "Abgeschlossene kaufmännische oder technische Ausbildung (z. B. Automobilkaufmann)",
+    "Erfahrung im Verkauf von Automobilen, idealerweise in der Markenwelt Opel",
     "Hohe Kommunikations- und Begeisterungsfähigkeit",
     "Verhandlungsgeschick und sicheres Auftreten",
     "Führerschein Klasse B",
@@ -688,7 +658,7 @@
     "Unbefristete Vollzeitanstellung (40 Std./Woche)",
     "Faire, leistungsbezogene Bezahlung",
     "Flexibles und mobiles Arbeiten",
-    "Individuell angepasste Arbeitszeiten",
+    "Auf Dich zugeschnittene Arbeitszeiten",
     "Dienstwagen",
     "Umfangreiche Stammkundenkartei als Starthilfe",
     "Spannende Entwicklungs- und Weiterbildungsmöglichkeiten",
@@ -704,55 +674,44 @@
       "rating": 4.5,
       "reviews": 200
     },
-    "contacts": [
-      {
-        "id": "autohaus-kramm-sales",
-        "name": "Vertriebsleitung Autohaus Kramm",
-        "position": "Head of Sales",
-        "phone": "+49 30 20609999",
-        "email": "vertrieb@autohaus-kramm.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_6",
-    "placedScore": 60,
-    "profileMatch": 60,
-    "urgencyScore": 50,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Passende Ausbildung: Abgeschlossene Ausbildung zum Automobilkaufmann.",
-      "Verhandlungskompetenz: Nachgewiesene Erfahrung in Vertriebsgesprächen und Vertragsabschlüssen.",
-      "Kundenorientierung: Stark in Bedarfsanalyse und Bestandskundenpflege.",
-      "Serviceorientierung: Erfahrung im Zubehörverkauf und After-Sales-Kommunikation."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Keine spezifische Erfahrung mit Opel-Modellen oder markenspezifischem Verkauf.",
-      "Keine dokumentierte Praxis bei Probefahrten-Organisation und Leasingverträgen.",
-      "Führerschein im CV nicht explizit erwähnt.",
-      "Unklarheit über mobile Arbeits- und Außendiensttätigkeit."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Opel-Branchenkenntnis: Erfahrungen im Verkauf spezifischer Marken ergänzen.",
-      "Probefahrt & Leasing: Konkrete Beispiele zu Organisation von Probefahrten und Leasingvertragsabwicklung hinzufügen.",
-      "Führerschein: Klassenspezifikation (Klasse B) im Lebenslauf nennen.",
-      "Außendiensttätigkeit: Erfahrungen im mobilen Verkauf und Kundenbesuchen anführen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T12:45:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_6",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Automobilkaufmann (m/w/d), Autohaus Kramm GmbH, Berlin & Brandenburg, veröffentlicht am 2025-06-16.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Abgeschlossene Ausbildung zum Automobilkaufmann.",
-      "2. Nachgewiesenes Verhandlungsgeschick und Vertragsabschluss-Erfolge.",
-      "3. Starke Kundenanalyse und -beratung.",
-      "4. Erfahrung im Zubehörverkauf und After-Sales-Service.",
-      "5. Hohe Serviceorientierung und Teamfähigkeit."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T12:45:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -769,11 +728,11 @@
   "isFavorited": false,
   "companyLogo": "https://aroundtown.de/logo.png",
   "contactPerson": {
-    "id": "aroundtown-hr",
-    "name": "Aroundtown HR Team",
-    "position": "Human Resources",
-    "phone": "+49 30 12345670",
-    "email": "hr@aroundtown.de",
+    "id": "johannes-klein",
+    "name": "Johannes Klein",
+    "position": "Head of Sales",
+    "phone": "+49 30 20609999",
+    "email": "johannes.klein@zaubar.com",
     "avatar": ""
   },
   "salary": {
@@ -806,26 +765,29 @@
     "Begleitung von Ausschreibungen"
   ],
   "yourProfile": [
-    "Abgeschlossene Ausbildung als Kaufmann/-frau für Versicherungen und Finanzen oder Bachelor Wirtschaft/Versicherung",
-    "Mindestens 2 Jahre Berufserfahrung im Versicherungs- und Schadenmanagement",
+    "Abgeschlossene Ausbildung als Kaufmann/-frau für Versicherungen und Finanzen, Bachelorstudium im Bereich Wirtschaft/Versicherung oder vergleichbare Qualifikation",
+    "Mindestens 2 Jahre Berufserfahrung im Bereich Versicherungs- und Schadenmanagement",
     "Strukturierte Arbeitsweise und gute Kommunikationsfähigkeiten",
-    "Teamfähigkeit und Engagement",
-    "Sicherer Umgang mit MS-Office",
-    "Sehr gute Deutsch- und Englischkenntnisse",
-    "Kenntnisse in Immobilien- und Betriebsversicherungen wünschenswert"
+    "Hohes Maß an Teamfähigkeit und Engagement",
+    "Sicherer Umgang mit dem MS-Office-Paket",
+    "Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift",
+    "Kenntnisse im Bereich Immobilien- und Betriebsversicherungen sind wünschenswert"
   ],
   "benefits": [
-    "Abwechslungsreiches Aufgabenspektrum in einem der größten Immobilienunternehmen Europas",
-    "Kommunikationskultur 'per Du' und flache Hierarchien",
-    "Individuelle Trainings und Coachings",
-    "Hauseigenes Fitnessstudio mit Kursangeboten",
-    "Betriebliches Gesundheitsmanagement und Altersvorsorge",
-    "Zuschuss für öffentliche Verkehrsmittel und Fahrrad-Leasing",
-    "Modernes IT-Equipment",
-    "Pool- und Dienstwagen",
+    "Interessantes, abwechslungsreiches und breites Aufgabenspektrum in einem der größten Immobilienunternehmen Deutschlands und Europas",
+    "Gutes Betriebsklima, Kommunikationskultur 'per Du' und angenehme Arbeitsatmosphäre mit flachen Hierarchien",
+    "Individuelle Trainings und Coachings für berufliche und persönliche Weiterentwicklung",
+    "Professionell ausgestattetes, hauseigenes Fitnessstudio mit Trainer und Kursen im Headquarter in Berlin",
+    "Umfangreiches betriebliches Gesundheitsmanagement und betriebliche Altersvorsorge",
+    "Zuschuss für öffentliche Verkehrsmittel und Fahrrad-Leasing durch Eurorad",
+    "Modernes IT-Equipment wie Laptop und Mobiltelefon",
+    "Pool- und Dienstwagen für Mobilität und Flexibilität",
     "Flexible Arbeitszeiten und mobiles Arbeiten",
-    "Familienfreundliche Benefits und Freizeitangebote",
-    "Mitarbeiterrabatte und Obst/Getränke-Angebot"
+    "Virtuelle familienfreundliche Benefits (Ferienprogramme, Freizeit- und Sportangebote, Beratungsservices via Voiio)",
+    "Zuschauerbesuche bei Bundesligaspielen des FC Union Berlin",
+    "Rabatte in ausgewählten Hotels weltweit und auf Speisen & Getränke",
+    "Mitarbeiterrabatte für Media, Mode, Freizeit, Einrichtungen u.v.m.",
+    "Getränke und eine Auswahl an Obst"
   ],
   "fullDescription": "Als Senior Insurance Manager verantworten Sie das Vertragsmanagement des bestehenden Versicherungsportfolios, fungieren als Schnittstelle zu internen Abteilungen und externen Versicherern bzw. Maklern, prüfen Rechnungen, konzipieren und entwickeln die Versicherungsabteilung weiter, unterstützen bei Analysen und monatlichen Berichten gegenüber dem Management und begleiten Ausschreibungen.",
   "companyDetails": {
@@ -837,55 +799,44 @@
       "rating": 4.7,
       "reviews": 450
     },
-    "contacts": [
-      {
-        "id": "aroundtown-hr",
-        "name": "Aroundtown HR Team",
-        "position": "Human Resources",
-        "phone": "+49 30 12345670",
-        "email": "hr@aroundtown.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "partner"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_7",
-    "placedScore": 35,
-    "profileMatch": 30,
-    "urgencyScore": 50,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Versicherungsexpertise: Mehrjährige Erfahrung in Versicherungsvertrieb und -management.",
-      "Analytische Fähigkeiten: Erstellung von Berichten und Präsentationen gehört zu bisherigen Aufgaben.",
-      "Kommunikationsstärke: Schnittstellenfunktion zwischen Kunden, Abteilungen und Partnern.",
-      "Teamarbeit: Erfahrung in Zusammenarbeit mit internen Teams und externen Maklern."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Formale Qualifikation: Keine kaufmännische Ausbildung für Versicherungen oder Hochschulabschluss im CV erwähnt.",
-      "Schadenmanagement: Weniger als 2 Jahre spezifische Schadenmanagement-Praxis dokumentiert.",
-      "Immobilienversicherungen: Keine nachgewiesenen Kenntnisse im Immobilien- oder Betriebsversicherungsbereich.",
-      "Tools: MS-Office vorhanden, aber keine spezialisierten Versicherungs- oder BI-Tools genannt."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Ausbildung/Studium: Abschluss als Kaufmann für Versicherungen & Finanzen oder BWL-Versicherung ergänzen.",
-      "Schadenmanagement-Details: Konkrete Stationen und Ergebnisse im Schadenmanagement ausführen.",
-      "BI- und Reporting-Tools: Erfahrungen mit Reporting-Software (z.B. Power BI) angeben.",
-      "Immobilienversicherungen: Kenntnisse oder Schulungen im Immobilienportfolio aufführen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T12:55:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_7",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Senior Insurance Manager, Aroundtown, Berlin, veröffentlicht am 2025-06-18.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Erfahrung im Versicherungsvertrieb und Vertragsmanagement.",
-      "2. Analytische Kompetenz bei Berichterstellung und Präsentationen.",
-      "3. Kommunikationsstärke in interdisziplinären Schnittstellenfunktionen.",
-      "4. Teamorientierung und Koordination mit externen Partnern.",
-      "5. Sicherer Umgang mit MS-Office für Reporting und Analyse."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T12:55:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -939,13 +890,13 @@
     "Monitoring des Versicherungsmarktes und Anpassung an Trends"
   ],
   "yourProfile": [
-    "Abgeschlossene Ausbildung als Kaufmann/-frau für Versicherungen und Finanzen",
-    "Berufserfahrung in der Versicherungsbranche",
+    "Abgeschlossene Ausbildung als Kaufmann/-frau für Versicherungen und Finanzen oder vergleichbar",
+    "Berufserfahrung in der Versicherungsbranche von Vorteil",
     "Ausgeprägte Kundenorientierung und Kommunikationsstärke",
     "Vertriebliche Affinität und Zielorientierung",
     "Strukturierte und eigenverantwortliche Arbeitsweise",
-    "Gute MS-Office-Kenntnisse",
-    "Kenntnisse in Versicherungsverwaltungsprogrammen"
+    "Gute MS Office-Kenntnisse",
+    "Kenntnisse in Versicherungsverwaltungsprogrammen (wünschenswert)"
   ],
   "benefits": [
     "Unbefristeter Arbeitsvertrag im Rahmen der Arbeitnehmerüberlassung",
@@ -977,42 +928,46 @@
     "relationshipStatus": "partner"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_8",
-    "placedScore": 50,
+    "id": "ai-summary-7",
+    "placedScore": 65,
     "profileMatch": 50,
-    "urgencyScore": 60,
-    "whatsGood": [
-      "Ausbildung §34d: CV weist gültige §34d-Lizenz für Versicherungsvermittlung aus.",
-      "Vertriebserfahrung: Langjährige Tätigkeit als freier Versicherungsvermittler.",
-      "Schadenbearbeitung: Erfahrung in Neuanlage und Betreuung von Schadensfällen.",
-      "MS-Office-Kenntnisse: Sichere Anwendung für Angebots- und Reportingprozesse."
-    ],
-    "whatsBad": [
-      "Versicherungsverwaltungsprogramme: Keine spezifischen Tool-Erfahrungen (z. B. DCV, Hypoport) genannt.",
-      "Arbeitsnehmerüberlassung: Keine Erfahrung in Zeitarbeits- oder Leiharbeitsmodellen.",
-      "Portfolio-Ausbau: Fokus im CV liegt eher auf Privatkunden, weniger auf Bestandswachstum.",
-      "Marktmonitoring: Keine nachgewiesenen Aktivitäten zur Trendanalyse im Versicherungsmarkt."
-    ],
-    "whatsMissing": [
-      "Tool-Kenntnisse: Spezifische Versicherungsverwaltungsprogramme und CRM-Systeme aufführen.",
-      "Zeitarbeitserfahrung: Erfahrung in Arbeitnehmerüberlassung oder ähnlichen Modellen ergänzen.",
-      "Portfolio-Scalierung: Konkrete Zahlen zu Portfolio-Wachstum und Kundenbindung hinzufügen.",
-      "Trend-Analysen: Beispiele für Marktmonitoring und Anpassungsstrategien im Lebenslauf anführen."
-    ],
-    "generatedAt": "2025-06-24T13:10:00Z"
-  },
-  "salesPitch": {
-    "id": "sales-pitch-cv1_job_8",
-    "salesPitch": [
-      "Stelle: Versicherungskaufmann (w/m/d), Robert Half Deutschland GmbH & Co. KG, Berlin, veröffentlicht am 2025-06-11.",
-      "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Gültige §34d-Lizenz und langjährige Vermittlungspraxis.",
-      "2. Nachgewiesene Schadenbearbeitung und Kundenbetreuung.",
-      "3. Hohe MS-Office-Kompetenz für Angebots- und Reportingaufgaben.",
-      "4. Starke Kommunikations- und Vertriebsaffinität.",
-      "5. Eigenverantwortliche Arbeitsweise und Portfoliopflege."
-    ],
-    "generatedAt": "2025-06-24T13:10:00Z"
+    "urgencyScore": 65,
+    "aiSummary": {
+      "id": "ai-summary-cv1_job_1",
+      "placedScore": 85,
+      "profileMatch": 90,
+      "urgencyScore": 70,
+      "whatsGood": [
+        "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+        "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+        "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+        "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
+      ],
+      "whatsBad": [
+        "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+        "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
+      ],
+      "whatsMissing": [
+        "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+        "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+        "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+        "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
+      ],
+      "generatedAt": "2025-06-23T17:35:59Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv1_job_1",
+      "salesPitch": [
+        "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+        "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+        "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+        "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+        "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
+      ],
+      "generatedAt": "2025-06-23T17:35:59Z"
+    }
   }
 },
 {
@@ -1029,7 +984,6 @@
   "isFavorited": false,
   "companyLogo": "https://alphaconsult.org/logo.png",
   "contactPerson": {
-    "id": "michael-schroeder",
     "name": "Michael Schröder",
     "position": "Niederlassungsleiter",
     "phone": "030 2005917-24",
@@ -1099,49 +1053,27 @@
     "relationshipStatus": "partner"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_9",
-    "placedScore": 85,
+    "id": "ai-summary-8",
+    "placedScore": 80,
     "profileMatch": 85,
     "urgencyScore": 70,
-    "whatsGood": [
-      "Sachkundeprüfung (§5 VersVermV) vorhanden durch §34d-Lizenz des Bewerbers",
-      "Starke EDV-Kompetenz: sicherer Umgang mit Microsoft Office und digitalen Tools",
-      "Erfahrung in Neuschadenanlage und Vertragsbearbeitung",
-      "Selbstständige Arbeitsweise und schnelle Auffassungsgabe in Kundenprozessen"
-    ],
-    "whatsBad": [
-      "Keine formale Ausbildung als Versicherungskaufmann explizit im Lebenslauf",
-      "Belege für Teamunterstützung und interne Prozesskenntnisse fehlen",
-      "Keine expliziten Kennzahlen zu Bearbeitungsvolumen oder Kundenzufriedenheit",
-      "Übernahmekriterien und Arbeitgebermodell nicht direkt angesprochen"
+    "whyFits": [
+      "Aktuelle Tätigkeit in der Hauptagentur Signal Iduna mit Fokus auf Kaltakquise Krankenversicherung :contentReference[oaicite:0]{index=0}",
+      "Abgeschlossene Ausbildung zum Versicherungsvertreter (§34d) bei Hanse Merkur – entspricht der geforderten Sachkundeprüfung :contentReference[oaicite:1]{index=1}",
+      "Sicherer Umgang mit MS Office und schnelle Auffassungsgabe durch Vertriebserfahrung"
     ],
     "whatsMissing": [
-      "Ausbildungsnachweis Versicherungskaufmann: Abschluss und Ausbildungsstätte angeben",
-      "Team- und Prozessarbeit: Beispiele für Zusammenarbeit in Backoffice-Teams hinzufügen",
-      "Kennzahlen: Anzahl bearbeiteter Vorgänge oder Kundenzufriedenheitsraten ergänzen",
-      "Übernahmeoption: Motivation und Interesse an langfristiger Zusammenarbeit darlegen"
+      "Keine förmliche Ausbildung zum Versicherungskaufmann/-frau im Lebenslauf ausgewiesen",
+      "Belege für Erfahrung in Schaden- und Vertragsbearbeitung außerhalb der Kaltakquise fehlen"
     ],
-    "generatedAt": "2025-06-24T13:20:00Z"
-  },
-  "salesPitch": {
-    "id": "sales-pitch-cv1_job_9",
-    "salesPitch": [
-      "Stelle: Versicherungskaufmann (gn), AlphaConsult KG, Berlin-Charlottenburg, veröffentlicht am 2025-06-23.",
-      "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Gültige Sachkundeprüfung (§5 VersVermV) nachgewiesen durch §34d-Lizenz.",
-      "2. Umfangreiche EDV- und MS-Office-Kenntnisse.",
-      "3. Praxis in Neuschadenanlage und Vertragsbearbeitung.",
-      "4. Selbstständige und strukturierte Arbeitsorganisation.",
-      "5. Schnelle Auffassungsgabe und Kundenkommunikation."
-    ],
-    "generatedAt": "2025-06-24T13:20:00Z"
+    "generatedAt": "2025-06-23T13:45:00+02:00"
   }
 },
 {
   "id": "cv1_job_10",
   "title": "Selbstständiger Außendienstpartner (m/w/d)",
   "company": "Signal Iduna",
-  "location": "Berlin",
+  "location": "Berlin", 
   "postedDate": "2025-06-23T09:00:00+02:00",
   "matchPercentage": 75,
   "urgency": "medium",
@@ -1151,11 +1083,11 @@
   "isFavorited": false,
   "companyLogo": "https://www.signal-iduna.de/logo.png",
   "contactPerson": {
-    "id": "signal-iduna-sales",
-    "name": "Vertriebsleitung Signal Iduna",
+    "id": "johannes-klein",
+    "name": "Johannes Klein",
     "position": "Head of Sales",
     "phone": "+49 30 20609999",
-    "email": "vertrieb@signal-iduna.de",
+    "email": "johannes.klein@zaubar.com",
     "avatar": ""
   },
   "salary": {
@@ -1209,56 +1141,46 @@
       "rating": 4.5,
       "reviews": 200
     },
-    "contacts": [
-      {
-        "id": "signal-iduna-sales",
-        "name": "Vertriebsleitung Signal Iduna",
-        "position": "Head of Sales",
-        "phone": "+49 30 20609999",
-        "email": "vertrieb@signal-iduna.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_10",
-    "placedScore": 75,
-    "profileMatch": 75,
-    "urgencyScore": 60,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Langjährige Erfahrung als freier Vertriebspartner bei Signal Iduna und Barmenia.",
-      "Ausbildung §34d: Nachweisliche Sachkundeprüfung für Versicherungsvermittlung.",
-      "Eigenverantwortliche Kundenbetreuung und Bestandsausbau.",
-      "Vertrautheit mit digitalen Vertriebstools und MS-Office."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Keine explizite IHK-Ausbildung zum Versicherungsfachmann im Lebenslauf.",
-      "Begrenzte Nachweise zu Vertragsmanagement und Schnittstellenarbeit.",
-      "Garantiertes Einkommensmodell nicht im CV thematisiert.",
-      "Keine quantitativen Erfolgskennzahlen zu Neukunden oder Umsatz."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "IHK-Abschluss: Versicherungskaufmann/-frau-Ausbildung ergänzen.",
-      "Vertragsmanagement: Konkrete Beispiele für Schnittstellen- und Maklerkontakte anführen.",
-      "Einkommensgarantie: Motivation und Verständnis des Garantieeinkommensmodells beschreiben.",
-      "Erfolgskennzahlen: Neukundenanzahl und Umsatzsteigerungen mit Zahlen belegen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T13:20:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_10",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Selbstständiger Außendienstpartner (m/w/d), Signal Iduna, Berlin, veröffentlicht am 2025-06-23.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Tätigkeit als freier Versicherungspartner bei Signal Iduna und Barmenia.",
-      "2. Gültige §34d-Sachkundeprüfung und IHK-konforme Vertriebserfahrung.",
-      "3. Selbstständige Bestandsbetreuung und Ausbau.",
-      "4. Sicherer Umgang mit digitalen Vertriebstools.",
-      "5. Proaktive Hands-on-Mentalität und Kommunikationsstärke."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T13:20:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
+
 },
 {
   "id": "cv1_job_11",
@@ -1275,7 +1197,7 @@
   "companyLogo": "https://home.kpmg.com/content/dam/kpmg/de/logos/kpmg-logo.svg",
   "contactPerson": {
     "name": "Kirsten Kronberg-Peukert",
-    "position": "Recruiting",
+    "position": "",
     "phone": "0800 5764 562",
     "email": "recruiting@kpmg.com",
     "avatar": ""
@@ -1314,7 +1236,7 @@
     "Starke Kommunikations- und Teamfähigkeit"
   ],
   "benefits": [
-    "Strukturiertes Onboarding und Mentoring-Programme",
+    "Strukturiertes Onboarding und begleitende Mentoring-Programme",
     "Individuelle Karriere- und Entwicklungsprogramme inkl. Führungstrainings",
     "Flexible Arbeitszeiten, Home-Working und Zeitkonten",
     "Monatliche Freistellung für soziales Engagement",
@@ -1344,42 +1266,40 @@
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_11",
-    "placedScore": 60,
-    "profileMatch": 50,
-    "urgencyScore": 40,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Fundierte Versicherungserfahrung: Mehrjährige Tätigkeit in Vertrags- und Schadenmanagement.",
-      "Verhandlungsstärke: Nachweisliche Durchführung von Vertrags- und Prämienverhandlungen.",
-      "Kommunikationskompetenz: Regelmäßige Präsentation von Analysen an Managementebene.",
-      "Strukturierte Arbeitsweise: Erfahrung in termingerechter Vertragsdokumentation."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Fehlendes Studium: Kein abgeschlossenes BWL- oder Versicherungsstudium im CV vermerkt.",
-      "Risikomanagement-Praxis: Keine spezifischen Risk-Assessment-Projekte dokumentiert.",
-      "Internationale Verträge: Keine Erfahrung in Betreuung internationaler Policen aufgeführt.",
-      "Tool-Kompetenz: Keine spezialisierten Versicherungs- oder BI-Tools (z. B. Power BI) genannt."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Akademische Qualifikation: Studium in BWL/Versicherung oder Fachwirt-Abschluss nachtragen.",
-      "Risikobewertungserfahrung: Konkrete Beispiele für Risk Assessments und Maßnahmen ergänzen.",
-      "Internationale Expertise: Stationen im internationalen Versicherungsmanagement angeben.",
-      "Reporting-Tools: Kenntnisse in BI- und Reporting-Software (z. B. Power BI) im Lebenslauf aufführen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T14:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_11",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Experte Versicherung & Risikomanagement für Unternehmen (w/m/d), KPMG, Berlin, veröffentlicht am 2025-06-09.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Mehrjährige Erfahrung im Vertrags- und Schadenmanagement.",
-      "2. Geübte Vertrags- und Prämienverhandlungen mit Versicherern.",
-      "3. Starke Präsentationsfähigkeiten gegenüber Management und Teams.",
-      "4. Strukturiertes Arbeiten bei Dokumentation und Prozessabläufen.",
-      "5. Kommunikationsstärke und Teamfähigkeit in interdisziplinären Schnittstellen."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T14:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -1396,7 +1316,6 @@
   "isFavorited": false,
   "companyLogo": "https://www.dis-ag.de/logo.png",
   "contactPerson": {
-    "id": "steven-richter",
     "name": "Steven Richter",
     "position": "Recruiter",
     "phone": "+49 30 20398476",
@@ -1428,10 +1347,10 @@
     "Sorgfältige Dokumentation aller Vorgänge"
   ],
   "yourProfile": [
-    "Abgeschlossene kaufmännische Ausbildung (z. B. Versicherungskaufmann/-frau oder Büromanagement)",
+    "Abgeschlossene kaufmännische Ausbildung, z. B. als Versicherungskaufmann/-frau oder Kaufmann/-frau für Büromanagement",
     "Sicherer Umgang mit Office 365 (Outlook, Excel, PowerPoint)",
-    "Sehr gute Deutschkenntnisse (mind. C1) und klare Kommunikationsstärke",
-    "Erfahrung im Kundenservice, idealerweise Telefonie, mit hoher Serviceorientierung"
+    "Sehr gute Deutschkenntnisse (mind. C1) und Freude an klarer Kommunikation",
+    "Erfahrung im Kundenservice, idealerweise in der Telefonie, und ausgeprägte Serviceorientierung"
   ],
   "benefits": [
     "Hybrides Arbeiten und Home-Office-Optionen",
@@ -1472,42 +1391,40 @@
     "relationshipStatus": "partner"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_12",
-    "placedScore": 50,
-    "profileMatch": 50,
-    "urgencyScore": 50,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Kundenservice-Erfahrung: Nachgewiesene tägliche Kommunikation per Telefon und E-Mail.",
-      "Vertragsbearbeitung: Erfahrung mit internen Systemen und Dokumentation.",
-      "Office-Kompetenz: Sicherer Umgang mit Outlook, Excel und PowerPoint.",
-      "Serviceorientierung: Ausgeprägte Kundenfokus und präzise Arbeitsweise."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Inbound-Fokus: Keine Akquiseerfahrung, obwohl Prozessoptimierung verlangt wird.",
-      "Garantieversicherung: CV nennt nur allgemeine Schadenbearbeitung, nicht spezifisch Garantiefälle.",
-      "Qualitätsmanagement: Keine ausgewiesenen Projekte zur Prozessoptimierung im Lebenslauf.",
-      "Dokumentationsvolumen: Keine quantitativen Angaben zu bearbeiteten Vorgängen."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Inbound-Spezialisierung: Konkrete Beispiele für Garantieversicherung und Inbound-Projekte ergänzen.",
-      "Prozessoptimierung: Nachweise zu Beteiligung an QM- oder Lean-Initiativen hinzufügen.",
-      "Mengenangaben: Anzahl bearbeiteter Verträge oder Kundenkontakte pro Tag/Woche angeben.",
-      "Systemkenntnisse: Spezifische CRM- oder Vertragsmanagement-Tools im CV aufführen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T14:30:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_12",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Sachbearbeiter Versicherung (m/w/d) – Inbound-Kundenservice & Vertragsbearbeitung, DIS AG, Berlin, veröffentlicht am 2025-06-09.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Tägliche Kundenkommunikation per Telefon und E-Mail im Inbound.",
-      "2. Sicherer Umgang mit Office 365 und internen Kundensystemen.",
-      "3. Ausgeprägte Serviceorientierung und präzise Dokumentation.",
-      "4. Erfahrung in Vertragsbearbeitung und Garantiefall-Management.",
-      "5. Hohe Qualitäts- und Prozessverständnisbereitschaft."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T14:30:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -1524,11 +1441,10 @@
   "isFavorited": false,
   "companyLogo": "https://www.marsh.com/content/dam/marsh/perspectives/images/marsh-logo.png",
   "contactPerson": {
-    "id": "aykhan-abbaszade",
     "name": "Aykhan Abbaszade",
     "position": "Talent Acquisition Consultant",
-    "phone": "+49 40 360310",
-    "email": "aykhan.abbaszade@marsh.com",
+    "phone": "",
+    "email": "",
     "avatar": ""
   },
   "salary": {
@@ -1556,11 +1472,11 @@
     "Marktbeobachtung und Beratung zu Versicherungsschutz und Trends"
   ],
   "yourProfile": [
-    "Abgeschlossene kaufmännische Ausbildung im Versicherungswesen oder vergleichbares Studium",
-    "Mehrjährige Berufserfahrung bei einem Versicherungsmakler oder in der Unternehmensversicherungsabteilung",
-    "Fundierte Kenntnisse in Industriesparten und technischen Risikofeldern",
+    "Abgeschlossene kaufmännische Ausbildung mit Schwerpunkt Versicherung oder vergleichbares Studium",
+    "Mehrjährige Berufserfahrung bei einem Versicherungsmakler oder in der Versicherungsabteilung eines Unternehmens",
+    "Fundierte Kenntnisse in einer oder mehreren Industriesparten",
     "Verhandlungssichere Deutschkenntnisse (C1) und gute Englischkenntnisse (B2)",
-    "Starke analytische Fähigkeiten und Kommunikationskompetenz",
+    "Analytische Fähigkeiten und klare Kommunikationsstärke",
     "Selbständige, strukturierte Arbeitsweise"
   ],
   "benefits": [
@@ -1586,50 +1502,48 @@
         "id": "aykhan-abbaszade",
         "name": "Aykhan Abbaszade",
         "position": "Talent Acquisition Consultant",
-        "phone": "+49 40 360310",
-        "email": "aykhan.abbaszade@marsh.com",
+        "phone": "",
+        "email": "",
         "avatar": ""
       }
     ],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_13",
-    "placedScore": 65,
-    "profileMatch": 60,
-    "urgencyScore": 55,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Solide Vertriebserfahrung: Mehrjährige Tätigkeit im Versicherungsvertrieb bei Signal Iduna und Barmenia.",
-      "Sachkundeprüfung §34d: Gültige Lizenz für Versicherungsvermittlung vorhanden.",
-      "Kommunikationsstärke: Umfangreiche Erfahrung in Kunden- und Vermittlergesprächen.",
-      "Office-Kompetenz: Sicherer Umgang mit MS Office und digitalen Tools."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Industrieversicherungen: Keine spezifische Erfahrung in technischen Branchen- oder Industrieversicherungen.",
-      "Risikomanagement: Keine dokumentierten Projekte zur Risikoanalyse oder -minimierung.",
-      "Schadenverhandlungen: CV nennt „Neuschadenanlage“, aber nicht Verhandlungen mit Industriekunden.",
-      "Internationalität: Keine ausgewiesene Erfahrung in Betreuung internationaler Policen."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Branchenkenntnis: Konkrete Stationen in Industrie- oder Techniksparte ergänzen.",
-      "Risikobewertung: Beispiele für Risk-Assessment-Projekte und -Methoden hinzufügen.",
-      "Verhandlungsbeispiele: Erfolge bei Schaden- oder Prämienverhandlungen mit Großkunden anführen.",
-      "Portfolio-Kennzahlen: Anzahl betreuter Industriekunden oder Volumen des Portfolios quantifizieren."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T14:45:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_13",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Kundenbetreuer:in (w/m/d) Industrieversicherungen, Marsh GmbH, Berlin, veröffentlicht am 2025-06-16.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Vertriebserfahrung im Versicherungsbereich mit Fokus auf Kaltakquise.",
-      "2. Gültige §34d-Lizenz und versicherungstechnisches Know-how.",
-      "3. Ausgeprägte Kommunikations- und Verhandlungsfähigkeiten.",
-      "4. Sicherer Umgang mit MS Office und digitalen Tools.",
-      "5. Selbstständige und strukturierte Arbeitsorganisation."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T14:45:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -1646,11 +1560,10 @@
   "isFavorited": false,
   "companyLogo": "",
   "contactPerson": {
-    "id": "sales-passion-hr",
-    "name": "Sales Passion Recruiting",
-    "position": "HR & Recruitment",
-    "phone": "+49 30 12345678",
-    "email": "recruiting@salespassion.de",
+    "name": "",
+    "position": "",
+    "phone": "",
+    "email": "",
     "avatar": ""
   },
   "salary": {
@@ -1667,7 +1580,7 @@
     {
       "name": "Sales Passion GmbH",
       "logo": "",
-      "url": "https://www.salespassion.de"
+      "url": ""
     }
   ],
   "responsibilities": [
@@ -1694,61 +1607,50 @@
   "companyDetails": {
     "id": "sales-passion-gmbh",
     "name": "Sales Passion GmbH",
-    "website": "https://www.salespassion.de",
+    "website": "",
     "logo": "",
     "kununu": {
       "rating": 0,
       "reviews": 0
     },
-    "contacts": [
-      {
-        "id": "sales-passion-hr",
-        "name": "Sales Passion Recruiting",
-        "position": "HR & Recruitment",
-        "phone": "+49 30 12345678",
-        "email": "recruiting@salespassion.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_14",
-    "placedScore": 30,
-    "profileMatch": 30,
-    "urgencyScore": 40,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Fundierte B2B-Vertriebserfahrung im Versicherungsumfeld.",
-      "Starke Verhandlungs- und Abschlussstärke.",
-      "Eigenverantwortliche und strukturierte Arbeitsweise.",
-      "Verhandlungssichere Deutschkenntnisse."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Keine Erfahrung in Digitalisierung oder Datenmanagement.",
-      "Kein Hintergrund im Software- oder Servicebereich.",
-      "Fehlende Kenntnisse einschlägiger Tools (CRM, BI, Data Analytics).",
-      "Keine nachgewiesenen Digitalisierungsprojekte im Lebenslauf."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Zertifikate/Weiterbildungen im Bereich Digitalisierung oder Data Management ergänzen.",
-      "Erfahrungen mit CRM- und BI-Systemen (z. B. Salesforce, Power BI) aufführen.",
-      "Konkrete Projekte zu Digitalisierungs- oder Transformationsinitiativen angeben.",
-      "Quantitative Erfolge (Umsatzsteigerungen, Projektabschlüsse) mit Zahlen belegen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T15:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_14",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Sales Account Manager – Digitalisierung & Datenmanagement, Sales Passion GmbH, Deutschland, veröffentlicht am 2025-06-16.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige B2B-Vertriebserfahrung im Versicherungssektor.",
-      "2. Ausgeprägte Verhandlungs- und Abschlussstärke.",
-      "3. Selbstständige und strukturierte Arbeitsweise.",
-      "4. Hohes Engagement und Eigeninitiative.",
-      "5. Verhandlungssichere Deutschkenntnisse."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T15:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -1765,11 +1667,10 @@
   "isFavorited": false,
   "companyLogo": "https://www.vodafone.de/logo.png",
   "contactPerson": {
-    "id": "vodafone-hr",
-    "name": "Vodafone Recruitment Team",
-    "position": "Human Resources",
-    "phone": "+49 800 1721212",
-    "email": "career@vodafone.com",
+    "name": "",
+    "position": "",
+    "phone": "",
+    "email": "",
     "avatar": ""
   },
   "salary": {
@@ -1802,7 +1703,7 @@
     "Technische Affinität und analytisches Denkvermögen",
     "Abschlusssicherheit, Vertriebs- und Krisenmanagement-Kompetenz",
     "Selbstständige, zielorientierte und belastbare Arbeitsweise",
-    "Englischkenntnisse auf C1-Niveau von Vorteil"
+    "Englischkenntnisse auf C1-Niveau sind von Vorteil"
   ],
   "benefits": [
     "Flexible Homeoffice-Regelung (bis zu 20 Tage/Jahr aus EU- und Nicht-EU-Ländern)",
@@ -1822,55 +1723,44 @@
       "rating": 0,
       "reviews": 0
     },
-    "contacts": [
-      {
-        "id": "vodafone-hr",
-        "name": "Vodafone Recruitment Team",
-        "position": "Human Resources",
-        "phone": "+49 800 1721212",
-        "email": "career@vodafone.com",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_15",
-    "placedScore": 20,
-    "profileMatch": 20,
-    "urgencyScore": 40,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Vertriebserfahrung: Mehrjährige Tätigkeit im Versicherungsvertrieb und Bestandsausbau.",
-      "Kommunikationsstärke: Erfahren in Kunden- und Vermittlergesprächen.",
-      "Eigenständige Arbeitsweise: Nachgewiesene Selbstorganisation als freier Vertriebspartner.",
-      "Krisenmanagement: Erfahrung mit Einwandbehandlung und Abschlussdruck."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Keine Telko-/IT-Erfahrung: Fehlende Branchekenntnisse in Telekommunikation oder Softwarelösungen.",
-      "Kein SaaS- oder Cloud-Background: Keine ausgewiesenen Digitalisierungsprojekte im CV.",
-      "Unzureichende Projektmethodik: Keine Beispiele für Ausschreibungs- oder Projektsteuerung.",
-      "Führungsebene: Keine dokumentierten Verhandlungen oder Kontakte auf Geschäftsführungs-Niveau."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Tech-Affinität: Konkrete Projekte zu Cloud-, Security- oder IoT-Lösungen ergänzen.",
-      "Projektsteuerung: Nachweise zu Ausschreibungsmanagement und Governance-Prozessen anführen.",
-      "Digitale Tools: Kenntnisse in CRM- und Collaboration-Plattformen (z.B. Salesforce) aufführen.",
-      "Englisch C1: Nachweis oder Zertifikat für Business-Englisch ergänzen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T15:15:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_15",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Account Manager New Business (m/w/d), Vodafone GmbH, Berlin, veröffentlicht am 2025-06-16.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Vertriebserfahrung und Bestandskundenpflege im Versicherungsumfeld.",
-      "2. Ausgeprägte Kommunikations- und Verhandlungsfähigkeiten.",
-      "3. Selbstständige Arbeitsweise und Krisenmanagement-Kompetenz.",
-      "4. Abschlussfokussierte Methodik und Hands-on-Mentalität.",
-      "5. Nachgewiesene Einwandbehandlung und Abschlussstärke."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T15:15:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -1887,11 +1777,10 @@
   "isFavorited": false,
   "companyLogo": "https://www.hdi.de/logo.png",
   "contactPerson": {
-    "id": "hdi-recruiting",
-    "name": "HDI Recruiting Team",
-    "position": "Talent Acquisition",
-    "phone": "+49 521 9120",
-    "email": "vertriebskarriere@hdi.de",
+    "name": "",
+    "position": "",
+    "phone": "",
+    "email": "",
     "avatar": ""
   },
   "salary": {
@@ -1899,13 +1788,10 @@
     "currency": "EUR"
   },
   "kununu": {
-    "rating": 4.0,
-    "reviews": 380
+    "rating": 0,
+    "reviews": 0
   },
-  "listedOn": [
-    { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
-    { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" }
-  ],
+  "listedOn": [],
   "headhunters": 0,
   "externalSources": [
     {
@@ -1917,86 +1803,75 @@
   "responsibilities": [
     "Eigenständige Betreuung, Beratung und Ausbau des Kundenbestandes im Außendienst",
     "Analyse von Versicherungssituationen mit digitalen Tools und Entwicklung maßgeschneiderter Lösungen",
-    "Akquise von Neukunden, insbesondere Firmen- und Verbandsgeschäft sowie freie Berufe",
+    "Akquise von Neu­kunden, insbesondere Firmen- und Verbands­geschäft sowie freie Berufe",
     "Vertragsmanagement und Bearbeitung von Änderungen",
-    "Regionale Reisebereitschaft und Pflege von Kundenkontakten"
+    "Regionale Reise­bereitschaft und Pflege von Kundenkontakten"
   ],
   "yourProfile": [
-    "Abgeschlossene kaufmännische Berufsausbildung im Versicherungs- oder Finanzumfeld",
-    "Mehrjährige Vertriebserfahrung als Partner bei Signal Iduna und Hanse Merkur",
+    "Abgeschlossene kauf­männische Berufsausbildung, idealerweise im Versicherungs- oder Finanzumfeld",
+    "Mehrjährige Erfahrung im Vertrieb als Partner bei Signal Iduna :contentReference[oaicite:0]{index=0} und Hanse Merkur :contentReference[oaicite:1]{index=1}",
     "Unternehmerisches Denken, Hands-on-Mentalität und Selbstständigkeit",
     "Ausgeprägtes Kommunikations- und Verkaufstalent",
     "Souveräner Umgang mit digitalen Medien und Vertriebstools",
-    "Pkw-Führerschein und regionale Reisebereitschaft"
+    "Pkw-Führerschein und regionale Reise­bereitschaft"
   ],
   "benefits": [
-    "Attraktive Vergütung und leistungsorientiertes Provisionsmodell",
-    "Unternehmerische Entwicklungs­möglichkeiten im HDI Exklusivvertrieb",
-    "Moderne digitale Verkaufsinstrumente und CRM-Systeme",
+    "Attraktive Vergütung und Provisionsmodell",
+    "Unternehmerische Entwicklungs­möglichkeiten in der HDI Exklusivvertrieb-Organisation",
+    "Digitale Verkaufsinstrumente und CRM-System",
     "Regionale Einarbeitung durch erfahrene Fach­kräfte",
-    "Qualifizierte Aus- und Weiterbildung",
+    "Qualifizierte Aus- und Weiter­bildung",
     "Exklusive Zugangskanäle zu Unternehmens- und Verbands­kunden",
     "Umfangreiche Vollmachten und regionale Unterstützung"
   ],
-  "fullDescription": "Im HDI Exklusivvertrieb sind Sie erste Ansprechpartner:in für Ihre Kunden. Mit digitalen Tools analysieren Sie Versicherungssituationen, gewinnen Neukunden im Firmen- und Verbandsgeschäft und entwickeln passgenaue Lösungen. Sie betreuen Bestandskunden eigenständig, bearbeiten Vertragsänderungen und gestalten Ihren Erfolg mit unternehmerischer Freiheit.",
+  "fullDescription": "Im HDI Exklusivvertrieb sind Sie erste Ansprech­person für Ihre Kunden. Mit digitalen Tools analysieren Sie Versicherungssituationen, gewinnen Neu­kunden im Firmen- und Verbandsgeschäft und entwickeln passgenaue Lösungen. Sie betreuen Bestandskunden eigenständig, bearbeiten Vertragsänderungen und gestalten Ihren Erfolg mit unternehmerischer Freiheit.",
   "companyDetails": {
     "id": "hdi-ag",
     "name": "HDI AG",
     "website": "https://www.hdi.de",
     "logo": "https://www.hdi.de/logo.png",
     "kununu": {
-      "rating": 4.0,
-      "reviews": 380
+      "rating": 0,
+      "reviews": 0
     },
-    "contacts": [
-      {
-        "id": "hdi-recruiting",
-        "name": "HDI Recruiting Team",
-        "position": "Talent Acquisition",
-        "phone": "+49 521 9120",
-        "email": "vertriebskarriere@hdi.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_16",
-    "placedScore": 80,
-    "profileMatch": 80,
-    "urgencyScore": 60,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Branchenerfahrung: Langjährige Außendiensttätigkeit bei Signal Iduna und Hanse Merkur.",
-      "Digitale Affinität: Erfahrung im Einsatz von digitalen Tools zur Risikoanalyse.",
-      "Unternehmerische Einstellung: Selbstständige Arbeitsweise und Hands-on-Mentalität.",
-      "Reisebereitschaft: Pkw-Führerschein und regionale Mobilität vorhanden."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Unternehmensfokus: Wenig dokumentierte Erfahrung im Firmen- und Verbandsgeschäft.",
-      "CRM-Nachweis: Keine explizite Nennung gängiger CRM-Systeme (z. B. Salesforce).",
-      "Quantifizierung: Erfolge in Akquise und Bestandsausbau nicht mit Zahlen belegt.",
-      "Ausbildungstiefe: Keine weiterführende Qualifikation (z. B. Versicherungsfachwirt) angegeben."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Firmengeschäft: Konkrete Projekte im Firmen- oder Verbandsvertrieb ergänzen.",
-      "CRM-Tools: Namen und Erfahrungen mit CRM-Systemen im Lebenslauf aufführen.",
-      "Erfolgsmessung: KPIs (Neukundenzahlen, Umsatzsteigerung) zur Vertriebsleistung hinzufügen.",
-      "Weiterbildung: Schulungen oder Fortbildungen im Versicherungs- oder Vertriebsbereich angeben."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T15:30:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_16",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, HDI AG, Berlin/Potsdam, veröffentlicht am 2025-06-02.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Langjährige Erfahrung im Außendienst bei Signal Iduna und Hanse Merkur.",
-      "2. Geübter Einsatz digitaler Tools zur Analyse und Beratung.",
-      "3. Unternehmerische Hands-on-Mentalität und Selbstständigkeit.",
-      "4. Pkw-Führerschein und ausgeprägte regionale Reisebereitschaft.",
-      "5. Ausgeprägtes Kommunikations- und Verkaufstalent."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T15:30:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -2038,16 +1913,16 @@
   ],
   "responsibilities": [
     "Betreuung und Ausbau eines eigenen Kundenstamms im Versicherungs- und Finanzbereich",
-    "Akquise von Neukund:innen und Vermittlung maßgeschneiderter Vorsorge- und Versicherungslösungen",
+    "Akquise von Neu­kund:innen und Vermittlung maßgeschneiderter Vorsorge- und Versicherungslösungen",
     "Begleitung des gesamten Verkaufsprozesses von der Bedarfserhebung bis zum Abschluss",
     "Teamaufbau und Coaching neuer Agenturpartner:innen",
     "Nutzung digitaler Verkaufsinstrumente und Lead-Management-Tools"
   ],
   "yourProfile": [
-    "Mehrjährige Erfahrung als Vertriebspartner:in Barmenia im Lebensversicherungsgeschäft (Jan 2020–März 2021)",
+    "Mehrjährige Erfahrung als Vertriebspartner:in Barmenia im Lebensversicherungsgeschäft (Jan 2020–März 2021) :contentReference[oaicite:0]{index=0}",
     "Abgeschlossene Ausbildung/Studium im Finanz- oder Versicherungswesen oder vergleichbar",
-    "Ausgeprägte Kundenorientierung und Vermittlungsexpertise (Deutsch C1)",
-    "Verhandlungssichere Englischkenntnisse",
+    "Ausgeprägte Kundenorientierung und Vermittlungsexpertise auf C1-Niveau Deutsch",
+    "Verhandlungssichere Englischkenntnisse :contentReference[oaicite:1]{index=1}",
     "Selbstständige, unternehmerische Arbeitsweise und Teamführungskompetenz",
     "Sicherer Umgang mit digitalen Vertriebstools und Microsoft Office"
   ],
@@ -2060,7 +1935,7 @@
     "Kostenloser GoTo-Meeting-Account für Onlineberatung",
     "Regelmäßige Vertriebsveranstaltungen und Wettbewerbe"
   ],
-  "fullDescription": "Als selbstständige:r Versicherungsfachmann/-frau bei der Barmenia betreuen Sie Ihren eigenen Kundenstamm, akquirieren Neukund:innen und vermitteln individuelle Vorsorge- und Versicherungslösungen. Sie gestalten Ihren Erfolg aktiv über Teamaufbau und nutzen digitale Tools zur Prozessoptimierung.",
+  "fullDescription": "Als selbstständige:r Versicherungsfachmann/-frau bei der Barmenia betreuen Sie Ihren eigenen Kundenstamm, akquirieren Neu­kund:innen und vermitteln individuelle Vorsorge- und Versicherungslösungen. Sie gestalten Ihren Erfolg aktiv über Teamaufbau und nutzen digitale Tools zur Prozessoptimierung.",
   "companyDetails": {
     "id": "barmenia",
     "name": "Barmenia Krankenversicherung AG",
@@ -2083,42 +1958,40 @@
     "relationshipStatus": "partner"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_17",
-    "placedScore": 75,
-    "profileMatch": 75,
-    "urgencyScore": 60,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Direkte Barmenia-Erfahrung: Vertriebspartnerin 2020–2021 bei Barmenia.",
-      "Relevante Ausbildung: Kaufmännischer oder versicherungsspezifischer Abschluss vorhanden.",
-      "Sprachkompetenz: Deutsch C1 und verhandlungssicheres Englisch.",
-      "Digital Literacy: Geübter Umgang mit Microsoft Office und digitalen Vertriebstools."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Firmenkunden-Erfahrung: Fokus lag auf privatkundenseitiger Lebensversicherung, weniger Firmen- und Verbandsgeschäft.",
-      "Quantifizierung: Keine KPIs (z. B. Umsatz, Neukundenzahlen) dokumentiert.",
-      "CRM-Nachweis: Keine spezifischen CRM- oder Lead-Management-Systeme genannt.",
-      "Weiterbildung: Keine Hinweise auf aktuelle Fortbildungen (z. B. Fachwirt)."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Erfolge in Zahlen: Neukunden- und Umsatzsteigerungen quantifizieren.",
-      "CRM-Tools: Spezifische Systeme (z. B. Salesforce, MS Dynamics) angeben.",
-      "Fortbildungsnachweise: Weiterbildungen im Versicherungsbereich ergänzen.",
-      "Firmenkundengeschäft: Konkrete Projekte im Firmen- und Verbandsvertrieb ergänzen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T15:45:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_17",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
       "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Barmenia-Vertriebspartnerin (Jan 2020–März 2021).",
-      "2. Abgeschlossene Ausbildung im Finanz-/Versicherungswesen.",
-      "3. Deutsch C1 & verhandlungssicheres Englisch.",
-      "4. Erfahrung mit digitalen Vertriebstools & MS Office.",
-      "5. Selbstständige, unternehmerische und teamleitende Arbeitsweise."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T15:45:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -2135,11 +2008,10 @@
   "isFavorited": false,
   "companyLogo": "https://www.lvm.de/logo.png",
   "contactPerson": {
-    "id": "lvm-bicen-oener-hr",
-    "name": "LVM Agenturteam Bicen & Öner",
-    "position": "Agenturleitung",
-    "phone": "+49 221 1234567",
-    "email": "kontakt@lvm-bicen-oener.de",
+    "name": "",
+    "position": "",
+    "phone": "",
+    "email": "",
     "avatar": ""
   },
   "salary": {
@@ -2190,55 +2062,44 @@
       "rating": 0,
       "reviews": 0
     },
-    "contacts": [
-      {
-        "id": "lvm-bicen-oener-hr",
-        "name": "LVM Agenturteam Bicen & Öner",
-        "position": "Agenturleitung",
-        "phone": "+49 221 1234567",
-        "email": "kontakt@lvm-bicen-oener.de",
-        "avatar": ""
-      }
-    ],
+    "contacts": [],
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_18",
-    "placedScore": 70,
-    "profileMatch": 70,
-    "urgencyScore": 50,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Außendiensterfahrung: Bewährte freie Vertriebstätigkeit beim Versicherungsvertrieb.",
-      "Ausbildung: Abgeschlossene kaufmännische/versicherungsfachliche Qualifikation.",
-      "Kommunikation: Starke persönliche Kundenberatung und Gesprächsführung.",
-      "Mobilität: Führerschein Klasse B und regionale Reisebereitschaft vorhanden."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Agentursysteme: Keine Nennung spezifischer LVM- oder CRM-Systeme im Lebenslauf.",
-      "Schadenregulierung: Erfahrung vor Ort zwar vorhanden, aber nicht quantifiziert.",
-      "Produktpalette: Wenig Dokumentation zu Finanzdienstleistungen im CV.",
-      "Homeoffice: Kein Hinweis auf hybride Arbeitsweise oder digitale Tools."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "CRM-Kenntnisse: Spezifische Agentur- oder CRM-Tools (z. B. LVM-Systeme) angeben.",
-      "Erfolgskennzahlen: Anzahl betreuter Kunden oder Terminvolumen pro Monat dokumentieren.",
-      "Finanzdienstleistungen: Konkrete Beratungserfolge bei Finanzprodukten ergänzen.",
-      "Hybrides Arbeiten: Erfahrungen mit Homeoffice- oder digitalen Beratungstools aufführen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T15:50:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_18",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Vertriebsmitarbeiter / Kundenberater (m/w/d), Außendienst, LVM-Versicherungsagentur Bicen & Öner GbR, Berlin-Kreuzberg, veröffentlicht am 2025-06-02.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Abgeschlossene Ausbildung als Versicherungskaufmann/-frau.",
-      "2. Nachgewiesene Außendiensterfahrung und Kundenberatungskompetenz.",
-      "3. Ausgeprägte Kommunikationsstärke und Serviceorientierung.",
-      "4. Führerschein Klasse B und regionale Mobilität.",
-      "5. Selbstständige und eigenverantwortliche Arbeitsweise."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T15:50:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -2255,7 +2116,6 @@
   "isFavorited": false,
   "companyLogo": "https://www.axa.de/logo.png",
   "contactPerson": {
-    "id": "carolin-kaltsios",
     "name": "Carolin Kaltsios",
     "position": "Recruiting",
     "phone": "",
@@ -2321,42 +2181,40 @@
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_19",
-    "placedScore": 60,
-    "profileMatch": 60,
-    "urgencyScore": 50,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Versicherungsausbildung: Abgeschlossene kaufmännische Berufsausbildung im Versicherungsbereich vorhanden.",
-      "Bestandskundenpflege: Mehrjährige Erfahrung im Ausbau und in der Betreuung von Kundenstämmen.",
-      "Kommunikationsstärke: Umfangreiche Erfahrungen in persönlichen Verkaufsgesprächen.",
-      "Eigenverantwortung: Nachgewiesene selbstständige Arbeitsweise im Außendienst."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "IHK-Zertifikat: Keine explizite Nennung als IHK-geprüfter Versicherungsvermittler.",
-      "plan360°-Ansatz: Fehlende Erfahrung mit ganzheitlichen Beratungsmodellen.",
-      "Weiterbildung: Keine aktuellen VertriebsCampus- oder Fortbildungsnachweise.",
-      "Zusatzprodukte: Wenig Dokumentation zu Akquise von Zusatzversicherungen."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "IHK-Zertifikat: IHK-Prüfung zum Versicherungsvermittler ergänzen.",
-      "plan360°-Kompetenz: Beispiele für Rundum-Beratungsansätze hinzufügen.",
-      "VertriebsCampus: Teilnahme an AXA-Weiterbildungsprogrammen im CV aufführen.",
-      "Zusatzprodukt-Akquise: Erfolgskennzahlen zur Vermittlung von Zusatzprodukten angeben."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T16:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_19",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Versicherungskaufmann/frau als Kundenberater:in, AXA Gebietsdirektion Berlin, veröffentlicht am 2025-06-16.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Abgeschlossene kaufmännische Ausbildung im Versicherungswesen.",
-      "2. Umfangreiche Bestandskundenpflege und Ausbau-Erfolge.",
-      "3. Ausgeprägte Kommunikations- und Präsentationsfähigkeiten.",
-      "4. Selbstständige Arbeitsweise mit Hands-on-Mentalität.",
-      "5. Teamfähigkeit und Offenheit für neue Beratungskonzepte."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T16:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
 },
 {
@@ -2441,42 +2299,41 @@
     "relationshipStatus": "unknown"
   },
   "aiSummary": {
-    "id": "ai-summary-cv1_job_20",
-    "placedScore": 75,
-    "profileMatch": 75,
-    "urgencyScore": 60,
+    "id": "ai-summary-cv1_job_1",
+    "placedScore": 85,
+    "profileMatch": 90,
+    "urgencyScore": 70,
     "whatsGood": [
-      "Langjährige Industrievertriebserfahrung im Versicherungsumfeld.",
-      "Starke Verhandlungsfähigkeiten bei Schadenfällen und Vertragsabschlüssen.",
-      "Analytische Kompetenz: Erfahrung in Risiko- und Kostenanalysen.",
-      "Internationale Ausrichtung: Fließendes Englisch und kundenübergreifende Koordination."
+      "Passende Berufserfahrung: Mehrjährige, aktuelle Tätigkeit im Versicherungsvertrieb bei verschiedenen Unternehmen (Signal Iduna, Hanse Merkur, Barmenia).",
+      "Relevante Ausbildung: Abgeschlossene Ausbildung zum Versicherungsvertreter (34d) und eine kaufmännische Ausbildung zum Automobilkaufmann.",
+      "Vertriebsfokus: Nachgewiesene Erfahrung in der Neukundengewinnung durch Kaltakquise und im Bekanntenkreis.",
+      "Sprachkenntnisse: Verhandlungssicheres Englisch, was in einem internationalen Konzern wie der HDI Group vorteilhaft sein kann."
     ],
     "whatsBad": [
-      "Studienabschluss unklar: BWL-Studium im Lebenslauf nicht erwähnt.",
-      "Portfolio-Größe: Keine dokumentierte Betreuung von Kunden mit > 100 Mio. € Umsatz.",
-      "Risikomanagement-Projekte: Konkrete Nachweise für Risikominderungsmaßnahmen fehlen.",
-      "Interne Schnittstellen: Wenig Beispiele zur Zusammenarbeit mit Fachabteilungen."
+      "Fehlender Fokus auf Firmenkunden: Die Stellenanzeige legt einen Schwerpunkt auf das Firmen- und Verbandsgeschäft; der Lebenslauf weist bisher nur Erfahrung in der Privatkunden-Akquise (private Krankenversicherung, Lebensversicherung) aus.",
+      "Kaufmännische Ausbildung nicht aus der Finanzbranche: Die primäre Ausbildung ist im Automobilhandel, nicht direkt im gewünschten Versicherungs- oder Finanzumfeld."
     ],
     "whatsMissing": [
-      "Akademischer Nachweis: BWL- oder versicherungsrelevantes Studium im CV ergänzen.",
-      "Großkunden-Expertise: Betreuung von > 100 Mio. €-Portfolios mit Zahlen belegen.",
-      "Risikomanagement: Konkrete Projekte und Erfolge bei Risikominderungsstrategien anführen.",
-      "Cross-Funktionale Zusammenarbeit: Beispiele für interne Koordination mit Fachteams hinzufügen."
+      "Führerschein: Die erforderliche regionale Reisebereitschaft und der Pkw-Führerschein werden im Lebenslauf nicht erwähnt.",
+      "Umgang mit digitalen Tools: Die Anzeige fordert Begeisterung für digitale Medien und Tools; der Lebenslauf nennt nur \"Microsoft Office\". Erfahrungen mit CRM-Systemen oder spezifischer Verkaufssoftware fehlen.",
+      "Detaillierte Tätigkeitsbeschreibung: Die Aufgaben (z.B. \"Kaltakquise\") könnten quantifiziert werden (Erfolgsquoten, Anzahl Neukunden), um die Vertriebserfahrung zu untermauern.",
+      "Unternehmerisches Handeln: Belege für unternehmerisches Denken und selbstständiges Arbeiten, wie in der Anzeige gefordert, könnten durch konkrete Beispiele im Lebenslauf gestärkt werden."
     ],
-    "generatedAt": "2025-06-24T16:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   },
   "salesPitch": {
-    "id": "sales-pitch-cv1_job_20",
+    "id": "sales-pitch-cv1_job_1",
     "salesPitch": [
-      "Stelle: Key Client Executive (w/m/d) Industrieversicherungen, Marsh GmbH, Berlin/Leipzig, veröffentlicht am 2025-06-16.",
+      "Stelle: Vertriebspartner:in im Versicherungsaußendienst, Barmenia Krankenversicherung AG, Berlin, veröffentlicht am 2025-06-09.",
       "Top 5 Stärken und Erfahrungen des Bewerbers:",
-      "1. Umfangreiche Industrievertriebserfahrung im internationalen Kontext.",
-      "2. Verhandlungssichere Führung von Schaden- und Vertragsgesprächen.",
-      "3. Expertise in Risiko- und Kostenanalysen.",
-      "4. Fließende Englischkenntnisse für internationale Kundenbetreuung.",
-      "5. Selbstständige und eigenverantwortliche Arbeitsweise."
+      "1. Spezifische Vertriebserfahrung: Seit 2020 durchgehend im Versicherungsvertrieb tätig, u.a. als Hauptagentur bei Signal Iduna und Vertriebspartner bei Hanse Merkur und Barmenia.",
+      "2. Passende Qualifikation: Besitzt eine abgeschlossene Ausbildung zum Versicherungsvertreter (34d) mit Schwerpunkt Kranken- & Pflegeversicherung.",
+      "3. Erfüllte Grundanforderung: Bringt eine abgeschlossene kaufmännische Berufsausbildung mit.",
+      "4. Akquise-Methoden: Erfahrung in der Kaltakquise sowie in der Akquise im Bekanntenkreis.",
+      "5. Karriereentwicklung: Zeigt eine klare Entwicklung von einem Traineeship über verschiedene Vertriebspartner-Stationen bis hin zur Tätigkeit in einer Hauptagentur."
     ],
-    "generatedAt": "2025-06-24T16:00:00Z"
+    "generatedAt": "2025-06-23T17:35:59Z"
   }
-}]
+}
+]
 
