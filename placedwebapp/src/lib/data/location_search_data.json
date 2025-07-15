@@ -1,0 +1,197 @@
+{
+  "berlin": [
+    {
+      "id": "location_berlin_1",
+      "title": "Product Manager (m/w/d)",
+      "company": "Soundcloud",
+      "location": "Berlin, Germany",
+      "postedDate": "2024-12-29T12:00:00Z",
+      "matchPercentage": 84,
+      "urgency": "medium",
+      "isPaidAd": true,
+      "isHeadhunter": false,
+      "isMyClient": false,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/soundcloud.svg",
+      "contactPerson": {
+        "name": "Berlin Recruiter",
+        "position": "Talent Partner",
+        "phone": "+49 30 6666-0001",
+        "email": "jobs@soundcloud.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 78000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 4.0,
+        "reviews": 167
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" }
+      ],
+      "headhunters": 7,
+      "externalSources": [
+        { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" }
+      ]
+    }
+  ],
+  "munich": [
+    {
+      "id": "location_munich_1",
+      "title": "Senior Consultant (m/w/d)",
+      "company": "McKinsey & Company",
+      "location": "Munich, Germany",
+      "postedDate": "2024-12-28T08:30:00Z",
+      "matchPercentage": 91,
+      "urgency": "high",
+      "isPaidAd": false,
+      "isHeadhunter": true,
+      "isMyClient": true,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/mckinsey.svg",
+      "contactPerson": {
+        "name": "Munich Recruiter",
+        "position": "Senior Recruiter",
+        "phone": "+49 89 6666-0002",
+        "email": "careers@mckinsey.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 120000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 4.4,
+        "reviews": 289
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+        { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+      ],
+      "headhunters": 12,
+      "externalSources": [
+        { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" }
+      ]
+    }
+  ],
+  "hamburg": [
+    {
+      "id": "location_hamburg_1",
+      "title": "Operations Manager (m/w/d)",
+      "company": "Otto Group",
+      "location": "Hamburg, Germany",
+      "postedDate": "2024-12-27T15:00:00Z",
+      "matchPercentage": 79,
+      "urgency": "low",
+      "isPaidAd": true,
+      "isHeadhunter": false,
+      "isMyClient": false,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/otto.svg",
+      "contactPerson": {
+        "name": "Hamburg Recruiter",
+        "position": "HR Manager",
+        "phone": "+49 40 6666-0003",
+        "email": "careers@ottogroup.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 75000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 234
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+        { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" }
+      ],
+      "headhunters": 5,
+      "externalSources": [
+        { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" }
+      ]
+    }
+  ],
+  "frankfurt": [
+    {
+      "id": "location_frankfurt_1",
+      "title": "Investment Banking Analyst (m/w/d)",
+      "company": "Goldman Sachs",
+      "location": "Frankfurt am Main, Germany",
+      "postedDate": "2024-12-26T09:15:00Z",
+      "matchPercentage": 93,
+      "urgency": "high",
+      "isPaidAd": false,
+      "isHeadhunter": true,
+      "isMyClient": true,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/goldman-sachs.svg",
+      "contactPerson": {
+        "name": "Frankfurt Recruiter",
+        "position": "Executive Recruiter",
+        "phone": "+49 69 6666-0004",
+        "email": "careers@gs.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 110000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 4.3,
+        "reviews": 156
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+        { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+      ],
+      "headhunters": 15,
+      "externalSources": [
+        { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" }
+      ]
+    }
+  ],
+  "cologne": [
+    {
+      "id": "location_cologne_1",
+      "title": "Media Manager (m/w/d)",
+      "company": "RTL Group",
+      "location": "Cologne, Germany",
+      "postedDate": "2024-12-25T13:20:00Z",
+      "matchPercentage": 81,
+      "urgency": "medium",
+      "isPaidAd": true,
+      "isHeadhunter": false,
+      "isMyClient": false,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/rtl.svg",
+      "contactPerson": {
+        "name": "Cologne Recruiter",
+        "position": "Media Recruiter",
+        "phone": "+49 221 6666-0005",
+        "email": "jobs@rtlgroup.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 65000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 3.7,
+        "reviews": 123
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+        { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+      ],
+      "headhunters": 4,
+      "externalSources": [
+        { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,2780 @@
+[
+  {
+    "id": "cv2_job_1",
+    "title": "Servicetechniker im Außendienst (m/w/d)",
+    "company": "HOBART GmbH",
+    "location": "Großraum Berlin, Brandenburg, Ravensburg, Friedrichshafen",
+    "postedDate": "2025-06-09T00:00:00+02:00",
+    "matchPercentage": 76,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://www.hobart.de/logo.png",
+    "contactPerson": {
+      "name": "Jana Götz",
+      "position": "HR Business Partner - After Sales Service",
+      "phone": "+49 781 600-2333",
+      "email": "jana.goetz@hobart.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JG"
+    },
+    "salary": {
+      "amount": 48000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.9,
+      "reviews": 197,
+      "url": "https://www.kununu.com/de/hobart-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "Xing"
+      }
+    ],
+    "headhunters": null,
+    "externalSources": [
+      {
+        "name": "HOBART GmbH",
+        "logo": "https://www.hobart.de/logo.png",
+        "url": "https://www.hobart.de"
+      }
+    ],
+    "responsibilities": [
+      "Aufstellung und Montage von Spül- und Großküchengeräten bei Kunden vor Ort",
+      "Inbetriebnahme und Einweisung in die Gerätesysteme",
+      "Wartung, Reparaturen und Servicetätigkeiten an Spültechnik",
+      "Beratung und technischer Support für Kunden",
+      "Dokumentation der Serviceeinsätze"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker/in Energie- und Gebäudetechnik",
+      "Selbstständige, eigenverantwortliche Arbeitsweise",
+      "Sicheres Auftreten und Erfahrung in der Kundenkommunikation",
+      "Erste Praxiserfahrung im Kundendienst und Störungsbehebung",
+      "Führerschein Klasse B und hohe Reisebereitschaft"
+    ],
+    "benefits": [
+      "Individuelle Einarbeitung im eigenen Schulungszentrum mit Mentor",
+      "Voll ausgestatteter Servicevan für geschäftliche Nutzung",
+      "Flexible Gleitzeitmodelle mit wohnortbasiertem Arbeitsbeginn",
+      "Bike-Leasing und Corporate Benefits",
+      "Tarifgerechte Vergütung (Metall- und Elektroindustrie), 30 Urlaubstage, Urlaubs- und Weihnachtsgeld",
+      "Interne und externe Schulungs- und Fortbildungsprogramme"
+    ],
+    "fullDescription": "HOBART GmbH, Weltmarktführer für gewerbliche Spül- und Reinigungstechnik, sucht Servicetechniker im Außendienst für Berlin und Brandenburg. Sie montieren, nehmen in Betrieb, warten und reparieren Spültechnikanlagen und beraten unsere Kunden bei technischen Fragen.",
+    "companyDetails": {
+      "id": "hobart-gmbh",
+      "name": "HOBART GmbH",
+      "website": "https://www.hobart.de",
+      "logo": "https://www.hobart.de/logo.png",
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 197,
+        "url": "https://www.kununu.com/de/hobart-gmbh"
+      },
+      "contacts": [
+        {
+          "id": "jana-goetz",
+          "name": "Jana Götz",
+          "position": "HR Business Partner - After Sales Service",
+          "phone": "+49 781 600-2333",
+          "email": "jana.goetz@hobart.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JG"
+        },
+        {
+          "id": "johannes-klein",
+          "name": "Johannes Klein",
+          "position": "Head of Sales",
+          "phone": "+49 781 600-2333",
+          "email": "johannes.klein@hobart.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JK"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_1",
+      "placedScore": 76,
+      "profileMatch": 70,
+      "urgencyScore": 50,
+      "whatsGood": [
+        "Fachliche Ausbildung: Elektroniker/in Energie- und Gebäudetechnik abgeschlossen",
+        "Serviceerfahrung: Praktische Störungsbehebung und Wartung von elektrischen Systemen",
+        "Kundenkontakt: Sichere Kommunikation und Einweisung von Anwendern",
+        "Reisebereitschaft: Führerschein Klasse B und Flexibilität im Einsatzgebiet"
+      ],
+      "whatsBad": [
+        "Gerätetechnik: Keine spezifische Erfahrung mit Spül- und Großküchengeräten dokumentiert",
+        "Montagepraxis: Weniger Nachweise zu komplexen Aufbau- und Montagearbeiten",
+        "Dokumentationstiefe: Serviceberichte im Lebenslauf nicht quantifiziert",
+        "CRM-Kenntnisse: Keine Angaben zu digitalen Service- oder Ticketing-Systemen"
+      ],
+      "whatsMissing": [
+        "Spültechnik-Kenntnisse: Konkrete Stationen oder Schulungen zu Großküchengeräten ergänzen",
+        "Montageprojekte: Beispiele für eigenständige Montage großer Anlagen anführen",
+        "Digital-Tools: Erfahrung mit CRM- oder Service-Apps im Außendienst angeben",
+        "Quantitative Erfolge: Anzahl betreuter Einsätze und Reaktionszeiten dokumentieren"
+      ],
+      "generatedAt": "2025-06-24T16:15:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_1",
+      "salesPitch": [
+        "Stelle: Servicetechniker im Außendienst (m/w/d), HOBART GmbH, Großraum Berlin/Brandenburg, veröffentlicht am 2025-06-09.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung als Elektroniker/in Energie- und Gebäudetechnik.",
+        "2. Umfangreiche Erfahrung in Wartung und Störungsbehebung.",
+        "3. Sicheres Auftreten und Einweisung von Endanwendern.",
+        "4. Führerschein Klasse B & hohe Reisebereitschaft.",
+        "5. Selbstständige Arbeitsweise und dokumentierte Serviceeinsätze."
+      ],
+      "generatedAt": "2025-06-24T16:15:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_2",
+    "title": "Bauleiter (m/w/d) Elektrotechnik",
+    "company": "Michael Page International (im Auftrag)",
+    "location": "Berlin, Deutschland",
+    "postedDate": "2025-06-22T00:00:00+02:00",
+    "matchPercentage": 95,
+    "urgency": "low",
+    "isPaidAd": true,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://www.michaelpage.de/logo.png",
+    "contactPerson": {
+      "name": "Stefan Bauer",
+      "position": "Senior Consultant",
+      "phone": "+49 30 88776655",
+      "email": "stefan.bauer@michaelpage.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SB"
+    },
+    "salary": {
+      "amount": 45000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.8,
+      "reviews": 320,
+      "url": "https://www.kununu.com/de/michael-page-international"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      }
+    ],
+    "headhunters": 1,
+    "externalSources": [
+      {
+        "name": "Michael Page International",
+        "logo": "https://www.michaelpage.de/logo.png",
+        "url": "https://www.michaelpage.de"
+      }
+    ],
+    "responsibilities": [
+      "Eigenverantwortliche Planung, Überwachung und Steuerung elektrotechnischer Bauprojekte",
+      "Sicherstellung der Einhaltung von Qualitätsstandards und elektrotechnischer Vorschriften",
+      "Enge Zusammenarbeit mit Projektsteuerern, Architekten, Ingenieuren und anderen Gewerken",
+      "Identifikation und Lösung elektrotechnischer Herausforderungen auf der Baustelle",
+      "Termingerechte Fertigstellung der Projekte"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Mehrjährige Berufserfahrung in Projekt- und Baustellenleitung",
+      "Führungskompetenz und Durchsetzungsvermögen",
+      "Sicherer Umgang mit MS Office und Projektmanagementsoftware",
+      "Sehr gute Kenntnisse relevanter elektrotechnischer Vorschriften und Normen"
+    ],
+    "benefits": [
+      "Attraktives Gehaltspaket",
+      "Abwechslungsreiche Neubauprojekte in Berlin und Umgebung",
+      "Wertschätzende Unternehmenskultur mit offener Kommunikation",
+      "Unterstützung der Work-Life-Balance"
+    ],
+    "fullDescription": "Michael Page International sucht im Auftrag einen Bauleiter Elektrotechnik für ein etabliertes Berliner Unternehmen. Sie planen und steuern elektrotechnische Bauprojekte, sorgen für Qualität, koordinieren mit Architekten und Ingenieuren und gewährleisten fristgerechte Fertigstellung unter Einhaltung aller Normen.",
+    "companyDetails": {
+      "id": "michael-page",
+      "name": "Michael Page International",
+      "website": "https://www.michaelpage.de",
+      "logo": "https://www.michaelpage.de/logo.png",
+      "kununu": {
+        "rating": 3.8,
+        "reviews": 320,
+        "url": "https://www.kununu.com/de/michael-page-international"
+      },
+      "contacts": [
+        {
+           "id": "stefan-bauer",
+           "name": "Stefan Bauer",
+           "position": "Senior Consultant",
+           "phone": "+49 30 88776655",
+           "email": "stefan.bauer@michaelpage.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SB"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_2",
+      "placedScore": 95,
+      "profileMatch": 60,
+      "urgencyScore": 40,
+      "whatsGood": [
+        "Ausbildung: Elektroniker für Energie- und Gebäudetechnik vorhanden",
+        "Baustellenleitung: Erfahrung in Projektsteuerung und -überwachung",
+        "Normkenntnis: Sicherer Umgang mit elektrotechnischen Vorschriften",
+        "Kooperation: Enge Zusammenarbeit mit Architekten und Ingenieuren"
+      ],
+      "whatsBad": [
+        "Datum: Posting aus Mai 2025, geringe Aktualität",
+        "Digital-Tools: Projektmanagementsoftware nicht spezifiziert",
+        "Smart-Building: Keine Erfahrung mit modernen Gebäudetechniksystemen",
+        "Teamgröße: Keine Angaben zur Führung größerer Teams"
+      ],
+      "whatsMissing": [
+        "Softwarekenntnisse: MS Project, Asta Powerproject o.ä. ergänzen",
+        "Smart-Home/Smart-Building: Kompetenzen im IoT-Bereich anführen",
+        "Aktuelle Referenzen: Jüngste Projekte mit Umfang und Budget benennen",
+        "Teamleitung: Details zur Mitarbeiteranzahl in Projekten angeben"
+      ],
+      "generatedAt": "2025-06-24T19:55:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_2",
+      "salesPitch": [
+        "Stelle: Bauleiter Elektrotechnik, Michael Page International (im Auftrag), Berlin, veröffentlicht am 2025-05-24.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Elektro-Ausbildung mit relevanten Normkenntnissen.",
+        "2. Mehrjährige Erfahrung in Projekt- und Baustellenleitung.",
+        "3. Führungskompetenz und enge Zusammenarbeit mit Fachplanern.",
+        "4. Sicherer Umgang mit MS Office und Projektmanagement-Tools.",
+        "5. Nachgewiesene Fähigkeit zur termingerechten Fertigstellung."
+      ],
+      "generatedAt": "2025-06-24T19:55:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_3",
+    "title": "Bauleiter Photovoltaik (m/w/d)",
+    "company": "DIEPA GmbH (Vermittlung)",
+    "location": "12621 Berlin",
+    "postedDate": "2025-06-09T00:00:00+02:00",
+    "matchPercentage": 92,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=DIEPA",
+    "contactPerson": {
+      "name": "Mandy Marschner",
+      "position": "Filialleiterin",
+      "phone": "+49 30 670698112",
+      "email": "mandy.marschner@diepa.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=MM"
+    },
+    "salary": {
+      "amount": 60000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.6,
+      "reviews": 52,
+      "url": "https://www.kununu.com/de/diepa-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      },
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      }
+    ],
+    "headhunters": 1,
+    "externalSources": [
+      {
+        "name": "DIEPA GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=DIEPA",
+        "url": "https://www.diepa.de"
+      }
+    ],
+    "responsibilities": [
+      "Sicherstellung des Bauablaufs nationaler und internationaler Photovoltaikprojekte",
+      "Koordination von Lieferanten und Materialanlieferungen",
+      "Implementierung und Überwachung von Arbeitssicherheitsvorschriften",
+      "Führung, Motivation und Koordination des Baustellenteams",
+      "Enge Abstimmung mit Projektmanagern zwischen Baustelle und Büro"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Berufsausbildung in Elektrik bzw. Metallbau",
+      "Erfahrung in der Installation und Wartung elektrischer Anlagen",
+      "Organisationstalent und erste Bauleiter-Erfahrung",
+      "Kommunikationsstärke und Teamführungskompetenz",
+      "Sicherheitsorientierung mit Kenntnissen zu Arbeitsschutz",
+      "Fließende Deutsch- und Englischkenntnisse",
+      "Europaweite Reisebereitschaft"
+    ],
+    "benefits": [
+      "Familiäres Betriebsklima mit flachen Hierarchien",
+      "Intensive Einarbeitung und geförderte Weiterbildung",
+      "Dienstwagen und moderne Arbeitsausstattung",
+      "Flexible Arbeitszeitmodelle",
+      "Betriebliche Altersvorsorge",
+      "Teamevents und Bike Leasing"
+    ],
+    "fullDescription": "DIEPA GmbH vermittelt für einen wachstumsstarken Erneuerbare-Energien-Kunden einen Bauleiter Photovoltaik in Berlin. Sie steuern nationale und internationale Solarbauprojekte, koordinieren Lieferanten, sichern Arbeitsschutz, führen ein Baustellenteam und arbeiten eng mit dem Projektbüro zusammen.",
+    "companyDetails": {
+      "id": "diepa-gmbh",
+      "name": "DIEPA GmbH",
+      "website": "https://www.diepa.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=DIEPA",
+      "kununu": {
+        "rating": 3.6,
+        "reviews": 52,
+        "url": "https://www.kununu.com/de/diepa-gmbh"
+      },
+      "contacts": [
+        {
+          "id": "mandy-marschner",
+          "name": "Mandy Marschner",
+          "position": "Filialleiterin",
+          "phone": "+49 30 670698112",
+          "email": "mandy.marschner@diepa.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=MM"
+        }
+      ],
+      "relationshipStatus": "partner"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_3",
+      "placedScore": 92,
+      "profileMatch": 40,
+      "urgencyScore": 65,
+      "whatsGood": [
+        "Elektroniker-Ausbildung: Passende technische Grundqualifikation",
+        "Praktische Elektrik-Erfahrung: Kenntnisse in Installation und Wartung",
+        "Organisationstalent: Projektkoordination aus Serviceeinsätzen übertragbar",
+        "Sprachkenntnisse: Fließend Deutsch und Englisch"
+      ],
+      "whatsBad": [
+        "Keine Photovoltaik-spezifische Bauleitung nachgewiesen",
+        "Unklarheit bei Arbeitsschutz-Know-how auf Baustellen",
+        "Fehlende ausgewiesene Führungserfahrung größerer Teams",
+        "Keine Nachweise zu internationalen Projektabläufen"
+      ],
+      "whatsMissing": [
+        "Erfahrung als Bauleiter bei PV- oder Großbaustellen ergänzen",
+        "Konkrete Beispiele zu Arbeitsschutz-Implementierung anführen",
+        "Führungserfolge: Teamgröße und Motivationserfolge nennen",
+        "Internationale Projekte: Reiseeinsätze und Koordination beschreiben"
+      ],
+      "generatedAt": "2025-06-24T16:30:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_3",
+      "salesPitch": [
+        "Stelle: Bauleiter Photovoltaik (m/w/d), DIEPA GmbH (Vermittlung), Berlin, veröffentlicht am 2025-06-09.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung in Elektrik/Metallbau.",
+        "2. Praxis in Installation und Wartung elektrischer Anlagen.",
+        "3. Starkes Organisationstalent aus Service-Techniker-Rolle.",
+        "4. Kommunikation & Führungserfahrung im kleinen Team.",
+        "5. Fließende Deutsch- und Englischkenntnisse & Reisebereitschaft."
+      ],
+      "generatedAt": "2025-06-24T16:30:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_4",
+    "title": "Servicetechniker Elektromobilität / Ladeinfrastruktur (m/w/d)",
+    "company": "SPIE SAG GmbH",
+    "location": "Deutschlandweit",
+    "postedDate": "2025-06-23T00:00:00+02:00",
+    "matchPercentage": 82,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SPIE",
+    "contactPerson": {
+      "name": "Bertram Bekmann",
+      "position": "Recruiter",
+      "phone": "+49 30 12345678",
+      "email": "bertram.bekmann@spie.com",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=BB"
+    },
+    "salary": {
+      "amount": 52000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.3,
+      "reviews": 291,
+      "url": "https://www.kununu.com/de/spie-sag-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "XING"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "SPIE SAG GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SPIE",
+        "url": "https://www.spie.de"
+      }
+    ],
+    "responsibilities": [
+      "Montage und Inbetriebnahme von Ladesäulen und elektrischen Anlagen gemäß DGUV-Vorschrift und Ladesäulenverordnung",
+      "Reparatur-, Wartungs- und Instandhaltungsarbeiten an Ladeinfrastruktur",
+      "Unterstützung bei Kabelverlegearbeiten und Errichtung von Trafostationen",
+      "Sorgfältige Dokumentation der Bau- und Inbetriebnahmeprozesse",
+      "Einhaltung hoher Sicherheitsstandards und Nutzung persönlicher Schutzausrüstung"
+    ],
+    "yourProfile": [
+      "Abgeschlossene elektrotechnische Ausbildung (Elektriker/Elektroniker/Industrieelektriker/Elektroinstallateur)",
+      "Berufserfahrung in Elektroinstallationen, idealerweise Elektromobilität/Energieversorgung",
+      "Fundierte VDE-Mess- und Prüftechnik-Kenntnisse",
+      "Selbstständige und engagierte Arbeitsweise",
+      "Kommunikations- und Kooperationsfähigkeit",
+      "Gültiger Führerschein Klasse B (C/CE wünschenswert)",
+      "Gute Deutschkenntnisse (B2) und verhandlungssicheres Englisch"
+    ],
+    "benefits": [
+      "Tarifgerechte Vergütung nach IG Metall mit Weihnachtsgeld",
+      "30 Tage Urlaub zuzüglich Urlaubsgeld",
+      "Krankenzusatzversicherung mit Facharzt-Service und Krankentagegeld",
+      "Betriebliche Altersversorgung bis zu 600 € Arbeitgeberzuschuss",
+      "Unbefristete Anstellung in krisensicherem Umfeld",
+      "Mitarbeiter-Aktienbeteiligungsprogramm",
+      "Corporate Benefits und moderne Ausrüstung inklusive Dienstwagen",
+      "Individuelle Einarbeitung und Weiterbildung über SPIE‐Akademie",
+      "Prämie bis zu 2 550 € im Empfehlungsprogramm",
+      "Unterstützungsfonds und Diversity-/Mentoring‐Netzwerke"
+    ],
+    "fullDescription": "SPIE SAG GmbH sucht deutschlandweit einen Servicetechniker Elektromobilität/Ladeinfrastruktur zur Montage, Inbetriebnahme, Wartung und Reparatur von Ladesäulen und Trafostationen nach DGUV und Ladesäulenverordnung. Es erwartet Sie ein krisensicherer, unbefristeter Arbeitsplatz mit umfassender Einarbeitung und attraktiven Sozialleistungen.",
+    "companyDetails": {
+      "id": "spie-sag-gmbh",
+      "name": "SPIE SAG GmbH",
+      "website": "https://www.spie.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SPIE",
+      "kununu": {
+        "rating": 3.3,
+        "reviews": 291,
+        "url": "https://www.kununu.com/de/spie-sag-gmbh"
+      },
+      "contacts": [
+        {
+          "id": "bertram-bekmann",
+          "name": "Bertram Bekmann",
+          "position": "Recruiter",
+          "phone": "+49 30 12345678",
+          "email": "bertram.bekmann@spie.com",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=BB"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_4",
+      "placedScore": 82,
+      "profileMatch": 75,
+      "urgencyScore": 55,
+      "whatsGood": [
+        "Elektrotechnische Ausbildung: Passende Grundqualifikation für Ladeinfrastruktur",
+        "VDE-Kenntnisse: Fundierte Mess- und Prüftechnik",
+        "Servicepraxis: Erfahrung in Montage, Wartung und Reparatur elektrischer Anlagen",
+        "Sicherheitsbewusstsein: Einhaltung DGUV-Vorschriften und PSA-Nutzung"
+      ],
+      "whatsBad": [
+        "Elektromobilitätsspezifisch: Keine ausgewiesene Projekterfahrung mit Ladesäulen",
+        "Trafostationen: Weniger Nachweise zu Errichtung von Trafostationen",
+        "Dokumentation: Serviceeinsätze nicht quantitativ im CV belegt",
+        "Führerscheinklasse: Klasse C/CE vermisst für schwerere Fahrzeuge"
+      ],
+      "whatsMissing": [
+        "Projekterfahrung: Konkrete Ladesäulen-Installationsprojekte ergänzen",
+        "Trafostationen: Beispiele für Mitwirkung bei Trafobau aufführen",
+        "Digital-Tools: Kenntnisse in Abrechnungs- und Dokumentations-Software nennen",
+        "Erfolgskennzahlen: Anzahl betreuter Einsätze und Reaktionszeiten dokumentieren"
+      ],
+      "generatedAt": "2025-06-24T16:45:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_4",
+      "salesPitch": [
+        "Stelle: Servicetechniker Elektromobilität/Ladeinfrastruktur (m/w/d), SPIE SAG GmbH, deutschlandweit, veröffentlicht am 2025-06-23.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene elektrotechnische Ausbildung und VDE-Kenntnisse.",
+        "2. Umfangreiche Praxis in Montage, Wartung und Reparatur elektrischer Anlagen.",
+        "3. Sicheres Arbeiten nach DGUV-Vorschriften mit PSA.",
+        "4. Selbstständige Arbeitsweise und Teamfähigkeit.",
+        "5. Gute Deutsch- und Englischkenntnisse, Führerschein Klasse B."
+      ],
+      "generatedAt": "2025-06-24T16:45:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_5",
+    "title": "Elektriker (m/w/d) – Schwerpunkt E-Mobility / Ladeinfrastruktur",
+    "company": "mraElectric.Com GmbH",
+    "location": "Berlin, Deutschland",
+    "postedDate": "2025-06-15T00:00:00+02:00",
+    "matchPercentage": 71,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=mraE",
+    "contactPerson": {
+      "name": "Wladislaw Enzi",
+      "position": "Geschäftsführer",
+      "phone": "+49 1761 16567110",
+      "email": "wladislaw.enzi@mraelectric.com",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=WE"
+    },
+    "salary": {
+      "amount": 20,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.8,
+      "reviews": 45,
+      "url": "https://www.kununu.com/de/mraelectric-com-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      },
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "Xing"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "mraElectric.Com GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=mraE",
+        "url": "https://www.mraelectric.com"
+      }
+    ],
+    "responsibilities": [
+      "Installation, Inbetriebnahme und Wartung von Ladestationen (AC/DC, Wallboxen, Schnelllader)",
+      "Durchführung von Netzanschlüssen und Schutzmaßnahmen nach DIN VDE 0100-722",
+      "Integration von Ladepunkten in Smart-Home- oder Energiemanagementsysteme",
+      "Unterstützung bei Planung und Projektierung der Ladeinfrastruktur",
+      "Fehlersuche, Wartung und sorgfältige Dokumentation",
+      "Kundenberatung zu technischen Lösungen und Fördermöglichkeiten"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik oder Elektroinstallateur/in",
+      "Erfahrung in Elektroinstallation, idealerweise mit Ladeinfrastruktur (Wallboxen, Wechselrichter, Speicher)",
+      "Fundierte Kenntnisse von VDE-Normen und sichere Handhabung von Stromanlagen",
+      "Selbstständige, sorgfältige und teamfähige Arbeitsweise",
+      "Führerschein Klasse B",
+      "Gute Deutschkenntnisse (B2) und verhandlungssicheres Englisch"
+    ],
+    "benefits": [
+      "Unbefristetes Arbeitsverhältnis",
+      "30 Tage Urlaub plus Urlaubsgeld",
+      "Ausgezeichnetes Betriebsklima und krisensicherer Arbeitsplatz",
+      "Kostenlose Fort- und Weiterbildung sowie Fachqualifikationen",
+      "Hoher Handlungsfreiraum und eigenverantwortliches Arbeiten",
+      "Attraktive Vergütung ab 20 €/Stunde zzgl. Erfolgsprämien",
+      "50 €/Monat steuerfreie Zulage, Zuschuss ÖPNV und Kita, vermögenswirksame Leistungen",
+      "Moderne Arbeitskleidung, persönliche Schutzausrüstung"
+    ],
+    "fullDescription": "mraElectric.Com GmbH sucht in Berlin einen Elektriker/Elektroniker für E-Mobility und Ladeinfrastruktur. Sie installieren, nehmen in Betrieb, warten und dokumentieren Ladestationen nach DIN VDE- und Ladesäulen-Normen, unterstützen bei Netzanschlüssen und beraten Kunden zu Fördermöglichkeiten.",
+    "companyDetails": {
+      "id": "mraelectriccom-gmbh",
+      "name": "mraElectric.Com GmbH",
+      "website": "https://www.mraelectric.com",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=mraE",
+      "kununu": {
+        "rating": 3.8,
+        "reviews": 45,
+        "url": "https://www.kununu.com/de/mraelectric-com-gmbh"
+      },
+      "contacts": [
+        {
+          "id": "wladislaw-enzi",
+          "name": "Wladislaw Enzi",
+          "position": "Geschäftsführer",
+          "phone": "+49 1761 16567110",
+          "email": "wladislaw.enzi@mraelectric.com",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=WE"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_5",
+      "placedScore": 71,
+      "profileMatch": 90,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Spezialisierung E-Mobility: Direkte Erfahrung mit Ladeinfrastruktur (Wallboxen, Schnelllader)",
+        "VDE-Normen: Fundierte Kenntnisse in DIN VDE 0100-722 und Mess- und Prüftechnik",
+        "Projektarbeit: Praxis in Installation, Netzanschluss und Smart-Home-Integration",
+        "Dokumentation & Beratung: Geübte Dokumentationsprozesse und Kundenkommunikation"
+      ],
+      "whatsBad": [
+        "Smart-Home-Systeme: Weniger tiefgehende Projektbeispiele zur Energiemanagement-Integration",
+        "Förderberatung: Fördermittel-Prozesse nicht detailliert im Lebenslauf beschrieben"
+      ],
+      "whatsMissing": [
+        "Projektnachweise: Konkrete Referenzprojekte mit Ladeinfrastruktur anführen",
+        "Smart-Home-Integration: Details zu eingesetzten Energiemanagement-Systemen ergänzen",
+        "Förderprogramme: Erfahrungen in Fördermittel-Anträgen und Abwicklungen beschreiben"
+      ],
+      "generatedAt": "2025-06-24T17:00:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_5",
+      "salesPitch": [
+        "Stelle: Elektriker (m/w/d) – Schwerpunkt E-Mobility/Ladeinfrastruktur, mraElectric.Com GmbH, Berlin, veröffentlicht am 2025-06-15.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik.",
+        "2. Spezifische Praxis mit Wallboxen, AC/DC-Ladesystemen und Schnellladern.",
+        "3. Fundierte VDE 0100-722 Kenntnisse und Mess-/Prüftechnik.",
+        "4. Erfahrung in Netzanschluss und Smart-Home-Integration.",
+        "5. Sorgfältige Dokumentation und kundenorientierte Beratung."
+      ],
+      "generatedAt": "2025-06-24T17:00:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_6",
+    "title": "Bauleiter / Obermonteur Elektro (m/w/d)",
+    "company": "Elektroanlagenbau Berlin GmbH",
+    "location": "Berlin",
+    "postedDate": "2025-06-09T00:00:00+02:00",
+    "matchPercentage": 94,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=EAB",
+    "contactPerson": {
+      "name": "Janet Hübsch",
+      "position": "Recruiting",
+      "phone": "+49 30 50080315",
+      "email": "janet.huebsch@eab.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JH"
+    },
+    "salary": {
+      "amount": 62000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4.7,
+      "reviews": 692,
+      "url": "https://www.kununu.com/de/elektroanlagenbau-berlin"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "Xing"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "Elektroanlagenbau Berlin GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=EAB",
+        "url": "https://www.elektroanlagenbau-berlin.de"
+      }
+    ],
+    "responsibilities": [
+      "Arbeitsvorbereitung und Qualitäts- sowie Arbeitssichere Baustellenabwicklung",
+      "Führung und Koordination von Eigen- und Fremdpersonal",
+      "Ökonomisches, vertragsorientiertes Handeln",
+      "Kontrollen von Nachunternehmerleistungen (Qualität, Leistung, Termine)",
+      "Bautagebücher führen und Baustellenschriftverkehr",
+      "Vorbereitung von Nachträgen, Aufmaßerstellung und Revisionsunterlagen"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektriker, Elektroniker oder Elektroinstallateur",
+      "Erfahrung als Obermonteur oder in der Bauleitung",
+      "Kenntnisse in VDE, VOB, HOAI sowie sicherer Umgang mit MS Office",
+      "Montage- und Reisebereitschaft",
+      "Durchsetzungsvermögen, Verantwortungsbewusstsein und Führungskompetenz",
+      "Hohes persönliches Engagement"
+    ],
+    "benefits": [
+      "Unbefristeter, zukunftssicherer Arbeitsplatz",
+      "30 Tage Urlaub plus Sonderurlaub",
+      "Firmenfahrzeug und moderne technische Ausstattung",
+      "Gezielte Einarbeitung und individuelle Weiterbildung",
+      "Arbeitgeberzuschüsse zur Alters- und Berufsunfähigkeitsversorgung",
+      "Bikeleasing und Corporate Benefits"
+    ],
+    "fullDescription": "Für unseren Standort Berlin suchen wir einen Bauleiter / Obermonteur Elektro (m/w/d). Sie übernehmen die Arbeitsvorbereitung, führen Eigen- und Fremdpersonal, koordinieren Gewerke, kontrollieren Nachunternehmerleistungen, führen Bautagebücher und erstellen Revisionsunterlagen. Reisebereitschaft und sichere Kenntnis aktueller Regelwerke sind Voraussetzung.",
+    "companyDetails": {
+      "id": "eab-berlin",
+      "name": "Elektroanlagenbau Berlin GmbH",
+      "website": "https://www.elektroanlagenbau-berlin.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=EAB",
+      "kununu": {
+        "rating": 4.7,
+        "reviews": 692,
+        "url": "https://www.kununu.com/de/elektroanlagenbau-berlin"
+      },
+      "contacts": [
+        {
+          "id": "janet-huebsch",
+          "name": "Janet Hübsch",
+          "position": "Recruiting",
+          "phone": "+49 30 50080315",
+          "email": "janet.huebsch@eab.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JH"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_6",
+      "placedScore": 94,
+      "profileMatch": 60,
+      "urgencyScore": 50,
+      "whatsGood": [
+        "Elektro-Ausbildung: Abgeschlossene Ausbildung im Elektrobereich",
+        "Bauleitungserfahrung: Praxis als Obermonteur vorhanden",
+        "Führungskompetenz: Nachgewiesene Personalkoordination",
+        "Regelwerkskenntnisse: Sicher im Umgang mit VDE, VOB, HOAI"
+      ],
+      "whatsBad": [
+        "Unternehmenshintergrund: Kein konkreter Arbeitgeber erkennbar",
+        "Reiseprofil: Keine Angabe zu Reisebereitschaft im Detail",
+        "Projektumfang: Keine Nachweise zu Großbaustellen",
+        "Software-Tools: MS Office nur allgemein genannt"
+      ],
+      "whatsMissing": [
+        "Arbeitgeberdetails: Firmenname und Projektreferenzen ergänzen",
+        "Reisebereitschaft: Konkrete Einsatzorte und -zeiten aufführen",
+        "Großprojekte: Beispiele für Leitungsaufgaben bei großen Baustellen hinzufügen",
+        "Digitale Tools: Spezifische Planungs- und Projektmanagement-Software nennen"
+      ],
+      "generatedAt": "2025-06-24T17:10:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_6",
+      "salesPitch": [
+        "Stelle: Bauleiter/Obermonteur Elektro (m/w/d), Berlin, veröffentlicht am 2025-06-09.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Elektro-Ausbildung.",
+        "2. Erfahrung als Obermonteur/Bauleiter.",
+        "3. Führung und Koordination von Personal.",
+        "4. Kenntnisse VDE, VOB, HOAI & MS Office.",
+        "5. Hohe Einsatzbereitschaft und Verantwortungsbewusstsein."
+      ],
+      "generatedAt": "2025-06-24T17:10:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_7",
+    "title": "Obermonteur (m/w/d) Elektrotechnik",
+    "company": "SPIE Deutschland & Zentraleuropa GmbH",
+    "location": "14467 Potsdam, Deutschland",
+    "postedDate": "2025-04-23T00:00:00+02:00",
+    "matchPercentage": 75,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SPIE",
+    "contactPerson": {
+      "name": "Anna Schmidt",
+      "position": "HR Manager",
+      "phone": "+49 331 1234567",
+      "email": "anna.schmidt@spie.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=AS"
+    },
+    "salary": {
+      "amount": 58000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.7,
+      "reviews": 831,
+      "url": "https://www.kununu.com/de/spie-deutschland--zentraleuropa-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "XING"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "SPIE Deutschland & Zentraleuropa GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SPIE",
+        "url": "https://www.spie.de"
+      }
+    ],
+    "responsibilities": [
+      "Montage und Inbetriebnahme von Elektroanlagen bei Kunden",
+      "Verantwortung für und Koordination der Montagemitarbeiter externer Nachunternehmer",
+      "Planung und Überwachung von Montageeinsätzen vor Ort",
+      "Erstellung und Prüfung von Dokumentationen (Aufmaße, Berichte, Bautagebücher)"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektriker/Elektroniker für Energie- und Gebäudetechnik",
+      "Erste Berufserfahrung in der Organisation von Montagearbeiten und Inbetriebnahmen",
+      "Fundierte Kenntnisse aktueller VDE-Regelwerke und sicherer Umgang mit MS Office",
+      "Fahrerlaubnis Klasse B und Reisebereitschaft innerhalb Deutschlands",
+      "Teamführungskompetenz und eigenverantwortliche Arbeitsweise"
+    ],
+    "benefits": [
+      "Unbefristete Anstellung in krisensicherem Umfeld",
+      "Leistungsbezogene Vergütung inkl. 13. Monatseinkommen",
+      "Zuschuss zur betrieblichen Altersvorsorge und Kinderbetreuung",
+      "4-Tage-Woche und 30 Tage Urlaub",
+      "Moderne Arbeitsmittel, hochwertige Sicherheitskleidung und Werkzeug",
+      "Weiterbildung über SPIE Akademie und Teamevents",
+      "Betriebliches Gesundheitsmanagement und Corporate Benefits"
+    ],
+    "fullDescription": "SPIE Deutschland & Zentraleuropa GmbH sucht in Potsdam einen Obermonteur Elektrotechnik zur Montage, Inbetriebnahme und Leitung von Elektroinstallationsprojekten. Sie koordinieren Nachunternehmer, planen Montageeinsätze, erstellen Dokumentationen und tragen zur nachhaltigen Umsetzung innovativer Technikprojekte bei.",
+    "companyDetails": {
+      "id": "spie-deutschland-zentraleuropa-gmbh",
+      "name": "SPIE Deutschland & Zentraleuropa GmbH",
+      "website": "https://www.spie.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SPIE",
+      "kununu": {
+        "rating": 3.7,
+        "reviews": 831,
+        "url": "https://www.kununu.com/de/spie-deutschland--zentraleuropa-gmbh"
+      },
+      "contacts": [
+        {
+           "id": "anna-schmidt",
+           "name": "Anna Schmidt",
+           "position": "HR Manager",
+           "phone": "+49 331 1234567",
+           "email": "anna.schmidt@spie.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=AS"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_7",
+      "placedScore": 75,
+      "profileMatch": 85,
+      "urgencyScore": 55,
+      "whatsGood": [
+        "Elektro-Ausbildung: Abgeschlossene Qualifikation als Elektriker/Elektroniker",
+        "Montageleitung: Erfahrung in Koordination von Monteuren und Nachunternehmern",
+        "VDE-Kenntnisse: Fundiertes Wissen aktueller Regelwerke",
+        "Dokumentation: Geübte Erstellung von Aufmaßen, Berichten und Bautagebüchern"
+      ],
+      "whatsBad": [
+        "Elektrische Spezialanlagen: Keine ausgewiesene Erfahrung mit Photovoltaik oder Ladeinfrastruktur",
+        "Projektgrößen: Unklarheit über den Umfang geleiteter Projekte",
+        "Reisebereitschaft: Keine Details zu Einsatzzeiten außerhalb Potsdam",
+        "Software-Tools: Keine Nennung spezieller Projektmanagement-Software"
+      ],
+      "whatsMissing": [
+        "Spezialprojekte: Angaben zu komplexen Elektroinstallationsprojekten ergänzen",
+        "Teamgrößen: Anzahl koordinierter Mitarbeiter und Projektgrößen anführen",
+        "Reiseprofil: Konkrete Angaben zu deutschlandweiten Einsätzen hinzufügen",
+        "Tools: Erfahrungen mit MS Project oder ähnlichen Planungs-Tools nennen"
+      ],
+      "generatedAt": "2025-06-24T17:20:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_7",
+      "salesPitch": [
+        "Stelle: Obermonteur Elektrotechnik (m/w/d), SPIE Deutschland & Zentraleuropa GmbH, Potsdam, veröffentlicht am 2025-04-23.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung als Elektriker/Elektroniker für Energie- und Gebäudetechnik.",
+        "2. Leitung und Koordination von Monteuren und Nachunternehmern.",
+        "3. Fundierte VDE- und MS Office-Kenntnisse.",
+        "4. Praxis in Montage, Inbetriebnahme und Dokumentation.",
+        "5. Teamführungskompetenz und eigenverantwortliche Arbeitsweise."
+      ],
+      "generatedAt": "2025-06-24T17:20:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_8",
+    "title": "Elektriker für Energie- und Gebäudetechnik",
+    "company": "Paul Zienicke Zienicke Elektro",
+    "location": "Berlin",
+    "postedDate": "2025-06-20T00:00:00+02:00",
+    "matchPercentage": 82,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://www.zienicke-elektro.de/logo.png",
+    "contactPerson": {
+      "name": "Paul Zienicke",
+      "position": "Geschäftsführer",
+      "phone": "+49 30 98765432",
+      "email": "paul.zienicke@zienicke-elektro.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=PZ"
+    },
+    "salary": {
+      "amount": 49000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.7,
+      "reviews": 28,
+      "url": "https://www.kununu.com/de/zienicke-elektro"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "Xing"
+      },
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "Paul Zienicke Zienicke Elektro",
+        "logo": "https://www.zienicke-elektro.de/logo.png",
+        "url": "https://www.zienicke-elektro.de"
+      }
+    ],
+    "responsibilities": [
+      "Installation, Wartung und Reparatur elektrischer Anlagen und Systeme",
+      "Durchführung von Prüfungen und Messungen gemäß Vorschriften",
+      "Fehleranalyse und Störungsbeseitigung an elektrischen Anlagen",
+      "Verlegung von Kabeln, Leitungen und Anschlüssen",
+      "Inbetriebnahme elektrischer und elektronischer Systeme",
+      "Dokumentation der durchgeführten Arbeiten",
+      "Zusammenarbeit mit anderen Fachabteilungen und Kunden"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Erfahrung in Installation, Inbetriebnahme und Wartung elektrotechnischer Systeme",
+      "Fundierte VDE-Mess- und Prüftechnik-Kenntnisse",
+      "Selbstständige und sorgfältige Arbeitsweise",
+      "Teamfähigkeit und Zuverlässigkeit",
+      "Führerschein Klasse B"
+    ],
+    "benefits": [
+      "Sicherer, unbefristeter Arbeitsplatz",
+      "Attraktive Vergütung und Zusatzleistungen",
+      "Abwechslungsreiche Projekte mit moderner Technik",
+      "Fort- und Weiterbildungsmöglichkeiten",
+      "Angenehmes Arbeitsklima in motiviertem Team"
+    ],
+    "fullDescription": "Paul Zienicke Zienicke Elektro sucht in Berlin einen Elektriker für Energie- und Gebäudetechnik. Zu Ihren Aufgaben gehören Installation, Wartung, Reparatur und Inbetriebnahme von elektrischen Systemen, Prüfungen und Messungen, Fehlerdiagnose, Kabelverlegung sowie Dokumentation und Kundenkommunikation.",
+    "companyDetails": {
+      "id": "zienicke-elektro",
+      "name": "Paul Zienicke Zienicke Elektro",
+      "website": "https://www.zienicke-elektro.de",
+      "logo": "https://www.zienicke-elektro.de/logo.png",
+      "kununu": {
+        "rating": 3.7,
+        "reviews": 28,
+        "url": "https://www.kununu.com/de/zienicke-elektro"
+      },
+      "contacts": [
+        {
+           "id": "paul-zienicke",
+           "name": "Paul Zienicke",
+           "position": "Geschäftsführer",
+           "phone": "+49 30 98765432",
+           "email": "paul.zienicke@zienicke-elektro.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=PZ"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_8",
+      "placedScore": 82,
+      "profileMatch": 70,
+      "urgencyScore": 65,
+      "whatsGood": [
+        "Ausbildung: Elektroniker für Energie- und Gebäudetechnik vorhanden",
+        "Praxis: Mehrjährige Erfahrung in Installation und Wartung elektrotechnischer Systeme",
+        "VDE-Kompetenz: Fundierte Mess- und Prüftechnik-Kenntnisse",
+        "Teamfähigkeit: Sorgfältige Arbeitsweise und Zusammenarbeit mit Fachabteilungen"
+      ],
+      "whatsBad": [
+        "Smart Systems: Keine Erfahrung mit Smart-Home- oder Gebäudemanagementsystemen",
+        "Projektleitung: Fehlender Nachweis zu eigenständiger Projektverantwortung",
+        "Dokumentationstiefe: Prüf- und Messprotokolle nicht quantifiziert",
+        "Digital-Tools: Keine Angaben zu Nutzung von CAFM- oder Dokumentationssoftware"
+      ],
+      "whatsMissing": [
+        "Smart-Home-Integrationen: Beispiele für Projekte mit Gebäudemanagement ergänzen",
+        "Projektverantwortung: Referenzprojekte mit Leitungserfahrung anführen",
+        "Softwarekenntnisse: CAFM- und Dokumentations-Tools im CV nennen",
+        "Erfolgskennzahlen: Anzahl geprüfter Anlagen und Reaktionszeiten dokumentieren"
+      ],
+      "generatedAt": "2025-06-24T17:30:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_8",
+      "salesPitch": [
+        "Stelle: Elektriker für Energie- und Gebäudetechnik, Paul Zienicke Zienicke Elektro, Berlin, veröffentlicht am 2025-06-20.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung Elektroniker E- und Gebäudetechnik.",
+        "2. Mehrjährige Installation und Wartung elektrotechnischer Anlagen.",
+        "3. Fundierte VDE-Mess- und Prüftechnik-Kompetenz.",
+        "4. Sorgfältige Dokumentation und Prüfprotokolle.",
+        "5. Teamorientierte Arbeitsweise und Zuverlässigkeit."
+      ],
+      "generatedAt": "2025-06-24T17:30:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_9",
+    "title": "Projektleiter Energie und Gebäudetechnik (m/w/d)",
+    "company": "BAUER Elektroanlagen",
+    "location": "Berlin",
+    "postedDate": "2025-06-20T00:00:00+02:00",
+    "matchPercentage": 91,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://bauer-elektro.de/logo.png",
+    "contactPerson": {
+      "name": "Sabine Meier",
+      "position": "Personalreferentin",
+      "phone": "+49 30 11223344",
+      "email": "sabine.meier@bauer-elektro.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SM"
+    },
+    "salary": {
+      "amount": 72000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4,
+      "reviews": 246,
+      "url": "https://www.kununu.com/de/bauer-elektroanlagen"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "BAUER Elektroanlagen",
+        "logo": "https://bauer-elektro.de/logo.png",
+        "url": "https://bauer-elektro.de"
+      }
+    ],
+    "responsibilities": [
+      "Leitung und Steuerung der Projektabwicklung über alle Phasen",
+      "Vertretung der Projektinteressen gegenüber internen Stellen, Kunden und Lieferanten",
+      "Personaleinsatzplanung für Eigen- und Fremdpersonal",
+      "Verantwortung für Arbeitssicherheit, Umwelt- und Gesundheitsschutz",
+      "Erstellung von Werk- und Montageplänen in Zusammenarbeit mit der Planung",
+      "Kalkulation von Nachtragsangeboten und Aufbereitung von Abschlags- und Schlussrechnungen",
+      "Kosten- und Leistungsüberwachung sowie Koordination von Inbetriebnahme und Abnahme"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Techniker- oder Meisterabschluss im elektrotechnischen Bereich (wünschenswert)",
+      "Erfahrung in technischer und kaufmännischer Projekt- und Baustellenabwicklung",
+      "Lösungsorientierte, strukturierte und eigenverantwortliche Arbeitsweise",
+      "Erste Führungserfahrung und Personaleinsatzkoordination",
+      "Hohe Kundenorientierung und Kommunikationsstärke",
+      "Kenntnisse aktueller Normen (VDE/VOB/HOAI) und sicherer Umgang mit MS Office"
+    ],
+    "benefits": [
+      "Unbefristeter und zukunftssicherer Arbeitsplatz",
+      "Attraktive, übertarifliche Vergütung",
+      "30 Tage Urlaub sowie Sonderurlaub",
+      "Firmenfahrzeug und moderne technische Ausstattung",
+      "Gezielte Einarbeitung und individuelle Weiterbildung",
+      "Arbeitgeberzuschüsse zu Alters- und Berufsunfähigkeit",
+      "Bikeleasing und Corporate Benefits",
+      "Lebensarbeitszeitkonto und flexible Arbeitsmodelle",
+      "Team-Events und positive Unternehmenskultur"
+    ],
+    "fullDescription": "BAUER Elektroanlagen sucht einen Projektleiter für Energie- und Gebäudetechnik in Berlin. Sie übernehmen die Verantwortung für Projektsteuerung, Kosten- und Leistungsüberwachung, Personaleinsatzplanung, Arbeitssicherheit und Montagedokumentation. Sie arbeiten eng mit Planung, Vertrieb und On-Site-Teams zusammen, um Elektroprojekte erfolgreich umzusetzen.",
+    "companyDetails": {
+      "id": "bauer-elektroanlagen",
+      "name": "BAUER Elektroanlagen",
+      "website": "https://bauer-elektro.de",
+      "logo": "https://bauer-elektro.de/logo.png",
+      "kununu": {
+        "rating": 4,
+        "reviews": 246,
+        "url": "https://www.kununu.com/de/bauer-elektroanlagen"
+      },
+      "contacts": [
+        {
+           "id": "sabine-meier",
+           "name": "Sabine Meier",
+           "position": "Personalreferentin",
+           "phone": "+49 30 11223344",
+           "email": "sabine.meier@bauer-elektro.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SM"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_9",
+      "placedScore": 91,
+      "profileMatch": 55,
+      "urgencyScore": 50,
+      "whatsGood": [
+        "Projektleitungserfahrung: Praxis in technischer und kaufmännischer Abwicklung",
+        "Fachqualifikation: Ausbildung als Elektroniker Energie- und Gebäudetechnik",
+        "Führungskompetenz: Personaleinsatzplanung und Koordination von Teams",
+        "Normenkenntnis: Sicher im Umgang mit VDE, VOB und HOAI"
+      ],
+      "whatsBad": [
+        "Meister-/Technikerabschluss nicht nachgewiesen",
+        "Erfahrungsnachweise zu großen Infrastrukturprojekten fehlen",
+        "Finanzkalkulation: Detailkenntnisse zu Nachtragskalkulation nicht belegt",
+        "Softwaretools: MS Office nur allgemein genannt, keine Projektmanagement-Tools"
+      ],
+      "whatsMissing": [
+        "Techniker-/Meisterabschluss ergänzen",
+        "Referenzprojekte mit Projektgrößen und Budgets anführen",
+        "Erfolge bei Nachtragskalkulationen und Abschlussrechnungen beschreiben",
+        "Erfahrung mit MS Project oder ähnlichen Tools aufführen"
+      ],
+      "generatedAt": "2025-06-24T17:45:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_9",
+      "salesPitch": [
+        "Stelle: Projektleiter Energie und Gebäudetechnik (m/w/d), BAUER Elektroanlagen, Berlin, veröffentlicht am 2025-06-20.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung Elektroniker Energie- und Gebäudetechnik.",
+        "2. Erfahrung in technischer & kaufmännischer Projektabwicklung.",
+        "3. Führung und Koordination von Eigen- und Fremdpersonal.",
+        "4. Fundierte VDE-/VOB-/HOAI-Kenntnisse.",
+        "5. Strukturierte Arbeitsweise und Kundenorientierung."
+      ],
+      "generatedAt": "2025-06-24T17:45:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_10",
+    "title": "Elektroinstallateur / Elektroniker für Energie- und Gebäudetechnik (m/w/d)",
+    "company": "ANH Hausbesitz GmbH & Co. KG",
+    "location": "Berlin",
+    "postedDate": "2025-06-16T00:00:00+02:00",
+    "matchPercentage": 77,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://www.anh-hausbesitz.de/logo.png",
+    "contactPerson": {
+      "name": "Jörg Fischer",
+      "position": "Technischer Leiter",
+      "phone": "+49 30 55667788",
+      "email": "joerg.fischer@anh-hausbesitz.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JF"
+    },
+    "salary": {
+      "amount": 51000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.8,
+      "reviews": 32,
+      "url": "https://www.kununu.com/de/anh-hausbesitz-gmbh-co-kg"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "ANH Hausbesitz",
+        "logo": "https://www.anh-hausbesitz.de/logo.png",
+        "url": "https://www.anh-hausbesitz.de"
+      }
+    ],
+    "responsibilities": [
+      "Fachkundige Betreuung technischer Gebäudeanlagen gewerblicher Objekte",
+      "Installation, Wartung und Inspektion elektrischer Hausanlagen",
+      "Störungsanalyse und Koordination bzw. Durchführung von Reparaturen",
+      "Qualitätssicherung und Kostenkontrolle bei Fremdfirmenleistungen (MSR-, Lüftungs- und Kältetechnik)",
+      "Dokumentation aller Wartungs- und Reparaturarbeiten im digitalen System"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Mehrjährige Erfahrung in Installation, Inbetriebnahme und Wartung elektrotechnischer Anlagen",
+      "Kenntnisse in VDE-Mess- und Prüftechnik sowie MSR-, Lüftungs- und Kältetechnik",
+      "Selbstständige, sorgfältige und teamorientierte Arbeitsweise",
+      "Sicherer Umgang mit digitalen Dokumentationstools",
+      "Sehr gute Deutschkenntnisse in Wort und Schrift"
+    ],
+    "benefits": [
+      "Sicherer, unbefristeter Arbeitsplatz",
+      "Markt- und leistungsgerechte Vergütung",
+      "Voll ausgestatteter moderner Arbeitsplatz inkl. Smartphone",
+      "30 Tage Erholungsurlaub und Mobilitätszuschuss",
+      "Fitnessstudio-Mitgliedschaft",
+      "Umfassende Schulungs- und Weiterbildungsmöglichkeiten",
+      "Regelmäßige Firmen- und Teamevents"
+    ],
+    "fullDescription": "ANH Hausbesitz GmbH & Co. KG sucht in Berlin einen Elektroinstallateur/Elektroniker für Energie- und Gebäudetechnik. Sie betreuen gewerbliche Gebäudeanlagen, führen Installationen, Wartungen und Störungsbeseitigungen durch, kontrollieren Fremdfirmenleistungen und dokumentieren alle Tätigkeiten digital.",
+    "companyDetails": {
+      "id": "anh-hausbesitz",
+      "name": "ANH Hausbesitz GmbH & Co. KG",
+      "website": "https://www.anh-hausbesitz.de",
+      "logo": "https://www.anh-hausbesitz.de/logo.png",
+      "kununu": {
+        "rating": 3.8,
+        "reviews": 32,
+        "url": "https://www.kununu.com/de/anh-hausbesitz-gmbh-co-kg"
+      },
+      "contacts": [
+        {
+           "id": "joerg-fischer",
+           "name": "Jörg Fischer",
+           "position": "Technischer Leiter",
+           "phone": "+49 30 55667788",
+           "email": "joerg.fischer@anh-hausbesitz.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=JF"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_10",
+      "placedScore": 77,
+      "profileMatch": 80,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Fachliche Ausbildung: Elektroniker für Energie- und Gebäudetechnik absolviert",
+        "Praxis: Mehrjährige Erfahrungen in Installation, Wartung und Inbetriebnahme",
+        "VDE-Kompetenz: Fundierte Mess- und Prüftechnik-Kenntnisse",
+        "Digital-Tools: Sicherer Umgang mit Dokumentationssoftware"
+      ],
+      "whatsBad": [
+        "MSR-/HKL-Technik: Weniger ausgeprägte Projekterfahrung in Lüftungs- und Kältetechnik",
+        "Projektleitung: Keine Nachweise zu eigenständiger Koordination größerer Wartungsprojekte",
+        "Smart-Building: Keine Erfahrung mit integrativen Gebäudemanagement-Systemen",
+        "Sprachkenntnisse: Englischkenntnisse nicht angegeben"
+      ],
+      "whatsMissing": [
+        "MSR-Projekte: Konkrete Beispiele von MSR- und Kältetechnik-Projekten ergänzen",
+        "Projektkoordination: Nachweise zu geleiteten Wartungszyklen und Budgetverantwortung",
+        "Smart-Building-Integrationen: Details zu Gebäudemanagement-Projekten hinzufügen",
+        "Englisch-Level: Genaue Sprachniveaus (z.B. B2/C1) aufführen"
+      ],
+      "generatedAt": "2025-06-24T17:55:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_10",
+      "salesPitch": [
+        "Stelle: Elektroinstallateur/Elektroniker für Energie- und Gebäudetechnik, ANH Hausbesitz GmbH & Co. KG, Berlin, veröffentlicht am 2025-06-16.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik.",
+        "2. Mehrjährige Praxis in Installation, Wartung und Inbetriebnahme.",
+        "3. Fundierte VDE-Mess- und Prüftechnik-Kompetenz.",
+        "4. Sicherer Umgang mit digitalen Dokumentations-Tools.",
+        "5. Sorgfältige, teamorientierte Arbeitsweise."
+      ],
+      "generatedAt": "2025-06-24T17:55:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_11",
+    "title": "Elektroinstallateur für Energie und Gebäudetechnik (m/w/d)",
+    "company": "B-U-G Baumanagement, Umwelt-, Gebäudetechnik GmbH",
+    "location": "Berlin",
+    "postedDate": "2025-06-09T00:00:00+02:00",
+    "matchPercentage": 87,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=BUG",
+    "contactPerson": {
+      "name": "Frank Baumann",
+      "position": "Abteilungsleiter",
+      "phone": "+49 30 22334455",
+      "email": "frank.baumann@bug-gmbh.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=FB"
+    },
+    "salary": {
+      "amount": 49500,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.9,
+      "reviews": 20,
+      "url": "https://www.kununu.com/de/bug-gebaudetechnik-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "XING"
+      },
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "Linkedin"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "B-U-G Baumanagement, Umwelt-, Gebäudetechnik GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=BUG",
+        "url": "https://www.bug-gmbh.de"
+      }
+    ],
+    "responsibilities": [
+      "Eigenverantwortliche Arbeitseinteilung basierend auf Bauunterlagen",
+      "Allgemeine Elektroinstallationsarbeiten an Gebäudetechnik",
+      "Service- und Wartungsarbeiten an technischen Anlagen",
+      "Fehleranalyse und Behebung von Störungen an elektrischen Systemen",
+      "Montage und Installation von Energieversorgungsanlagen",
+      "Fachlich korrekte Umsetzung geplanter Arbeiten"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektriker/Elektroniker für Energie- und Gebäudetechnik",
+      "Erfahrung in Installation, Wartung und Instandhaltung elektrotechnischer Anlagen",
+      "Kenntnisse in Energieverteilung, Gebäudesystemtechnik und Entstörung",
+      "Selbstständige und sorgfältige Arbeitsweise",
+      "Teamfähigkeit und gute Deutschkenntnisse",
+      "Führerschein Klasse B"
+    ],
+    "benefits": [
+      "Unbefristetes Arbeitsverhältnis",
+      "Aufträge in Berlin und Brandenburg (keine Montagetätigkeiten außerhalb Wohngebiet)",
+      "Bereitstellung von Arbeitskleidung",
+      "Flexibles Teilzeit-/Vollzeitmodell (35–40 Std./Woche)",
+      "Gute Bezahlung und Prämienzahlungen",
+      "Urlaub nach Vereinbarung"
+    ],
+    "fullDescription": "B-U-G Baumanagement, Umwelt-, Gebäudetechnik GmbH sucht in Berlin einen Elektroinstallateur für Energie- und Gebäudetechnik. Sie planen und führen Elektroinstallationen durch, übernehmen Service- und Wartungsarbeiten, analysieren und beheben Störungen und montieren Energieversorgungsanlagen in Wohnungs- und Gewerbeobjekten.",
+    "companyDetails": {
+      "id": "bug-gebaudetechnik",
+      "name": "B-U-G Baumanagement, Umwelt-, Gebäudetechnik GmbH",
+      "website": "https://www.bug-gmbh.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=BUG",
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 20,
+        "url": "https://www.kununu.com/de/bug-gebaudetechnik-gmbh"
+      },
+      "contacts": [
+        {
+           "id": "frank-baumann",
+           "name": "Frank Baumann",
+           "position": "Abteilungsleiter",
+           "phone": "+49 30 22334455",
+           "email": "frank.baumann@bug-gmbh.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=FB"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_11",
+      "placedScore": 87,
+      "profileMatch": 85,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Passende Ausbildung: Elektroniker für Energie- und Gebäudetechnik absolviert",
+        "Praxis: Mehrjährige Installation, Wartung und Instandhaltung elektrotechnischer Anlagen",
+        "Technikbreite: Kompetenz in Energieverteilung und Gebäudesystemtechnik",
+        "Selbstständigkeit: Proaktive Arbeitseinteilung und Störungsbewältigung"
+      ],
+      "whatsBad": [
+        "Smart-Home/Smart-Building: Keine Erfahrung mit integrierten Gebäudemanagement-Systemen",
+        "Projektleitung: Keine Nachweise zu eigenständiger Projektkoordination großer Aufträge",
+        "Digitalisierung: Dokumentationstools werden nicht im CV erwähnt",
+        "Sicherheitszertifikate: DGUV- oder VdS-Prüfungsnachweise nicht aufgeführt"
+      ],
+      "whatsMissing": [
+        "Projektreferenzen: Konkrete Großprojekte oder Objektarten benennen",
+        "Digital-Tools: Erfahrungen mit CAFM- oder Wartungssoftware ergänzen",
+        "Sicherheitszertifikate: DGUV-Prüfberechtigungen und VDE-Prüfscheine angeben",
+        "Fremdleistungen: Beispiele zur Koordination von Subunternehmern aufführen"
+      ],
+      "generatedAt": "2025-06-24T18:05:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_11",
+      "salesPitch": [
+        "Stelle: Elektroinstallateur (m/w/d) Energie- und Gebäudetechnik, B-U-G Baumanagement GmbH, Berlin, veröffentlicht am 2025-06-09.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Elektroniker-Ausbildung mit Schwerpunkt Energie- und Gebäudetechnik.",
+        "2. Langjährige Praxis in Installation, Wartung und Instandhaltung.",
+        "3. Kenntnis von Energieverteilung und Gebäudesystemtechnik.",
+        "4. Selbstständige Arbeitseinteilung und Fehleranalyse.",
+        "5. Führerschein Klasse B und gute Deutschkenntnisse."
+      ],
+      "generatedAt": "2025-06-24T18:05:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_12",
+    "title": "Elektroniker für Energie- und Gebäudetechnik (w/m/d)",
+    "company": "ATOZ Facility Solutions GmbH",
+    "location": "Berlin",
+    "postedDate": "2025-06-17T00:00:00+02:00",
+    "matchPercentage": 87,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=ATOZ",
+    "contactPerson": {
+      "name": "Sina Szabo",
+      "position": "Ansprechpartnerin",
+      "phone": "+49 175 8809569",
+      "email": "meinjob@howoge.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SS"
+    },
+    "salary": {
+      "amount": 53000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.9,
+      "reviews": 40,
+      "url": "https://www.kununu.com/de/atoz-facility-solutions-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "XING"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "ATOZ Facility Solutions",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=ATOZ",
+        "url": "https://www.howoge.de/karriere.html"
+      }
+    ],
+    "responsibilities": [
+      "Instandhaltung und Reparatur elektrischer Anlagen in Wohn- und Geschäftsgebäuden",
+      "Fehlersuche und Störungsbeseitigung an Elektro- und Sprechanlagen nach DGUV V3",
+      "Elektronische Planung und Dokumentation von Aufträgen zur Qualitätssicherung",
+      "Übernahme von Bereitschafts- und Notdiensten bei dringenden Störungen"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung zum Elektroniker für Energie- und Gebäudetechnik",
+      "Mehrjährige Praxis in Installation, Wartung und Inbetriebnahme elektrotechnischer Systeme",
+      "Fundierte VDE-Mess- und Prüftechnik-Kenntnisse",
+      "Selbstständige, zuverlässige Arbeitsweise mit ausgeprägter Serviceorientierung",
+      "Erfahrung in Kundenkommunikation und Dokumentation",
+      "Führerschein Klasse B und gute Deutschkenntnisse"
+    ],
+    "benefits": [
+      "Unbefristetes Arbeitsverhältnis mit fairer Vergütung und Zulagen",
+      "Hochwertige Werkzeuge, Dienstfahrzeuge und Firmenbekleidung",
+      "Flexible Tourenplanung und großzügige Freistellungsregelungen",
+      "Regelmäßige Teamevents und familienfreundliche Unternehmenskultur",
+      "Individuelle Weiterbildungsmöglichkeiten und Feedbackgespräche"
+    ],
+    "fullDescription": "In der ATOZ Facility Solutions GmbH, Tochter der HOWOGE Wohnungsbaugesellschaft, betreuen Sie als Elektroniker (w/m/d) für Energie- und Gebäudetechnik elektrische Anlagen in Wohn- und Geschäftsgebäuden, führen Instandsetzungen und DGUV-gerechte Störungsbeseitigungen durch, dokumentieren Ihre Arbeiten elektronisch und übernehmen Bereitschafts- und Notdienste.",
+    "companyDetails": {
+      "id": "atoz-facility-solutions",
+      "name": "ATOZ Facility Solutions GmbH",
+      "website": "https://www.howoge.de/karriere.html",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=ATOZ",
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 40,
+        "url": "https://www.kununu.com/de/atoz-facility-solutions-gmbh"
+      },
+      "contacts": [
+        {
+          "id": "sina-szabo",
+          "name": "Sina Szabo",
+          "position": "Ansprechpartnerin",
+          "phone": "+49 175 8809569",
+          "email": "meinjob@howoge.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SS"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_12",
+      "placedScore": 87,
+      "profileMatch": 90,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Energie-/Gebäudetechnik: Direkte Übereinstimmung mit Ausbildung und Berufserfahrung",
+        "VDE- und DGUV-Kenntnisse: Fundierte Mess- und Prüftechnik gemäß Normen",
+        "Serviceorientierung: Mehrjährige Praxis in Instandhaltung und Kundenkommunikation",
+        "Notdienst-Erfahrung: Bereitschaftsdienste und schnelle Störungsbeseitigung"
+      ],
+      "whatsBad": [
+        "Smart-Building: Keine Erfahrung mit Smart-Home-Integrationen",
+        "Projektleitung: Keine Nachweise zu eigenständiger Koordination größerer Projekte",
+        "Dokumentations-Tools: Genaue Softwarekenntnisse nicht genannt",
+        "Englisch-Level: Genaue Sprachstufe nicht spezifiziert"
+      ],
+      "whatsMissing": [
+        "Smart-Home-Projekte: Integrationserfahrungen ergänzen",
+        "Projektverantwortung: Referenzprojekte mit Umfang und Budget anführen",
+        "Softwarekenntnisse: CAFM- und Dokumentationsprogramme nennen",
+        "Sprachangaben: Englischlevel (z.B. B2/C1) präzisieren"
+      ],
+      "generatedAt": "2025-06-24T18:20:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_12",
+      "salesPitch": [
+        "Stelle: Elektroniker E- und Gebäudetechnik (w/m/d), ATOZ Facility Solutions GmbH, Berlin, veröffentlicht am 2025-06-17.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung und VDE-/DGUV-Kenntnisse.",
+        "2. Mehrjährige Instandhaltungs- und Wartungspraxis.",
+        "3. Praxis in Bereitschafts- und Notdiensten.",
+        "4. Serviceorientierte Dokumentation und Kundenkommunikation.",
+        "5. Führerschein Klasse B und gute Deutschkenntnisse."
+      ],
+      "generatedAt": "2025-06-24T18:20:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_13",
+    "title": "Elektroniker Energie- und Gebäudetechnik (m/w/d)",
+    "company": "Neo Temp GmbH NL Potsdam",
+    "location": "Berlin",
+    "postedDate": "2025-06-17T00:00:00+02:00",
+    "matchPercentage": 92,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=NT",
+    "contactPerson": {
+      "name": "Tom Weber",
+      "position": "Recruiter",
+      "phone": "030 402 030 99-16",
+      "email": "bewerbung.berlin@neo-temp.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=TW"
+    },
+    "salary": {
+      "amount": 34500,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.4,
+      "reviews": 60,
+      "url": "https://www.kununu.com/de/neo-temp-gmbh-nl-potsdam"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      },
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "Linkedin"
+      }
+    ],
+    "headhunters": 1,
+    "externalSources": [
+      {
+        "name": "Neo Temp GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=NT",
+        "url": "https://www.neo-temp.de"
+      }
+    ],
+    "responsibilities": [
+      "Installation elektrischer Bauteile und Baugruppen",
+      "Verlegen von Kabeln und Durchführung von Anschlussarbeiten",
+      "Umsetzung von Stromlaufplänen",
+      "Wartung und Reparatur von Elektroanlagen",
+      "Dokumentation der durchgeführten Aufgaben"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Verantwortungsvolles, selbstständiges Arbeiten und Montagebereitschaft",
+      "Flexibilität, Teamfähigkeit und gute Deutschkenntnisse",
+      "Berufseinsteiger willkommen"
+    ],
+    "benefits": [
+      "Unbefristetes Arbeitsverhältnis",
+      "Angemessene Vergütung",
+      "Hochwertige Arbeitskleidung",
+      "Vergünstigungen in Shopping, Freizeit und Reisen",
+      "Vielseitige und verantwortungsvolle Aufgaben in einem Innovationsunternehmen"
+    ],
+    "fullDescription": "Neo Temp GmbH NL Potsdam sucht in Berlin einen Elektroniker für Energie- und Gebäudetechnik (m/w/d) für Installation, Wartung und Reparatur von Elektroanlagen. Sie setzen Stromlaufpläne um, verlegen Kabel, dokumentieren Ihre Arbeit und arbeiten eigenverantwortlich in einem dynamischen Team.",
+    "companyDetails": {
+      "id": "neo-temp-potsdam",
+      "name": "Neo Temp GmbH NL Potsdam",
+      "website": "https://www.neo-temp.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=NT",
+      "kununu": {
+        "rating": 3.4,
+        "reviews": 60,
+        "url": "https://www.kununu.com/de/neo-temp-gmbh-nl-potsdam"
+      },
+      "contacts": [
+        {
+          "id": "neo-temp-recruiting",
+          "name": "Tom Weber",
+          "position": "Recruiter",
+          "phone": "030 402 030 99-16",
+          "email": "bewerbung.berlin@neo-temp.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=TW"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_13",
+      "placedScore": 92,
+      "profileMatch": 85,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Direkte Ausbildung: Elektroniker Energie- und Gebäudetechnik abgeschlossen",
+        "Praxis: Montage- und Wartungserfahrung an Elektroanlagen",
+        "Selbstständigkeit: Hohe Eigenverantwortung und Montagebereitschaft",
+        "Teamfähigkeit: Flexibilität und gute Kommunikationskompetenz"
+      ],
+      "whatsBad": [
+        "Projektleitung: Keine Nachweise zu eigenständiger Projektplanung",
+        "Digital-Tools: Dokumentationssoftware nicht explizit genannt",
+        "Smart-Building: Keine Erfahrung mit Smart-Home-Integrationen",
+        "Erfahrungstiefe: Begrenzte Nachweise zu komplexen Gebäudetechnik-Systemen"
+      ],
+      "whatsMissing": [
+        "Projektreferenzen: Beispiele für abgeschlossene Installationsprojekte",
+        "Softwarekenntnisse: CAFM- oder Dokumentationsprogramme aufführen",
+        "Smart-Home-Projekte: Erfahrungen in Gebäudeautomationssystemen ergänzen",
+        "Führung: Erste Koordinationserfahrungen, auch bei kleinen Teams, beschreiben"
+      ],
+      "generatedAt": "2025-06-24T18:30:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_13",
+      "salesPitch": [
+        "Stelle: Elektroniker Energie- und Gebäudetechnik (m/w/d), Neo Temp GmbH NL Potsdam, Berlin, veröffentlicht am 2025-06-17.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung als Elektroniker Energie- und Gebäudetechnik.",
+        "2. Praxis in Installation und Wartung von Elektroanlagen.",
+        "3. Selbstständiges Arbeiten und hohe Motivation.",
+        "4. Flexibilität und Teamfähigkeit in dynamischen Einsatzgebieten.",
+        "5. Dokumentationserfahrung und Montagebereitschaft."
+      ],
+      "generatedAt": "2025-06-24T18:30:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_14",
+    "title": "Elektroniker Energie- und Gebäudetechnik (m/w/d)",
+    "company": "B&O Bau und Gebäudetechnik GmbH & Co. KG",
+    "location": "Berlin",
+    "postedDate": "2025-06-24T00:00:00+02:00",
+    "matchPercentage": 91,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=B%26O",
+    "contactPerson": {
+      "name": "Maria Neumann",
+      "position": "Personalabteilung",
+      "phone": "+49 30 66778899",
+      "email": "maria.neumann@buo.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=MN"
+    },
+    "salary": {
+      "amount": 54000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4.1,
+      "reviews": 18,
+      "url": "https://www.kununu.com/de/bo-bau-gebaeudetechnik-gmbh-co-kg"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "B&O Bau und Gebäudetechnik",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=B%26O",
+        "url": "https://www.buo.de/bau/karriere"
+      }
+    ],
+    "responsibilities": [
+      "Installation und Inbetriebnahme elektrischer Anlagen (Beleuchtung, Energieversorgung, Kommunikationssysteme)",
+      "Wartung, Instandhaltung und Störungsanalyse elektrotechnischer Systeme",
+      "Einbau und Verdrahtung von Schaltschränken sowie Durchführung elektrischer Prüfungen",
+      "Installation von Smart-Home-Systemen und energieeffizienten Lösungen (z. B. Photovoltaik, Batteriespeicher)",
+      "Erstellung und Pflege der Dokumentation zu installierten Anlagen"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Praxis in Installation und Wartung gebäudetechnischer Anlagen (Beleuchtung, Alarm, Klima, Kommunikation)",
+      "Kenntnisse in MSR-Technik und modernen Smart-Home-Technologien",
+      "Fundierte VDE- und prüftechnische Kenntnisse",
+      "Selbstständige, lösungsorientierte und teamfähige Arbeitsweise",
+      "Führerschein Klasse B von Vorteil"
+    ],
+    "benefits": [
+      "Unbefristete Anstellung mit langfristiger Perspektive",
+      "Leistungsgerechte, pünktliche Vergütung",
+      "Kooperatives Team und geregelte Arbeitszeiten",
+      "Moderne Arbeitsmittel namhafter Partner",
+      "Jobrad und Mitarbeiterrabatte",
+      "Vielfältige Weiterbildungsmöglichkeiten"
+    ],
+    "fullDescription": "B&O Bau und Gebäudetechnik GmbH & Co. KG sucht in Berlin einen Elektroniker (m/w/d) für Energie- und Gebäudetechnik. Zu Ihren Aufgaben gehören Installation, Inbetriebnahme, Wartung und Fehlerbehebung elektrotechnischer Anlagen, Verdrahtung von Schaltschränken, Prüfungen nach aktuellen Normen sowie Integration von Smart-Home- und Photovoltaik-Systemen.",
+    "companyDetails": {
+      "id": "bo-bau-gebaeudetechnik",
+      "name": "B&O Bau und Gebäudetechnik GmbH & Co. KG",
+      "website": "https://www.buo.de/bau/karriere",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=B%26O",
+      "kununu": {
+        "rating": 4.1,
+        "reviews": 18,
+        "url": "https://www.kununu.com/de/bo-bau-gebaeudetechnik-gmbh-co-kg"
+      },
+      "contacts": [
+        {
+           "id": "maria-neumann",
+           "name": "Maria Neumann",
+           "position": "Personalabteilung",
+           "phone": "+49 30 66778899",
+           "email": "maria.neumann@buo.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=MN"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_14",
+      "placedScore": 91,
+      "profileMatch": 85,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Ausbildung: Elektroniker für Energie- und Gebäudetechnik absolviert",
+        "Smart-Home: Erfahrung mit modernen Smart-Home-Systemen",
+        "MSR-Kenntnisse: Fundierte Messtechnik und Prüfprozesse",
+        "VDE-Kompetenz: Sicherer Umgang mit aktuellen Regelwerken"
+      ],
+      "whatsBad": [
+        "Photovoltaik: Weniger Projektbeispiele zu PV-Installationen",
+        "Projektleitung: Keine Angaben zu eigenständiger Bauleitung",
+        "Dokumentationstiefe: Keine Nennung spezifischer Software",
+        "Führerschein: Klasse C/CE nicht erwähnt"
+      ],
+      "whatsMissing": [
+        "Photovoltaik-Projekte: konkrete Referenzen ergänzen",
+        "Projektverantwortung: Beispiele für Leitung von Installationen",
+        "Softwaretools: CAFM- oder Dokumentationsprogramme aufführen",
+        "Führerscheinklassen: ergänzende Lkw-Fahrerlaubnis angeben"
+      ],
+      "generatedAt": "2025-06-24T18:40:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_14",
+      "salesPitch": [
+        "Stelle: Elektroniker Energie- und Gebäudetechnik (m/w/d), B&O Bau und Gebäudetechnik GmbH & Co. KG, Berlin, veröffentlicht am 2025-06-24.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Fachlich korrekte Elektro-Ausbildung und VDE-Normen-Kenntnisse.",
+        "2. Praxis in Smart-Home- und MSR-Technologien.",
+        "3. Erfahrung in Verdrahtung von Schaltschränken und Prüfungen.",
+        "4. Selbstständige, lösungsorientierte Arbeitsweise.",
+        "5. Teamfähigkeit und Bereitschaft zur Dokumentation."
+      ],
+      "generatedAt": "2025-06-24T18:40:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_15",
+    "title": "Haustechniker / Elektroniker für Energie- und Gebäudetechnik (w/m/d)",
+    "company": "Apleona Nordost GmbH",
+    "location": "10178 Berlin",
+    "postedDate": "2025-06-21T00:00:00+02:00",
+    "matchPercentage": 79,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://www.apleona.com/logo.png",
+    "contactPerson": {
+      "name": "Klaus Müller",
+      "position": "Teamleiter HR",
+      "phone": "+49 30 99887766",
+      "email": "klaus.mueller@apleona.com",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=KM"
+    },
+    "salary": {
+      "amount": 56000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4.2,
+      "reviews": 120,
+      "url": "https://www.kununu.com/de/apleona-nordost-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "Xing"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "Apleona Nordost GmbH",
+        "logo": "https://www.apleona.com/logo.png",
+        "url": "https://www.apleona.com"
+      }
+    ],
+    "responsibilities": [
+      "Instandhaltung und Betrieb technischer Gebäudeanlagen",
+      "Behebung technischer Störungen und Durchführung von Kleinreparaturen",
+      "Dokumentation von Fehler-, Prüf-, Wartungs- und Inspektionsberichten",
+      "Wahrnehmung der Verkehrssicherungspflicht",
+      "Koordination von Fremdfirmen bei Wartungs- und Reparaturarbeiten"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Berufsausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Erfahrung in Installation, Wartung und Instandhaltung elektrotechnischer Anlagen",
+      "Kenntnisse in VDE-Mess- und Prüftechnik und Störungsdiagnose",
+      "Selbstständige, kundenorientierte und eigenverantwortliche Arbeitsweise",
+      "Erste Erfahrung im technischen Gebäudemanagement oder Facility Management",
+      "Gute Deutschkenntnisse"
+    ],
+    "benefits": [
+      "Unbefristete Vollzeitanstellung",
+      "Abwechslungsreiches, sinnstiftendes Tätigkeitsfeld im Gebäudemanagement",
+      "Moderne Arbeitsmittel und hochwertige Dienstkleidung",
+      "30 Tage Urlaub und flexible Arbeitszeiten",
+      "Weiterbildungsmöglichkeiten und Karriereperspektiven",
+      "Corporate Benefits und Zusatzleistungen"
+    ],
+    "fullDescription": "Apleona Nordost GmbH sucht in Berlin einen Haustechniker / Elektroniker für Energie- und Gebäudetechnik (w/m/d). Sie betreiben und warten technische Anlagen, beheben Störungen, koordinieren Fremdfirmen und dokumentieren Prüf- und Wartungsarbeiten im Facility Management.",
+    "companyDetails": {
+      "id": "apleona-nordost",
+      "name": "Apleona Nordost GmbH",
+      "website": "https://www.apleona.com",
+      "logo": "https://www.apleona.com/logo.png",
+      "kununu": {
+        "rating": 4.2,
+        "reviews": 120,
+        "url": "https://www.kununu.com/de/apleona-nordost-gmbh"
+      },
+      "contacts": [
+         {
+           "id": "klaus-mueller",
+           "name": "Klaus Müller",
+           "position": "Teamleiter HR",
+           "phone": "+49 30 99887766",
+           "email": "klaus.mueller@apleona.com",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=KM"
+         }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_15",
+      "placedScore": 79,
+      "profileMatch": 90,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Abgeschlossene Ausbildung: Elektroniker E-/Gebäudetechnik",
+        "Praxis: Langjährige Instandhaltungs- und Reparaturerfahrung",
+        "Facility Management: Erste Erfahrungen im technischen Gebäudemanagement",
+        "Dokumentationskompetenz: Geübte Erstellung von Prüf- und Wartungsberichten"
+      ],
+      "whatsBad": [
+        "Smart-Building: Keine ausgewiesene Erfahrung mit intelligenten Gebäudesystemen",
+        "Projektleitung: Keine Nachweise zu Koordination größerer Projekte",
+        "Notdienste: Bereitschaftsdienst-Erfahrung nicht spezifiziert",
+        "Digital-Tools: Softwarekenntnisse nicht detailliert beschrieben"
+      ],
+      "whatsMissing": [
+        "Smart-Home-/Smart-Building-Projekte ergänzen",
+        "Referenzgrößen: Angaben zu verwalteten Gebäudetypen und Teamgrößen",
+        "Bereitschaftsdienst: Details zu Rufbereitschaft und Einsätzen aufführen",
+        "Softwaretools: CAFM- oder Wartungssoftwarekenntnisse nennen"
+      ],
+      "generatedAt": "2025-06-24T18:55:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_15",
+      "salesPitch": [
+        "Stelle: Haustechniker/Elektroniker E-/Gebäudetechnik (w/m/d), Apleona Nordost GmbH, Berlin, veröffentlicht am 2025-06-21.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung als Elektroniker für E-/Gebäudetechnik.",
+        "2. Langjährige Praxis in Instandhaltung und Reparatur von Gebäudeanlagen.",
+        "3. Erfahrung im technischen Gebäudemanagement/Facility Management.",
+        "4. Sorgfältige Dokumentation und Berichtserstellung.",
+        "5. Kundenorientierte, selbstständige Arbeitsweise."
+      ],
+      "generatedAt": "2025-06-24T18:55:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_16",
+    "title": "Elektroniker:in / Elektriker:in Energie- und Gebäudetechnik - Berlin",
+    "company": "Vonovia SE",
+    "location": "Berlin",
+    "postedDate": "2025-06-19T00:00:00+02:00",
+    "matchPercentage": 84,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://www.vonovia.de/logo.png",
+    "contactPerson": {
+      "name": "Sepideh Canovic",
+      "position": "Recruiterin Value Add",
+      "phone": "0162-2143291",
+      "email": "sepideh.canovic@vonovia.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SC"
+    },
+    "salary": {
+      "amount": 52500,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.9,
+      "reviews": 1507,
+      "url": "https://www.kununu.com/de/vonovia-se"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      },
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "Vonovia SE",
+        "logo": "https://www.vonovia.de/logo.png",
+        "url": "https://www.vonovia.de"
+      }
+    ],
+    "responsibilities": [
+      "Durchführung von Einzelreparaturen, Schadenbehebungen und Wohnungsmodernisierungen",
+      "Störungsbeseitigung elektrischer Anlagen (Austausch von Schaltern, Steckdosen, Klingel-/Sprechanlagen)",
+      "Behebung von Stromausfällen und Durchführung von VDE-Prüfungen (E-Check)",
+      "Erneuerung elektrischer Leitungen im Rahmen von Wohnungsmodernisierungen"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Erfahrung in Installation, Wartung und Reparatur elektrotechnischer Anlagen",
+      "Präzise, selbstständige Arbeitsweise und serviceorientiertes Auftreten",
+      "Kundenkommunikationserfahrung und freundliches Auftreten",
+      "Führerschein Klasse B und sicherer Umgang mit Tablet-PCs"
+    ],
+    "benefits": [
+      "Willkommensprämie in Höhe von zwei Bruttogehältern",
+      "Unbefristeter Arbeitsvertrag und regelmäßiges Festgehalt",
+      "Digitale Arbeitsmittel (Tablet-PC, Firmenhandy)",
+      "Vollausgestattetes Servicefahrzeug und Tankkarte",
+      "Weiterbildungsmöglichkeiten und Entwicklungsperspektiven",
+      "Jährliche Prämienzahlung, Aktienpakete und Mitarbeiter-werben-Mitarbeiter-Programm",
+      "Firmenveranstaltungen und Corporate Benefits",
+      "Unterstützung bei Wohnungssuche im Vonovia-Bestand"
+    ],
+    "fullDescription": "Die Vonovia SE sucht in Berlin einen Elektroniker bzw. Elektriker für Energie- und Gebäudetechnik. Zu Ihren Aufgaben gehören Einzelreparaturen und Modernisierung von Wohnungen, Störungsbeseitigung inklusive VDE-Prüfungen, Erneuerung elektrischer Leitungen sowie Kundenservice im technischen Wohnungsbereich.",
+    "companyDetails": {
+      "id": "vonovia",
+      "name": "Vonovia SE",
+      "website": "https://www.vonovia.de",
+      "logo": "https://www.vonovia.de/logo.png",
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 1507,
+        "url": "https://www.kununu.com/de/vonovia-se"
+      },
+      "contacts": [
+        {
+          "id": "sepideh-canovic",
+          "name": "Sepideh Canovic",
+          "position": "Recruiterin Value Add",
+          "phone": "0162-2143291",
+          "email": "sepideh.canovic@vonovia.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SC"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_16",
+      "placedScore": 84,
+      "profileMatch": 90,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Ausbildung: Elektroniker für Energie- und Gebäudetechnik absolviert",
+        "E-Check-Erfahrung: VDE-Prüfungen routiniert durchgeführt",
+        "Modernisierungen: Praxis in Wohnungsmodernisierung und Einzelreparaturen",
+        "Kundenservice: Geübte Kommunikation und serviceorientierte Haltung"
+      ],
+      "whatsBad": [
+        "Smart-Home: Keine Projektbeispiele zu Gebäudeautomation",
+        "Leitung: Keine Nachweise zu eigenverantwortlicher Projektsteuerung",
+        "Notdienst: Bereitschaftsdienste nicht spezifiziert",
+        "Digitalisierung: Spezifische Apps oder Software nicht genannt"
+      ],
+      "whatsMissing": [
+        "Smart-Building-Integrationen: Beispiele zu Gebäudeautomationslösungen ergänzen",
+        "Projektleitung: Nachweise eigener Modernisierungsprojekte anführen",
+        "Bereitschaftsdienst: Details zu Notdiensten und Rufbereitschaft angeben",
+        "Softwarekenntnisse: Erfahrung mit Service-Apps und Wartungssoftware nennen"
+      ],
+      "generatedAt": "2025-06-24T19:05:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_16",
+      "salesPitch": [
+        "Stelle: Elektroniker Energie- und Gebäudetechnik (m/w/d), Vonovia SE, Berlin, veröffentlicht am 2025-06-19.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung und VDE/E-Check-Kenntnisse.",
+        "2. Praxis in Wohnungsmodernisierung und Einzelreparaturen.",
+        "3. Serviceorientiertes Auftreten und Kundenkommunikation.",
+        "4. Präzise Dokumentation und Nutzung digitaler Arbeitsmittel.",
+        "5. Führerschein Klasse B und kundennahe Einsatzbereitschaft."
+      ],
+      "generatedAt": "2025-06-24T19:05:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_17",
+    "title": "Obermonteur für Elektrotechnik – Bauleitung",
+    "company": "WA-Jobs / Direktvermittlung",
+    "location": "Berlin – Steglitz",
+    "postedDate": "2021-03-03T00:00:00+01:00",
+    "matchPercentage": 90,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": true,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=WAJ",
+    "contactPerson": {
+      "name": "Herr Uwe Bludau",
+      "position": "Geschäftsführer",
+      "phone": "+49 30 34331667",
+      "email": "info@wa-jobs.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=UB"
+    },
+    "salary": {
+      "amount": 25,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.2,
+      "reviews": 991,
+      "url": "https://www.kununu.com/de/wa-jobs--direktvermittlung"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      },
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      },
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "Xing"
+      }
+    ],
+    "headhunters": 1,
+    "externalSources": [
+      {
+        "name": "WA-Jobs",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=WAJ",
+        "url": "https://www.wa-jobs.de"
+      }
+    ],
+    "responsibilities": [
+      "Eigenständige Projektabwicklung und -organisation (Laden-, Kino- und Wohnungsbau)",
+      "Führung von Mitarbeitern und Subunternehmern",
+      "Materialdisposition und Steuerung der Arbeitsabläufe",
+      "Erstellung von Aufmaßen sowie Ausführungs-, Abrechnungs- und Revisionsunterlagen",
+      "Baustelleneinweisung und Koordination"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Mehrjährige praktische Erfahrung in Inbetriebnahme und Wartung elektrotechnischer Anlagen",
+      "Selbstständige Arbeitsweise und hohes Qualitätsbewusstsein",
+      "Führerschein Klasse B",
+      "Erste Führungskompetenz durch leitende Techniker-Rollen"
+    ],
+    "benefits": [
+      "Unbefristeter Arbeitsvertrag in Vollzeit",
+      "Übertarifliche Bezahlung bis 25 €/h plus Prämien",
+      "Tarifliche Lohnerhöhungen sowie Urlaubs- und Weihnachtsgeld",
+      "Bis zu 30 Tage Urlaub",
+      "Regelmäßige Weiterbildungsmöglichkeiten",
+      "Dienstwagen"
+    ],
+    "fullDescription": "Im Auftrag zur Direktvermittlung sucht WA-Jobs einen bauleitenden Obermonteur für Elektrotechnik in Berlin-Steglitz. Sie organisieren und leiten Projekte im Laden-, Kino- und Wohnungsbau, führen Mitarbeiter und Subunternehmer, disponieren Material, erstellen Aufmaße und Revisionsunterlagen sowie koordinieren Baustellen.",
+    "companyDetails": {
+      "id": "wa-jobs",
+      "name": "WA-Jobs / Direktvermittlung",
+      "website": "https://www.wa-jobs.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=WAJ",
+      "kununu": {
+        "rating": 3.2,
+        "reviews": 991,
+        "url": "https://www.kununu.com/de/wa-jobs--direktvermittlung"
+      },
+      "contacts": [
+        {
+          "id": "uwe-bludau",
+          "name": "Herr Uwe Bludau",
+          "position": "Geschäftsführer",
+          "phone": "+49 30 34331667",
+          "email": "info@wa-jobs.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=UB"
+        }
+      ],
+      "relationshipStatus": "partner"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_17",
+      "placedScore": 90,
+      "profileMatch": 50,
+      "urgencyScore": 40,
+      "whatsGood": [
+        "Ausbildung: Elektroniker für Energie- und Gebäudetechnik vorhanden",
+        "Bauleitungserfahrung: Leitung von Laden-, Kino- und Wohnungsbauprojekten",
+        "Teamführung: Koordination von Mitarbeitern und Subunternehmern",
+        "Dokumentation: Erstellung von Aufmaßen und Revisionsunterlagen"
+      ],
+      "whatsBad": [
+        "Datum: Ausschreibung aus 2021, keine aktuellen Projekte",
+        "Smart-Home: Keine Erfahrung mit modernen Gebäudetechnik-Systemen",
+        "Softwaretools: Keine Nennung von Projektmanagement-Software",
+        "Reisebereitschaft: Kein Hinweis auf Mobilität außerhalb Steglitz"
+      ],
+      "whatsMissing": [
+        "Aktuelle Referenzen: Ergänzung jüngerer Projektbeispiele",
+        "Digitale Tools: Erfahrungen mit MS Project oder CAFM-Software aufführen",
+        "Smart-Building: Kompetenzen in modernen Gebäudemanagementsystemen ergänzen",
+        "Reiseprofil: Details zu Einsatzbereitschaft in weiteren Berliner Bezirken"
+      ],
+      "generatedAt": "2025-06-24T19:15:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_17",
+      "salesPitch": [
+        "Stelle: Obermonteur Elektrotechnik – Bauleitung, WA-Jobs, Berlin-Steglitz, veröffentlicht am 2021-03-03.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Ausbildung Elektroniker E-/Gebäudetechnik.",
+        "2. Leitungserfahrung in Laden-, Kino- und Wohnungsbauprojekten.",
+        "3. Kooperation und Führung von Subunternehmern.",
+        "4. Dokumentation und Aufmaßerstellung.",
+        "5. Eigenständiges, qualitätsbewusstes Arbeiten."
+      ],
+      "generatedAt": "2025-06-24T19:15:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_18",
+    "title": "Obermonteur/in Elektrotechnik (m/w/d)",
+    "company": "Vogler Technik",
+    "location": "Berlin",
+    "postedDate": "2025-06-24T00:00:00+02:00",
+    "matchPercentage": 85,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=VT",
+    "contactPerson": {
+      "name": "Ramona Heinrich",
+      "position": "Personalreferentin",
+      "phone": "+49 30 12121212",
+      "email": "info@vogler-technik.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=RH"
+    },
+    "salary": {
+      "amount": 61000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4,
+      "reviews": 12,
+      "url": "https://www.kununu.com/de/vogler-technik"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "XING"
+      },
+      {
+        "src": "/logos/providerlogos/linkedin.svg",
+        "alt": "LinkedIn"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "Vogler Technik",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=VT",
+        "url": "https://www.vogler-technik.de"
+      }
+    ],
+    "responsibilities": [
+      "Selbständige Ausführung von Elektroinstallationsarbeiten",
+      "Aufmaßerstellung und Prüfung von Elektroanlagen",
+      "Schaltschrankverdrahtung und Umgang mit Schaltplänen",
+      "Führen kleiner Teams und Abwicklung eigener Teilbaustellen",
+      "Unterstützung des Bauleiters"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Mehrjährige Erfahrung in Inbetriebnahme, Wartung und Schaltschrankverdrahtung",
+      "Fundierte VDE-Mess- und Prüftechnik-Kenntnisse",
+      "Selbstständige, teamorientierte Arbeitsweise und Flexibilität",
+      "Erfahrung in Führung kleiner Teams"
+    ],
+    "benefits": [
+      "Überdurchschnittliche, leistungsgerechte Vergütung",
+      "Unbefristete Festanstellung",
+      "Prämien- und Zusatzvergütung",
+      "Flache Hierarchien und Weiterbildungsmöglichkeiten",
+      "Verantwortungsvolle und abwechslungsreiche Aufgaben"
+    ],
+    "fullDescription": "Vogler Technik sucht in Berlin eine/n Obermonteur/in Elektrotechnik. Sie führen eigenständig Elektroinstallationen, Aufmaße, Prüfungen und Schaltschrankverdrahtung durch, leiten kleine Teams und unterstützen den Bauleiter bei Teilbaustellen.",
+    "companyDetails": {
+      "id": "vogler-technik",
+      "name": "Vogler Technik",
+      "website": "https://www.vogler-technik.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=VT",
+      "kununu": {
+        "rating": 4,
+        "reviews": 12,
+        "url": "https://www.kununu.com/de/vogler-technik"
+      },
+      "contacts": [
+        {
+          "id": "ramona-heinrich",
+          "name": "Ramona Heinrich",
+          "position": "Personalreferentin",
+          "phone": "+49 30 12121212",
+          "email": "info@vogler-technik.de",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=RH"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_18",
+      "placedScore": 85,
+      "profileMatch": 80,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Fachkompetenz: Abgeschlossene Ausbildung als Elektroniker E-/Gebäudetechnik",
+        "Praxis: Mehrjährige Erfahrung in Schaltschrankverdrahtung und Inbetriebnahme",
+        "VDE-Kenntnisse: Fundierte Mess- und Prüftechnik-Expertise",
+        "Teamführung: Erfahrung in Leitung kleiner Monteur-Teams"
+      ],
+      "whatsBad": [
+        "Smart-Home: Keine Projekterfahrung mit Gebäudeautomation",
+        "Großprojekte: Fehlender Nachweis zu größeren Baustellen",
+        "Dokumentationstools: Softwarekenntnisse nicht spezifiziert",
+        "Projektleitung: Begrenzte Angaben zu selbständiger Teilbaustellenleitung"
+      ],
+      "whatsMissing": [
+        "Smart-Building-Integrationen: Beispiele für Automationsprojekte ergänzen",
+        "Projektgröße: Referenzen zu Umfang und Teamgröße nennen",
+        "Softwaretools: CAFM- oder Dokumentationsprogramme anführen",
+        "Quantitative Ergebnisse: Anzahl installierter Schaltschränke/Anlagen ergänzen"
+      ],
+      "generatedAt": "2025-06-24T19:30:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_18",
+      "salesPitch": [
+        "Stelle: Obermonteur/in Elektrotechnik (m/w/d), Vogler Technik, Berlin, veröffentlicht am 2025-06-24.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abgeschlossene Ausbildung Elektroniker E-/Gebäudetechnik.",
+        "2. Mehrjährige Praxis in Schaltschrankverdrahtung und Inbetriebnahme.",
+        "3. Fundierte VDE-Mess- und Prüftechnik-Kenntnisse.",
+        "4. Führungserfahrung kleiner Teams.",
+        "5. Flexible, selbstständige Arbeitsweise."
+      ],
+      "generatedAt": "2025-06-24T19:30:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_19",
+    "title": "Servicetechniker / Elektromonteur (m/w/d) Sicherheitstechnik",
+    "company": "GTI Elektroanlagen GmbH",
+    "location": "Berlin",
+    "postedDate": "2025-06-24T00:00:00+02:00",
+    "matchPercentage": 72,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=GTI",
+    "contactPerson": {
+      "name": "Peter Krause",
+      "position": "HR-Abteilung",
+      "phone": "+49 30 33445566",
+      "email": "peter.krause@gti-elektro.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=PK"
+    },
+    "salary": {
+      "amount": 55000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4,
+      "reviews": 120,
+      "url": "https://www.kununu.com/de/gti-elektroanlagen-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "GTI Elektroanlagen GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=GTI",
+        "url": "https://www.gti-elektroanlagen.de"
+      }
+    ],
+    "responsibilities": [
+      "Montage und Installation von Brandmelde- und Sprachalarmierungsanlagen",
+      "Einbruchmelde- und Zutrittskontrollsysteme aufbauen und anschließen",
+      "Inbetriebnahme, Programmierung und Instandhaltung sicherheitstechnischer Anlagen",
+      "Störungsbehebung und Wartungsarbeiten an Sicherheitssystemen",
+      "Übergabe der Anlagen an Kunden inklusive Einweisung"
+    ],
+    "yourProfile": [
+      "Abgeschlossene elektrotechnische Berufsausbildung (z.B. Elektroniker für Energie- und Gebäudetechnik)",
+      "Erfahrung in Montage, Inbetriebnahme und Wartung elektrotechnischer Systeme",
+      "Grundkenntnisse oder Interesse an sicherheitstechnischen Anlagen",
+      "Selbstständige, lösungsorientierte Arbeitsweise",
+      "Teamplayer-Mentalität und Führerschein Klasse B"
+    ],
+    "benefits": [
+      "Attraktives Festgehalt und 2.000 € Wechselprämie",
+      "Weihnachts- und Urlaubsgeld",
+      "Unbefristeter Arbeitsvertrag",
+      "Betriebliche Krankenversicherung und Altersvorsorge",
+      "Dienstwagen und Smartphone auch zur Privatnutzung",
+      "Kostenlose McFit-Mitgliedschaft",
+      "Überstundenvergütung und -zuschläge",
+      "Moderne Mess- und Arbeitsmittel, hochwertige Dienstkleidung",
+      "Regelmäßige Schulungen und Firmenevents"
+    ],
+    "fullDescription": "GTI Elektroanlagen GmbH sucht einen Servicetechniker / Elektromonteur (m/w/d) für Sicherheitstechnik in Berlin. Sie montieren, programmieren und warten Brandmelde-, Sprachalarmierungs-, Einbruchmelde- und Zutrittskontrollanlagen, beheben Störungen und übergeben die Systeme einsatzbereit an unsere Kunden.",
+    "companyDetails": {
+      "id": "gti-elektroanlagen",
+      "name": "GTI Elektroanlagen GmbH",
+      "website": "https://www.gti-elektroanlagen.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=GTI",
+      "kununu": {
+        "rating": 4,
+        "reviews": 120,
+        "url": "https://www.kununu.com/de/gti-elektroanlagen-gmbh"
+      },
+      "contacts": [
+         {
+           "id": "peter-krause",
+           "name": "Peter Krause",
+           "position": "HR-Abteilung",
+           "phone": "+49 30 33445566",
+           "email": "peter.krause@gti-elektro.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=PK"
+         }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_19",
+      "placedScore": 72,
+      "profileMatch": 75,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "Elektrotechnische Ausbildung: Passend zur Anforderung Sicherheitstechnik",
+        "Praxis: Erfahrung in Montage und Inbetriebnahme elektrotechnischer Systeme",
+        "Sicherheitstechnik: Grundkenntnisse in Brandmelde- und Zutrittskontrollanlagen",
+        "Serviceorientierung: Kundenübergabe und Einweisung geübt"
+      ],
+      "whatsBad": [
+        "Programmierungstiefe: Keine Details zu spezifischer SPS- oder Softwarekenntnis",
+        "Zertifikate: DGUV- oder VdS-Prüfberechtigungen nicht angegeben",
+        "Notdienst: Rufbereitschaft und Störungsdienst nicht erwähnt",
+        "Smart-Building: Fehlende Projekterfahrung in vernetzten Sicherheitssystemen"
+      ],
+      "whatsMissing": [
+        "Softwarekenntnisse: Nennung relevanter Programmiertools ergänzen",
+        "Zertifikate: DGUV-V3 oder VdS-Nachweise anführen",
+        "Rufbereitschaft: Details zu Bereitschaftsdienst und Einsatzzeiten",
+        "Referenzen: Beispiele abgeschlossener Sicherheitsinstallationsprojekte"
+      ],
+      "generatedAt": "2025-06-24T19:45:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_19",
+      "salesPitch": [
+        "Stelle: Servicetechniker/Elektromonteur Sicherheitstechnik, GTI Elektroanlagen GmbH, Berlin, veröffentlicht am 2025-06-24.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Elektrotechnische Grundausbildung und praktische Montageerfahrung.",
+        "2. Kenntnisse in Brandmelde- und Sprachalarmanlagen.",
+        "3. Erfahrung mit Einbruchmelde- und Zutrittskontrollsystemen.",
+        "4. Geübte Inbetriebnahme und Kundenübergabe.",
+        "5. Selbstständige, lösungsorientierte Arbeitsweise."
+      ],
+      "generatedAt": "2025-06-24T19:45:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_20",
+    "title": "Bauleiter / Obermonteur Elektro (m/w/d)",
+    "company": "R+S solutions GmbH",
+    "location": "Berlin",
+    "postedDate": "2025-06-24T00:00:00+02:00",
+    "matchPercentage": 91,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=R%26S",
+    "contactPerson": {
+      "name": "Laura Koch",
+      "position": "Personalsachbearbeiterin",
+      "phone": "+49 30 44556677",
+      "email": "laura.koch@rs-solutions.de",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=LK"
+    },
+    "salary": {
+      "amount": 57500,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 3.9,
+      "reviews": 24,
+      "url": "https://www.kununu.com/de/rs-solutions-gmbh"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/xing.svg",
+        "alt": "XING"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "R+S solutions GmbH",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=R%26S",
+        "url": "https://www.rs-solutions.de"
+      }
+    ],
+    "responsibilities": [
+      "Arbeitsvorbereitung und arbeitssichere, qualitätsgerechte Baustellenabwicklung",
+      "Führung und Koordination von Eigen- und Fremdpersonal sowie Gewerken",
+      "Vertragsorientiertes und ökonomisches Handeln",
+      "Qualitäts-, Leistungs- und Terminkontrollen von Nachunternehmerleistungen",
+      "Führen von Bautagebüchern und Baustellenschriftverkehr",
+      "Vorbereitung von Nachträgen, Aufmaßerstellung und Erstellung von Revisionsunterlagen"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroniker für Energie- und Gebäudetechnik",
+      "Erfahrung in Arbeitsvorbereitung und Baustellenleitung aus Service-Techniker-Rolle",
+      "Fundierte VDE- und Prüftechnik-Kenntnisse",
+      "Erste Führungserfahrung in kleinen Teams",
+      "Selbstständige, strukturierte und lösungsorientierte Arbeitsweise"
+    ],
+    "benefits": [
+      "Unbefristeter, zukunftssicherer Arbeitsplatz",
+      "30 Tage Urlaub sowie Sonderurlaub",
+      "Firmenfahrzeug und moderne technische Ausstattung",
+      "Gezielte Einarbeitung und individuelle Weiterbildung",
+      "Arbeitgeberzuschüsse zur Alters- und Berufsunfähigkeitsversorgung",
+      "Bikeleasing und Corporate Benefits"
+    ],
+    "fullDescription": "R+S solutions GmbH sucht in Berlin einen Bauleiter / Obermonteur Elektro. Zu Ihren Aufgaben gehören Arbeitsvorbereitung, Baustellenabwicklung, Personalführung, Qualitäts- und Terminkontrollen, Bautagebuchführung sowie Vorbereitung von Nachträgen, Aufmaßen und Revisionsunterlagen.",
+    "companyDetails": {
+      "id": "rs-solutions-gmbh",
+      "name": "R+S solutions GmbH",
+      "website": "https://www.rs-solutions.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=R%26S",
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 24,
+        "url": "https://www.kununu.com/de/rs-solutions-gmbh"
+      },
+      "contacts": [
+        {
+           "id": "laura-koch",
+           "name": "Laura Koch",
+           "position": "Personalsachbearbeiterin",
+           "phone": "+49 30 44556677",
+           "email": "laura.koch@rs-solutions.de",
+           "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=LK"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_20",
+      "placedScore": 91,
+      "profileMatch": 65,
+      "urgencyScore": 55,
+      "whatsGood": [
+        "Ausbildung: Elektroniker für Energie- und Gebäudetechnik abgeschlossen",
+        "Arbeitsvorbereitung: Erfahrung aus Service-Techniker-Tätigkeit",
+        "VDE-Kenntnisse: Fundierte Prüftechnik-Kompetenz",
+        "Führung: Erste Leitung kleiner Teams"
+      ],
+      "whatsBad": [
+        "Smart-Home: Keine Projekterfahrung mit Automationssystemen",
+        "Großbaustellen: Fehlende Nachweise zu größeren Projekten",
+        "Softwaretools: Keine Nennung von CAFM oder Projektsoftware",
+        "Budgetkontrolle: Keine Erfahrungen in Kostenüberwachung genannt"
+      ],
+      "whatsMissing": [
+        "Projektgrößen: Angaben zu Umfang und Budget der betreuten Baustellen",
+        "Digital-Tools: Erfahrung mit Bauleitungstools (MS Project o.Ä.) ergänzen",
+        "Smart-Building: Kompetenzen in Gebäudeautomationslösungen aufführen",
+        "Kostenmanagement: Beispiele zur Kosten- und Leistungsüberwachung hinzufügen"
+      ],
+      "generatedAt": "2025-06-24T20:10:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_20",
+      "salesPitch": [
+        "Stelle: Bauleiter/Obermonteur Elektro (m/w/d), R+S solutions GmbH, Berlin, veröffentlicht am 2025-06-24.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. Abschluss als Elektroniker E-/Gebäudetechnik.",
+        "2. Praxis in Arbeitsvorbereitung und Baustellenleitung.",
+        "3. VDE- und Prüftechnik-Expertise.",
+        "4. Führungserfahrung kleiner Teams.",
+        "5. Selbstständige, strukturierte Arbeitsweise."
+      ],
+      "generatedAt": "2025-06-24T20:10:00Z"
+    }
+  },
+  {
+    "id": "cv2_job_21",
+    "title": "Servicetechniker:in Elektrotechnik (m/w/d)",
+    "company": "STRABAG Property and Facility Services",
+    "location": "Berlin",
+    "postedDate": "2025-06-24T00:00:00+02:00",
+    "matchPercentage": 90,
+    "urgency": "medium",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": false,
+    "isFavorited": false,
+    "companyLogo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=STRABAG",
+    "contactPerson": {
+      "name": "Sebastian Zacharzewski",
+      "position": "Recruiter",
+      "phone": "+49 160 91220870",
+      "email": "sebastian.zacharzewski@strabag-pfs.com",
+      "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SZ"
+    },
+    "salary": {
+      "amount": 59000,
+      "currency": "EUR"
+    },
+    "kununu": {
+      "rating": 4,
+      "reviews": 210,
+      "url": "https://www.kununu.com/de/strabag-property-and-facility-services"
+    },
+    "listedOn": [
+      {
+        "src": "/logos/providerlogos/monster.svg",
+        "alt": "Monster"
+      },
+      {
+        "src": "/logos/providerlogos/stepstone.svg",
+        "alt": "StepStone"
+      }
+    ],
+    "headhunters": 0,
+    "externalSources": [
+      {
+        "name": "STRABAG PFS",
+        "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=STRABAG",
+        "url": "https://www.strabag-pfs.de"
+      }
+    ],
+    "responsibilities": [
+      "Selbstständige Wartung, Inspektion und Instandsetzung gebäudetechnischer Anlagen",
+      "Beheben von Störungen an technischen Anlagen und Einrichtungen",
+      "Anlagenbezogene Dokumentation gemäß VDE 0105",
+      "Bedienen und Übergabe technischer Systeme inklusive Einweisung",
+      "Teilnahme an Rufbereitschaft auch außerhalb der Regelarbeitszeit"
+    ],
+    "yourProfile": [
+      "Abgeschlossene Ausbildung als Elektroinstallateur:in, Elektroniker:in oder Elektromeister:in",
+      "Fachkraft nach VDE 0105",
+      "Erfahrung in Wartung und Instandsetzung von gebäudetechnischen Anlagen",
+      "Kenntnisse in Gebäudeleittechnik und Gebäudeautomation wünschenswert",
+      "Selbstständige, lösungsorientierte Arbeitsweise",
+      "Führerschein Klasse B"
+    ],
+    "benefits": [
+      "Vertrauensgleitzeit (38h-Woche)",
+      "Heiligabend und Silvester arbeitsfrei",
+      "Tariflich geregelte Vergütung und Weiterentwicklung",
+      "Bezahlte Rufbereitschaft nach Haustarifvertrag",
+      "Strukturiertes Onboarding und Entwicklungsangebote",
+      "Geförderte Altersvorsorge und Corporate Benefits",
+      "Company Bike und Gesundheitsförderung"
+    ],
+    "fullDescription": "Als Servicetechniker:in bei STRABAG PFS in Berlin halten Sie Gebäudetechnik in Stand: Sie führen Wartungen, Inspektionen und Störungsbehebungen durch, dokumentieren Ihre Arbeiten nach VDE 0105, bedienen technische Anlagen, betreuen Rufbereitschaften und sorgen für zufriedene Kunden.",
+    "companyDetails": {
+      "id": "strabag-pfs",
+      "name": "STRABAG Property and Facility Services",
+      "website": "https://www.strabag-pfs.de",
+      "logo": "https://placehold.co/100x100/AABBCC/FFFFFF?text=STRABAG",
+      "kununu": {
+        "rating": 4,
+        "reviews": 210,
+        "url": "https://www.kununu.com/de/strabag-property-and-facility-services"
+      },
+      "contacts": [
+        {
+          "id": "sebastian-zacharzewski",
+          "name": "Sebastian Zacharzewski",
+          "position": "Recruiter",
+          "phone": "+49 160 91220870",
+          "email": "sebastian.zacharzewski@strabag-pfs.com",
+          "avatar": "https://placehold.co/100x100/AABBCC/FFFFFF?text=SZ"
+        }
+      ],
+      "relationshipStatus": "unknown"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv2_job_21",
+      "placedScore": 90,
+      "profileMatch": 90,
+      "urgencyScore": 60,
+      "whatsGood": [
+        "VDE-Fachkraft: Qualifikation nach VDE 0105 vorhanden",
+        "Praxis: Umfassende Erfahrung in Wartung und Instandsetzung",
+        "Dokumentation: Geübte Anlagenbezogene Berichterstellung",
+        "Rufbereitschaft: Bereitschaftsdienst eingeübt"
+      ],
+      "whatsBad": [
+        "Gebäudeautomation: Keine konkreten Smart-Building-Projekte genannt",
+        "Spezialzertifikate: VdS- oder DIN-Prüfberechtigungen nicht aufgeführt",
+        "Softwaretools: CAFM- oder Wartungssoftware nicht genannt",
+        "Kommunikationssysteme: Wenig Erfahrung mit vernetzten Kontrollanlagen"
+      ],
+      "whatsMissing": [
+        "Smart-Building-Referenzen: Projekte zur Gebäudeautomation ergänzen",
+        "Zertifizierungen: VdS- oder DIN-Messbefähigungen anführen",
+        "Softwarekenntnisse: CAFM- und Service-Apps spezifizieren",
+        "Kundenerfolge: Kennzahlen zu Reaktionszeiten und Lösungserfolgen"
+      ],
+      "generatedAt": "2025-06-24T20:25:00Z"
+    },
+    "salesPitch": {
+      "id": "sales-pitch-cv2_job_21",
+      "salesPitch": [
+        "Stelle: Servicetechniker:in Elektrotechnik, STRABAG PFS, Berlin, veröffentlicht am 2025-06-24.",
+        "Top 5 Stärken und Erfahrungen des Bewerbers:",
+        "1. VDE 0105-Fachkraft mit umfangreicher Praxis in Wartung und Inspektion.",
+        "2. Geübte Dokumentation nach VDE 0105 und Einweisung technischer Systeme.",
+        "3. Erfahrung im Rufbereitschaftsdienst und Störungsbehebung.",
+        "4. Selbstständige, lösungsorientierte Arbeitsweise.",
+        "5. Kundenorientierte Übergabe und Schulung."
+      ],
+      "generatedAt": "2025-06-24T20:25:00Z"
+    }
+  }
+]

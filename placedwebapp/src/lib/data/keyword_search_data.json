@@ -1,0 +1,613 @@
+{
+  "software_engineer": [
+    {
+      "id": "keyword_tech_1",
+      "title": "Senior Software Engineer (m/w/d) - Backend",
+      "company": "N26",
+      "location": "Berlin, Germany",
+      "postedDate": "2024-12-29T09:00:00Z",
+      "matchPercentage": null,
+      "urgency": "high",
+      "isPaidAd": true,
+      "isHeadhunter": false,
+      "isMyClient": false,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/n26.svg",
+      "contactPerson": {
+        "name": "Tech Recruiter",
+        "position": "Engineering Recruiter",
+        "phone": "+49 30 5555-0001",
+        "email": "careers@n26.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 90000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 4.1,
+        "reviews": 289
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" }
+      ],
+      "headhunters": 6,
+      "externalSources": [
+        { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" }
+      ],
+      "responsibilities": [
+        "Design and develop scalable backend systems using modern technologies",
+        "Collaborate with cross-functional teams to implement new features",
+        "Optimize application performance and ensure system reliability",
+        "Code review and mentor junior developers",
+        "Participate in architectural decisions and technical strategy",
+        "Maintain and improve existing microservices architecture"
+      ],
+      "yourProfile": [
+        "5+ years of experience in backend development",
+        "Strong expertise in Java, Python, or Go",
+        "Experience with microservices architecture and cloud platforms (AWS, GCP)",
+        "Knowledge of databases (SQL and NoSQL) and message queues",
+        "Experience with containerization (Docker, Kubernetes)",
+        "Strong problem-solving skills and attention to detail",
+        "Excellent communication skills in English"
+      ],
+      "benefits": [
+        "Competitive salary with equity options",
+        "Flexible working hours and remote work options",
+        "Professional development budget for courses and conferences",
+        "State-of-the-art equipment and modern office space",
+        "Comprehensive health insurance and wellness programs",
+        "30 days of vacation plus company holidays",
+        "Team events and company retreats",
+        "Free N26 premium account and banking services"
+      ],
+      "fullDescription": "Join N26, Europe's leading digital bank, as a Senior Backend Engineer. You'll be working on cutting-edge financial technology, building systems that serve millions of customers across Europe. Our engineering team values innovation, collaboration, and technical excellence. You'll have the opportunity to work with modern technologies, contribute to architectural decisions, and help shape the future of banking. We're looking for an experienced backend developer who is passionate about building scalable, reliable systems and enjoys working in a fast-paced, dynamic environment.",
+      "companyDetails": {
+        "id": "n26-1",
+        "name": "N26",
+        "website": "https://www.n26.com",
+        "logo": "/logos/providerlogos/n26.svg",
+        "kununu": {
+          "rating": 4.1,
+          "reviews": 289
+        },
+        "contacts": [
+          {
+            "id": "contact-n26-1",
+            "name": "Tech Recruiter",
+            "position": "Engineering Recruiter",
+            "phone": "+49 30 5555-0001",
+            "email": "careers@n26.com",
+            "avatar": "/avatars/default.jpg"
+          },
+          {
+            "id": "contact-n26-2",
+            "name": "Sarah Johnson",
+            "position": "Head of Engineering",
+            "phone": "+49 30 5555-0002",
+            "email": "sarah.johnson@n26.com",
+            "avatar": "/avatars/contact-n26-2.jpg"
+          }
+        ],
+        "relationshipStatus": "none"
+      },
+      "aiSummary": {
+        "id": "ai-summary-keyword-tech-1",
+        "placedScore": 88,
+        "profileMatch": 92,
+        "urgencyScore": 85,
+        "whyFits": [
+          "Your extensive backend development experience with modern technologies makes you an ideal candidate for this role.",
+          "Your expertise in microservices architecture aligns perfectly with N26's technical infrastructure.",
+          "Your experience with cloud platforms (AWS/GCP) and containerization is exactly what the team needs.",
+          "Your strong problem-solving skills and attention to detail are crucial for building reliable financial systems.",
+          "Your ability to mentor junior developers and participate in architectural decisions matches the senior-level expectations."
+        ],
+        "whatsMissing": [
+          "Specific experience with financial services regulations would be beneficial but can be learned on the job.",
+          "Knowledge of N26's specific tech stack can be acquired through onboarding and training.",
+          "German language skills would be helpful for local market understanding but not required.",
+          "Experience with real-time payment processing would be advantageous but not essential."
+        ],
+        "generatedAt": "2024-12-29T09:00:00Z"
+      }
+    }
+  ],
+  "marketing_manager": [
+    {
+      "id": "keyword_marketing_1",
+      "title": "Digital Marketing Manager (m/w/d)",
+      "company": "Delivery Hero",
+      "location": "Berlin, Germany",
+      "postedDate": "2024-12-28T11:30:00Z",
+      "matchPercentage": null,
+      "urgency": "medium",
+      "isPaidAd": false,
+      "isHeadhunter": true,
+      "isMyClient": true,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/delivery-hero.svg",
+      "contactPerson": {
+        "name": "Marketing Recruiter",
+        "position": "Talent Partner",
+        "phone": "+49 30 5555-0002",
+        "email": "jobs@deliveryhero.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 72000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 3.9,
+        "reviews": 156
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+        { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" }
+      ],
+      "headhunters": 4,
+      "externalSources": [
+        { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" }
+      ],
+      "responsibilities": [
+        "Develop and execute comprehensive digital marketing strategies across multiple channels",
+        "Manage and optimize paid advertising campaigns (Google Ads, Facebook, Instagram)",
+        "Analyze campaign performance and provide actionable insights",
+        "Collaborate with creative teams to develop compelling marketing content",
+        "Lead email marketing campaigns and marketing automation",
+        "Monitor market trends and competitor activities",
+        "Manage marketing budget and ensure ROI optimization"
+      ],
+      "yourProfile": [
+        "3+ years of experience in digital marketing, preferably in food delivery or e-commerce",
+        "Strong expertise in Google Ads, Facebook Ads Manager, and analytics tools",
+        "Experience with marketing automation platforms (HubSpot, Marketo)",
+        "Data-driven mindset with strong analytical skills",
+        "Excellent project management and communication skills",
+        "Bachelor's degree in Marketing, Business, or related field",
+        "Fluency in German and English"
+      ],
+      "benefits": [
+        "Competitive salary with performance bonuses",
+        "Flexible working arrangements and remote work options",
+        "Professional development opportunities and training budget",
+        "Free meal delivery credits and employee discounts",
+        "Health and wellness programs",
+        "Modern office space with great amenities",
+        "International career opportunities within the Delivery Hero network",
+        "28 days vacation plus public holidays"
+      ],
+      "fullDescription": "Join Delivery Hero, one of the world's leading food delivery platforms, as a Digital Marketing Manager. You'll be responsible for driving customer acquisition and engagement through innovative digital marketing strategies. Our marketing team operates in a fast-paced, data-driven environment where creativity meets performance. You'll have the opportunity to work on global campaigns, experiment with new marketing channels, and make a direct impact on business growth. We're looking for a passionate digital marketer who thrives in a dynamic environment and is eager to shape the future of food delivery.",
+      "companyDetails": {
+        "id": "delivery-hero-1",
+        "name": "Delivery Hero",
+        "website": "https://www.deliveryhero.com",
+        "logo": "/logos/providerlogos/delivery-hero.svg",
+        "kununu": {
+          "rating": 3.9,
+          "reviews": 156
+        },
+        "contacts": [
+          {
+            "id": "contact-dh-1",
+            "name": "Marketing Recruiter",
+            "position": "Talent Partner",
+            "phone": "+49 30 5555-0002",
+            "email": "jobs@deliveryhero.com",
+            "avatar": "/avatars/default.jpg"
+          },
+          {
+            "id": "contact-dh-2",
+            "name": "Maria Rodriguez",
+            "position": "Head of Marketing",
+            "phone": "+49 30 5555-0003",
+            "email": "maria.rodriguez@deliveryhero.com",
+            "avatar": "/avatars/contact-dh-2.jpg"
+          }
+        ],
+        "relationshipStatus": "existing_client"
+      },
+      "aiSummary": {
+        "id": "ai-summary-keyword-marketing-1",
+        "placedScore": 85,
+        "profileMatch": 88,
+        "urgencyScore": 70,
+        "whyFits": [
+          "Your digital marketing expertise and campaign management experience are perfectly aligned with this role.",
+          "Your data-driven approach and analytical skills match Delivery Hero's performance-focused culture.",
+          "Your experience with marketing automation and customer acquisition strategies is highly valuable.",
+          "Your understanding of e-commerce and digital channels makes you an ideal candidate.",
+          "Your project management skills and ability to work in fast-paced environments fit the company culture."
+        ],
+        "whatsMissing": [
+          "Specific experience in food delivery or on-demand services would be beneficial but not required.",
+          "Knowledge of local German market dynamics could be enhanced through training.",
+          "Experience with emerging marketing channels and technologies can be developed on the job.",
+          "Advanced proficiency in marketing analytics tools could be improved through training."
+        ],
+        "generatedAt": "2024-12-28T11:30:00Z"
+      }
+    }
+  ],
+  "sales_manager": [
+    {
+      "id": "keyword_sales_1",
+      "title": "Enterprise Sales Manager (m/w/d)",
+      "company": "Personio",
+      "location": "Munich, Germany",
+      "postedDate": "2024-12-27T14:15:00Z",
+      "matchPercentage": null,
+      "urgency": "high",
+      "isPaidAd": true,
+      "isHeadhunter": false,
+      "isMyClient": true,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/personio.svg",
+      "contactPerson": {
+        "name": "Sales Recruiter",
+        "position": "Recruiting Manager",
+        "phone": "+49 89 5555-0003",
+        "email": "careers@personio.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 95000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 4.5,
+        "reviews": 201
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+        { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+      ],
+      "headhunters": 8,
+      "externalSources": [
+        { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" }
+      ],
+      "responsibilities": [
+        "Manage and grow relationships with enterprise clients (500+ employees)",
+        "Lead complex sales cycles from initial contact to contract closure",
+        "Develop strategic account plans and identify upselling opportunities",
+        "Collaborate with Customer Success and Product teams to ensure client satisfaction",
+        "Conduct product demonstrations and presentations to C-level executives",
+        "Negotiate contracts and terms with enterprise clients",
+        "Achieve quarterly and annual sales targets",
+        "Maintain accurate sales forecasting and pipeline management"
+      ],
+      "yourProfile": [
+        "5+ years of B2B enterprise sales experience, preferably in SaaS/HR tech",
+        "Proven track record of exceeding sales targets in complex environments",
+        "Experience selling to HR leaders and C-level executives",
+        "Strong negotiation and presentation skills",
+        "Excellent relationship-building and communication abilities",
+        "Experience with CRM systems (Salesforce preferred)",
+        "Bachelor's degree in Business, Sales, or related field",
+        "Fluency in German and English required"
+      ],
+      "benefits": [
+        "Competitive base salary plus uncapped commission structure",
+        "Comprehensive benefits package including health insurance",
+        "Flexible working hours and hybrid work model",
+        "Professional development budget and career growth opportunities",
+        "Stock options and equity participation",
+        "Modern office spaces in Munich with great amenities",
+        "Team events and company retreats",
+        "Access to Personio's HR platform for personal use"
+      ],
+      "fullDescription": "Join Personio, Europe's leading HR software company, as an Enterprise Sales Manager. You'll be responsible for driving revenue growth by selling our comprehensive HR platform to large enterprises. Our sales team operates in a collaborative, high-performance environment where individual success contributes to company growth. You'll work with cutting-edge HR technology, help transform how companies manage their people, and have the opportunity to build lasting relationships with industry leaders. We're looking for a seasoned sales professional who is passionate about consultative selling and enjoys tackling complex sales challenges.",
+      "companyDetails": {
+        "id": "personio-1",
+        "name": "Personio",
+        "website": "https://www.personio.com",
+        "logo": "/logos/providerlogos/personio.svg",
+        "kununu": {
+          "rating": 4.5,
+          "reviews": 201
+        },
+        "contacts": [
+          {
+            "id": "contact-personio-1",
+            "name": "Sales Recruiter",
+            "position": "Recruiting Manager",
+            "phone": "+49 89 5555-0003",
+            "email": "careers@personio.com",
+            "avatar": "/avatars/default.jpg"
+          },
+          {
+            "id": "contact-personio-2",
+            "name": "Thomas Mueller",
+            "position": "VP of Sales",
+            "phone": "+49 89 5555-0004",
+            "email": "thomas.mueller@personio.com",
+            "avatar": "/avatars/contact-personio-2.jpg"
+          }
+        ],
+        "relationshipStatus": "existing_client"
+      },
+      "aiSummary": {
+        "id": "ai-summary-keyword-sales-1",
+        "placedScore": 92,
+        "profileMatch": 95,
+        "urgencyScore": 88,
+        "whyFits": [
+          "Your extensive enterprise sales experience and proven track record make you an exceptional candidate.",
+          "Your expertise in B2B SaaS sales aligns perfectly with Personio's business model.",
+          "Your ability to build relationships with C-level executives is crucial for this role.",
+          "Your experience with complex sales cycles and contract negotiations is exactly what we need.",
+          "Your consultative selling approach matches Personio's customer-centric philosophy."
+        ],
+        "whatsMissing": [
+          "Specific knowledge of HR technology landscape would be beneficial but can be learned quickly.",
+          "Experience with Personio's specific product suite can be gained through comprehensive training.",
+          "Understanding of European HR compliance and regulations can be developed through internal resources.",
+          "Advanced CRM analytics skills could be enhanced through professional development."
+        ],
+        "generatedAt": "2024-12-27T14:15:00Z"
+      },
+      "salesPitch": {
+        "id": "sales-pitch-keyword-sales-1",
+        "placedScore": 92,
+        "profileMatch": 95,
+        "urgencyScore": 88,
+        "conversationStarters": [
+          "Hello [Candidate Name], your impressive enterprise sales track record caught our attention for this Personio opportunity.",
+          "Your B2B SaaS expertise aligns perfectly with Personio's growth trajectory and sales model.",
+          "The ability to build C-level relationships that you've demonstrated is exactly what this role demands.",
+          "Your consultative selling approach matches perfectly with Personio's customer-centric culture.",
+          "This position offers the chance to join Europe's leading HR tech company during their expansion phase."
+        ],
+        "objectionHandlers": [
+          "If you're concerned about HR tech knowledge: Personio provides comprehensive product training to get you up to speed quickly.",
+          "Regarding European compliance: Our legal and product teams will give you all the regulatory context you need.",
+          "Don't worry about CRM analytics - we have excellent tools and training to enhance these skills.",
+          "The learning curve is manageable with our structured onboarding and mentorship program.",
+          "Your enterprise sales skills are transferable - HR tech is just another vertical where you'll excel."
+        ],
+        "generatedAt": "2024-12-27T14:15:00Z"
+      }
+    }
+  ],
+  "financial_analyst": [
+    {
+      "id": "keyword_finance_1",
+      "title": "Senior Financial Analyst (m/w/d)",
+      "company": "Trade Republic",
+      "location": "Berlin, Germany",
+      "postedDate": "2024-12-26T10:00:00Z",
+      "matchPercentage": null,
+      "urgency": "medium",
+      "isPaidAd": false,
+      "isHeadhunter": true,
+      "isMyClient": false,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/trade-republic.svg",
+      "contactPerson": {
+        "name": "Finance Recruiter",
+        "position": "Talent Acquisition",
+        "phone": "+49 30 5555-0004",
+        "email": "jobs@traderepublic.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 85000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 4.2,
+        "reviews": 134
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+        { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+      ],
+      "headhunters": 5,
+      "externalSources": [
+        { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" }
+      ],
+      "responsibilities": [
+        "Conduct comprehensive financial analysis and modeling for business units",
+        "Prepare monthly, quarterly, and annual financial reports",
+        "Support budgeting and forecasting processes across departments",
+        "Analyze key performance indicators and provide strategic insights",
+        "Collaborate with cross-functional teams on financial planning initiatives",
+        "Perform variance analysis and identify trends in financial data",
+        "Support due diligence processes for potential investments",
+        "Assist in regulatory reporting and compliance activities"
+      ],
+      "yourProfile": [
+        "3-5 years of experience in financial analysis, preferably in fintech or banking",
+        "Strong proficiency in Excel, SQL, and financial modeling",
+        "Experience with ERP systems and business intelligence tools",
+        "Solid understanding of financial markets and investment products",
+        "CFA or similar finance certification preferred",
+        "Excellent analytical and problem-solving skills",
+        "Strong communication and presentation abilities",
+        "Bachelor's or Master's degree in Finance, Economics, or related field"
+      ],
+      "benefits": [
+        "Competitive salary with performance-based bonuses",
+        "Stock options and equity participation in a fast-growing fintech",
+        "Professional development budget for certifications and training",
+        "Flexible working hours and remote work possibilities",
+        "Premium health insurance and wellness programs",
+        "Free trading account with premium features",
+        "Modern office space in Berlin with excellent amenities",
+        "International career opportunities and exposure"
+      ],
+      "fullDescription": "Join Trade Republic, Europe's leading commission-free broker, as a Senior Financial Analyst. You'll play a crucial role in driving financial insights and supporting strategic decision-making in our rapidly growing fintech company. Our finance team operates at the intersection of traditional financial analysis and cutting-edge technology, providing you with unique opportunities to shape the future of investing. You'll work with large datasets, complex financial models, and contribute to the financial strategy that enables millions of Europeans to invest effortlessly. We're looking for a detail-oriented analyst who is passionate about financial markets and eager to make an impact in the fintech revolution.",
+      "companyDetails": {
+        "id": "trade-republic-1",
+        "name": "Trade Republic",
+        "website": "https://www.traderepublic.com",
+        "logo": "/logos/providerlogos/trade-republic.svg",
+        "kununu": {
+          "rating": 4.2,
+          "reviews": 134
+        },
+        "contacts": [
+          {
+            "id": "contact-tr-1",
+            "name": "Finance Recruiter",
+            "position": "Talent Acquisition",
+            "phone": "+49 30 5555-0004",
+            "email": "jobs@traderepublic.com",
+            "avatar": "/avatars/default.jpg"
+          },
+          {
+            "id": "contact-tr-2",
+            "name": "Alexandra Fischer",
+            "position": "Head of Finance",
+            "phone": "+49 30 5555-0005",
+            "email": "alexandra.fischer@traderepublic.com",
+            "avatar": "/avatars/contact-tr-2.jpg"
+          }
+        ],
+        "relationshipStatus": "none"
+      },
+      "aiSummary": {
+        "id": "ai-summary-keyword-finance-1",
+        "placedScore": 89,
+        "profileMatch": 91,
+        "urgencyScore": 75,
+        "whyFits": [
+          "Your strong financial analysis background and modeling expertise are perfectly aligned with this role.",
+          "Your experience with financial markets and investment products is highly valuable for Trade Republic.",
+          "Your proficiency in Excel, SQL, and BI tools matches the technical requirements perfectly.",
+          "Your analytical mindset and attention to detail are crucial for accurate financial reporting.",
+          "Your understanding of fintech and digital finance trends makes you an ideal candidate."
+        ],
+        "whatsMissing": [
+          "Specific experience with brokerage operations would be beneficial but can be learned on the job.",
+          "Knowledge of German financial regulations can be acquired through training and mentorship.",
+          "Advanced Python or R programming skills would be advantageous but not required.",
+          "CFA certification would strengthen your profile but experience is more important."
+        ],
+        "generatedAt": "2024-12-26T10:00:00Z"
+      }
+    }
+  ],
+  "hr_specialist": [
+    {
+      "id": "keyword_hr_1",
+      "title": "HR Specialist (m/w/d) Talent Management",
+      "company": "Rocket Internet",
+      "location": "Berlin, Germany",
+      "postedDate": "2024-12-25T16:45:00Z",
+      "matchPercentage": null,
+      "urgency": "low",
+      "isPaidAd": true,
+      "isHeadhunter": false,
+      "isMyClient": true,
+      "isFavorited": false,
+      "companyLogo": "/logos/providerlogos/rocket-internet.svg",
+      "contactPerson": {
+        "name": "HR Recruiter",
+        "position": "People Partner",
+        "phone": "+49 30 5555-0005",
+        "email": "careers@rocket-internet.com",
+        "avatar": "/avatars/default.jpg"
+      },
+      "salary": {
+        "amount": 68000,
+        "currency": "€"
+      },
+      "kununu": {
+        "rating": 3.8,
+        "reviews": 98
+      },
+      "listedOn": [
+        { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
+        { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+      ],
+      "headhunters": 3,
+      "externalSources": [
+        { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" }
+      ],
+      "responsibilities": [
+        "Design and implement talent management strategies and programs",
+        "Manage performance review processes and career development initiatives",
+        "Develop and deliver training programs for managers and employees",
+        "Lead succession planning and high-potential identification programs",
+        "Analyze talent metrics and provide insights to leadership",
+        "Support organizational development and change management initiatives",
+        "Partner with business leaders on talent acquisition and retention strategies",
+        "Maintain HRIS systems and ensure data accuracy"
+      ],
+      "yourProfile": [
+        "3+ years of experience in HR, with focus on talent management or development",
+        "Strong knowledge of performance management and learning & development",
+        "Experience with HRIS systems and HR analytics",
+        "Excellent interpersonal and communication skills",
+        "Project management experience and ability to handle multiple priorities",
+        "Bachelor's degree in HR, Psychology, Business, or related field",
+        "HR certification (SHRM, CIPD) preferred but not required",
+        "Fluency in German and English"
+      ],
+      "benefits": [
+        "Competitive salary with annual performance reviews",
+        "Flexible working arrangements and remote work options",
+        "Professional development budget for courses and certifications",
+        "Access to internal learning platform and external training programs",
+        "Health insurance and wellness benefits",
+        "Modern office space with collaborative work environments",
+        "Regular team events and company-wide gatherings",
+        "Opportunity to work with diverse, international teams"
+      ],
+      "fullDescription": "Join Rocket Internet, a leading startup incubator and venture capital firm, as an HR Specialist focused on Talent Management. You'll be responsible for developing and implementing talent strategies that support our portfolio companies and internal teams. Our HR department operates in a dynamic, fast-paced environment where innovation and agility are key. You'll have the opportunity to work with diverse teams across multiple industries, implement cutting-edge HR practices, and contribute to building world-class organizations. We're looking for an HR professional who is passionate about talent development, enjoys working in a startup environment, and is eager to make a significant impact on organizational growth.",
+      "companyDetails": {
+        "id": "rocket-internet-1",
+        "name": "Rocket Internet",
+        "website": "https://www.rocket-internet.com",
+        "logo": "/logos/providerlogos/rocket-internet.svg",
+        "kununu": {
+          "rating": 3.8,
+          "reviews": 98
+        },
+        "contacts": [
+          {
+            "id": "contact-ri-1",
+            "name": "HR Recruiter",
+            "position": "People Partner",
+            "phone": "+49 30 5555-0005",
+            "email": "careers@rocket-internet.com",
+            "avatar": "/avatars/default.jpg"
+          },
+          {
+            "id": "contact-ri-2",
+            "name": "Jennifer Weber",
+            "position": "Head of People & Culture",
+            "phone": "+49 30 5555-0006",
+            "email": "jennifer.weber@rocket-internet.com",
+            "avatar": "/avatars/contact-ri-2.jpg"
+          }
+        ],
+        "relationshipStatus": "existing_client"
+      },
+      "aiSummary": {
+        "id": "ai-summary-keyword-hr-1",
+        "placedScore": 86,
+        "profileMatch": 88,
+        "urgencyScore": 60,
+        "whyFits": [
+          "Your talent management expertise and development focus align perfectly with this role.",
+          "Your experience with performance management systems is exactly what Rocket Internet needs.",
+          "Your ability to work in fast-paced, dynamic environments suits the startup culture.",
+          "Your project management skills and ability to handle multiple priorities are valuable assets.",
+          "Your understanding of HR analytics and metrics supports data-driven decision making."
+        ],
+        "whatsMissing": [
+          "Experience working in venture capital or startup incubator environment would be beneficial.",
+          "Knowledge of international HR practices across multiple markets could be developed.",
+          "Advanced HRIS administration skills can be enhanced through training.",
+          "Experience with organizational psychology and change management would be advantageous."
+        ],
+        "generatedAt": "2024-12-25T16:45:00Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "company": {
+    "title": "Company Information",
+    "dropdown": {
+      "existingClient": "Existing Client",
+      "follow": "Follow",
+      "blacklist": "Blacklist",
+      "none": "No Relationship"
+    },
+    "employees": "employees",
+    "contact": "Contact",
+    "website": "Website",
+    "about": "About {{companyName}}",
+    "relationship": "Relationship",
+    "industry": "Industry",
+    "location": "Location"
+  },
+  "aiSummary": {
+    "title": "Generated with Placed AI",
+    "learnMore": "Learn More",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profile Match",
+    "urgencyScore": "Urgency Score",
+    "whatsGood": "What is good?",
+    "whatsBad": "What is bad?",
+    "whatsMissing": "What is missing?",
+    "generatedOn": "Generated on {{date}}",
+    "feedback": {
+      "question": "Was this helpful?",
+      "thumbsUp": "Thumbs up - positive feedback",
+      "thumbsDown": "Thumbs down - negative feedback"
+    }
+  },
+  "salesPitch": {
+    "title": "AI Sales Pitch",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profile Match",
+    "urgencyScore": "Urgency Score",
+    "conversationStarters": "Conversation Starters",
+    "objectionHandlers": "Objection Handlers",
+    "generatedOn": "Generated on ",
+    "feedback": {
+      "question": "Was this helpful?",
+      "thumbsUp": "Thumbs up - positive feedback",
+      "thumbsDown": "Thumbs down - negative feedback"
+    }
+  },
+  "jobDetails": {
+    "responsibilities": "Responsibilities",
+    "yourProfile": "Your Profile",
+    "benefits": "Benefits",
+    "jobDescription": "Job Description",
+    "alsoListedOn": "Also Listed On"
+  },
+  "actions": {
+    "profileAnalysis": "AI Assistant",
+    "salesPitch": "AI Sales Pitch",
+    "aiGenerated": "AI Generated",
+    "generating": "Generating...",
+    "backToSearch": "Back to Search",
+    "browseJobs": "Browse Jobs",
+    "favorite": "Favorite",
+    "copyToClipboard": "Copy to clipboard"
+  },
+  "jobCard": {
+    "postedToday": "today",
+    "postedYesterday": "yesterday",
+    "postedDaysAgo": "{{days}} days ago",
+    "listedOn": "Listed on",
+    "headhunterRecruiting": "{{count}} headhunter recruiting",
+    "headhuntersRecruiting": "{{count}} headhunters recruiting",
+    "backToSearch": "Back to Search",
+    "profileAnalysis": "AI Assistant",
+    "salesPitch": "AI Sales Pitch",
+    "generating": "Generating...",
+    "favorited": "Favorited",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites"
+  },
+  "errors": {
+    "jobNotFound": "Job Not Found",
+    "jobNotFoundDescription": "The job you're looking for doesn't exist or has been removed.",
+    "failedToToggleFavorite": "Failed to toggle favorite status",
+    "failedToGenerateAI": "Failed to generate AI summary"
+  },
+  "loading": {
+    "loadingJob": "Loading job details...",
+    "generatingAI": "Generating AI summary...",
+    "aiLoadingMessages": {
+      "analyzing": "Analyzing job requirements...",
+      "processing": "Processing candidate profile...",
+      "generating": "Generating AI insights...",
+      "finalizing": "Finalizing summary..."
+    }
+  }
+} 

@@ -1,0 +1,103 @@
+{
+  "company": {
+    "title": "Unternehmensinformationen",
+    "dropdown": {
+      "existingClient": "Bestehender Kunde",
+      "follow": "Folgen",
+      "blacklist": "Schwarze Liste",
+      "none": "Keine Beziehung"
+    },
+    "contact": "Kontakt",
+    "website": "Website",
+    "about": "Über {{companyName}}"
+  },
+  "aiSummary": {
+    "title": "KI Assistent",
+    "subtitle": "Basierend auf der Stellenbeschreibung generiert",
+    "regenerate": "Neu generieren",
+    "learnMore": "Mehr erfahren",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profil Match",
+    "urgencyScore": "Dringlichkeits-Score",
+    "whatsGood": "Was ist gut?",
+    "whatsBad": "Was ist schlecht?",
+    "whatsMissing": "Was fehlt?",
+    "generatedOn": "Generiert am ",
+    "feedback": {
+      "question": "War das hilfreich?",
+      "thumbsUp": "Daumen hoch - positives Feedback",
+      "thumbsDown": "Daumen runter - negatives Feedback"
+    }
+  },
+  "salesPitch": {
+    "title": "KI Gesprächsleitfaden",
+    "placedScore": "Placed Score",
+    "profileMatch": "Profil Match",
+    "urgencyScore": "Dringlichkeits-Score",
+    "conversationStarters": "Gesprächseinstiege",
+    "objectionHandlers": "Einwandbehandlung",
+    "generatedOn": "Generiert am ",
+    "feedback": {
+      "question": "War das hilfreich?",
+      "thumbsUp": "Daumen hoch - positives Feedback",
+      "thumbsDown": "Daumen runter - negatives Feedback"
+    }
+  },
+  "jobDetails": {
+    "title": "Stellendetails",
+    "responsibilities": "Verantwortlichkeiten",
+    "yourProfile": "Ihr Profil",
+    "benefits": "Vorteile",
+    "jobDescription": "Stellenbeschreibung",
+    "alsoListedOn": "Auch gelistet auf",
+    "description": "Stellenbeschreibung",
+    "requirements": "Anforderungen",
+    "aboutCompany": "Über das Unternehmen",
+    "applyNow": "Jetzt bewerben",
+    "saveJob": "Stelle speichern"
+  },
+  "actions": {
+    "profileAnalysis": "KI Assistent",
+    "salesPitch": "KI Gesprächsleitfaden",
+    "aiGenerated": "KI Generiert",
+    "generating": "Generiere...",
+    "backToSearch": "Zurück zur Suche",
+    "browseJobs": "Jobs durchsuchen",
+    "favorite": "Favorit",
+    "copyToClipboard": "In Zwischenablage kopieren"
+  },
+  "jobCard": {
+    "postedToday": "heute",
+    "postedYesterday": "gestern",
+    "postedDaysAgo": "vor {{days}} Tagen veröffentlicht",
+    "listedOn": "Veröffentlicht auf",
+    "headhunterRecruiting": "{{count}} Personalvermittler aktiv",
+    "headhuntersRecruiting": "{{count}} Personalvermittler aktiv",
+    "backToSearch": "Zurück zur Suche",
+    "profileAnalysis": "KI Assistent",
+    "salesPitch": "KI Gesprächsleitfaden",
+    "generating": "Generiere...",
+    "favorited": "Favorisiert",
+    "addToFavorites": "Zu Favoriten hinzufügen",
+    "removeFromFavorites": "Aus Favoriten entfernen",
+    "headhunters": "Headhunter",
+    "salaryRange": "Gehaltsbereich",
+    "postedDate": "Veröffentlicht"
+  },
+  "errors": {
+    "jobNotFound": "Job nicht gefunden",
+    "jobNotFoundDescription": "Der gesuchte Job existiert nicht oder wurde entfernt.",
+    "failedToToggleFavorite": "Favoriten-Status konnte nicht geändert werden",
+    "failedToGenerateAI": "KI-Zusammenfassung konnte nicht generiert werden"
+  },
+  "loading": {
+    "loadingJob": "Lade Job-Details...",
+    "generatingAI": "Generiere KI-Zusammenfassung...",
+    "aiLoadingMessages": {
+      "analyzing": "Analysiere Stellenanforderungen...",
+      "processing": "Verarbeite Kandidatenprofil...",
+      "generating": "Generiere KI-Erkenntnisse...",
+      "finalizing": "Finalisiere Zusammenfassung..."
+    }
+  }
+} 

@@ -1,0 +1,221 @@
+[
+  {
+    "id": "cv3_job_1",
+    "title": "Senior Full Stack Developer (m/w/d)",
+    "company": "Zalando SE",
+    "location": "Berlin, Germany",
+    "postedDate": "2024-12-29T16:30:00Z",
+    "matchPercentage": 94,
+    "urgency": "high",
+    "isPaidAd": true,
+    "isHeadhunter": false,
+    "isMyClient": true,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/zalando.svg",
+    "contactPerson": {
+      "name": "Alex Thompson",
+      "position": "Engineering Recruiter",
+      "phone": "+49 30 2759-1234",
+      "email": "alex.thompson@zalando.de",
+      "avatar": "/avatars/contact-7.jpg"
+    },
+    "salary": {
+      "amount": 95000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.3,
+      "reviews": 567
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/stack-overflow.svg", "alt": "Stack Overflow" }
+    ],
+    "headhunters": 12,
+    "externalSources": [
+      { "name": "LinkedIn", "logo": "/logos/providerlogos/linkedin.svg", "url": "https://linkedin.com" },
+      { "name": "Stack Overflow", "logo": "/logos/providerlogos/stack-overflow.svg", "url": "https://stackoverflow.com" }
+    ],
+    "responsibilities": [
+      "Entwicklung von skalierbaren Web-Anwendungen mit React und Node.js",
+      "Design und Implementierung von RESTful APIs und Microservices",
+      "Code-Reviews und Mentoring von Junior-Entwicklern",
+      "Zusammenarbeit mit Product Managern und UX-Designern",
+      "Optimierung der Anwendungsperformance und Skalierbarkeit",
+      "Teilnahme an Architekturentscheidungen und technischen Diskussionen"
+    ],
+    "yourProfile": [
+      "Mindestens 5 Jahre Erfahrung in der Full Stack Entwicklung",
+      "Expertise in JavaScript/TypeScript, React, Node.js",
+      "Erfahrung mit Cloud-Plattformen (AWS, Azure, GCP)",
+      "Kenntnisse in Docker, Kubernetes und CI/CD-Pipelines",
+      "Verständnis für Agile Entwicklungsmethoden (Scrum, Kanban)",
+      "Sehr gute Englischkenntnisse für internationale Zusammenarbeit"
+    ],
+    "benefits": [
+      "Attraktives Gehaltspaket mit Equity-Optionen",
+      "Flexible Arbeitszeiten und Remote-Work-Möglichkeiten",
+      "Learning Budget von 3.000€ pro Jahr für Weiterbildung",
+      "Moderne Tech-Ausstattung nach Wahl (MacBook, Monitor, etc.)",
+      "Zalando-Mitarbeiterrabatt und kostenlose Lieferung",
+      "Fitness-Studio-Mitgliedschaft und Gesundheitsprogramme",
+      "Internationale Arbeitsumgebung mit 40+ Nationalitäten"
+    ],
+    "fullDescription": "Zalando ist Europas führende Fashion-und-Lifestyle-Plattform. Wir suchen einen erfahrenen Full Stack Developer, der unser Engineering-Team dabei unterstützt, innovative Lösungen für Millionen von Kunden zu entwickeln. Sie werden an der Gestaltung der Zukunft des E-Commerce beteiligt sein und mit modernsten Technologien arbeiten. Als Teil unseres agilen Teams haben Sie die Möglichkeit, Ihre technischen Fähigkeiten weiterzuentwickeln und gleichzeitig einen direkten Impact auf unser Geschäft zu haben.",
+    "company": {
+      "id": "zalando-1",
+      "name": "Zalando SE",
+      "website": "https://www.zalando.de",
+      "logo": "/logos/providerlogos/zalando.svg",
+      "kununu": {
+        "rating": 4.3,
+        "reviews": 567
+      },
+      "contacts": [
+        {
+          "id": "contact-7",
+          "name": "Alex Thompson",
+          "position": "Engineering Recruiter",
+          "phone": "+49 30 2759-1234",
+          "email": "alex.thompson@zalando.de",
+          "avatar": "/avatars/contact-7.jpg"
+        },
+        {
+          "id": "contact-8",
+          "name": "Dr. Elena Kowalski",
+          "position": "Engineering Manager",
+          "phone": "+49 30 2759-1235",
+          "email": "elena.kowalski@zalando.de",
+          "avatar": "/avatars/contact-8.jpg"
+        }
+      ],
+      "relationshipStatus": "existing_client"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv3-1",
+      "placedScore": 94,
+      "profileMatch": 96,
+      "urgencyScore": 91,
+      "whyFits": [
+        "Ihre umfassende Full Stack Erfahrung mit React und Node.js entspricht exakt unseren technischen Anforderungen.",
+        "Mit Ihrer Expertise in Cloud-Technologien und Microservices können Sie sofort zu unserer Skalierungsstrategie beitragen.",
+        "Ihre Erfahrung in agiler Entwicklung und Code-Reviews passt perfekt zu unserer Arbeitsweise.",
+        "Die nachgewiesene Fähigkeit, komplexe E-Commerce-Lösungen zu entwickeln, ist ein großer Vorteil.",
+        "Ihre internationale Erfahrung und Englischkenntnisse sind essentiell für unser globales Team."
+      ],
+      "whatsMissing": [
+        "Spezifische Erfahrung mit Zalando-Tech-Stack kann durch umfassende Einarbeitung erworben werden.",
+        "Kenntnisse in Machine Learning wären für unsere Recommendation-Engine von Vorteil.",
+        "Erfahrung mit Fashion-E-Commerce wäre hilfreich, ist aber nicht erforderlich.",
+        "Zusätzliche DevOps-Kenntnisse könnten für Infrastructure-Projekte nützlich sein."
+      ],
+      "generatedAt": "2024-12-29T16:30:00Z"
+    }
+  },
+  {
+    "id": "cv3_job_2",
+    "title": "DevOps Engineer (m/w/d) Cloud Infrastructure",
+    "company": "SAP SE",
+    "location": "Walldorf, Germany",
+    "postedDate": "2024-12-27T13:45:00Z",
+    "matchPercentage": 89,
+    "urgency": "medium",
+    "isPaidAd": false,
+    "isHeadhunter": true,
+    "isMyClient": true,
+    "isFavorited": false,
+    "companyLogo": "/logos/providerlogos/sap.svg",
+    "contactPerson": {
+      "name": "Thomas Bauer",
+      "position": "Technical Recruiter",
+      "phone": "+49 6227 7-12345",
+      "email": "thomas.bauer@sap.com",
+      "avatar": "/avatars/contact-9.jpg"
+    },
+    "salary": {
+      "amount": 88000,
+      "currency": "€"
+    },
+    "kununu": {
+      "rating": 4.2,
+      "reviews": 892
+    },
+    "listedOn": [
+      { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
+      { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
+      { "src": "/logos/providerlogos/xing.svg", "alt": "XING" }
+    ],
+    "headhunters": 8,
+    "externalSources": [
+      { "name": "StepStone", "logo": "/logos/providerlogos/stepstone.svg", "url": "https://stepstone.com" },
+      { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" }
+    ],
+    "responsibilities": [
+      "Design und Implementierung von Cloud-Infrastrukturen (AWS, Azure)",
+      "Automatisierung von Deployment-Prozessen mit CI/CD-Pipelines",
+      "Monitoring und Optimierung von System-Performance",
+      "Sicherheitskonzepte für Cloud-Umgebungen entwickeln",
+      "Infrastructure as Code mit Terraform und Ansible",
+      "24/7 Support für kritische Produktions-Systeme"
+    ],
+    "yourProfile": [
+      "Abgeschlossenes Studium in Informatik oder vergleichbare Qualifikation",
+      "3+ Jahre Erfahrung als DevOps Engineer oder System Administrator",
+      "Expertise in AWS/Azure Cloud Services und Kubernetes",
+      "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)",
+      "Kenntnisse in Monitoring-Tools (Prometheus, Grafana, ELK Stack)",
+      "Problemlösungskompetenz und Bereitschaft für Bereitschaftsdienst"
+    ],
+    "benefits": [
+      "Umfassendes Weiterbildungsprogramm und Zertifizierungsunterstützung",
+      "Flexible Arbeitsmodelle mit Home-Office-Möglichkeiten",
+      "Betriebliche Altersvorsorge und Lebensversicherung",
+      "Firmenwagen oder ÖPNV-Zuschuss",
+      "Kostenlose Getränke und subventionierte Kantine",
+      "Sport- und Freizeitangebote am Standort",
+      "Internationale Karrieremöglichkeiten in 130+ Ländern"
+    ],
+    "fullDescription": "SAP ist der Marktführer für Unternehmenssoftware und hilft Unternehmen jeder Größe dabei, besser zu wirtschaften. Wir suchen einen erfahrenen DevOps Engineer für unser Cloud Infrastructure Team. Sie werden verantwortlich sein für die Skalierung und Optimierung unserer globalen Cloud-Plattformen, die Millionen von Nutzern weltweit unterstützen. Als Teil unseres innovativen Teams haben Sie die Möglichkeit, mit modernsten Technologien zu arbeiten und zur digitalen Transformation führender Unternehmen beizutragen.",
+    "company": {
+      "id": "sap-1",
+      "name": "SAP SE",
+      "website": "https://www.sap.com",
+      "logo": "/logos/providerlogos/sap.svg",
+      "kununu": {
+        "rating": 4.2,
+        "reviews": 892
+      },
+      "contacts": [
+        {
+          "id": "contact-9",
+          "name": "Thomas Bauer",
+          "position": "Technical Recruiter",
+          "phone": "+49 6227 7-12345",
+          "email": "thomas.bauer@sap.com",
+          "avatar": "/avatars/contact-9.jpg"
+        }
+      ],
+      "relationshipStatus": "follow"
+    },
+    "aiSummary": {
+      "id": "ai-summary-cv3-2",
+      "placedScore": 89,
+      "profileMatch": 91,
+      "urgencyScore": 78,
+      "whyFits": [
+        "Ihre umfassende DevOps-Erfahrung und Cloud-Expertise machen Sie zum idealen Kandidaten für diese Position.",
+        "Mit Ihrer Expertise in Kubernetes und Infrastructure as Code können Sie sofort zur Skalierung beitragen.",
+        "Ihre Erfahrung mit Monitoring und Performance-Optimierung ist essentiell für unsere globalen Systeme.",
+        "Die Bereitschaft für 24/7-Support zeigt Ihr Engagement für kritische Infrastrukturen."
+      ],
+      "whatsMissing": [
+        "Spezifische SAP-Cloud-Platform-Kenntnisse können durch interne Schulungen erworben werden.",
+        "Erfahrung mit SAP-spezifischen Deployment-Tools wäre von Vorteil.",
+        "Zusätzliche Security-Zertifizierungen könnten für Compliance-Anforderungen hilfreich sein.",
+        "Kenntnisse in Enterprise-Scale-Architekturen wären ein Plus."
+      ],
+      "generatedAt": "2024-12-27T13:45:00Z"
+    }
+  }
+] 
