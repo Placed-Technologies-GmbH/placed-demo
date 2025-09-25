@@ -12,14 +12,35 @@ interface CompanyInfoSidebarProps {
   company: CompanyDetails;
   relationshipStatus: 'existing_client' | 'follow' | 'blacklist' | 'none';
   onRelationshipChange: (status: 'existing_client' | 'follow' | 'blacklist' | 'none') => void;
+  additionalContacts?: Array<{
+    id: string;
+    name: string;
+    position: string;
+    phone: string;
+    email: string;
+  }>;
 }
 
 export function CompanyInfoSidebar({ 
   company, 
   relationshipStatus, 
-  onRelationshipChange 
+  onRelationshipChange,
+  additionalContacts = []
 }: CompanyInfoSidebarProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  // Combine company contacts with additional contacts
+  const allContacts = [
+    ...company.contacts,
+    ...additionalContacts.map(contact => ({
+      id: contact.id,
+      name: contact.name,
+      position: contact.position,
+      phone: contact.phone,
+      email: contact.email,
+      avatar: '/avatars/default.jpg' // Default avatar for additional contacts
+    }))
+  ];
 
   const getDropdownLabel = () => {
     switch (relationshipStatus) {
@@ -138,7 +159,7 @@ export function CompanyInfoSidebar({
         </div>
 
         {/* Contact Persons */}
-        {company.contacts.map((contact, index) => (
+        {allContacts.map((contact, index) => (
           <div key={contact.id} className="space-y-3">
             {/* Contact Name and Position */}
             <div>
@@ -168,7 +189,7 @@ export function CompanyInfoSidebar({
             </div>
 
             {/* Separator between contacts (except for last one) */}
-            {index < company.contacts.length - 1 && (
+            {index < allContacts.length - 1 && (
               <div className="border-t border-none my-4" />
             )}
           </div>

@@ -52,6 +52,13 @@
     "jobDescription": "Job Description",
     "alsoListedOn": "Also Listed On"
   },
+  "additionalContacts": {
+    "contactNotWorking": "Contact not working?",
+    "additionalContactDescription": "Get additional contact information for this company.",
+    "noCompanyFound": "No additional contacts found for this company.",
+    "requestAdditionalContact": "Request additional contact",
+    "creditsLeft": "credits left"
+  },
   "actions": {
     "profileAnalysis": "AI Assistant",
     "salesPitch": "AI Sales Pitch",

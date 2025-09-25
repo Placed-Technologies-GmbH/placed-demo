@@ -9,6 +9,7 @@ import { AISummaryLoadingCard } from '@/components/jobdetails/AISummaryLoadingCa
 import { SalesPitchCard } from '@/components/jobdetails/SalesPitchCard';
 import { SalesPitchLoadingCard } from '@/components/jobdetails/AISummaryLoadingCard';
 import { JobDetailsCard } from '@/components/jobdetails/JobDetailsCard';
+import AdditionalContactRequest from '@/components/jobdetails/AdditionalContactRequest';
 import { useJobDetails } from '@/hooks/jobdetailshook/useJobDetails';
 import { useAISummary } from '@/hooks/jobdetailshook/useAISummary';
 import { useSalesPitch } from '@/hooks/jobdetailshook/useSalesPitch';
@@ -16,6 +17,80 @@ import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/co
 import { Button } from '@/components/ui/button';
 import { Building2 } from 'lucide-react';
 import type { JobDetailsPageState } from '@/features/jobdetails/types';
+
+// Mock additional contacts data
+const mockAdditionalContacts = [
+  {
+    id: 'contact-3',
+    name: 'Thomas Schmidt',
+    position: 'HR Manager',
+    phone: '+49 30 789 123 45',
+    email: 'thomas@techvisio.de'
+  },
+  {
+    id: 'contact-4',
+    name: 'Sarah Weber',
+    position: 'Senior Recruiter',
+    phone: '+49 30 456 789 12',
+    email: 'sarah@techvisio.de'
+  },
+  {
+    id: 'contact-5',
+    name: 'Michael Fischer',
+    position: 'People Operations',
+    phone: '+49 30 654 321 98',
+    email: 'michael@techvisio.de'
+  },
+  {
+    id: 'contact-6',
+    name: 'Lisa Wagner',
+    position: 'Recruiting Specialist',
+    phone: '+49 30 987 654 32',
+    email: 'lisa@techvisio.de'
+  },
+  {
+    id: 'contact-7',
+    name: 'David Hoffmann',
+    position: 'Team Lead Recruiting',
+    phone: '+49 30 234 567 89',
+    email: 'david@techvisio.de'
+  },
+  {
+    id: 'contact-8',
+    name: 'Maria Becker',
+    position: 'Talent Acquisition Specialist',
+    phone: '+49 30 345 678 90',
+    email: 'maria@techvisio.de'
+  },
+  {
+    id: 'contact-9',
+    name: 'Alexander Schulz',
+    position: 'Head of Recruiting',
+    phone: '+49 30 567 890 12',
+    email: 'alexander@techvisio.de'
+  },
+  {
+    id: 'contact-10',
+    name: 'Julia Meyer',
+    position: 'HR Business Partner',
+    phone: '+49 30 678 901 23',
+    email: 'julia@techvisio.de'
+  },
+  {
+    id: 'contact-11',
+    name: 'Stefan Wagner',
+    position: 'Recruiting Manager',
+    phone: '+49 30 789 012 34',
+    email: 'stefan@techvisio.de'
+  },
+  {
+    id: 'contact-12',
+    name: 'Katharina Zimmermann',
+    position: 'Director of People Operations',
+    phone: '+49 30 890 123 45',
+    email: 'katharina@techvisio.de'
+  }
+];
 
 interface JobDetailsPageClientProps {
   lang: string;
@@ -69,6 +144,13 @@ interface JobDetailsPageClientProps {
       jobDescription: string;
       alsoListedOn: string;
     };
+    additionalContacts: {
+      contactNotWorking: string;
+      additionalContactDescription: string;
+      noCompanyFound: string;
+      requestAdditionalContact: string;
+      creditsLeft: string;
+    };
     actions: {
       profileAnalysis: string;
       salesPitch: string;
@@ -118,6 +200,17 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
     isFavorited: false,
     companyRelationship: 'none',
   });
+
+  // Additional contacts state
+  const [creditsLeft, setCreditsLeft] = useState(10);
+  const [revealedContacts, setRevealedContacts] = useState<Array<{
+    id: string;
+    name: string;
+    position: string;
+    phone: string;
+    email: string;
+  }>>([]);
+
 
   // Data fetching hooks
   const { data: jobDetails, isLoading, error } = useJobDetails(id);
@@ -188,6 +281,26 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
 
   const handleCompanyRelationshipChange = (newRelationship: 'existing_client' | 'follow' | 'blacklist' | 'none') => {
     setPageState(prev => ({ ...prev, companyRelationship: newRelationship }));
+  };
+
+  const handleRequestAdditionalContact = () => {
+    if (creditsLeft <= 0) return;
+    
+    // Find next unrevealed contact
+    const nextContact = mockAdditionalContacts.find(contact => 
+      !revealedContacts.some(revealed => revealed.id === contact.id)
+    );
+    
+    if (!nextContact) {
+      console.log('No more contacts available');
+      return;
+    }
+    
+    // Add to revealed contacts list
+    setRevealedContacts(prev => [...prev, nextContact]);
+    
+    // Decrease credits
+    setCreditsLeft(prev => prev - 1);
   };
 
   if (isLoading) {
@@ -319,12 +432,22 @@ export function JobDetailsPageClient({ lang, id, dict }: JobDetailsPageClientPro
       {/* Desktop Layout */}
       <div className="hidden md:flex gap-8">
         {/* Left Sidebar - Company Info */}
-        <div className="w-[296px] flex-shrink-0">
+        <div className="w-[296px] flex-shrink-0 space-y-6">
           <CompanyInfoSidebar
             company={jobDetails.company}
             relationshipStatus={pageState.companyRelationship}
             onRelationshipChange={handleCompanyRelationshipChange}
+            additionalContacts={revealedContacts}
           />
+          
+          {/* Request more contacts button */}
+          {creditsLeft > 0 && revealedContacts.length < mockAdditionalContacts.length && (
+            <AdditionalContactRequest
+              creditsLeft={creditsLeft}
+              onRequestContact={handleRequestAdditionalContact}
+              dict={dict.additionalContacts}
+            />
+          )}
         </div>
 
         {/* Right Content Area */}
