@@ -146,8 +146,7 @@
         "reviews": 156
       },
       "listedOn": [
-        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" },
-        { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+        { "src": "/logos/providerlogos/linkedin.svg", "alt": "LinkedIn" }
       ],
       "headhunters": 15,
       "externalSources": [

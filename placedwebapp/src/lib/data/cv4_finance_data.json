@@ -143,13 +143,11 @@
     },
     "listedOn": [
       { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
-      { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" },
       { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" }
     ],
     "headhunters": 6,
     "externalSources": [
-      { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" },
-      { "name": "Monster", "logo": "/logos/providerlogos/monster.svg", "url": "https://monster.com" }
+      { "name": "Indeed", "logo": "/logos/providerlogos/indeed.svg", "url": "https://indeed.com" }
     ],
     "responsibilities": [
       "Kontrolle und Überwachung von Investment-Portfolios",

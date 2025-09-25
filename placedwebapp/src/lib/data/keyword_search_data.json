@@ -402,8 +402,7 @@
         "reviews": 134
       },
       "listedOn": [
-        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
-        { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" }
       ],
       "headhunters": 5,
       "externalSources": [

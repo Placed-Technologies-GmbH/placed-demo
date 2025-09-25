@@ -169,10 +169,6 @@
       },
       "listedOn": [
         {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
-        },
-        {
           "src": "/logos/providerlogos/xing.svg",
           "alt": "Xing"
         }
@@ -576,10 +572,6 @@
         {
           "src": "/logos/providerlogos/stepstone.svg",
           "alt": "StepStone"
-        },
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
         }
       ],
       "headhunters": 0,
@@ -712,10 +704,6 @@
         {
           "src": "/logos/providerlogos/stepstone.svg",
           "alt": "StepStone"
-        },
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
         },
         {
           "src": "/logos/providerlogos/xing.svg",
@@ -1116,10 +1104,6 @@
         "url": "https://www.kununu.com/de/signal-iduna"
       },
       "listedOn": [
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
-        }
       ],
       "headhunters": 0,
       "externalSources": [
@@ -1373,7 +1357,7 @@
       "listedOn": [
         {
           "src": "/logos/providerlogos/linkedin.svg",
-          "alt": "Monster"
+          "alt": "LinkedIn"
         },
         {
           "src": "/logos/providerlogos/xing.svg",
