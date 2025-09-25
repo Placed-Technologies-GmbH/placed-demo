@@ -105,7 +105,7 @@ const generateMockJobs = (): JobListing[] => {
     const randomCompany = companies[companyIndex];
     const randomLocation = locations[Math.floor(Math.random() * locations.length)];
     const randomUrgency = urgencyLevels[Math.floor(Math.random() * urgencyLevels.length)];
-    const randomSalary = Math.floor(Math.random() * 80000) + 30000;
+    const randomSalary = Math.floor(Math.random() * 4000) + 1;
     const randomMatch = Math.floor(Math.random() * 40) + 60;
     const randomDaysAgo = Math.floor(Math.random() * 30) + 1;
     
