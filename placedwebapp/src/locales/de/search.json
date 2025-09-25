@@ -67,7 +67,7 @@
     "profileMatch": "Profil-Übereinstimmung"
   },
   "results": {
-    "jobsFound": "Über {{count}} Stellenangebote gefunden",
+    "jobsFound": "Stellenangebote gefunden",
     "noResults": "Keine Jobs gefunden",
     "noResultsDescription": "Versuchen Sie, Ihre Suchkriterien oder Filter anzupassen, um mehr Möglichkeiten zu finden.",
     "loading": "Suche nach Jobs...",

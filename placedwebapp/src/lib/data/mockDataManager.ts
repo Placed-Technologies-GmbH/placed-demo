@@ -493,7 +493,7 @@ export class MockDataManager {
         company: `${template.company} ${i}`,
         location: 'Berlin, Germany',
         salary: {
-          amount: Math.floor(Math.random() * 40000) + 60000,
+          amount: Math.floor(Math.random() * 4000) + 1,
           currency: '€'
         },
         postedDate: new Date(Date.now() - Math.random() * 30 * 24 * 60 * 60 * 1000).toISOString(),

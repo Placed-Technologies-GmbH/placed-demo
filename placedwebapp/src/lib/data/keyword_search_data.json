@@ -21,7 +21,7 @@
         "avatar": "/avatars/default.jpg"
       },
       "salary": {
-        "amount": 90000,
+        "amount": 2847,
         "currency": "€"
       },
       "kununu": {
@@ -137,7 +137,7 @@
         "avatar": "/avatars/default.jpg"
       },
       "salary": {
-        "amount": 72000,
+        "amount": 1923,
         "currency": "€"
       },
       "kununu": {
@@ -254,7 +254,7 @@
         "avatar": "/avatars/default.jpg"
       },
       "salary": {
-        "amount": 95000,
+        "amount": 3456,
         "currency": "€"
       },
       "kununu": {
@@ -394,7 +394,7 @@
         "avatar": "/avatars/default.jpg"
       },
       "salary": {
-        "amount": 85000,
+        "amount": 2134,
         "currency": "€"
       },
       "kununu": {
@@ -402,8 +402,7 @@
         "reviews": 134
       },
       "listedOn": [
-        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
-        { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+        { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" }
       ],
       "headhunters": 5,
       "externalSources": [
@@ -513,7 +512,7 @@
         "avatar": "/avatars/default.jpg"
       },
       "salary": {
-        "amount": 68000,
+        "amount": 3789,
         "currency": "€"
       },
       "kununu": {

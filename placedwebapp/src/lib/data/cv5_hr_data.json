@@ -133,8 +133,7 @@
     },
     "listedOn": [
       { "src": "/logos/providerlogos/stepstone.svg", "alt": "StepStone" },
-      { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" },
-      { "src": "/logos/providerlogos/monster.svg", "alt": "Monster" }
+      { "src": "/logos/providerlogos/indeed.svg", "alt": "Indeed" }
     ],
     "headhunters": 8,
     "externalSources": [

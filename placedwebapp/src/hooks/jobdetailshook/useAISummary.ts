@@ -2,13 +2,14 @@
 
 import { useState } from 'react';
 import type { AISummary } from '@/features/jobdetails/types';
+import { validateAISummary } from '@/features/jobdetails/utils';
 import MockDataManager from '@/lib/data/mockDataManager';
 import { useSearchParams } from 'next/navigation';
 
 // Mock AI summary data
 const mockAISummary: AISummary = {
   id: 'ai-summary-1',
-  placedScore: 78,
+  placedScore: 75,
   profileMatch: 87,
   urgencyScore: 62,
   whatsGood: [
@@ -67,10 +68,10 @@ export function useAISummary(jobId: string): UseAISummaryReturn {
         const cvAISummary = mockDataManager.getCVSpecificAISummary(jobId, fileId);
         if (cvAISummary) {
           console.log(`Found CV-specific AI summary for jobId: ${jobId}, fileId: ${fileId}`);
-          return {
+          return validateAISummary({
             ...cvAISummary,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
 
@@ -81,10 +82,10 @@ export function useAISummary(jobId: string): UseAISummaryReturn {
         const cvAISummary = mockDataManager.getCVSpecificAISummary(jobId, fallbackFileId);
         if (cvAISummary) {
           console.log(`Found CV-specific AI summary using fallback method for jobId: ${jobId}`);
-          return {
+          return validateAISummary({
             ...cvAISummary,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
 
@@ -93,10 +94,10 @@ export function useAISummary(jobId: string): UseAISummaryReturn {
         const keywordJobDetails = mockDataManager.getKeywordSpecificJobDetails(jobId);
         if (keywordJobDetails && keywordJobDetails.aiSummary) {
           console.log(`Found keyword-specific AI summary for jobId: ${jobId}`);
-          return {
+          return validateAISummary({
             ...keywordJobDetails.aiSummary,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
 
@@ -105,19 +106,19 @@ export function useAISummary(jobId: string): UseAISummaryReturn {
         const locationJobDetails = mockDataManager.getLocationSpecificJobDetails(jobId);
         if (locationJobDetails && locationJobDetails.aiSummary) {
           console.log(`Found location-specific AI summary for jobId: ${jobId}`);
-          return {
+          return validateAISummary({
             ...locationJobDetails.aiSummary,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
       
       // Fallback to general mock AI summary
       console.log(`Using general mock AI summary for jobId: ${jobId}`);
-      return {
+      return validateAISummary({
         ...mockAISummary,
         generatedAt: new Date().toISOString()
-      };
+      });
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to generate AI summary';
       setError(errorMessage);

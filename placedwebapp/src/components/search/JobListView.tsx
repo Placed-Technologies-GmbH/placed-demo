@@ -105,7 +105,6 @@ function JobCardSkeleton() {
         {/* Fourth Row */}
         <div className="w-full h-14 flex justify-between items-center pt-4 px-6">
           <Skeleton className="h-4 w-20" />
-          <Skeleton className="h-10 w-[128px] rounded-3xl" />
         </div>
       </div>
 
@@ -133,7 +132,6 @@ function JobCardSkeleton() {
         </div>
         <div className="flex items-center justify-between">
           <Skeleton className="h-3 w-16" />
-          <Skeleton className="h-6 w-16 rounded-full" />
         </div>
       </div>
     </div>

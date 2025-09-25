@@ -103,7 +103,7 @@
     },
     "aiSummary": {
       "id": "ai-summary-cv1_job_1",
-        "placedScore": 95,
+        "placedScore": 80,
       "profileMatch": 90,
       "urgencyScore": 70,
         "whatsGood": [
@@ -168,10 +168,6 @@
         "url": "https://www.kununu.com/de/alphaconsult-kg"
       },
       "listedOn": [
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
-        },
         {
           "src": "/logos/providerlogos/xing.svg",
           "alt": "Xing"
@@ -576,10 +572,6 @@
         {
           "src": "/logos/providerlogos/stepstone.svg",
           "alt": "StepStone"
-        },
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
         }
       ],
       "headhunters": 0,
@@ -712,10 +704,6 @@
         {
           "src": "/logos/providerlogos/stepstone.svg",
           "alt": "StepStone"
-        },
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
         },
         {
           "src": "/logos/providerlogos/xing.svg",
@@ -1116,10 +1104,6 @@
         "url": "https://www.kununu.com/de/signal-iduna"
       },
       "listedOn": [
-        {
-          "src": "/logos/providerlogos/monster.svg",
-          "alt": "Monster"
-        }
       ],
       "headhunters": 0,
       "externalSources": [
@@ -1373,7 +1357,7 @@
       "listedOn": [
         {
           "src": "/logos/providerlogos/linkedin.svg",
-          "alt": "Monster"
+          "alt": "LinkedIn"
         },
         {
           "src": "/logos/providerlogos/xing.svg",

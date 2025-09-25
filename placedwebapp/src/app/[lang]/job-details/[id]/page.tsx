@@ -73,6 +73,9 @@ export async function generateStaticParams() {
   // Generate location-based job IDs
   const locationJobIds = generateLocationJobIds(locationData);
   
+  // Generate general job IDs (1-55) from mock data
+  const generalJobIds = Array.from({ length: 55 }, (_, i) => (i + 1).toString());
+
   // Combine all job IDs
   const allJobIds = [
     ...cv1JobIds,
@@ -82,8 +85,7 @@ export async function generateStaticParams() {
     ...cv5JobIds,
     ...keywordJobIds,
     ...locationJobIds,
-    // Add some fallback general job IDs
-    '1', '2', '3', '4', '5'
+    ...generalJobIds
   ];
 
   console.log(`Generated static params for ${allJobIds.length} job IDs:`);
@@ -92,6 +94,9 @@ export async function generateStaticParams() {
   console.log(`CV3: ${cv3JobIds.length} jobs (${cv3JobIds[0]} to ${cv3JobIds[cv3JobIds.length - 1]})`);
   console.log(`CV4: ${cv4JobIds.length} jobs (${cv4JobIds[0]} to ${cv4JobIds[cv4JobIds.length - 1]})`);
   console.log(`CV5: ${cv5JobIds.length} jobs (${cv5JobIds[0]} to ${cv5JobIds[cv5JobIds.length - 1]})`);
+  console.log(`Keyword: ${keywordJobIds.length} jobs`);
+  console.log(`Location: ${locationJobIds.length} jobs`);
+  console.log(`General: ${generalJobIds.length} jobs (${generalJobIds[0]} to ${generalJobIds[generalJobIds.length - 1]})`);
 
   // Generate params for both languages
   const params = [];

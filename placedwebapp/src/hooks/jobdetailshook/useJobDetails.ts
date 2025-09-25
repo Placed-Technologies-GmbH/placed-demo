@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import type { JobDetails } from '@/features/jobdetails/types';
 import MockDataManager from '@/lib/data/mockDataManager';
 import { useSearchParams } from 'next/navigation';
+import { SearchService } from '@/lib/api/searchService';
 
 // Mock data for development
 const mockJobDetails: JobDetails = {
@@ -34,11 +35,6 @@ const mockJobDetails: JobDetails = {
       url: 'https://indeed.de'
     },
     {
-      name: 'Monster',
-      logo: '/logos/providerlogos/monster.svg',
-      url: 'https://monster.de'
-    },
-    {
       name: 'LinkedIn',
       logo: '/logos/providerlogos/linkedin.svg',
       url: 'https://linkedin.com'
@@ -47,7 +43,6 @@ const mockJobDetails: JobDetails = {
   listedOn: [
     { src: '/logos/providerlogos/stepstone.svg', alt: 'StepStone' },
     { src: '/logos/providerlogos/indeed.svg', alt: 'Indeed' },
-    { src: '/logos/providerlogos/monster.svg', alt: 'Monster' },
     { src: '/logos/providerlogos/linkedin.svg', alt: 'LinkedIn' }
   ],
   company: {
@@ -189,8 +184,36 @@ export function useJobDetails(jobId: string): UseJobDetailsReturn {
         }
       }
       
-      // Fallback to general mock data
-      console.log(`Using general mock data for jobId: ${jobId}`);
+      // Fallback: try to get job from SearchService
+      try {
+        const jobFromSearchService = await SearchService.getJob(jobId);
+        if (jobFromSearchService) {
+          console.log(`Found job in SearchService for jobId: ${jobId}`);
+          // Convert JobListing to JobDetails if needed
+          if ('fullDescription' in jobFromSearchService) {
+            setData(jobFromSearchService as JobDetails);
+          } else {
+            // Convert JobListing to JobDetails format
+            const jobDetails: JobDetails = {
+              ...jobFromSearchService,
+              responsibilities: mockJobDetails.responsibilities,
+              yourProfile: mockJobDetails.yourProfile,
+              benefits: mockJobDetails.benefits,
+              fullDescription: mockJobDetails.fullDescription,
+              company: mockJobDetails.company,
+              aiSummary: undefined,
+              salesPitch: undefined,
+            };
+            setData(jobDetails);
+          }
+          return;
+        }
+      } catch (searchServiceError) {
+        console.warn(`SearchService failed for jobId: ${jobId}`, searchServiceError);
+      }
+      
+      // Final fallback to static mock data
+      console.log(`Using static mock data fallback for jobId: ${jobId}`);
       setData(mockJobDetails);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch job details');

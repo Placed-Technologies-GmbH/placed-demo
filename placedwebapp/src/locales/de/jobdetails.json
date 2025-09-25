@@ -56,6 +56,13 @@
     "applyNow": "Jetzt bewerben",
     "saveJob": "Stelle speichern"
   },
+  "additionalContacts": {
+    "contactNotWorking": "Kontakt funktioniert nicht?",
+    "additionalContactDescription": "Erhalten Sie zusätzliche Kontaktdaten zu diesem Unternehmen.",
+    "noCompanyFound": "Keine zusätzlichen Kontakte für dieses Unternehmen gefunden.",
+    "requestAdditionalContact": "Zusätzlichen Kontakt anfordern",
+    "creditsLeft": "Credits übrig"
+  },
   "actions": {
     "profileAnalysis": "KI Assistent",
     "salesPitch": "KI Gesprächsleitfaden",
