@@ -2,13 +2,10 @@
 
   import { useState } from 'react';
   import { useRouter, useParams, useSearchParams } from 'next/navigation';
-  import { Button } from '@/components/ui/button';
-  import { Dialog, DialogContent, DialogHeader, DialogTitle,  DialogFooter, DialogTrigger, DialogClose } from '@/components/ui/dialog';
   import { Avatar, AvatarFallback } from '@/components/ui/avatar';
   import { Skeleton } from '@/components/ui/skeleton';
   import { Phone, Star } from 'lucide-react';
   import { SearchService } from '@/lib/api/searchService';
-  import { CopyToClipboardField } from '@/components/ui/CopyToClipboardField';
   import type { JobListing } from '@/features/search/types';
   import Image from 'next/image';
   import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -349,54 +346,6 @@
                 </>
               )}
             </div>
-            {/* Place Now Button */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant="cta"
-                  className="min-w-[128px] h-10 rounded-3xl px-6 py-3 font-semibold hover:bg-cta-hover whitespace-nowrap hover:cursor-pointer"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {dict.placeNow}
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="w-[500px] h-[280px] rounded-lg shadow-md pb-[12px]">
-                <DialogHeader className="pl-6 pr-6 h-[28px]">
-                  <DialogTitle className="text-text-navy text-xl font-medium ">Contact Details</DialogTitle>
-                  <div className="flex flex-col gap-2">
-                    <div className="flex flex-col gap-2 h-[22px]">
-                      <span className="text-text-navy text-lg font-medium text-primary ">{job.contactPerson?.name}</span>
-                    </div>
-                    <div className="flex flex-col gap-2 h-[22px]">
-                      <span className="text-text-secondary text-md font-medium">{job.company}</span>
-                    </div>
-                    {/* Phone with copy-to-clipboard */}
-                    {job.contactPerson?.phone && (
-                      <CopyToClipboardField
-                        label={job.contactPerson.phone}
-                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
-                        copiedMessage="Copied!"
-                      />
-                    )}
-                    {/* Email with copy-to-clipboard */}
-                    {job.contactPerson?.email && (
-                      <CopyToClipboardField
-                        label={job.contactPerson.email}
-                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
-                        copiedMessage="Copied!"
-                      />
-                    )}
-                  </div>
-                </DialogHeader>
-                <DialogFooter className="mt-30">
-                  <DialogClose asChild>
-                    <Button type="button" variant="outline" className="h-[56px] w-[83px]">
-                      Hide
-                    </Button>
-                  </DialogClose>
-                </DialogFooter>
-              </DialogContent>
-            </Dialog>
           </div>
         </div>
 
@@ -543,61 +492,6 @@
                 </div>
               )}
             </div>
-
-            {/* Place Now Button */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant="cta"
-                  className="min-w-[128px] h-10 rounded-3xl px-6 py-3 font-semibold hover:bg-cta-hover whitespace-nowrap"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {dict.placeNow}
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="flex flex-col w-[500px] h-[280px] rounded-lg shadow-md pb-[12px]">
-                <DialogHeader className="pl-6 pr-6 h-[28px]">
-                  <DialogTitle className="text-text-navy text-xl font-medium ">Contact Details</DialogTitle>
-                  <div className="flex flex-col gap-2">
-                    <div className="flex flex-col gap-2 h-[22px]">
-                      <span className="text-text-navy text-lg font-medium text-primary">{job.contactPerson?.name}</span>
-                    </div>
-                    <div className="flex flex-col gap-2 h-[22px]">
-                      <span className="text-text-secondary text-md font-medium">{job.company}</span>
-                    </div>
-                    {/* Phone with copy-to-clipboard */}
-                      {job.contactPerson?.phone && (
-                        <div className="flex items-center gap-2">
-                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.11021 12.9223C9.6979 13.0259 10.3021 13.0259 10.8898 12.9223C11.8344 12.7559 12.5952 12.1217 12.8573 11.2824L12.9129 11.1044C12.9707 10.9193 13 10.7279 13 10.5356C13 9.68751 12.2416 9 11.306 9H8.69404C7.75845 9 7 9.68751 7 10.5356C7 10.7279 7.02931 10.9193 7.08709 11.1044L7.14268 11.2824C7.40475 12.1217 8.16561 12.7559 9.11021 12.9223ZM9.11021 12.9223C5.02797 12.1659 1.83405 8.97203 1.07767 4.88979M1.07767 4.88979C0.97411 4.3021 0.974111 3.6979 1.07767 3.11021C1.24412 2.16561 1.8783 1.40475 2.71761 1.14268L2.89563 1.08709C3.08069 1.02931 3.27208 1 3.46441 1C4.31249 1 5.00001 1.75845 5 2.69404L5 5.30596C5 6.24155 4.31249 7 3.4644 7C3.27208 7 3.08068 6.97069 2.89563 6.91291L2.71761 6.85732C1.87829 6.59525 1.24412 5.83439 1.07767 4.88979Z" stroke="#363853" stroke-width="1.5"/>
-                          </svg>
-                          {job.contactPerson.phone}
-                        </div>
-                      )}
-                      <CopyToClipboardField
-                        label={job.contactPerson.phone}
-                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
-                        copiedMessage="Copied!"
-                      />
-                    {/* Email with copy-to-clipboard */}
-                    {job.contactPerson?.email && (
-                      <CopyToClipboardField
-                        label={job.contactPerson.email}
-                        className="text-text-navy text-md font-medium text-primary hover:text-shadow-2xl"
-                        copiedMessage="Copied!"
-                      />
-                    )}
-                  </div>
-                </DialogHeader>
-                <DialogFooter className="mt-30">
-                  <DialogClose asChild>
-                    <Button type="button" variant="outline" className="h-[56px] w-[83px]">
-                      Hide
-                    </Button>
-                  </DialogClose>
-                </DialogFooter>
-              </DialogContent>
-            </Dialog>
           </div>
         </div>
       </div>
