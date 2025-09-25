@@ -34,11 +34,6 @@ const mockJobDetails: JobDetails = {
       url: 'https://indeed.de'
     },
     {
-      name: 'Monster',
-      logo: '/logos/providerlogos/monster.svg',
-      url: 'https://monster.de'
-    },
-    {
       name: 'LinkedIn',
       logo: '/logos/providerlogos/linkedin.svg',
       url: 'https://linkedin.com'
@@ -47,7 +42,6 @@ const mockJobDetails: JobDetails = {
   listedOn: [
     { src: '/logos/providerlogos/stepstone.svg', alt: 'StepStone' },
     { src: '/logos/providerlogos/indeed.svg', alt: 'Indeed' },
-    { src: '/logos/providerlogos/monster.svg', alt: 'Monster' },
     { src: '/logos/providerlogos/linkedin.svg', alt: 'LinkedIn' }
   ],
   company: {

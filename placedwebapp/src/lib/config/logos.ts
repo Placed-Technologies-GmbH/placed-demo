@@ -25,7 +25,6 @@ export const LOGO_PATHS = {
     indeed: '/logos/providerlogos/indeed.svg',
     stepstone: '/logos/providerlogos/stepstone.svg',
     linkedin: '/logos/providerlogos/linkedin.svg',
-    monster: '/logos/providerlogos/monster.svg',
   },
   
   // Default fallback logos

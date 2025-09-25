@@ -252,11 +252,28 @@ export class SearchService {
         return true;
       });
 
-      // Sort jobs by match percentage for CV searches
-      let sortedJobs = filteredJobs;
-      if (params.fileId) {
-        sortedJobs = [...filteredJobs].sort((a, b) => (b.matchPercentage || 0) - (a.matchPercentage || 0));
-      }
+      // Sort jobs - CV search by match percentage, regular search by date
+      const sortedJobs = [...filteredJobs].sort((a, b) => {
+        if (params.fileId) {
+          // For CV-based search: sort by match percentage (highest first)
+          const matchA = a.matchPercentage || 0;
+          const matchB = b.matchPercentage || 0;
+          
+          if (matchA !== matchB) {
+            return matchB - matchA;
+          }
+          
+          // If match percentages are equal, sort by posted date (newest first)
+          const dateA = new Date(a.postedDate).getTime();
+          const dateB = new Date(b.postedDate).getTime();
+          return dateB - dateA;
+        } else {
+          // For regular search: sort by posted date (newest first)
+          const dateA = new Date(a.postedDate).getTime();
+          const dateB = new Date(b.postedDate).getTime();
+          return dateB - dateA;
+        }
+      });
 
       // Calculate pagination
       const totalCount = sortedJobs.length;
