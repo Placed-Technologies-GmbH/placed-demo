@@ -2,13 +2,14 @@
 
 import { useState } from 'react';
 import type { SalesPitch } from '@/features/jobdetails/types';
+import { validateSalesPitch } from '@/features/jobdetails/utils';
 import MockDataManager from '@/lib/data/mockDataManager';
 import { useSearchParams } from 'next/navigation';
 
 // Mock sales pitch data
 const mockSalesPitch: SalesPitch = {
   id: 'sales-pitch-1',
-  placedScore: 78,
+  placedScore: 75,
   profileMatch: 87,
   urgencyScore: 62,
   salesPitch: [
@@ -59,10 +60,10 @@ export function useSalesPitch(jobId: string): UseSalesPitchReturn {
         const cvSalesPitch = mockDataManager.getCVSpecificSalesPitch(jobId, fileId);
         if (cvSalesPitch) {
           console.log(`Found CV-specific sales pitch for jobId: ${jobId}, fileId: ${fileId}`);
-          return {
+          return validateSalesPitch({
             ...cvSalesPitch,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
 
@@ -73,10 +74,10 @@ export function useSalesPitch(jobId: string): UseSalesPitchReturn {
         const cvSalesPitch = mockDataManager.getCVSpecificSalesPitch(jobId, fallbackFileId);
         if (cvSalesPitch) {
           console.log(`Found CV-specific sales pitch using fallback method for jobId: ${jobId}`);
-          return {
+          return validateSalesPitch({
             ...cvSalesPitch,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
 
@@ -85,10 +86,10 @@ export function useSalesPitch(jobId: string): UseSalesPitchReturn {
         const keywordJobDetails = mockDataManager.getKeywordSpecificJobDetails(jobId);
         if (keywordJobDetails && keywordJobDetails.salesPitch) {
           console.log(`Found keyword-specific sales pitch for jobId: ${jobId}`);
-          return {
+          return validateSalesPitch({
             ...keywordJobDetails.salesPitch,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
 
@@ -97,19 +98,19 @@ export function useSalesPitch(jobId: string): UseSalesPitchReturn {
         const locationJobDetails = mockDataManager.getLocationSpecificJobDetails(jobId);
         if (locationJobDetails && locationJobDetails.salesPitch) {
           console.log(`Found location-specific sales pitch for jobId: ${jobId}`);
-          return {
+          return validateSalesPitch({
             ...locationJobDetails.salesPitch,
             generatedAt: new Date().toISOString()
-          };
+          });
         }
       }
       
       // Fallback to general mock sales pitch
       console.log(`Using general mock sales pitch for jobId: ${jobId}`);
-      return {
+      return validateSalesPitch({
         ...mockSalesPitch,
         generatedAt: new Date().toISOString()
-      };
+      });
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to generate sales pitch';
       setError(errorMessage);
