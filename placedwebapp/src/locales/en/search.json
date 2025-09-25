@@ -67,7 +67,7 @@
     "profileMatch": "Profile Match"
   },
   "results": {
-    "jobsFound": "{{count}} jobs found",
+    "jobsFound": "Jobs found",
     "noResults": "No jobs found",
     "noResultsDescription": "Try adjusting your search criteria or filters to find more opportunities.",
     "loading": "Searching for jobs...",
